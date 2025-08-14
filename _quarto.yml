@@ -10,7 +10,7 @@ book:
   author: "Serhat Beyenir"
   date: last-modified
   date-format: "D MMMM YYYY"
-  downloads: [pdf]
+  #downloads: [pdf]
   sidebar:
     align: left
     style: floating
@@ -22,10 +22,11 @@ book:
       Built with <a href="https://quarto.org"> Quarto {{< version >}}</a>
   chapters:
     - index.qmd
-    - part: Beginnings
+    - part: Beginning
       chapters:
       - python_tutorial.qmd
       - SI_Units.qmd
+    - part: Making progress
     - part: Going forward
       chapters:
       - review.qmd
@@ -44,6 +45,7 @@ format:
   pdf:
     #latex-engine: xelatex  # or pdflatex, if preferred
     documentclass: book #scrreprt
+    code-overflow: wrap
     toc-title: Contents
     lot: true
     lof: true

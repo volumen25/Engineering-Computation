@@ -16,7 +16,7 @@
     "section": "",
     "text": "1.1 Requirements\nThis tutorial will help you get started with Python, covering basic concepts and providing examples to illustrate key points. We will use Python as a glorified calculator first, then move on to variables, functions, and control flow.\nTo follow along with this tutorial, you will need to have Python installed on your computer. Python is available for Windows, macOS, and Linux. You can use Python 3.13.6, which is the version used for this tutorial. Additionally, ensure you have a text editor or an IDE (Integrated Development Environment) to write your Python code. I recommend using Positron for this purpose, as it provides a user-friendly interface and a built-in terminal for running Python scripts.",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python Tutorial</span>"
     ]
   },
@@ -27,7 +27,7 @@
     "section": "1.2 Basic Syntax",
     "text": "1.2 Basic Syntax\nPython uses indentation to define blocks of code. Make sure to use consistent indentation (usually 4 spaces) throughout your code.\nHere are some basic syntax rules:\n\nComments start with # and extend to the end of the line.\nStrings can be enclosed in single quotes ('), double quotes (\"), or triple quotes (''' or \"\"\") for multi-line strings.\nStatements end with a newline character. You can use a backslash (\\) to continue a statement on the next line.\nPython is case-sensitive, so Variable and variable are considered different identifiers.",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python Tutorial</span>"
     ]
   },
@@ -38,7 +38,7 @@
     "section": "1.3 The print() Function",
     "text": "1.3 The print() Function\nIn Python, print() is the built-in function used to display output.\nname = \"Rudolf Diesel\"\nyear = 1858\nprint(f\"{name} was born in {year}.\")\n# Output: Rudolf Diesel was born in 1858.",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python Tutorial</span>"
     ]
   },
@@ -49,7 +49,7 @@
     "section": "1.4 Formatting in print()",
     "text": "1.4 Formatting in print()\n\n\n\n\n\n\n\n\n\nFormat\nCode\nExample\nOutput\n\n\n\n\nRound to 2 decimals\nf\"{x:.2f}\"\nprint(f\"{3.14159:.2f}\")\n3.14\n\n\nRound to whole number\nf\"{x:.0f}\"\nprint(f\"{3.9:.0f}\")\n4\n\n\nThousands separator\nf\"{x:,.2f}\"\nprint(f\"{1234567.89:,.2f}\")\n1,234,567.89\n\n\nPercentage\nf\"{x:.1%}\"\nprint(f\"{0.756:.1%}\")\n75.6%\n\n\nCurrency style\nf\"${x:,.2f}\"\nprint(f\"${1234.5:,.2f}\")\n$1,234.50",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python Tutorial</span>"
     ]
   },
@@ -60,7 +60,7 @@
     "section": "1.5 Variables and Data Types",
     "text": "1.5 Variables and Data Types\nVariables are used to store data. You can assign a value to a variable using the = operator.\nx = 10\ny = 3.14\nname = \"Rudolph\"\nPython has several built-in data types, including:\n\nIntegers (int): Whole numbers, e.g., 10, -5\nFloating-point numbers (float): Decimal numbers, e.g., 3.14, -0.001\nStrings (str): Text, e.g., \"Hello\", 'World'\nBooleans (bool): True or False\n\nYou can check the type of a variable using the type() function.\nprint(type(x))  # Output: &lt;class 'int'&gt;\nprint(type(name))  # Output: &lt;class 'str'&gt;\n\n1.5.1 Arithmetic Operations\na = 10\nb = 3\nprint(a + b)  # Addition: 13\nprint(a - b)  # Subtraction: 7\nprint(a * b)  # Multiplication: 30\nprint(a / b)  # Division: 3.3333...\nprint(a // b) # Integer Division: 3\nprint(a ** b) # Exponentiation: 1000\n\n\n1.5.2 String Operations\nfirst_name = \"Rudolph\"\nlast_name = \"Diesel\"\nfull_name = first_name + \" \" + last_name  # Concatenation\nprint(full_name)  # Output: Rudolph Diesel\nprint(full_name * 2)  # Repetition: Rudolph DieselRudolph Diesel\nprint(full_name.upper())  # Uppercase: RUDOLPH DIESEL",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python Tutorial</span>"
     ]
   },
@@ -71,7 +71,7 @@
     "section": "1.6 Python as a Calculator in Interactive Mode",
     "text": "1.6 Python as a Calculator in Interactive Mode\nYou can use Python as a calculator in interactive mode, which allows you to enter Python commands directly and see the results immediately. This is useful for quick calculations and testing small snippets of code. To start Python in interactive mode, open macOS terminal and type:\n    python3\n(or python on Windows)\nYou should see:\n    &gt;&gt;&gt;\nNow you can type math expressions and press Enter.\n\n1.6.1 Basic Arithmetic\n    2 + 3     # addition → 5\n    7 - 4     # subtraction → 3\n    6 * 9     # multiplication → 54\n    8 / 2     # division → 4.0 (float result, decimal)\n    8 // 2    # integer division → 4\n    2 ** 3    # exponent → 8\n\n\n1.6.2 Parentheses for Grouping\n    (2 + 3) * 4   # → 20\n    2 + (3 * 4)   # → 14\n\n\n1.6.3 Variables\n    x = 10\n    y = 3\n    x / y        # → 3.3333333333333335\n\n\n1.6.4 Exiting Python Interactive Mode\nTo exit the interactive mode, you can type:\n    exit()  # Type this to exit the interactive mode\nOr:\n\nCtrl+D (macOS/Linux)\nCtrl+Z then Enter (Windows)",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python Tutorial</span>"
     ]
   },
@@ -80,9 +80,9 @@
     "href": "python_tutorial.html#control-flow",
     "title": "1  Python Tutorial",
     "section": "1.7 Control Flow",
-    "text": "1.7 Control Flow\nControl flow statements allow you to control the execution of your code based on certain conditions.\n\n1.7.1 Conditional Statements\nConditional statements let you execute different blocks of code based on certain conditions. The most common conditional statements are if, elif, and else.\nif statements check a condition and execute a block of code if the condition is true. elif (short for “else if”) allows you to check multiple conditions, and else provides a fallback option if none of the previous conditions are true.\n# Conditional Statements: This script checks the age of a person and categorizes them as Minor, Adult, or Senior.\nage = 19\nif age &lt; 18:\n    print(\"Minor\")\nelif age &gt;= 18 and age &lt; 65:\n    print(\"Adult\")\nelse:\n    print(\"Senior\")\n# Output: Adult\n\n\n1.7.2 For Loop\nA for loop iterates over a sequence (like a list or string) and executes a block of code for each item in the sequence.\ncomponents = [\"piston\", \"liner\", \"connecting rod\"]\nfor component in components:\n    print(component)\n# Output:\n# piston\n# liner\n# connecting rod\n\n\n1.7.3 While Loop\nA while loop continues to execute a block of code as long as a specified condition is true.\ncount = 0\nwhile count &lt;= 5:\n    print(count)\n    count += 1\n# Output:\n# 0\n# 1\n# 2\n# 3\n# 4\n# 5",
+    "text": "1.7 Control Flow\nControl flow statements allow you to control the execution of your code based on certain conditions.\n\n1.7.1 Conditional Statements\nConditional statements let you execute different blocks of code based on certain conditions. The most common conditional statements are if, elif, and else.\nif statements check a condition and execute a block of code if the condition is true. elif (short for “else if”) allows you to check multiple conditions, and else provides a fallback option if none of the previous conditions are true.\n# Conditional Statements: This script checks \n# the age of a person and categorizes them as \n# Minor, Adult, or Senior.\nage = 19\nif age &lt; 18:\n    print(\"Minor\")\nelif age &gt;= 18 and age &lt; 65:\n    print(\"Adult\")\nelse:\n    print(\"Senior\")\n# Output: Adult\n\n\n1.7.2 For Loop\nA for loop iterates over a sequence (like a list or string) and executes a block of code for each item in the sequence.\ncomponents = [\"piston\", \"liner\", \"connecting rod\"]\nfor component in components:\n    print(component)\n# Output:\n# piston\n# liner\n# connecting rod\n\n\n1.7.3 While Loop\nA while loop continues to execute a block of code as long as a specified condition is true.\ncount = 0\nwhile count &lt;= 5:\n    print(count)\n    count += 1\n# Output:\n# 0\n# 1\n# 2\n# 3\n# 4\n# 5",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python Tutorial</span>"
     ]
   },
@@ -93,7 +93,7 @@
     "section": "1.8 Functions",
     "text": "1.8 Functions\nFunctions are reusable blocks of code that perform a specific task. You can define a function using the def keyword.\ndef greet(name):\n    return \"Hello, \" + name + \"!\"\nprint(greet(\"Alice\"))  # Output: Hello, Alice!\nYou can also define functions with default parameters and final results in decimal points.\ndef add(a, b=0):\n    return a + b\nprint(add(5))      # Output: 5\nprint(add(5, 3))   # Output: 8      \ndef multiply(*args):\n    result = 1\n    for num in args:\n        result *= num\n    return result\nprint(multiply(2, 3, 4))  # Output: 24\nlambda a special syntax in Python for creating a function object without using the def keyword. Two ways to create the same function:\ncelsius_to_fahrenheit = lambda c: (c * 9 / 5) + 32\ndef celsius_to_fahrenheit(c):\n    return (c * 9 / 5) + 32\nBoth behave identically:\ncelsius_to_fahrenheit(25)  # 77.0",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python Tutorial</span>"
     ]
   },
@@ -104,7 +104,7 @@
     "section": "1.9 The math Module",
     "text": "1.9 The math Module\nPython has a built-in math module that provides various mathematical functions and constants. You can import the math module using import math, and then use its functions like math.sqrt(), math.sin(), and math.cos().\nimport math\nprint(math.sqrt(16))         # Output: 4.0\nprint(math.pi)               # Output: 3.141592653589793\nimport math\nangle = math.pi / 4  # 45 degrees in radians\nprint(math.sin(angle))  # Output: 0.7071067811865475\nprint(math.cos(angle))  # Output: 0.7071067811865476\nprint(math.tan(angle))  # Output: 1.0\nThe math.log() function can be used to calculate the natural logarithm, and you can specify a base for logarithms as well.\nimport math\nprint(math.log(10))  # Natural logarithm of 10\nprint(math.log(100, 10))  # Logarithm of 100 with base 10",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python Tutorial</span>"
     ]
   },
@@ -115,7 +115,7 @@
     "section": "1.10 Writing Python Scripts",
     "text": "1.10 Writing Python Scripts\nYou can also write Python code in a text file and run it as a script. Create a file named script.py and add the following code:\n# script.py\nimport math\nprint(\"Square root of 16 is:\", math.sqrt(16))\nprint(\"Value of pi is:\", math.pi)\nprint(\"Sine of 90 degrees is:\", math.sin(math.pi / 2))\nprint(\"Natural logarithm of 10 is:\", math.log(10))\nprint(\"Logarithm of 100 with base 10 is:\", math.log(100, 10))\nTo run the script, open your terminal and navigate to the directory where script.py is located, then type:\npython3 script.py  # or python script.py on Windows\nYou should see the output of the script in your terminal. This is a great way to write and save your Python code for later use.\n# Output:\nSquare root of 16 is: 4.0\nValue of pi is: 3.141592653589793\nSine of 90 degrees is: 1.0\nNatural logarithm of 10 is: 2.302585092994046\nLogarithm of 100 with base 10 is: 2.0",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python Tutorial</span>"
     ]
   },
@@ -126,7 +126,7 @@
     "section": "1.11 Summary",
     "text": "1.11 Summary\nThis tutorial covered the basics of Python programming, including syntax, variables, data types, operations, control flow, and functions. Python is a powerful and versatile language, and has a rich ecosystem of libraries and modules that extend its functionality. Some popular libraries include:\n\nNumPy: For numerical computations and array manipulations.\nMatplotlib: For data visualization and plotting.\nPint: For handling units and performing unit conversions automatically.\n\nYou can explore these libraries to enhance your Python programming skills further. For example installing them can be done using pip:\npip install numpy matplotlib pint\npip is the package manager for Python, and it allows you to install and manage additional libraries that are not included in the standard Python distribution.",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Python Tutorial</span>"
     ]
   },
@@ -137,7 +137,7 @@
     "section": "",
     "text": "2.1 SI Units\nThe International System of Units (SI) is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>International System of Units</span>"
     ]
   },
@@ -148,7 +148,7 @@
     "section": "",
     "text": "Base SI units.\n\n\nPhysical Quantity\nSI Base Unit\nSymbol\n\n\n\n\nLength\nMeter\nm\n\n\nMass\nKilogram\nkg\n\n\nTime\nSecond\ns\n\n\nElectric Current\nAmpere\nA\n\n\nTemperature\nKelvin\nK\n\n\nAmount of Substance\nMole\nmol\n\n\nLuminous Intensity\nCandela\ncd\n\n\n\n\nDerived SI units.\n\n\nPhysical Quantity\nDerived SI Unit\nSymbol\n\n\n\n\nArea\nSquare meter\nm²\n\n\nVolume\nCubic meter\nm³\n\n\nSpeed\nMeter per second\nm/s\n\n\nAcceleration\nMeter per second squared\nm/s2\n\n\nForce\nNewton\nN\n\n\nPressure\nPascal\nPa\n\n\nEnergy\nJoule\nJ\n\n\nPower\nWatt\nW\n\n\nElectric Charge\nCoulomb\nC\n\n\nElectric Potential\nVolt\nV\n\n\nResistance\nOhm\nΩ\n\n\nCapacitance\nFarad\nF\n\n\nFrequency\nHertz\nHz\n\n\nLuminous Flux\nLumen\nlm\n\n\nIlluminance\nLux\nlx\n\n\nSpecific Energy\nJoule per kilogram\nJ/kg\n\n\nSpecific Heat Capacity\nJoule per kilogram Kelvin\nJ/(kg·K)\n\n\n\n\n\nCommon multiples and submultiples for SI units.\n\n\nFactor\nPrefix\nSymbol\n\n\n\n\n109\ngiga\nG\n\n\n106\nmega\nM\n\n\n103\nkilo\nk\n\n\n102\nhecto\nh\n\n\n101\ndeca\nda\n\n\n10-1\ndeci\nd\n\n\n10-2\ncenti\nc\n\n\n10-3\nmilli\nm\n\n\n10-6\nmicro\nµ",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>International System of Units</span>"
     ]
   },
@@ -159,7 +159,7 @@
     "section": "2.2 SI System Rules and Common Mistakes",
     "text": "2.2 SI System Rules and Common Mistakes\nUsing the SI system correctly is crucial for clear communication in science and engineering. Below are common mistakes in using the SI system, examples of incorrect usage, and how to correct them.\n\nSI system rules and common mistakes\n\n\n\n\n\n\n\n\nConcept\nMistake\nCorrect Usage\nNotes\n\n\n\n\nUse of SI Unit Symbols\nm./s\nm/s\nUse the correct format without additional punctuation.\n\n\nSpacing Between Value & Unit\n10kg\n10 kg\nAlways leave a space between the number and the unit symbol.\n\n\nIncorrect Unit Symbols\nsec, hrs, °K\ns, h, K\nUse the proper SI symbols; symbols are case-sensitive.\n\n\nAbbreviations for Units\n5 kilograms (kgs)\n5 kilograms (kg)\nAvoid informal abbreviations like “kgs”; adhere to standard symbols.\n\n\nMultiple Units in Expressions\n5 m/s/s, 5 kg/meter²\n5 m/s², 5 kg/m²\nUse compact, standardized formats for derived units.\n\n\nIncorrect Use of Prefixes\n0.0001 km\n100 mm\nChoose prefixes to keep numbers in the range (0.1 x &lt; 1000).\n\n\nMisplaced Unit Symbols\n5/s, kg10\n5 s⁻¹, 10 kg\nSymbols must follow numerical values, not precede them.\n\n\nDegrees Celsius vs. Kelvin\n300°K\n300 K\nKelvin is written without “degree”\n\n\nSingular vs. Plural Units\n5 kgs, 1 meters\n5 kg, 1 meter\nSymbols do not pluralize; full unit names follow grammar rules.\n\n\nCapitalization of Symbols\nKg, S, Km, MA\nkg, s, km, mA\nSymbols are case-sensitive; use uppercase only where specified (e.g., N, Pa).\n\n\nCapitalization of Unit Names\nNewton, Pascal, Watt\nnewton, pascal, watt\nUnit names are lowercase, even if derived from a person’s name, unless starting a sentence.\n\n\nPrefix Capitalization\nMilliMeter, MegaWatt\nmillimeter, megawatt\nPrefixes are lowercase for (10^{-1}) to (10^{-9}), uppercase for (10^6) and larger (except k for kilo).\n\n\nFormatting in Reports\n5, Temperature: 300\n5 kg, Temperature: 300 K\nAlways specify units explicitly.",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>International System of Units</span>"
     ]
   },
@@ -170,7 +170,7 @@
     "section": "2.3 Unity Fraction",
     "text": "2.3 Unity Fraction\nThe unity fraction method, or unit conversion using unity fractions, is a systematic way to convert one unit of measurement into another. This method relies on multiplying by fractions that are equal to one, where the numerator and the denominator represent the same quantity in different units. Since any number multiplied by one remains the same, unity fractions allow for seamless conversion without changing the value.\nThe principle of unity fractions is based on:\n\nSetting up equal values: Write a fraction where the numerator and denominator are equivalent values in different units, so the fraction equals one. For example, \\(\\frac{1km}{1000m}\\) is a unity fraction because 1 km equals 1000 m.\nMultiplying by unity fractions: Multiply the initial quantity by the unity fraction(s) so that the undesired units cancel out, leaving only the desired units.",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>International System of Units</span>"
     ]
   },
@@ -181,7 +181,7 @@
     "section": "2.4 Classwork",
     "text": "2.4 Classwork\n\nExample 2.1 Suppose we want to convert \\(5\\) kilometers to meters.\n\nStart with \\(5\\) kilometers: \\[\n5 \\, \\text{km}\n\\]\nMultiply by a unity fraction that cancels kilometers and introduces meters. We use \\((\\frac{1000 \\, \\text{m}}{1 \\, \\text{km}}), since\\:1 \\, \\text{km} = 1000 \\, \\text{m}\\):\n\n\\[5 \\, \\text{km} \\times \\frac{1000 \\, \\text{m}}{1 \\, \\text{km}} = 5000 \\, \\text{m}\\]\n\nThe kilometers \\(\\text{km}\\) cancel out, leaving us with meters \\(\\text{m}\\):\n\n\\[\n5 \\, \\text{km} = 5000 \\, \\text{m}\n\\]\nThis step-by-step approach illustrates how the unity fraction cancels the undesired units and achieves the correct result in meters.\nUnity fractions can be extended by using multiple conversion steps. For example, converting hours to seconds would require two unity fractions: one to convert hours to minutes and another to convert minutes to seconds. This approach ensures accuracy and is widely used in science, engineering, and other fields that require precise unit conversions.\n\n\nExample 2.2 Convert \\(15 \\, \\text{m/s}\\) to \\(\\text{km/h}\\).\n\nStart with \\(15 \\, \\text{m/s}\\).\nTo convert meters to kilometers, multiply by \\(\\frac{1 \\, \\text{km}}{1000 \\, \\text{m}}\\).\nTo convert seconds to hours, multiply by \\(\\frac{3600 \\, \\text{s}}{1 \\, \\text{h}}\\).\n\n\\[\n15 \\, \\text{m/s} \\times \\frac{1 \\, \\text{km}}{1000 \\, \\text{m}} \\times \\frac{3600 \\, \\text{s}}{1 \\, \\text{h}} = 54 \\, \\text{km/h}\n\\]\nThe meters and seconds cancel out, leaving kilometers per hour: \\(54 \\, \\text{km/h}\\).",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>International System of Units</span>"
     ]
   },
@@ -192,7 +192,7 @@
     "section": "2.5 Problem Set",
     "text": "2.5 Problem Set\nInstructions:\n\nUse unity fraction to convert between derived SI units.\nShow each step of your work to ensure accuracy.\nSimplify your answers and include correct units.\n\n\n\nSpeed\nConvert \\(72 \\, \\text{km/h}\\) to \\(\\text{m/s}\\).\nForce\nConvert \\(980 \\, \\text{N}\\) (newtons) to \\(\\text{kg} \\cdot \\text{m/s}^2\\).\nEnergy\nConvert \\(2500 \\, \\text{J}\\) (joules) to \\(\\text{kJ}\\).\nPower\nConvert \\(1500 \\, \\text{W}\\) (watts) to \\(\\text{kW}\\).\nPressure\nConvert \\(101325 \\, \\text{Pa}\\) (pascals) to \\(\\text{kPa}\\).\nVolume Flow Rate\nConvert \\(3 \\, \\text{m}^3/\\text{min}\\) to \\(\\text{L/s}\\).\nDensity\nConvert \\(1000 \\, \\text{kg/m}^3\\) to \\(\\text{g/cm}^3\\).\nAcceleration\nConvert \\(9.8 \\, \\text{m/s}^2\\) to \\(\\text{cm/s}^2\\).\nTorque\nConvert \\(50 \\, \\text{N} \\cdot \\text{m}\\) to \\(\\text{kN} \\cdot \\text{cm}\\).\nFrequency\nConvert \\(500 \\, \\text{Hz}\\) (hertz) to \\(\\text{kHz}\\).\nWork to Energy Conversion\nA force of \\(20 \\, \\text{N}\\) moves an object \\(500 \\, \\text{cm}\\). Convert the work done to joules.\nKinetic Energy Conversion\nCalculate the kinetic energy in kilojoules of a \\(1500 \\, \\text{kg}\\) car moving at \\(72 \\, \\text{km/h}\\).\nPower to Energy Conversion\nA machine operates at \\(2 \\, \\text{kW}\\) for \\(3\\) hours. Convert the energy used to megajoules.\nPressure to Force Conversion\nConvert a pressure of \\(200 \\, \\text{kPa}\\) applied to an area of \\(0.5 \\, \\text{m}^2\\) to force in newtons.\nDensity to Mass Conversion\nConvert \\(0.8 \\, \\text{g/cm}^3\\) for an object with a volume of \\(250 \\, \\text{cm}^3\\) to mass in grams.\n\n\n\n2.5.1 Answer Key\n\n\\(72 \\, \\text{km/h} = 20 \\, \\text{m/s}\\)\n\\(980 \\, \\text{N} = 980 \\, \\text{kg} \\cdot \\text{m/s}^2\\)\n\\(2500 \\, \\text{J} = 2.5 \\, \\text{kJ}\\)\n\\(1500 \\, \\text{W} = 1.5 \\, \\text{kW}\\)\n\\(101325 \\, \\text{Pa} = 101.325 \\, \\text{kPa}\\)\n\\(3 \\, \\text{m}^3/\\text{min} = 50 \\, \\text{L/s}\\)\n\\(1000 \\, \\text{kg/m}^3 = 1 \\, \\text{g/cm}^3\\)\n\\(9.8 \\, \\text{m/s}^2 = 980 \\, \\text{cm/s}^2\\)\n\\(50 \\, \\text{N} \\cdot \\text{m} = 5 \\, \\text{kN} \\cdot \\text{cm}\\)\n\\(500 \\, \\text{Hz} = 0.5 \\, \\text{kHz}\\)\n\\(20 \\, \\text{N} \\times 5 \\, \\text{m} = 100 \\, \\text{J}\\)\n\\(\\text{Kinetic energy} = 1500 \\, \\text{kg} \\times \\left(20 \\, \\text{m/s}\\right)^2 / 2 = 300 \\, \\text{kJ}\\)\n\\(2 \\, \\text{kW} \\times 3 \\, \\text{hours} = 21.6 \\, \\text{MJ}\\)\n\\(200 \\, \\text{kPa} \\times 0.5 \\, \\text{m}^2 = 100,000 \\, \\text{N}\\)\n\\(0.8 \\, \\text{g/cm}^3 \\times 250 \\, \\text{cm}^3 = 200 \\, \\text{g}\\)",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>International System of Units</span>"
     ]
   },
@@ -203,7 +203,7 @@
     "section": "2.6 Further Reading",
     "text": "2.6 Further Reading\nIntroduction in Russell et al. (2021) and SI units in Bolton (2021) for additional information.\n\n\n\n\nBolton, W. (2021). Engineering science (Seventh edition). Routledge.\n\n\nRussell, P. A., Jackson, L., & Embleton, W. (2021). Applied mechanics for marine engineers (7th edition). Reeds.",
     "crumbs": [
-      "Beginnings",
+      "Beginning",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>International System of Units</span>"
     ]
   },

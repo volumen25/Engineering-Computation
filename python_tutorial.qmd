@@ -157,7 +157,9 @@ Conditional statements let you execute different blocks of code based on certain
 `if` statements check a condition and execute a block of code if the condition is true. `elif` (short for "else if") allows you to check multiple conditions, and `else` provides a fallback option if none of the previous conditions are true.
 
 ``` python
-# Conditional Statements: This script checks the age of a person and categorizes them as Minor, Adult, or Senior.
+# Conditional Statements: This script checks 
+# the age of a person and categorizes them as 
+# Minor, Adult, or Senior.
 age = 19
 if age < 18:
     print("Minor")
