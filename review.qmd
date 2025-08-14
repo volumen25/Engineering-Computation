@@ -1,0 +1,17 @@
+# Review {#sec-review}
+
+We have used several books by @ahrensHowTakeSmart2022, @russell2021, @bolton2021, @polya2014, @bird2020 and @bird2021. These sources have helped you understand complex concepts.
+
+@sec-international-system-of-units:
+
+-   Purpose of SI Units: Provide a consistent framework for scientific and technical measurements.
+
+-   Advantages of SI Units: Facilitate clear communication and data comparison across various fields and countries.
+
+-   Fundamental Units of SI: Meter, kilogram, second, ampere, kelvin, mole, and candela.
+
+-   Method Name: Unity fraction method.
+
+-   Purpose: Converting one unit of measurement into another.
+
+-   Methodology: Multiplying by fractions equal to one, where the numerator and denominator represent the same quantity in different units.

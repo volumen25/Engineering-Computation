@@ -1,0 +1,325 @@
+# Python Tutorial {#sec-py-tutorial}
+
+This tutorial will help you get started with Python, covering basic concepts and providing examples to illustrate key points. We will use Python as a glorified calculator first, then move on to variables, functions, and control flow.
+
+## Requirements
+
+To follow along with this tutorial, you will need to have [Python](https://www.python.org/downloads/) installed on your computer. Python is available for Windows, macOS, and Linux. You can use Python 3.13.6, which is the version used for this tutorial. Additionally, ensure you have a text editor or an IDE (Integrated Development Environment) to write your Python code. I recommend using [Positron](https://positron.posit.co/) for this purpose, as it provides a user-friendly interface and a built-in terminal for running Python scripts.
+
+## Basic Syntax
+
+Python uses indentation to define blocks of code. Make sure to use consistent indentation (usually 4 spaces) throughout your code.
+
+Here are some basic syntax rules:
+
+-   Comments start with `#` and extend to the end of the line.
+-   Strings can be enclosed in single quotes (`'`), double quotes (`"`), or triple quotes (`'''` or `"""`) for multi-line strings.
+-   Statements end with a newline character. You can use a backslash (`\`) to continue a statement on the next line.
+-   Python is case-sensitive, so `Variable` and `variable` are considered different identifiers.
+
+## The `print()` Function
+
+In Python, `print()` is the built-in function used to display output.
+
+``` python
+name = "Rudolf Diesel"
+year = 1858
+print(f"{name} was born in {year}.")
+```
+
+``` txt
+# Output: Rudolf Diesel was born in 1858.
+```
+
+## Formatting in `print()`
+
+| Format | Code | Example | Output |
+|------------------|------------------|-------------------|------------------|
+| **Round to 2 decimals** | `f"{x:.2f}"` | `print(f"{3.14159:.2f}")` | `3.14` |
+| **Round to whole number** | `f"{x:.0f}"` | `print(f"{3.9:.0f}")` | `4` |
+| **Thousands separator** | `f"{x:,.2f}"` | `print(f"{1234567.89:,.2f}")` | `1,234,567.89` |
+| **Percentage** | `f"{x:.1%}"` | `print(f"{0.756:.1%}")` | `75.6%` |
+| **Currency style** | `f"${x:,.2f}"` | `print(f"${1234.5:,.2f}")` | `$1,234.50` |
+
+## Variables and Data Types
+
+Variables are used to store data. You can assign a value to a variable using the `=` operator.
+
+``` python
+x = 10
+y = 3.14
+name = "Rudolph"
+```
+
+Python has several built-in data types, including:
+
+-   Integers (`int`): Whole numbers, e.g., `10`, `-5`
+-   Floating-point numbers (`float`): Decimal numbers, e.g., `3.14`, `-0.001`
+-   Strings (`str`): Text, e.g., `"Hello",` `'World'`
+-   Booleans (`bool`): `True` or `False`
+
+You can check the type of a variable using the `type()` function.
+
+``` python
+print(type(x))  # Output: <class 'int'>
+print(type(name))  # Output: <class 'str'>
+```
+
+### Arithmetic Operations
+
+``` python
+a = 10
+b = 3
+print(a + b)  # Addition: 13
+print(a - b)  # Subtraction: 7
+print(a * b)  # Multiplication: 30
+print(a / b)  # Division: 3.3333...
+print(a // b) # Integer Division: 3
+print(a ** b) # Exponentiation: 1000
+```
+
+### String Operations
+
+``` python
+first_name = "Rudolph"
+last_name = "Diesel"
+full_name = first_name + " " + last_name  # Concatenation
+print(full_name)  # Output: Rudolph Diesel
+print(full_name * 2)  # Repetition: Rudolph DieselRudolph Diesel
+print(full_name.upper())  # Uppercase: RUDOLPH DIESEL
+```
+
+## Python as a Calculator in Interactive Mode
+
+You can use Python as a calculator in interactive mode, which allows you to enter Python commands directly and see the results immediately. This is useful for quick calculations and testing small snippets of code. To start Python in interactive mode, open macOS terminal and type:
+
+``` txt
+    python3
+```
+
+(or `python` on Windows)
+
+You should see:
+
+``` txt
+    >>>
+```
+
+Now you can type math expressions and press **Enter**.
+
+### Basic Arithmetic
+
+``` txt
+    2 + 3     # addition → 5
+    7 - 4     # subtraction → 3
+    6 * 9     # multiplication → 54
+    8 / 2     # division → 4.0 (float result, decimal)
+    8 // 2    # integer division → 4
+    2 ** 3    # exponent → 8
+```
+
+### Parentheses for Grouping
+
+``` txt
+    (2 + 3) * 4   # → 20
+    2 + (3 * 4)   # → 14
+```
+
+### Variables
+
+``` txt
+    x = 10
+    y = 3
+    x / y        # → 3.3333333333333335
+```
+
+### Exiting Python Interactive Mode
+
+To exit the interactive mode, you can type:
+
+``` txt
+    exit()  # Type this to exit the interactive mode
+```
+
+Or:
+
+-   **Ctrl+D** (macOS/Linux)
+-   **Ctrl+Z** then Enter (Windows)
+
+## Control Flow
+
+Control flow statements allow you to control the execution of your code based on certain conditions.
+
+### Conditional Statements
+
+Conditional statements let you execute different blocks of code based on certain conditions. The most common conditional statements are `if`, `elif`, and `else`.
+
+`if` statements check a condition and execute a block of code if the condition is true. `elif` (short for "else if") allows you to check multiple conditions, and `else` provides a fallback option if none of the previous conditions are true.
+
+``` python
+# Conditional Statements: This script checks the age of a person and categorizes them as Minor, Adult, or Senior.
+age = 19
+if age < 18:
+    print("Minor")
+elif age >= 18 and age < 65:
+    print("Adult")
+else:
+    print("Senior")
+```
+
+``` txt
+# Output: Adult
+```
+
+### For Loop
+
+A `for` loop iterates over a sequence (like a list or string) and executes a block of code for each item in the sequence.
+
+``` python
+components = ["piston", "liner", "connecting rod"]
+for component in components:
+    print(component)
+```
+
+``` txt
+# Output:
+# piston
+# liner
+# connecting rod
+```
+
+### While Loop
+
+A `while` loop continues to execute a block of code as long as a specified condition is true.
+
+``` python
+count = 0
+while count <= 5:
+    print(count)
+    count += 1
+```
+
+``` txt
+# Output:
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+```
+
+## Functions
+
+Functions are reusable blocks of code that perform a specific task. You can define a function using the `def` keyword.
+
+``` python
+def greet(name):
+    return "Hello, " + name + "!"
+print(greet("Alice"))  # Output: Hello, Alice!
+```
+
+You can also define functions with default parameters and final results in decimal points.
+
+``` python
+def add(a, b=0):
+    return a + b
+print(add(5))      # Output: 5
+print(add(5, 3))   # Output: 8      
+def multiply(*args):
+    result = 1
+    for num in args:
+        result *= num
+    return result
+print(multiply(2, 3, 4))  # Output: 24
+```
+
+`lambda` a special syntax in Python for creating a function object without using the `def` keyword. Two ways to create the same function:
+
+``` python
+celsius_to_fahrenheit = lambda c: (c * 9 / 5) + 32
+```
+
+``` python
+def celsius_to_fahrenheit(c):
+    return (c * 9 / 5) + 32
+```
+
+Both behave identically:
+
+``` python
+celsius_to_fahrenheit(25)  # 77.0
+```
+
+## The `math` Module
+
+Python has a built-in `math` module that provides various mathematical functions and constants. You can import the `math` module using `import math`, and then use its functions like `math.sqrt()`, `math.sin()`, and `math.cos()`.
+
+``` python
+import math
+print(math.sqrt(16))         # Output: 4.0
+print(math.pi)               # Output: 3.141592653589793
+```
+
+``` python
+import math
+angle = math.pi / 4  # 45 degrees in radians
+print(math.sin(angle))  # Output: 0.7071067811865475
+print(math.cos(angle))  # Output: 0.7071067811865476
+print(math.tan(angle))  # Output: 1.0
+```
+
+The `math.log()` function can be used to calculate the natural logarithm, and you can specify a base for logarithms as well.
+
+``` python
+import math
+print(math.log(10))  # Natural logarithm of 10
+print(math.log(100, 10))  # Logarithm of 100 with base 10
+```
+
+## Writing Python Scripts
+
+You can also write Python code in a text file and run it as a script. Create a file named `script.py` and add the following code:
+
+``` python
+# script.py
+import math
+print("Square root of 16 is:", math.sqrt(16))
+print("Value of pi is:", math.pi)
+print("Sine of 90 degrees is:", math.sin(math.pi / 2))
+print("Natural logarithm of 10 is:", math.log(10))
+print("Logarithm of 100 with base 10 is:", math.log(100, 10))
+```
+
+To run the script, open your terminal and navigate to the directory where `script.py` is located, then type:
+
+``` txt
+python3 script.py  # or python script.py on Windows
+```
+
+You should see the output of the script in your terminal. This is a great way to write and save your Python code for later use.
+
+``` txt
+# Output:
+Square root of 16 is: 4.0
+Value of pi is: 3.141592653589793
+Sine of 90 degrees is: 1.0
+Natural logarithm of 10 is: 2.302585092994046
+Logarithm of 100 with base 10 is: 2.0
+```
+
+## Summary
+
+This tutorial covered the basics of Python programming, including syntax, variables, data types, operations, control flow, and functions. Python is a powerful and versatile language, and has a rich ecosystem of libraries and modules that extend its functionality. Some popular libraries include:
+
+-   **NumPy**: For numerical computations and array manipulations.
+-   **Matplotlib**: For data visualization and plotting.
+-   **Pint**: For handling units and performing unit conversions automatically.
+
+You can explore these libraries to enhance your Python programming skills further. For example installing them can be done using `pip`:
+
+``` txt
+pip install numpy matplotlib pint
+```
+
+`pip` is the package manager for Python, and it allows you to install and manage additional libraries that are not included in the standard Python distribution.
