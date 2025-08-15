@@ -6,7 +6,7 @@ project:
 
 book:
   title: "Engineering Computation"
-  subtitle: "A Tutorial for Beginners in Computation for Applied Mechanics"
+  subtitle: "A Brief Introduction to Computational Tools for Mechanics"
   author: "Serhat Beyenir"
   date: last-modified
   date-format: "D MMMM YYYY"

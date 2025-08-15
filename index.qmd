@@ -1,5 +1,11 @@
 # Preface {.unnumbered}
 
-This book presents a collection of lecture notes on engineering computation, designed to provide learners with succinct yet essential insights into key topics covered in class. Each chapter is accompanied by a problem set to facilitate comprehension and reinforce understanding.
+A Brief Introduction to Computational Tools for Mechanics presents a collection of tutorials based on lecture notes from Applied Mechanics classes, designed to give learners clear and essential insights into key topics. No previous programming experience is required. Each tutorial guides you step by step through the concepts with hands-on examples and includes a problem set to reinforce understanding. You will learn to solve applied mechanics problems using computational tools, with an emphasis on practice and problem-solving rather than theory alone.
 
-@sec-international-system-of-units: The International System of Units (SI)\index{SI} is the globally accepted standard for measurement. Established to provide a consistent framework for scientific and technical measurements, SI units facilitate clear communication and data comparison across various fields and countries. The system is based on seven fundamental units: the meter for length, the kilogram for mass, the second for time, the ampere for electric current, the kelvin for temperature, the mole for substance, and the candela for luminous intensity.
+@sec-tutorial-basic: Introduces the fundamentals of Python, including syntax, variables, data types, operations, control flow, and functions.
+
+@sec-international-system-of-units: Explains the International System of Units (SI)\index{SI}, the globally accepted standard for measurement, and its role in ensuring consistency, clarity, and comparability in scientific and technical work.
+
+@sec-tutorial-advanced: Covers advanced Python skills, including the use of virtual environments for project isolation, installing libraries such as Pint with pip, and developing a flexible unit conversion script.
+
+@sec-applied-mechanics-tutorial: Demonstrates the application of Python to applied mechanics problems, using NumPy for computations, Matplotlib for visualization, and SciPy for numerical methods.
