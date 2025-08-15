@@ -1,0 +1,251 @@
+# Advanced Python Tutorial {#sec-tutorial-advanced}
+
+This tutorial builds upon the foundational concepts introduced in the basic Python tutorial, focusing on more advanced topics. It covers virtual environments for project isolation, installing external libraries using `pip`, and applying these skills to build a unit conversion script with the Pint library. Examples are provided to demonstrate practical implementation, including conversions for speed and pressure units.
+
+## Requirements
+
+To follow this tutorial, ensure you have Python (version 3.10 or later) installed on your computer, as detailed in the basic tutorial. You will also need access to a terminal or command prompt for creating virtual environments and installing libraries. No additional IDE is required beyond what was recommended previously, though Positron or VS Code remains suitable.
+
+## Virtual Environments (.venv)
+
+Virtual environments in Python allow you to create isolated spaces for projects, ensuring that dependencies (libraries and versions) do not conflict across different projects. This is particularly useful when working on multiple applications that require different library versions.
+
+### Why Use Virtual Environments?
+
+- **Isolation**: Each project can have its own set of installed packages without affecting the global Python installation.
+- **Reproducibility**: Share your project's dependencies easily via a `requirements.txt` file.
+- **Cleanliness**: Avoid cluttering your system Python with project-specific libraries.
+
+### Creating a Virtual Environment
+
+To create a virtual environment named `.venv` in your project directory, open a terminal and navigate to the desired folder, then run:
+
+```bash
+python -m venv .venv
+```
+
+This command generates a `.venv` directory containing an isolated Python interpreter and `pip`.
+
+### Activating the Virtual Environment
+
+Activation makes the virtual environment's Python and `pip` the default for your terminal session.
+
+- On macOS/Linux:
+  ```bash
+  source .venv/bin/activate
+  ```
+
+- On Windows:
+  ```bash
+  .venv\Scripts\activate
+  ```
+
+Once activated, your terminal prompt will typically show `(.venv)` to indicate the active environment.
+
+### Deactivating the Virtual Environment
+
+To exit the virtual environment and return to the global Python, simply run:
+
+```bash
+deactivate
+```
+
+## Installing Libraries with pip
+
+`pip` is Python's package installer, used to download and install libraries from the Python Package Index (PyPI). Within an activated virtual environment, installations are confined to that environment.
+
+### Installing Pint
+
+Pint is a library for handling physical quantities and unit conversions, ensuring dimensional consistency in calculations.
+
+To install Pint, activate your virtual environment (as described above) and run:
+
+```bash
+pip install pint
+```
+
+This command downloads and installs Pint and its dependencies. To verify the installation, start Python in interactive mode (e.g., `python`) and import Pint:
+
+```python
+import pint
+```
+
+If no errors occur, the installation is successful.
+
+### Managing Dependencies
+
+To save your project's dependencies (e.g., for sharing), generate a `requirements.txt` file:
+
+```bash
+pip freeze > requirements.txt
+```
+
+Others can recreate the environment by installing from this file:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Sample Requirements File
+
+A `requirements.txt` file lists the libraries and their versions required for a project. Below is an example for a project using Pint:
+
+```txt
+pint>=0.23
+```
+
+Save this content in a file named `requirements.txt` in your project directory. You can install these dependencies in a new virtual environment using `pip install -r requirements.txt`. This ensures consistent library versions across different setups.
+
+## Building a Unit Conversion Script with Pint
+
+Pint simplifies unit conversions by associating units with numerical values, automatically handling conversions and ensuring compatibility (e.g., preventing addition of length and mass).
+
+### Basic Usage of Pint
+
+First, import Pint and create a `UnitRegistry` to manage units:
+
+```python
+from pint import UnitRegistry
+
+ureg = UnitRegistry()
+
+# Define a quantity with units
+length = 2.5 * ureg.meter
+
+# Convert to another unit
+length_in_feet = length.to(ureg.foot)
+print(length_in_feet)  # Output: 8.202099737532808 foot
+```
+
+Pint supports a wide range of units, including length, mass, temperature, speed, and pressure. For temperature conversions, use the `.to()` method carefully, as some require delta considerations for differences versus absolute values.
+
+### Example: Temperature Conversion
+
+```python
+from pint import UnitRegistry
+
+ureg = UnitRegistry()
+
+# Absolute temperature conversion
+temp_c = 100 * ureg.degC
+temp_f = temp_c.to(ureg.degF)
+print(temp_f)  # Output: 212.0 degF
+
+# Delta temperature (for differences)
+delta_c = 10 * ureg.delta_degC
+delta_f = delta_c.to(ureg.delta_degF)
+print(delta_f)  # Output: 18.0 delta_degF
+```
+
+### Example: Additional Unit Conversions
+
+Pint also supports conversions for speed and pressure units, such as knots to kilometers per hour (km/h), pounds per square inch (psi) to kilopascals (kPa), and bar to psi, which are common in aviation, engineering, and industrial applications.
+
+```python
+from pint import UnitRegistry
+
+ureg = UnitRegistry()
+
+# Speed: knots to km/h
+speed = 100 * ureg.knot
+speed_kmh = speed.to(ureg.km_per_hour)
+print(speed_kmh)  # Output: 185.2 kilometer / hour
+
+# Pressure: psi to kPa
+pressure_psi = 50 * ureg.psi
+pressure_kpa = pressure_psi.to(ureg.kPa)
+print(pressure_kpa)  # Output: 344.737864655216 kilopascal
+
+# Pressure: bar to psi
+pressure_bar = 2 * ureg.bar
+pressure_psi = pressure_bar.to(ureg.psi)
+print(pressure_psi)  # Output: 29.0075477738527 psi
+```
+
+### Building the Script
+
+Create a file named `unit_converter.py` in your project directory. The following script provides a command-line interface for converting various units (e.g., length, temperature, speed, pressure) using Pint. Activate your virtual environment, ensure Pint is installed, and add the code below:
+
+```python
+# unit_converter.py
+from pint import UnitRegistry, UndefinedUnitError, DimensionalityError
+import sys
+
+def main():
+    ureg = UnitRegistry()
+    
+    if len(sys.argv) != 4:
+        print("Usage: python unit_converter.py <value> <from_unit> <to_unit>")
+        print("Examples:")
+        print("  python unit_converter.py 2.5 meter foot")
+        print("  python unit_converter.py 100 degC degF")
+        print("  python unit_converter.py 100 knot km_per_hour")
+        print("  python unit_converter.py 50 psi kPa")
+        print("  python unit_converter.py 2 bar psi")
+        sys.exit(1)
+    
+    try:
+        value = float(sys.argv[1])
+        from_unit = sys.argv[2]
+        to_unit = sys.argv[3]
+        
+        quantity = value * ureg(from_unit)
+        converted = quantity.to(ureg(to_unit))
+        
+        print(f"{value} {from_unit} is {converted.magnitude} {converted.units}")
+    
+    except (UndefinedUnitError, DimensionalityError) as e:
+        print(f"Error: {e}")
+        print("Ensure units are valid and compatible (e.g., length to length, pressure to pressure).")
+    except ValueError:
+        print("Error: The value must be a number.")
+
+if __name__ == "__main__":
+    main()
+```
+
+### Running the Script
+
+Navigate to your project directory in the terminal, activate the virtual environment, and run:
+
+```bash
+python unit_converter.py 2.5 meter foot
+```
+
+Output: `2.5 meter is 8.202099737532808 foot`
+
+For temperature:
+
+```bash
+python unit_converter.py 100 degC degF
+```
+
+Output: `100 degC is 212.0 degF`
+
+For speed:
+
+```bash
+python unit_converter.py 100 knot km_per_hour
+```
+
+Output: `100 knot is 185.2 kilometer / hour`
+
+For pressure:
+
+```bash
+python unit_converter.py 50 psi kPa
+```
+
+Output: `50 psi is 344.737864655216 kilopascal`
+
+```bash
+python unit_converter.py 2 bar psi
+```
+
+Output: `2 bar is 29.0075477738527 psi`
+
+This script handles errors for invalid units, incompatible conversions (e.g., meters to kilograms), and non-numeric inputs.
+
+## Summary
+
+This advanced tutorial explored virtual environments for project isolation, installing libraries like Pint using `pip`, and constructing a versatile unit conversion script. The script supports conversions for length, temperature, speed (e.g., knots to km/h), and pressure (e.g., psi to kPa, bar to psi), making it useful for scientific and engineering applications. For further exploration, consult the official Pint documentation or experiment with additional units and quantities.

@@ -58,13 +58,6 @@ Python has several built-in data types, including:
 -   Strings (`str`): Text, e.g., `"Hello",` `'World'`
 -   Booleans (`bool`): `True` or `False`
 
-You can check the type of a variable using the `type()` function.
-
-``` python
-print(type(x))  # Output: <class 'int'>
-print(type(name))  # Output: <class 'str'>
-```
-
 ### Arithmetic Operations
 
 ``` python
@@ -213,6 +206,8 @@ while count <= 5:
 
 ## Functions
 
+### The `def` Keyword
+
 Functions are reusable blocks of code that perform a specific task. You can define a function using the `def` keyword.
 
 ``` python
@@ -235,6 +230,8 @@ def multiply(*args):
     return result
 print(multiply(2, 3, 4))  # Output: 24
 ```
+
+### The `lambda` Keyword
 
 `lambda` a special syntax in Python for creating a function object without using the `def` keyword. Two ways to create the same function:
 

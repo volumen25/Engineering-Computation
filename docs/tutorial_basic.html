@@ -117,7 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./python_tutorial.html">Beginning</a></li><li class="breadcrumb-item"><a href="./python_tutorial.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Python Tutorial</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./tutorial_basic.html">Beginning</a></li><li class="breadcrumb-item"><a href="./tutorial_basic.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Python Tutorial</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -159,7 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./python_tutorial.html" class="sidebar-item-text sidebar-link active">
+  <a href="./tutorial_basic.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Python Tutorial</span></span></a>
   </div>
 </li>
@@ -169,11 +169,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">International System of Units</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tutorial_advanced.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Advanced Python Tutorial</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Making progress</span></span>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Making progress</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tutorial_advanced1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Python for Applied Mechanics: A Follow-Up Tutorial</span></span></a>
+  </div>
+</li>
+      </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
@@ -187,7 +206,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./review.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Review</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Review</span></span></a>
   </div>
 </li>
       </ul>
@@ -219,10 +238,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#python-as-a-calculator-in-interactive-mode" id="toc-python-as-a-calculator-in-interactive-mode" class="nav-link" data-scroll-target="#python-as-a-calculator-in-interactive-mode"><span class="header-section-number">1.6</span> Python as a Calculator in Interactive Mode</a>
   <ul class="collapse">
-  <li><a href="#basic-arithmetic" id="toc-basic-arithmetic" class="nav-link" data-scroll-target="#basic-arithmetic"><span class="header-section-number">1.6.1</span> Basic Arithmetic</a></li>
-  <li><a href="#parentheses-for-grouping" id="toc-parentheses-for-grouping" class="nav-link" data-scroll-target="#parentheses-for-grouping"><span class="header-section-number">1.6.2</span> Parentheses for Grouping</a></li>
-  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables"><span class="header-section-number">1.6.3</span> Variables</a></li>
-  <li><a href="#exiting-python-interactive-mode" id="toc-exiting-python-interactive-mode" class="nav-link" data-scroll-target="#exiting-python-interactive-mode"><span class="header-section-number">1.6.4</span> Exiting Python Interactive Mode</a></li>
+  <li><a href="#parentheses-for-grouping" id="toc-parentheses-for-grouping" class="nav-link" data-scroll-target="#parentheses-for-grouping"><span class="header-section-number">1.6.1</span> Parentheses for Grouping</a></li>
+  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables"><span class="header-section-number">1.6.2</span> Variables</a></li>
+  <li><a href="#exiting-interactive-mode" id="toc-exiting-interactive-mode" class="nav-link" data-scroll-target="#exiting-interactive-mode"><span class="header-section-number">1.6.3</span> Exiting Interactive Mode</a></li>
   </ul></li>
   <li><a href="#control-flow" id="toc-control-flow" class="nav-link" data-scroll-target="#control-flow"><span class="header-section-number">1.7</span> Control Flow</a>
   <ul class="collapse">
@@ -230,8 +248,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#for-loop" id="toc-for-loop" class="nav-link" data-scroll-target="#for-loop"><span class="header-section-number">1.7.2</span> For Loop</a></li>
   <li><a href="#while-loop" id="toc-while-loop" class="nav-link" data-scroll-target="#while-loop"><span class="header-section-number">1.7.3</span> While Loop</a></li>
   </ul></li>
-  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions"><span class="header-section-number">1.8</span> Functions</a></li>
-  <li><a href="#the-math-module" id="toc-the-math-module" class="nav-link" data-scroll-target="#the-math-module"><span class="header-section-number">1.9</span> The <code>math</code> Module</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions"><span class="header-section-number">1.8</span> Functions</a>
+  <ul class="collapse">
+  <li><a href="#the-def-keyword" id="toc-the-def-keyword" class="nav-link" data-scroll-target="#the-def-keyword"><span class="header-section-number">1.8.1</span> The <code>def</code> Keyword</a></li>
+  <li><a href="#the-lambda-keyword" id="toc-the-lambda-keyword" class="nav-link" data-scroll-target="#the-lambda-keyword"><span class="header-section-number">1.8.2</span> The <code>lambda</code> Keyword</a></li>
+  </ul></li>
+  <li><a href="#the-math-module" id="toc-the-math-module" class="nav-link" data-scroll-target="#the-math-module"><span class="header-section-number">1.9</span> The <code>math</code> Module</a>
+  <ul class="collapse">
+  <li><a href="#converting-between-radians-and-degrees" id="toc-converting-between-radians-and-degrees" class="nav-link" data-scroll-target="#converting-between-radians-and-degrees"><span class="header-section-number">1.9.1</span> Converting Between Radians and Degrees</a></li>
+  </ul></li>
   <li><a href="#writing-python-scripts" id="toc-writing-python-scripts" class="nav-link" data-scroll-target="#writing-python-scripts"><span class="header-section-number">1.10</span> Writing Python Scripts</a></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">1.11</span> Summary</a></li>
   </ul>
@@ -240,9 +265,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./python_tutorial.html">Beginning</a></li><li class="breadcrumb-item"><a href="./python_tutorial.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Python Tutorial</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./tutorial_basic.html">Beginning</a></li><li class="breadcrumb-item"><a href="./tutorial_basic.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Python Tutorial</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-py-tutorial" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Python Tutorial</span></span></h1>
+<h1 class="title"><span id="sec-tutorial-basic" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Python Tutorial</span></span></h1>
 </div>
 
 
@@ -259,32 +284,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This tutorial will help you get started with Python, covering basic concepts and providing examples to illustrate key points. We will use Python as a glorified calculator first, then move on to variables, functions, and control flow.</p>
+<p>This tutorial introduces Python programming, covering basic concepts with examples to illustrate key points. We will start by using Python as a calculator, then explore variables, functions, and control flow.</p>
 <section id="requirements" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="requirements"><span class="header-section-number">1.1</span> Requirements</h2>
-<p>To follow along with this tutorial, you will need to have <a href="https://www.python.org/downloads/">Python</a> installed on your computer. Python is available for Windows, macOS, and Linux. You can use Python 3.13.6, which is the version used for this tutorial. Additionally, ensure you have a text editor or an IDE (Integrated Development Environment) to write your Python code. I recommend using <a href="https://positron.posit.co/">Positron</a> for this purpose, as it provides a user-friendly interface and a built-in terminal for running Python scripts.</p>
+<p>To follow this tutorial, you must have <a href="https://www.python.org/downloads/">Python</a> (version 3.10 or later) installed on your computer. Python is available for Windows, macOS, and Linux. Additionally, ensure you have a text editor or an Integrated Development Environment (IDE) to write Python code. We recommend <a href="https://positron.posit.co/">Positron</a>, a user-friendly IDE with a built-in terminal for running Python scripts, though other editors like VS Code or PyCharm are also suitable.</p>
 </section>
 <section id="basic-syntax" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="basic-syntax"><span class="header-section-number">1.2</span> Basic Syntax</h2>
-<p>Python uses indentation to define blocks of code. Make sure to use consistent indentation (usually 4 spaces) throughout your code.</p>
-<p>Here are some basic syntax rules:</p>
+<p>Python uses indentation (typically four spaces) to define code blocks. A colon (<code>:</code>) introduces a block, and statements within the block must be indented consistently. Python is case-sensitive, so <code>Variable</code> and <code>variable</code> are distinct identifiers. Statements typically end with a newline, but you can use a backslash (<code>\</code>) to continue a statement across multiple lines.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>total <span class="op">=</span> <span class="dv">1</span> <span class="op">+</span> <span class="dv">2</span> <span class="op">+</span> <span class="dv">3</span> <span class="op">+</span> <span class="op">\</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>        <span class="dv">4</span> <span class="op">+</span> <span class="dv">5</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(total)  <span class="co"># Output: 15</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Basic syntax rules:</p>
 <ul>
 <li>Comments start with <code>#</code> and extend to the end of the line.</li>
 <li>Strings can be enclosed in single quotes (<code>'</code>), double quotes (<code>"</code>), or triple quotes (<code>'''</code> or <code>"""</code>) for multi-line strings.</li>
-<li>Statements end with a newline character. You can use a backslash (<code>\</code>) to continue a statement on the next line.</li>
-<li>Python is case-sensitive, so <code>Variable</code> and <code>variable</code> are considered different identifiers.</li>
+<li>Python is case-sensitive, so <code>Variable</code> and <code>variable</code> are different identifiers.</li>
 </ul>
 </section>
 <section id="the-print-function" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="the-print-function"><span class="header-section-number">1.3</span> The <code>print()</code> Function</h2>
-<p>In Python, <code>print()</code> is the built-in function used to display output.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Rudolf Diesel"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>year <span class="op">=</span> <span class="dv">1858</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss"> was born in </span><span class="sc">{</span>year<span class="sc">}</span><span class="ss">."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a># Output: Rudolf Diesel was born in 1858.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The <code>print()</code> function displays output in Python.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Rudolf Diesel"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>year <span class="op">=</span> <span class="dv">1858</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss"> was born in </span><span class="sc">{</span>year<span class="sc">}</span><span class="ss">."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Output: <code>Rudolf Diesel was born in 1858.</code></p>
 </section>
 <section id="formatting-in-print" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="formatting-in-print"><span class="header-section-number">1.4</span> Formatting in <code>print()</code></h2>
+<p>The following table illustrates common f-string formatting options for the <code>print()</code> function:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 24%">
@@ -333,10 +361,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
+<p>Note: The currency symbol (e.g., <code>$</code>) can be modified for other currencies (e.g., <code>€</code>, <code>£</code>) based on the desired locale.</p>
 </section>
 <section id="variables-and-data-types" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="variables-and-data-types"><span class="header-section-number">1.5</span> Variables and Data Types</h2>
-<p>Variables are used to store data. You can assign a value to a variable using the <code>=</code> operator.</p>
+<p>Variables store data and are assigned values using the <code>=</code> operator.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fl">3.14</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="st">"Rudolph"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -344,189 +373,195 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Integers (<code>int</code>): Whole numbers, e.g., <code>10</code>, <code>-5</code></li>
 <li>Floating-point numbers (<code>float</code>): Decimal numbers, e.g., <code>3.14</code>, <code>-0.001</code></li>
-<li>Strings (<code>str</code>): Text, e.g., <code>"Hello",</code> <code>'World'</code></li>
+<li>Strings (<code>str</code>): Text, e.g., <code>"Hello"</code>, <code>'World'</code></li>
 <li>Booleans (<code>bool</code>): <code>True</code> or <code>False</code></li>
 </ul>
-<p>You can check the type of a variable using the <code>type()</code> function.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(x))  <span class="co"># Output: &lt;class 'int'&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(name))  <span class="co"># Output: &lt;class 'str'&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="arithmetic-operations" class="level3" data-number="1.5.1">
 <h3 data-number="1.5.1" class="anchored" data-anchor-id="arithmetic-operations"><span class="header-section-number">1.5.1</span> Arithmetic Operations</h3>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">3</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a <span class="op">+</span> b)  <span class="co"># Addition: 13</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a <span class="op">-</span> b)  <span class="co"># Subtraction: 7</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a <span class="op">*</span> b)  <span class="co"># Multiplication: 30</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a <span class="op">/</span> b)  <span class="co"># Division: 3.3333...</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a <span class="op">//</span> b) <span class="co"># Integer Division: 3</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a <span class="op">**</span> b) <span class="co"># Exponentiation: 1000</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a <span class="op">+</span> b)  <span class="co"># Addition: 13</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a <span class="op">-</span> b)  <span class="co"># Subtraction: 7</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a <span class="op">*</span> b)  <span class="co"># Multiplication: 30</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a <span class="op">/</span> b)  <span class="co"># Division: 3.3333...</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a <span class="op">//</span> b) <span class="co"># Integer Division: 3</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a <span class="op">**</span> b) <span class="co"># Exponentiation: 1000</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="string-operations" class="level3" data-number="1.5.2">
 <h3 data-number="1.5.2" class="anchored" data-anchor-id="string-operations"><span class="header-section-number">1.5.2</span> String Operations</h3>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>first_name <span class="op">=</span> <span class="st">"Rudolph"</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>last_name <span class="op">=</span> <span class="st">"Diesel"</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>full_name <span class="op">=</span> first_name <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> last_name  <span class="co"># Concatenation</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(full_name)  <span class="co"># Output: Rudolph Diesel</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(full_name <span class="op">*</span> <span class="dv">2</span>)  <span class="co"># Repetition: Rudolph DieselRudolph Diesel</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(full_name.upper())  <span class="co"># Uppercase: RUDOLPH DIESEL</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>first_name <span class="op">=</span> <span class="st">"Rudolph"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>last_name <span class="op">=</span> <span class="st">"Diesel"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>full_name <span class="op">=</span> first_name <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> last_name  <span class="co"># Concatenation using +</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(full_name)  <span class="co"># Output: Rudolph Diesel</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>first_name<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>last_name<span class="sc">}</span><span class="ss">"</span>)  <span class="co"># Concatenation using f-string</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(full_name <span class="op">*</span> <span class="dv">2</span>)  <span class="co"># Repetition: Rudolph DieselRudolph Diesel</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(full_name.upper())  <span class="co"># Uppercase: RUDOLPH DIESEL</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Note: String repetition (<code>*</code>) concatenates the string multiple times without spaces. For example, <code>full_name * 2</code> produces <code>Rudolph DieselRudolph Diesel</code>.</p>
 </section>
 </section>
 <section id="python-as-a-calculator-in-interactive-mode" class="level2" data-number="1.6">
 <h2 data-number="1.6" class="anchored" data-anchor-id="python-as-a-calculator-in-interactive-mode"><span class="header-section-number">1.6</span> Python as a Calculator in Interactive Mode</h2>
-<p>You can use Python as a calculator in interactive mode, which allows you to enter Python commands directly and see the results immediately. This is useful for quick calculations and testing small snippets of code. To start Python in interactive mode, open macOS terminal and type:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>    python3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>(or <code>python</code> on Windows)</p>
-<p>You should see:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>    &gt;&gt;&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Now you can type math expressions and press <strong>Enter</strong>.</p>
-<section id="basic-arithmetic" class="level3" data-number="1.6.1">
-<h3 data-number="1.6.1" class="anchored" data-anchor-id="basic-arithmetic"><span class="header-section-number">1.6.1</span> Basic Arithmetic</h3>
-<div class="sourceCode" id="cb9"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>    2 + 3     # addition → 5</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    7 - 4     # subtraction → 3</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    6 * 9     # multiplication → 54</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    8 / 2     # division → 4.0 (float result, decimal)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    8 // 2    # integer division → 4</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    2 ** 3    # exponent → 8</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Python’s interactive mode allows you to enter commands and see results immediately, ideal for quick calculations. To start, open a terminal (on macOS, Linux, or Windows) and type:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span>  <span class="co"># Use 'python' on Windows if 'python3' is not recognized</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You should see the Python prompt:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Enter expressions and press <strong>Enter</strong> to see results:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="op">+</span> <span class="dv">3</span>  <span class="co"># Output: 5</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span> <span class="op">-</span> <span class="dv">4</span>  <span class="co"># Output: 3</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span> <span class="op">*</span> <span class="dv">9</span>  <span class="co"># Output: 54</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span> <span class="op">/</span> <span class="dv">2</span>  <span class="co"># Output: 4.0</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span> <span class="op">//</span> <span class="dv">2</span> <span class="co"># Output: 4</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="op">**</span> <span class="dv">3</span> <span class="co"># Output: 8</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="parentheses-for-grouping" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1" class="anchored" data-anchor-id="parentheses-for-grouping"><span class="header-section-number">1.6.1</span> Parentheses for Grouping</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">2</span> <span class="op">+</span> <span class="dv">3</span>) <span class="op">*</span> <span class="dv">4</span>  <span class="co"># Output: 20</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="op">+</span> (<span class="dv">3</span> <span class="op">*</span> <span class="dv">4</span>)  <span class="co"># Output: 14</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="parentheses-for-grouping" class="level3" data-number="1.6.2">
-<h3 data-number="1.6.2" class="anchored" data-anchor-id="parentheses-for-grouping"><span class="header-section-number">1.6.2</span> Parentheses for Grouping</h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>    (2 + 3) * 4   # → 20</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    2 + (3 * 4)   # → 14</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="variables" class="level3" data-number="1.6.2">
+<h3 data-number="1.6.2" class="anchored" data-anchor-id="variables"><span class="header-section-number">1.6.2</span> Variables</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">3</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">/</span> y  <span class="co"># Output: 3.3333333333333335</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="variables" class="level3" data-number="1.6.3">
-<h3 data-number="1.6.3" class="anchored" data-anchor-id="variables"><span class="header-section-number">1.6.3</span> Variables</h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>    x = 10</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    y = 3</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    x / y        # → 3.3333333333333335</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="exiting-python-interactive-mode" class="level3" data-number="1.6.4">
-<h3 data-number="1.6.4" class="anchored" data-anchor-id="exiting-python-interactive-mode"><span class="header-section-number">1.6.4</span> Exiting Python Interactive Mode</h3>
-<p>To exit the interactive mode, you can type:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>    exit()  # Type this to exit the interactive mode</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Or:</p>
-<ul>
-<li><strong>Ctrl+D</strong> (macOS/Linux)</li>
-<li><strong>Ctrl+Z</strong> then Enter (Windows)</li>
-</ul>
+<section id="exiting-interactive-mode" class="level3" data-number="1.6.3">
+<h3 data-number="1.6.3" class="anchored" data-anchor-id="exiting-interactive-mode"><span class="header-section-number">1.6.3</span> Exiting Interactive Mode</h3>
+<p>To exit, type:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>exit()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Alternatively, use: - <strong>Ctrl+D</strong> (macOS/Linux) - <strong>Ctrl+Z</strong> then Enter (Windows)</p>
 </section>
 </section>
 <section id="control-flow" class="level2" data-number="1.7">
 <h2 data-number="1.7" class="anchored" data-anchor-id="control-flow"><span class="header-section-number">1.7</span> Control Flow</h2>
-<p>Control flow statements allow you to control the execution of your code based on certain conditions.</p>
+<p>Control flow statements direct the execution of code based on conditions.</p>
 <section id="conditional-statements" class="level3" data-number="1.7.1">
 <h3 data-number="1.7.1" class="anchored" data-anchor-id="conditional-statements"><span class="header-section-number">1.7.1</span> Conditional Statements</h3>
-<p>Conditional statements let you execute different blocks of code based on certain conditions. The most common conditional statements are <code>if</code>, <code>elif</code>, and <code>else</code>.</p>
-<p><code>if</code> statements check a condition and execute a block of code if the condition is true. <code>elif</code> (short for “else if”) allows you to check multiple conditions, and <code>else</code> provides a fallback option if none of the previous conditions are true.</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Conditional Statements: This script checks </span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># the age of a person and categorizes them as </span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Minor, Adult, or Senior.</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">19</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> age <span class="op">&lt;</span> <span class="dv">18</span>:</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Minor"</span>)</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> age <span class="op">&gt;=</span> <span class="dv">18</span> <span class="kw">and</span> age <span class="op">&lt;</span> <span class="dv">65</span>:</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Adult"</span>)</span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Senior"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb14"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a># Output: Adult</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Conditional statements allow you to execute different code blocks based on specific conditions. Python provides three keywords for this purpose:</p>
+<ul>
+<li><strong><code>if</code></strong>: Evaluates a condition and executes its code block if the condition is <code>True</code>.</li>
+<li><strong><code>elif</code></strong>: Short for “else if,” it checks an additional condition if the preceding <code>if</code> or <code>elif</code> conditions are <code>False</code>. You can use multiple <code>elif</code> statements to test multiple conditions sequentially, and Python will execute the first <code>True</code> condition’s block, skipping the rest.</li>
+<li><strong><code>else</code></strong>: Executes a code block if none of the preceding <code>if</code> or <code>elif</code> conditions are <code>True</code>. It serves as a fallback and does not require a condition.</li>
+</ul>
+<p>The following example uses age to categorize a person as a Minor, Adult, or Senior, demonstrating how <code>if</code>, <code>elif</code>, and <code>else</code> work together.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Categorize a person based on their age</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">19</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> age <span class="op">&lt;</span> <span class="dv">18</span>:</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Minor"</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> age <span class="op">&lt;=</span> <span class="dv">64</span>:</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Adult"</span>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Senior"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Output: <code>Adult</code></p>
 </section>
 <section id="for-loop" class="level3" data-number="1.7.2">
 <h3 data-number="1.7.2" class="anchored" data-anchor-id="for-loop"><span class="header-section-number">1.7.2</span> For Loop</h3>
-<p>A <code>for</code> loop iterates over a sequence (like a list or string) and executes a block of code for each item in the sequence.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>components <span class="op">=</span> [<span class="st">"piston"</span>, <span class="st">"liner"</span>, <span class="st">"connecting rod"</span>]</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> component <span class="kw">in</span> components:</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(component)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb16"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a># Output:</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a># piston</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a># liner</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a># connecting rod</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>A <code>for</code> loop iterates over a sequence (e.g., list or string).</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>components <span class="op">=</span> [<span class="st">"piston"</span>, <span class="st">"liner"</span>, <span class="st">"connecting rod"</span>]</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> component <span class="kw">in</span> components:</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(component)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Output:</p>
+<pre><code>piston
+liner
+connecting rod</code></pre>
 </section>
 <section id="while-loop" class="level3" data-number="1.7.3">
 <h3 data-number="1.7.3" class="anchored" data-anchor-id="while-loop"><span class="header-section-number">1.7.3</span> While Loop</h3>
-<p>A <code>while</code> loop continues to execute a block of code as long as a specified condition is true.</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> count <span class="op">&lt;=</span> <span class="dv">5</span>:</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(count)</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    count <span class="op">+=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb18"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a># Output:</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a># 0</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a># 1</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a># 2</span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a># 3</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a># 4</span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a># 5</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>A <code>while</code> loop executes as long as a condition is true. Ensure the condition eventually becomes false to avoid infinite loops.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> count <span class="op">&lt;=</span> <span class="dv">5</span>:</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(count)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    count <span class="op">+=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Output:</p>
+<pre><code>0
+1
+2
+3
+4
+5</code></pre>
 </section>
 </section>
 <section id="functions" class="level2" data-number="1.8">
 <h2 data-number="1.8" class="anchored" data-anchor-id="functions"><span class="header-section-number">1.8</span> Functions</h2>
-<p>Functions are reusable blocks of code that perform a specific task. You can define a function using the <code>def</code> keyword.</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> greet(name):</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Hello, "</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">"!"</span></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(greet(<span class="st">"Alice"</span>))  <span class="co"># Output: Hello, Alice!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You can also define functions with default parameters and final results in decimal points.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add(a, b<span class="op">=</span><span class="dv">0</span>):</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(add(<span class="dv">5</span>))      <span class="co"># Output: 5</span></span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(add(<span class="dv">5</span>, <span class="dv">3</span>))   <span class="co"># Output: 8      </span></span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> multiply(<span class="op">*</span>args):</span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> num <span class="kw">in</span> args:</span>
-<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>        result <span class="op">*=</span> num</span>
-<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span>
-<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(multiply(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>))  <span class="co"># Output: 24</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>lambda</code> a special syntax in Python for creating a function object without using the <code>def</code> keyword. Two ways to create the same function:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>celsius_to_fahrenheit <span class="op">=</span> <span class="kw">lambda</span> c: (c <span class="op">*</span> <span class="dv">9</span> <span class="op">/</span> <span class="dv">5</span>) <span class="op">+</span> <span class="dv">32</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> celsius_to_fahrenheit(c):</span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (c <span class="op">*</span> <span class="dv">9</span> <span class="op">/</span> <span class="dv">5</span>) <span class="op">+</span> <span class="dv">32</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Both behave identically:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>celsius_to_fahrenheit(<span class="dv">25</span>)  <span class="co"># 77.0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="the-def-keyword" class="level3" data-number="1.8.1">
+<h3 data-number="1.8.1" class="anchored" data-anchor-id="the-def-keyword"><span class="header-section-number">1.8.1</span> The <code>def</code> Keyword</h3>
+<p>Functions are reusable code blocks defined using the <code>def</code> keyword. They can include default parameters for optional arguments.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add(a, b<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(add(<span class="dv">5</span>))      <span class="co"># Output: 5</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(add(<span class="dv">5</span>, <span class="dv">3</span>))   <span class="co"># Output: 8</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> multiply(<span class="op">*</span>args):</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> num <span class="kw">in</span> args:</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>        result <span class="op">*=</span> num</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(multiply(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>))  <span class="co"># Output: 24</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="the-lambda-keyword" class="level3" data-number="1.8.2">
+<h3 data-number="1.8.2" class="anchored" data-anchor-id="the-lambda-keyword"><span class="header-section-number">1.8.2</span> The <code>lambda</code> Keyword</h3>
+<p>The <code>lambda</code> keyword creates anonymous functions for short, one-off operations, often used in functional programming.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>celsius_to_fahrenheit <span class="op">=</span> <span class="kw">lambda</span> c: (c <span class="op">*</span> <span class="dv">9</span> <span class="op">/</span> <span class="dv">5</span>) <span class="op">+</span> <span class="dv">32</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(celsius_to_fahrenheit(<span class="dv">25</span>))  <span class="co"># Output: 77.0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
 </section>
 <section id="the-math-module" class="level2" data-number="1.9">
 <h2 data-number="1.9" class="anchored" data-anchor-id="the-math-module"><span class="header-section-number">1.9</span> The <code>math</code> Module</h2>
-<p>Python has a built-in <code>math</code> module that provides various mathematical functions and constants. You can import the <code>math</code> module using <code>import math</code>, and then use its functions like <code>math.sqrt()</code>, <code>math.sin()</code>, and <code>math.cos()</code>.</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.sqrt(<span class="dv">16</span>))         <span class="co"># Output: 4.0</span></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.pi)               <span class="co"># Output: 3.141592653589793</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>angle <span class="op">=</span> math.pi <span class="op">/</span> <span class="dv">4</span>  <span class="co"># 45 degrees in radians</span></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.sin(angle))  <span class="co"># Output: 0.7071067811865475</span></span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.cos(angle))  <span class="co"># Output: 0.7071067811865476</span></span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.tan(angle))  <span class="co"># Output: 1.0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The <code>math.log()</code> function can be used to calculate the natural logarithm, and you can specify a base for logarithms as well.</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.log(<span class="dv">10</span>))  <span class="co"># Natural logarithm of 10</span></span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.log(<span class="dv">100</span>, <span class="dv">10</span>))  <span class="co"># Logarithm of 100 with base 10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The <code>math</code> module provides mathematical functions and constants.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.sqrt(<span class="dv">16</span>))  <span class="co"># Output: 4.0</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.pi)        <span class="co"># Output: 3.141592653589793</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>angle <span class="op">=</span> math.pi <span class="op">/</span> <span class="dv">4</span>  <span class="co"># 45 degrees in radians</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.sin(angle))  <span class="co"># Output: 0.7071067811865475 (approximately √2/2)</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.cos(angle))  <span class="co"># Output: 0.7071067811865476 (approximately √2/2)</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.tan(angle))  <span class="co"># Output: 1.0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Note: Floating-point arithmetic may result in small precision differences, as seen in the <code>sin</code> and <code>cos</code> outputs.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.log(<span class="dv">10</span>))       <span class="co"># Natural logarithm of 10: 2.302585092994046</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.log(<span class="dv">100</span>, <span class="dv">10</span>))  <span class="co"># Logarithm of 100 with base 10: 2.0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="converting-between-radians-and-degrees" class="level3" data-number="1.9.1">
+<h3 data-number="1.9.1" class="anchored" data-anchor-id="converting-between-radians-and-degrees"><span class="header-section-number">1.9.1</span> Converting Between Radians and Degrees</h3>
+<p>The <code>math</code> module provides <code>math.radians()</code> to convert degrees to radians and <code>math.degrees()</code> to convert radians to degrees, which is useful for trigonometric calculations.</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>degrees <span class="op">=</span> <span class="dv">180</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>radians <span class="op">=</span> math.radians(degrees)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>degrees<span class="sc">}</span><span class="ss"> degrees is </span><span class="sc">{</span>radians<span class="sc">:.3f}</span><span class="ss"> radians"</span>)  <span class="co"># Output: 180 degrees is 3.142 radians</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>radians <span class="op">=</span> math.pi <span class="op">/</span> <span class="dv">2</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>degrees <span class="op">=</span> math.degrees(radians)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>radians<span class="sc">:.3f}</span><span class="ss"> radians is </span><span class="sc">{</span>degrees<span class="sc">:.1f}</span><span class="ss"> degrees"</span>)  <span class="co"># Output: 1.571 radians is 90.0 degrees</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
 </section>
 <section id="writing-python-scripts" class="level2" data-number="1.10">
 <h2 data-number="1.10" class="anchored" data-anchor-id="writing-python-scripts"><span class="header-section-number">1.10</span> Writing Python Scripts</h2>
-<p>You can also write Python code in a text file and run it as a script. Create a file named <code>script.py</code> and add the following code:</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># script.py</span></span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Square root of 16 is:"</span>, math.sqrt(<span class="dv">16</span>))</span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Value of pi is:"</span>, math.pi)</span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Sine of 90 degrees is:"</span>, math.sin(math.pi <span class="op">/</span> <span class="dv">2</span>))</span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Natural logarithm of 10 is:"</span>, math.log(<span class="dv">10</span>))</span>
-<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Logarithm of 100 with base 10 is:"</span>, math.log(<span class="dv">100</span>, <span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To run the script, open your terminal and navigate to the directory where <code>script.py</code> is located, then type:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>python3 script.py  # or python script.py on Windows</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You should see the output of the script in your terminal. This is a great way to write and save your Python code for later use.</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a># Output:</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>Square root of 16 is: 4.0</span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>Value of pi is: 3.141592653589793</span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>Sine of 90 degrees is: 1.0</span>
-<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>Natural logarithm of 10 is: 2.302585092994046</span>
-<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>Logarithm of 100 with base 10 is: 2.0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Write Python code in a <code>.py</code> file and run it as a script. Create a file named <code>script.py</code>:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># script.py</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Square root of 16 is:"</span>, math.sqrt(<span class="dv">16</span>))</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Value of pi is:"</span>, math.pi)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Sine of 90 degrees is:"</span>, math.sin(math.pi <span class="op">/</span> <span class="dv">2</span>))</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Natural logarithm of 10 is:"</span>, math.log(<span class="dv">10</span>))</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Logarithm of 100 with base 10 is:"</span>, math.log(<span class="dv">100</span>, <span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To run the script, open a terminal, navigate to the directory containing <code>script.py</code> using the <code>cd</code> command (e.g., <code>cd /path/to/directory</code>), and type:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> script.py  <span class="co"># or python script.py on Windows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Output:</p>
+<pre><code>Square root of 16 is: 4.0
+Value of pi is: 3.141592653589793
+Sine of 90 degrees is: 1.0
+Natural logarithm of 10 is: 2.302585092994046
+Logarithm of 100 with base 10 is: 2.0</code></pre>
 </section>
 <section id="summary" class="level2" data-number="1.11">
 <h2 data-number="1.11" class="anchored" data-anchor-id="summary"><span class="header-section-number">1.11</span> Summary</h2>
-<p>This tutorial covered the basics of Python programming, including syntax, variables, data types, operations, control flow, and functions. Python is a powerful and versatile language, and has a rich ecosystem of libraries and modules that extend its functionality. Some popular libraries include:</p>
+<p>This tutorial covered Python basics, including syntax, variables, data types, operations, control flow, and functions. Python’s rich ecosystem includes libraries like:</p>
 <ul>
 <li><strong>NumPy</strong>: For numerical computations and array manipulations.</li>
 <li><strong>Matplotlib</strong>: For data visualization and plotting.</li>
-<li><strong>Pint</strong>: For handling units and performing unit conversions automatically.</li>
+<li><strong>Pandas</strong>: For data manipulation and analysis with tabular data structures.</li>
+<li><strong>Pint</strong>: For handling physical quantities and performing unit conversions.</li>
 </ul>
 <p>You can explore these libraries to enhance your Python programming skills further. For example installing them can be done using <code>pip</code>:</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode txt code-with-copy"><code class="sourceCode default"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>pip install numpy matplotlib pint</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>pip</code> is the package manager for Python, and it allows you to install and manage additional libraries that are not included in the standard Python distribution.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install numpy matplotlib pandas pint</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>pip</code> is Python’s package manager for installing and managing additional libraries.</p>
 
 
 </section>

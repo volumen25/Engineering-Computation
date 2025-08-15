@@ -24,9 +24,12 @@ book:
     - index.qmd
     - part: Beginning
       chapters:
-      - python_tutorial.qmd
+      - tutorial_basic.qmd
       - SI_Units.qmd
+      - tutorial_advanced.qmd
     - part: Making progress
+      chapters:
+      - tutorial_advanced1.qmd
     - part: Going forward
       chapters:
       - review.qmd
