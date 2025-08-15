@@ -6,7 +6,7 @@ This tutorial extends the foundational and advanced Python concepts from previou
 
 Build on the advanced tutorial: Activate your virtual environment and ensure the following libraries are installed via `pip install numpy matplotlib scipy pint`. SciPy is included for numerical methods like solving differential equations.
 
-## NumPy for Vectors and Matrices in Mechanics
+## NumPy for Vectors and Matrices
 
 NumPy is essential for handling arrays and matrices in applied mechanics, such as representing force vectors, displacement arrays, or stiffness matrices.
 
@@ -14,45 +14,44 @@ NumPy is essential for handling arrays and matrices in applied mechanics, such a
 
 Vectors are used for forces, velocities, and moments. NumPy arrays enable efficient operations like addition (resultant forces) and dot/cross products (work or torque).
 
-```python
-import numpy as np
-
-# Force vectors in 3D (e.g., in Newtons)
-force1 = np.array([10, 20, 0])
-force2 = np.array([5, -10, 15])
-
-# Resultant force
-resultant = force1 + force2
-print(resultant)  # Output: [15 10 15]
-
-# Dot product: Work done by force along a direction (e.g., force1 · force2)
-work = np.dot(force1, force2)
-print(work)  # Output: -150
-
-# Cross product: Torque (moment) vector
-torque = np.cross(force1, force2)
-print(torque)  # Output: [ 300 -150 -200]
-```
-
 These operations are crucial in statics for equilibrium analysis or in dynamics for momentum calculations.
 
-### Matrix Operations
-
-Matrices represent systems like truss structures or stress tensors. NumPy supports linear algebra for solving equations (e.g., Ax = b for displacements).
-
-```python
+``` python
+# Vector Operations using NumPy
 import numpy as np
 
-# Stiffness matrix K and force vector F for a simple system
-K = np.array([[2, -1], [-1, 2]])  # e.g., for a two-spring system
-F = np.array([0, 5])  # Applied forces
+# Define two force vectors in 3D space (units: Newtons)
+force1 = np.array([10, 20, 0])  # Force vector 1 along x and y directions
+force2 = np.array([5, -10, 15]) # Force vector 2 along x, y, and z directions
 
-# Solve for displacements: x = K^{-1} F
-displacements = np.linalg.solve(K, F)
-print(displacements)  # Output: [2.5 5. ]
+# 1. Resultant Force
+# Vector addition gives the combined effect of both forces
+resultant = force1 + force2
+print("Resultant Force:", resultant)
+# Output: [15 10 15]
+
+# 2. Dot Product
+# Measures how much one vector acts in the direction of another
+# Often interpreted as work done if one vector is force and the other is displacement
+work = np.dot(force1, force2)
+print("Dot Product (Work):", work)
+# Output: -150
+
+# 3. Cross Product
+# Produces a vector perpendicular to both input vectors
+# Often used to calculate torque (moment) vector
+torque = np.cross(force1, force2)
+print("Cross Product (Torque):", torque)
+# Output: [ 300 -150 -200]
 ```
 
-This example solves for nodal displacements in a basic finite element or truss problem.
+Output:
+
+``` txt
+Resultant Force: [15 10 15]
+Dot Product (Work): -150
+Cross Product (Torque): [ 300 -150 -200]
+```
 
 ## Matplotlib for Visualizing Mechanics Data
 
@@ -62,55 +61,84 @@ Matplotlib allows plotting of mechanics results, such as stress-strain curves in
 
 Plot force vs. displacement for a linear spring (Hooke's law: F = kx).
 
-```python
+``` python
+# Plotting Force vs. Displacement for a Linear Spring (Hooke's Law)
+
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Displacement array (m)
-x = np.linspace(0, 0.1, 50)
-k = 100  # Spring constant (N/m)
-F = k * x  # Force (N)
+# 1. Define displacement array (from 0 to 0.1 meters)
+x = np.linspace(0, 0.1, 50)  # 50 points for smooth curve
 
-plt.plot(x, F, label='Force vs. Displacement')
-plt.xlabel('Displacement (m)')
-plt.ylabel('Force (N)')
-plt.title('Hooke\'s Law for a Spring')
-plt.legend()
-plt.grid(True)
+# 2. Define spring constant
+k = 100  # Spring stiffness in N/m
+
+# 3. Calculate force using Hooke's Law: F = k * x
+F = k * x  # Force in Newtons corresponding to each displacement
+
+# 4. Plotting
+plt.plot(x, F, label='Force vs. Displacement', color='blue', linewidth=2)
+plt.xlabel('Displacement (m)')       # x-axis label
+plt.ylabel('Force (N)')              # y-axis label
+plt.title('Hooke\'s Law for a Spring')  # Plot title
+plt.legend()                         # Show legend
+plt.grid(True)                        # Add grid lines for readability
+
+# 5. Display the plot
 plt.show()
 ```
 
 This generates a line plot showing a linear relationship, useful for visualizing elastic behavior.
 
+![Hooke's Law](images/plot_hookes_law.png)
+
 ### Advanced Plot: Stress-Strain Curve
 
 For mechanics of materials, plot a typical stress-strain curve for steel.
 
-```python
+``` python
+# Plot a typical stress-strain curve for steel (elastic + plastic behavior)
+
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Strain (dimensionless)
-strain = np.linspace(0, 0.015, 100)
-# Stress (MPa): Linear elastic up to yield, then plastic
-yield_strain = 0.002
-E = 200000  # Young's modulus (MPa)
-yield_stress = E * yield_strain
-stress = np.where(strain <= yield_strain, E * strain, yield_stress + 10000 * (strain - yield_strain))
+# 1. Define strain array (dimensionless)
+# Small values since steel deforms elastically up to ~0.2% strain
+strain = np.linspace(0, 0.015, 100)  # 0 to 1.5% strain
 
-plt.plot(strain, stress, color='blue')
-plt.xlabel('Strain')
+# 2. Material properties
+E = 200_000         # Young's modulus in MPa (elastic stiffness)
+yield_strain = 0.002  # Approximate yield strain (0.2%)
+yield_stress = E * yield_strain  # Stress at yield (MPa)
+
+# 3. Stress-strain relationship
+# Linear elastic region: stress = E * strain
+# Plastic region: stress increases at lower slope (simplified hardening)
+stress = np.where(
+    strain <= yield_strain,
+    E * strain,                       # Elastic region
+    yield_stress + 10_000 * (strain - yield_strain)  # Plastic region with hardening
+)
+
+# 4. Plotting the curve
+plt.plot(strain, stress, color='blue', linewidth=2, label='Steel Stress-Strain')
+plt.xlabel('Strain (dimensionless)')
 plt.ylabel('Stress (MPa)')
 plt.title('Stress-Strain Curve for Steel')
+
+# Mark the yield point
 plt.axvline(x=yield_strain, color='red', linestyle='--', label='Yield Point')
+
 plt.legend()
-plt.grid(True)
+plt.grid(True)  # Show grid for better readability
 plt.show()
 ```
 
 This plot illustrates elastic and plastic regions, with a dashed line at the yield point.
 
-## Numerical Methods with SciPy for Dynamics
+![Stress-Strain Curve](images/plot_stress_strain.png)
+
+## Numerical Methods with SciPy
 
 SciPy provides tools for numerical integration and solving differential equations, key in dynamics for motion simulation.
 
@@ -118,84 +146,84 @@ SciPy provides tools for numerical integration and solving differential equation
 
 Model a mass-spring system: d²x/dt² + ω²x = 0.
 
-```python
+``` python
+# Simple Harmonic Motion (SHM) Simulation using ODE Integration
+
 import numpy as np
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 
+# 1. Define the differential equation for SHM
 def shm(y, t, omega):
-    # y = [position, velocity]
+    """
+    y: [position, velocity]
+    Returns derivatives [dy/dt, dv/dt]
+    dv/dt = -omega^2 * position
+    """
     return [y[1], -omega**2 * y[0]]
 
-# Initial conditions: position=1 m, velocity=0 m/s
-y0 = [1, 0]
-t = np.linspace(0, 10, 100)  # Time array (s)
-omega = 1  # Angular frequency (rad/s)
+# 2. Initial conditions
+y0 = [1, 0]           # Initial position = 1 m, initial velocity = 0 m/s
 
-# Solve ODE
+# 3. Time array for simulation
+t = np.linspace(0, 10, 100)  # 0 to 10 seconds, 100 points
+
+# 4. Angular frequency
+omega = 1  # rad/s
+
+# 5. Solve the ODE
 sol = odeint(shm, y0, t, args=(omega,))
 
-# Plot position vs. time
-plt.plot(t, sol[:, 0], label='Position (m)')
+# 6. Plot position vs. time
+plt.plot(t, sol[:, 0], label='Position (m)', color='blue', linewidth=2)
 plt.xlabel('Time (s)')
 plt.ylabel('Position (m)')
 plt.title('Simple Harmonic Motion')
-plt.legend()
 plt.grid(True)
+plt.legend()
 plt.show()
 ```
 
-The plot shows oscillatory motion, decaying to equilibrium if damping were added.
+The plot shows a sinusoidal oscillation of position vs. time.
 
-## Advanced Unit Handling with Pint for Mechanics
-
-Extend Pint usage to mechanics-specific units, ensuring calculations account for dimensions.
-
-### Force and Torque Conversions
-
-```python
-from pint import UnitRegistry
-
-ureg = UnitRegistry()
-
-# Force: Newtons to pounds-force
-force_n = 100 * ureg.newton
-force_lbf = force_n.to(ureg.lbf)
-print(force_lbf)  # Output: 22.480894309999998 pound_force
-
-# Torque: Newton-meters to foot-pounds
-torque_nm = 50 * ureg.newton * ureg.meter
-torque_ftlb = torque_nm.to(ureg.foot * ureg.pound_force)
-print(torque_ftlb)  # Output: 36.878681655 foot * pound_force
-```
-
-These conversions are vital in international engineering projects or when using mixed unit systems (SI vs. Imperial).
+![Sinusoidal oscillation of position vs. time.](images/plot_shm.png)
 
 ## Integration Example: Projectile Motion
 
 Combine NumPy, SciPy, and Matplotlib for a dynamics problem: Simulate projectile trajectory under gravity.
 
-```python
+``` python
+# Simulate projectile motion under gravity using ODE integration
+
 import numpy as np
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 
+# 1. Define the ODE system for projectile motion
 def projectile(y, t, g, theta, v0):
-    # y = [x, vx, y, vy]
-    return [y[1], 0, y[3], -g]
+    """
+    y = [x, vx, y, vy]
+    Returns derivatives [dx/dt, dvx/dt, dy/dt, dvy/dt]
+    Assumes no air resistance, constant gravity.
+    """
+    return [y[1], 0, y[3], -g]  # dx/dt = vx, dvx/dt = 0, dy/dt = vy, dvy/dt = -g
 
-# Initial conditions: Launch at angle theta=45 deg, v0=20 m/s
-theta = np.radians(45)
-v0 = 20
-y0 = [0, v0 * np.cos(theta), 0, v0 * np.sin(theta)]
-t = np.linspace(0, 4, 100)  # Time (s)
-g = 9.81  # Gravity (m/s²)
+# 2. Initial conditions
+theta = np.radians(45)     # Launch angle in radians
+v0 = 20                    # Initial speed in m/s
+y0 = [0, v0 * np.cos(theta), 0, v0 * np.sin(theta)]  # [x0, vx0, y0, vy0]
 
-# Solve ODE
+# 3. Time array for simulation
+t = np.linspace(0, 4, 100)  # 0 to 4 seconds
+
+# 4. Gravity
+g = 9.81  # m/s²
+
+# 5. Solve the ODE
 sol = odeint(projectile, y0, t, args=(g, theta, v0))
 
-# Plot trajectory (x vs. y)
-plt.plot(sol[:, 0], sol[:, 2])
+# 6. Plot trajectory (x vs. y)
+plt.plot(sol[:, 0], sol[:, 2], color='blue', linewidth=2)
 plt.xlabel('Horizontal Distance (m)')
 plt.ylabel('Vertical Distance (m)')
 plt.title('Projectile Trajectory')
@@ -205,6 +233,8 @@ plt.show()
 
 This simulates and plots the parabolic path, ignoring air resistance.
 
+![Projectile Trajectory](images/plot_projectile_trajectory.png)
+
 ## Summary
 
-This tutorial applies Python tools to applied mechanics, using NumPy for computations, Matplotlib for visualization, SciPy for numerical methods, and Pint for unit handling. These techniques support analysis in statics, dynamics, and materials. Experiment with parameters or integrate with real data for class projects. For advanced topics, explore SymPy for symbolic mechanics or finite element libraries like FEniCS.
+This tutorial applies Python tools to applied mechanics, using NumPy for computations, Matplotlib for visualization, SciPy for numerical methods, and Pint for unit handling. These techniques support analysis in statics, dynamics, and materials. Experiment with parameters or integrate with real data for class projects.

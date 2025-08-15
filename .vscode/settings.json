@@ -69,5 +69,16 @@
     "xml": false,
     "json": false,
     "toml": false
-}
+},
+"cSpell.words": [
+    "axvline",
+    "hookes",
+    "linestyle",
+    "linspace",
+    "odeint",
+    "pyplot",
+    "scipy",
+    "xlabel",
+    "ylabel"
+]
 }
