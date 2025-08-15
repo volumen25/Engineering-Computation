@@ -171,17 +171,96 @@ Create a file named `unit_converter.py` in your project directory. The following
 from pint import UnitRegistry, UndefinedUnitError, DimensionalityError
 import sys
 
+# Common unit aliases for applied mechanics
+unit_aliases = {
+    # Length / distance
+    "m": "meter",
+    "meter": "meter",
+    "meters": "meter",
+    "cm": "centimeter",
+    "mm": "millimeter",
+    "km": "kilometer",
+    "ft": "foot",
+    "inch": "inch",
+    "in": "inch",
+    "mi": "mile",
+
+    # Force
+    "n": "newton",
+    "newton": "newton",
+    "kgf": "kilogram_force",
+    "kg_f": "kilogram_force",
+    "lbf": "pound_force",
+    "lb_f": "pound_force",
+
+    # Pressure / stress
+    "pa": "pascal",
+    "kpa": "kPa",
+    "mpa": "MPa",
+    "bar": "bar",
+    "psi": "psi",
+    "atm": "atm",
+
+    # Energy / work
+    "j": "joule",
+    "kj": "kilojoule",
+    "cal": "calorie",
+    "kcal": "kilocalorie",
+    "ev": "electronvolt",
+    "eV": "electronvolt",
+
+    # Power
+    "w": "watt",
+    "kw": "kilowatt",
+    "hp": "horsepower",
+
+    # Mass
+    "kg": "kilogram",
+    "g": "gram",
+    "lb": "pound",
+    "lbs": "pound",
+    "t": "ton",
+    "slug": "slug",
+
+    # Acceleration
+    "m/s^2": "meter/second**2",
+    "ft/s^2": "foot/second**2",
+    "g": "9.80665*m/s**2",  # gravity acceleration
+
+    # Torque / Moment
+    "n*m": "newton*meter",
+    "lbf*ft": "pound_force*foot",
+    "kgf*m": "kilogram_force*meter",
+
+    # Speed / velocity
+    "m/s": "meter/second",
+    "km/h": "km/h",
+    "kph": "km/h",
+    "mph": "mile/hour",
+    "ft/s": "foot/second",
+    "knot": "knot",
+
+    # Temperature
+    "degc": "degC",
+    "degf": "degF",
+    "celsius": "degC",
+    "fahrenheit": "degF",
+    "k": "kelvin",
+    "delta_degC": "delta_degC",
+    "delta_degF": "delta_degF"
+}
+
 def main():
     ureg = UnitRegistry()
     
     if len(sys.argv) != 4:
-        print("Usage: python unit_converter.py <value> <from_unit> <to_unit>")
+        print("Usage: python unit_converter.py <value> <from_unit> <to_unit>\n")
         print("Examples:")
         print("  python unit_converter.py 2.5 meter foot")
         print("  python unit_converter.py 100 degC degF")
-        print("  python unit_converter.py 100 knot km_per_hour")
+        print("  python unit_converter.py 100 knot km/h")
         print("  python unit_converter.py 50 psi kPa")
-        print("  python unit_converter.py 2 bar psi")
+        print("  python unit_converter.py 5000 hp kw")
         sys.exit(1)
     
     try:
@@ -189,10 +268,16 @@ def main():
         from_unit = sys.argv[2]
         to_unit = sys.argv[3]
         
-        quantity = value * ureg(from_unit)
-        converted = quantity.to(ureg(to_unit))
+        # Apply aliases if any
+        from_unit = unit_aliases.get(from_unit.lower(), from_unit)
+        to_unit = unit_aliases.get(to_unit.lower(), to_unit)
         
-        print(f"{value} {from_unit} is {converted.magnitude} {converted.units}")
+        # Use Quantity for proper temperature and unit handling
+        quantity = ureg.Quantity(value, from_unit)
+        converted = quantity.to(to_unit)
+        
+        # Rounded output
+        print(f"{value} {from_unit} is {round(converted.magnitude, 4)} {to_unit}")
     
     except (UndefinedUnitError, DimensionalityError) as e:
         print(f"Error: {e}")
@@ -209,40 +294,57 @@ if __name__ == "__main__":
 Navigate to your project directory in the terminal, activate the virtual environment, and run:
 
 ```bash
-python unit_converter.py 2.5 meter foot
+python3 unit_converter.py
 ```
 
-Output: `2.5 meter is 8.202099737532808 foot`
+Output: 
+
+```
+Usage: python unit_converter.py <value> <from_unit> <to_unit>
+
+Examples:
+  python unit_converter.py 2.5 meter foot
+  python unit_converter.py 100 degC degF
+  python unit_converter.py 100 knot km/h
+  python unit_converter.py 50 psi kPa
+  python unit_converter.py 5000 hp kw
+```
 
 For temperature:
 
 ```bash
-python unit_converter.py 100 degC degF
+python3 unit_converter.py 100 degC degF
 ```
 
-Output: `100 degC is 212.0 degF`
+Output: `100.0 degC is 212.0 degF`
 
 For speed:
 
 ```bash
-python unit_converter.py 100 knot km_per_hour
+python3 unit_converter.py 100 knot km_per_hour
 ```
 
-Output: `100 knot is 185.2 kilometer / hour`
+Output: `100.0 knot is 185.2 km/h`
 
 For pressure:
 
 ```bash
-python unit_converter.py 50 psi kPa
+python3 unit_converter.py 50 psi kPa
 ```
 
-Output: `50 psi is 344.737864655216 kilopascal`
+Output: `50.0 psi is 344.7379 kPa`
 
 ```bash
-python unit_converter.py 2 bar psi
+python3 unit_converter.py 2 bar psi
 ```
 
-Output: `2 bar is 29.0075477738527 psi`
+Output: `2.0 bar is 29.0075 psi`
+
+```bash
+python3 unit_converter.py 3000 kw hp
+```
+
+Output: `3000.0 kilowatt is 4023.0663 horsepower`
 
 This script handles errors for invalid units, incompatible conversions (e.g., meters to kilograms), and non-numeric inputs.
 
