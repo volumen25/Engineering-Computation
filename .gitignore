@@ -56,8 +56,15 @@ dmypy.json
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-# Visual Studio Code
-.vscode/
+# Ignore everything in .vscode
+.vscode/*
+
+# Allow shared workspace settings
+!.vscode/settings.json
+
+# Allow extension recommendations (optional)
+!.vscode/extensions.json
+
 
 # Ruff stuff:
 .ruff_cache/
