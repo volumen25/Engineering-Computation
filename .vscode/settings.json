@@ -1,5 +1,34 @@
 {
-    "cSpell.words": [
+    "files.associations": {
+        "renv.lock": "json"
+    },
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "cSpell.userWords": [
+        "BCIT",
+        "Beyenir’s",
+        "Kongsberg",
+        "Sanja",
+        "Serhat",
+        "Beyenir",
+        "Antifragile",
+        "Cadd",
+        "centi",
+        "deca",
+        "deci",
+        "giga",
+        "hecto",
+        "longtails",
+        "milli",
+        "Nassim",
+        "Norah",
+        "Serhat",
+        "strat",
+        "Stratocaster",
+        "submultiples",
+        "Taleb",
+        "volumen",
         "ahrens",
         "codz",
         "degc",
@@ -27,5 +56,18 @@
         "usepackage",
         "venv",
         "xelatex"
-    ]
+    ],
+    "editor.accessibilitySupport": "off",
+    "cSpell.languageSettings": [
+
+
+    
+    ],
+"cSpell.enabledFileTypes": {
+    "yaml": false,
+    "python": false,
+    "xml": false,
+    "json": false,
+    "toml": false
+}
 }

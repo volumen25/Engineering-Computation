@@ -12,15 +12,15 @@ Virtual environments in Python allow you to create isolated spaces for projects,
 
 ### Why Use Virtual Environments?
 
-- **Isolation**: Each project can have its own set of installed packages without affecting the global Python installation.
-- **Reproducibility**: Share your project's dependencies easily via a `requirements.txt` file.
-- **Cleanliness**: Avoid cluttering your system Python with project-specific libraries.
+-   **Isolation**: Each project can have its own set of installed packages without affecting the global Python installation.
+-   **Reproducibility**: Share your project's dependencies easily via a `requirements.txt` file.
+-   **Cleanliness**: Avoid cluttering your system Python with project-specific libraries.
 
 ### Creating a Virtual Environment
 
 To create a virtual environment named `.venv` in your project directory, open a terminal and navigate to the desired folder, then run:
 
-```bash
+``` bash
 python -m venv .venv
 ```
 
@@ -30,15 +30,17 @@ This command generates a `.venv` directory containing an isolated Python interpr
 
 Activation makes the virtual environment's Python and `pip` the default for your terminal session.
 
-- On macOS/Linux:
-  ```bash
-  source .venv/bin/activate
-  ```
+-   On macOS/Linux:
 
-- On Windows:
-  ```bash
-  .venv\Scripts\activate
-  ```
+    ``` bash
+    source .venv/bin/activate
+    ```
+
+-   On Windows:
+
+    ``` bash
+    .venv\Scripts\activate
+    ```
 
 Once activated, your terminal prompt will typically show `(.venv)` to indicate the active environment.
 
@@ -46,7 +48,7 @@ Once activated, your terminal prompt will typically show `(.venv)` to indicate t
 
 To exit the virtual environment and return to the global Python, simply run:
 
-```bash
+``` bash
 deactivate
 ```
 
@@ -60,13 +62,13 @@ Pint is a library for handling physical quantities and unit conversions, ensurin
 
 To install Pint, activate your virtual environment (as described above) and run:
 
-```bash
+``` bash
 pip install pint
 ```
 
 This command downloads and installs Pint and its dependencies. To verify the installation, start Python in interactive mode (e.g., `python`) and import Pint:
 
-```python
+``` python
 import pint
 ```
 
@@ -76,13 +78,13 @@ If no errors occur, the installation is successful.
 
 To save your project's dependencies (e.g., for sharing), generate a `requirements.txt` file:
 
-```bash
+``` bash
 pip freeze > requirements.txt
 ```
 
 Others can recreate the environment by installing from this file:
 
-```bash
+``` bash
 pip install -r requirements.txt
 ```
 
@@ -90,7 +92,7 @@ pip install -r requirements.txt
 
 A `requirements.txt` file lists the libraries and their versions required for a project. Below is an example for a project using Pint:
 
-```txt
+``` txt
 pint>=0.23
 ```
 
@@ -104,7 +106,8 @@ Pint simplifies unit conversions by associating units with numerical values, aut
 
 First, import Pint and create a `UnitRegistry` to manage units:
 
-```python
+``` python
+# Basic Usage of Pint
 from pint import UnitRegistry
 
 ureg = UnitRegistry()
@@ -119,54 +122,84 @@ print(length_in_feet)  # Output: 8.202099737532808 foot
 
 Pint supports a wide range of units, including length, mass, temperature, speed, and pressure. For temperature conversions, use the `.to()` method carefully, as some require delta considerations for differences versus absolute values.
 
-### Example: Temperature Conversion
+### Temperature Conversion
 
-```python
+``` python
+# Temperature Conversion
+
 from pint import UnitRegistry
 
 ureg = UnitRegistry()
+Q_ = ureg.Quantity # shorthand
 
-# Absolute temperature conversion
-temp_c = 100 * ureg.degC
-temp_f = temp_c.to(ureg.degF)
-print(temp_f)  # Output: 212.0 degF
+# === Absolute temperature conversions require .to() on a Quantity object ===
+t_c = Q_(10, ureg.degC)
+t_k = t_c.to(ureg.K)
+t_f = t_c.to(ureg.degF)
 
-# Delta temperature (for differences)
-delta_c = 10 * ureg.delta_degC
+print("Initial temperature:")
+print(f"{t_c} = {t_k} = {t_f:.2f}")
+
+t_c = Q_(5, ureg.degC)
+t_k = t_c.to(ureg.K)
+t_f = t_c.to(ureg.degF)
+
+print("\nFinal temperature:")
+print(f"{t_c} = {t_k} = {t_f:.2f}")
+
+# === Delta temperatures (for differences) ===
+delta_c = Q_(5, ureg.delta_degC)
+delta_k = delta_c.to(ureg.kelvin)          # Use kelvin for differences
 delta_f = delta_c.to(ureg.delta_degF)
-print(delta_f)  # Output: 18.0 delta_degF
+
+print("\nTemperature differences:")
+print(f"{delta_c} = {delta_k} = {delta_f}")
+
+# === Difference between two absolute temperatures ===
+t1_c = Q_(10, ureg.degC)
+t2_c = Q_(5, ureg.degC)
+
+delta_abs_c = t1_c - t2_c                 # 5 degC
+delta_abs_k = delta_abs_c.to(ureg.kelvin) # 5 K
+delta_abs_f = delta_abs_c.to(ureg.delta_degF) # 9 delta_degF
+
+print("\nOr difference between 10 °C and 5 °C:")
+print(f"{delta_abs_c} = {delta_abs_k} = {delta_abs_f}")
 ```
 
-### Example: Additional Unit Conversions
+Output:
 
-Pint also supports conversions for speed and pressure units, such as knots to kilometers per hour (km/h), pounds per square inch (psi) to kilopascals (kPa), and bar to psi, which are common in aviation, engineering, and industrial applications.
+``` txt
+Initial temperature:
+10 degree_Celsius = 283.15 kelvin = 50.00 degree_Fahrenheit
 
-```python
-from pint import UnitRegistry
+Final temperature:
+5 degree_Celsius = 278.15 kelvin = 41.00 degree_Fahrenheit
 
-ureg = UnitRegistry()
+Temperature differences:
+5 delta_degree_Celsius = 5 kelvin = 9.0 delta_degree_Fahrenheit
 
-# Speed: knots to km/h
-speed = 100 * ureg.knot
-speed_kmh = speed.to(ureg.km_per_hour)
-print(speed_kmh)  # Output: 185.2 kilometer / hour
-
-# Pressure: psi to kPa
-pressure_psi = 50 * ureg.psi
-pressure_kpa = pressure_psi.to(ureg.kPa)
-print(pressure_kpa)  # Output: 344.737864655216 kilopascal
-
-# Pressure: bar to psi
-pressure_bar = 2 * ureg.bar
-pressure_psi = pressure_bar.to(ureg.psi)
-print(pressure_psi)  # Output: 29.0075477738527 psi
+Or difference between 10 °C and 5 °C:
+5 delta_degree_Celsius = 5 kelvin = 9.0 delta_degree_Fahrenheit
 ```
+
+Note that the conversion from Fahrenheit to Celsius is given:
+
+$$
+t_f = (t_c \times \frac{9}{5}) + 32
+$$
+
+and for temperature difference, the offset `+32` does not apply:
+
+$$
+\Delta t_f = \Delta t_c \times \frac{9}{5}
+$$
 
 ### Building the Script
 
 Create a file named `unit_converter.py` in your project directory. The following script provides a command-line interface for converting various units (e.g., length, temperature, speed, pressure) using Pint. Activate your virtual environment, ensure Pint is installed, and add the code below:
 
-```python
+``` python
 # unit_converter.py
 from pint import UnitRegistry, UndefinedUnitError, DimensionalityError
 import sys
@@ -293,26 +326,28 @@ if __name__ == "__main__":
 
 Navigate to your project directory in the terminal, activate the virtual environment, and run:
 
-```bash
+``` bash
 python3 unit_converter.py
 ```
 
-Output: 
+Output:
 
-```
+```txt         
 Usage: python unit_converter.py <value> <from_unit> <to_unit>
 
 Examples:
-  python unit_converter.py 2.5 meter foot
-  python unit_converter.py 100 degC degF
-  python unit_converter.py 100 knot km/h
-  python unit_converter.py 50 psi kPa
-  python unit_converter.py 5000 hp kw
+  python unit_converter.py 100 km/h mph
+  python unit_converter.py 16 knot km/h
+  python unit_converter.py 3 m^3/min l/s
+  python unit_converter.py 1000 kg/m^3 g/cm^3
+  python unit_converter.py 7 bar psi
+  python unit_converter.py 12 bar MPa
+  python unit_converter.py 3000 kw hp
 ```
 
 For temperature:
 
-```bash
+``` bash
 python3 unit_converter.py 100 degC degF
 ```
 
@@ -320,7 +355,7 @@ Output: `100.0 degC is 212.0 degF`
 
 For speed:
 
-```bash
+``` bash
 python3 unit_converter.py 100 knot km_per_hour
 ```
 
@@ -328,19 +363,19 @@ Output: `100.0 knot is 185.2 km/h`
 
 For pressure:
 
-```bash
+``` bash
 python3 unit_converter.py 50 psi kPa
 ```
 
 Output: `50.0 psi is 344.7379 kPa`
 
-```bash
+``` bash
 python3 unit_converter.py 2 bar psi
 ```
 
 Output: `2.0 bar is 29.0075 psi`
 
-```bash
+``` bash
 python3 unit_converter.py 3000 kw hp
 ```
 

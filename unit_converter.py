@@ -87,11 +87,13 @@ def main():
     if len(sys.argv) != 4:
         print("Usage: python unit_converter.py <value> <from_unit> <to_unit>\n")
         print("Examples:")
-        print("  python unit_converter.py 2.5 meter foot")
-        print("  python unit_converter.py 100 degC degF")
-        print("  python unit_converter.py 100 knot km/h")
-        print("  python unit_converter.py 50 psi kPa")
-        print("  python unit_converter.py 5000 hp kw")
+        print("  python unit_converter.py 100 km/h mph")
+        print("  python unit_converter.py 16 knot km/h")
+        print("  python unit_converter.py 3 m^3/min l/s")
+        print("  python unit_converter.py 1000 kg/m^3 g/cm^3")
+        print("  python unit_converter.py 7 bar psi")
+        print("  python unit_converter.py 12 bar MPa")
+        print("  python unit_converter.py 3000 kw hp")
         sys.exit(1)
     
     try:
