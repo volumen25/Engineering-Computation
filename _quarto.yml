@@ -33,6 +33,7 @@ book:
     - part: Going forward
       chapters:
       - review.qmd
+    - appendix.qmd
     - references.qmd
 
 bibliography: references.bib
