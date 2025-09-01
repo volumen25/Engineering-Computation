@@ -33,8 +33,10 @@ book:
     - part: Going forward
       chapters:
       - review.qmd
+  appendices:
     - appendix.qmd
     - references.qmd
+    - colophon.qmd
 
 bibliography: references.bib
 csl: apa.csl

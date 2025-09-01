@@ -68,3 +68,5 @@ dmypy.json
 
 # Ruff stuff:
 .ruff_cache/
+
+**/*.quarto_ipynb

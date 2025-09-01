@@ -76,6 +76,7 @@
     "linestyle",
     "linspace",
     "odeint",
+    "Pandoc",
     "pyplot",
     "scipy",
     "xlabel",
