@@ -1,6 +1,4 @@
-# Appendix {.unnumbered}
-
-## SI System Rules and Common Mistakes
+# SI System Common Mistakes {.unnumbered}
 
 Using the SI system correctly is crucial for clear communication in science and engineering. Below are common mistakes in using the SI system, examples of incorrect usage, and how to correct them.
 

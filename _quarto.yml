@@ -34,7 +34,7 @@ book:
       chapters:
       - review.qmd
   appendices:
-    - appendix.qmd
+    - SI_common_mistakes.qmd
     - references.qmd
     - colophon.qmd
 
