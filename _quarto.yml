@@ -21,7 +21,7 @@ book:
       Built with <a href="https://quarto.org"> Quarto {{< version >}}</a>
   chapters:
     - dedication.qmd         
-    - credits.qmd            
+    - attributions.qmd     
     - index.qmd            
     - acknowledgements.qmd   
     - part: Beginning
@@ -38,6 +38,7 @@ book:
     - references.qmd
     - colophon.qmd
   appendices:
+    - formulae.qmd
     - SI_common_mistakes.qmd
     - greek_letters.qmd
     - revision_history.qmd   

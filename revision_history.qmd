@@ -4,7 +4,7 @@
 |---------|------------|-------------------------------------|
 | 2.0     | 2026-01-   | Major revision with new chapters    |
 | 1.0     | 2025-09-   | Updated SI units section            |
-| 0.2     | 2025-09-02 | Corrected typos                     |
+| 0.2     | 2025-09-03 | Added formulae section              |
 | 0.1     | 2025-09-01 | Initial development                 |
 
 : Changelog.
