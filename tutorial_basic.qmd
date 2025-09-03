@@ -8,7 +8,7 @@ To follow this tutorial, you must have [Python](https://www.python.org/downloads
 
 ## Basic Syntax
 
-Python uses indentation (typically four spaces) to define code blocks. A colon (`:`) introduces a block, and statements within the block must be indented consistently. Python is case-sensitive, so `Variable` and `variable` are distinct identifiers. Statements typically end with a newline, but you can use a backslash (`\`) to continue a statement across multiple lines.
+Python uses indentation\index{indentation} (typically four spaces) to define code blocks. A colon\index{colon} (`:`) introduces a block, and statements within the block must be indented consistently. Python is case-sensitive, so `Variable` and `variable` are distinct identifiers. Statements typically end with a newline, but you can use a backslash (`\`) to continue a statement across multiple lines.
 
 ```python
 total = 1 + 2 + 3 + \
@@ -24,7 +24,7 @@ Basic syntax rules:
 
 ## The `print()` Function
 
-The `print()` function displays output in Python.
+The `print()` function\index{print} displays output in Python.
 
 ```python
 name = "Rudolf Diesel"
@@ -50,7 +50,7 @@ Note: The currency symbol (e.g., `$`) can be modified for other currencies (e.g.
 
 ## Variables and Data Types
 
-Variables store data and are assigned values using the `=` operator.
+Variables\index{variables} store data and are assigned values using the `=` operator.
 
 ```python
 x = 10
@@ -146,11 +146,11 @@ Alternatively, use:
 
 ## Control Flow
 
-Control flow statements direct the execution of code based on conditions.
+Control flow\index{control flow} statements direct the execution of code based on conditions.
 
 ### Conditional Statements
 
-Conditional statements allow you to execute different code blocks based on specific conditions. Python provides three keywords for this purpose:
+Conditional statements\index{conditional statements} allow you to execute different code blocks based on specific conditions. Python provides three keywords for this purpose:
 
 - **`if`**: Evaluates a condition and executes its code block if the condition is `True`.
 - **`elif`**: Short for "else if," it checks an additional condition if the preceding `if` or `elif` conditions are `False`. You can use multiple `elif` statements to test multiple conditions sequentially, and Python will execute the first `True` condition’s block, skipping the rest.
@@ -173,7 +173,7 @@ Output: `Adult`
 
 ### For Loop
 
-A `for` loop iterates over a sequence (e.g., list or string).
+A `for` loop\index{for loop} iterates over a sequence (e.g., list or string).
 
 ```python
 components = ["piston", "liner", "connecting rod"]
@@ -190,7 +190,7 @@ connecting rod
 
 ### While Loop
 
-A `while` loop executes as long as a condition is true. Ensure the condition eventually becomes false to avoid infinite loops.
+A `while` loop\index{while loop} executes as long as a condition is true. Ensure the condition eventually becomes false to avoid infinite loops.
 
 ```python
 count = 0
@@ -213,7 +213,7 @@ Output:
 
 ### The `def` Keyword
 
-Functions are reusable code blocks defined using the `def` keyword. They can include default parameters for optional arguments.
+Functions are reusable code blocks defined using the `def` keyword\index{def keyword}. They can include default parameters for optional arguments.
 
 ```python
 def add(a, b=0):
@@ -231,7 +231,7 @@ print(multiply(2, 3, 4))  # Output: 24
 
 ### The `lambda` Keyword
 
-The `lambda` keyword creates anonymous functions for short, one-off operations, often used in functional programming.
+The `lambda` keyword\index{lambda keyword} creates anonymous functions for short, one-off operations, often used in functional programming.
 
 ```python
 celsius_to_fahrenheit = lambda c: (c * 9 / 5) + 32
@@ -240,7 +240,7 @@ print(celsius_to_fahrenheit(25))  # Output: 77.0
 
 ## The `math` Module
 
-The `math` module provides mathematical functions and constants.
+The `math` module\index{math module} provides mathematical functions and constants.
 
 ```python
 import math

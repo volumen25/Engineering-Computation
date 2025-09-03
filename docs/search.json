@@ -10,6 +10,36 @@
     ]
   },
   {
+    "objectID": "dedication.html",
+    "href": "dedication.html",
+    "title": "Dedication",
+    "section": "",
+    "text": "To my students — for their inspiration, and encouragement.",
+    "crumbs": [
+      "Dedication"
+    ]
+  },
+  {
+    "objectID": "credits.html",
+    "href": "credits.html",
+    "title": "Credits",
+    "section": "",
+    "text": "This work was made possible thanks to the contributions of:",
+    "crumbs": [
+      "Credits"
+    ]
+  },
+  {
+    "objectID": "acknowledgements.html",
+    "href": "acknowledgements.html",
+    "title": "Acknowledgements",
+    "section": "",
+    "text": "I would like to thank the colleagues and friends who helped shape this project.\nSpecial thanks to their valuable feedback and support.\nAny errors or omissions are my own.",
+    "crumbs": [
+      "Acknowledgements"
+    ]
+  },
+  {
     "objectID": "tutorial_basic.html",
     "href": "tutorial_basic.html",
     "title": "1  Python Tutorial",
@@ -340,6 +370,28 @@
     ]
   },
   {
+    "objectID": "greek_letters.html",
+    "href": "greek_letters.html",
+    "title": "Greek Letters",
+    "section": "",
+    "text": "Symbols\nThe following list presents the names of Greek letters and selected symbols commonly used in engineering courses, ensuring precise reference and avoiding reliance on informal descriptors such as “squiggle.”",
+    "crumbs": [
+      "Appendices",
+      "Greek Letters"
+    ]
+  },
+  {
+    "objectID": "greek_letters.html#symbols",
+    "href": "greek_letters.html#symbols",
+    "title": "Greek Letters",
+    "section": "",
+    "text": "Commonly used symbols in engineering courses.\n\n\n\n\n\n\n\n\nSymbol\nName\nUse\nCourse\n\n\n\n\n\\(\\Delta\\)\nDelta\nChange\nThermodynamics\n\n\n\\(\\Delta\\)\nDelta\nDisplacement\nNaval Architecture\n\n\n\\(\\nabla\\)\nNabla\nVolume\nNaval Architecture\n\n\n\\(\\Sigma\\)\nSigma\nSum\nThermodynamics, Naval Architecture, Applied Mechanics\n\n\n\\(\\sigma\\)\nSigma\nStress\nThermodynamics, Applied Mechanics\n\n\n\\(\\epsilon\\)\nEpsilon\nModulus of elasticity\nThermodynamics, Applied Mechanics\n\n\n\\(\\eta\\)\nEta\nEfficiency\nThermodynamics\n\n\n\\(\\omega\\)\nOmega\nAngular velocity\nThermodynamics, Applied Mechanics\n\n\n\\(\\rho\\)\nRho\nDensity\nThermodynamics, Naval Architecture\n\n\n\\(\\tau\\)\nTau\nTorque\nThermodynamics, Applied Mechanics",
+    "crumbs": [
+      "Appendices",
+      "Greek Letters"
+    ]
+  },
+  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",
@@ -351,11 +403,22 @@
     ]
   },
   {
+    "objectID": "revision_history.html",
+    "href": "revision_history.html",
+    "title": "Revision History",
+    "section": "",
+    "text": "Version\nDate\nDescription\n\n\n\n\n2.0\n2026-01-\nMajor revision with new chapters\n\n\n1.2\n2025-09-\nUpdated SI units section\n\n\n1.1\n2025-09-02\nCorrected typos, clarified examples\n\n\n1.0\n2025-09-01\nFirst edition",
+    "crumbs": [
+      "Appendices",
+      "Revision History"
+    ]
+  },
+  {
     "objectID": "colophon.html",
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "This book was generated with Positron and Quarto v.1.8.22, powered by Pandoc for document conversion.",
+    "text": "This book was created using Positron and typeset with Quarto v.1.8.22, using Pandoc for document conversion.",
     "crumbs": [
       "Appendices",
       "Colophon"

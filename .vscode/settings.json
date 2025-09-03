@@ -75,6 +75,7 @@
     "hookes",
     "linestyle",
     "linspace",
+    "nabla",
     "odeint",
     "Pandoc",
     "pyplot",
