@@ -51,8 +51,8 @@ format:
     toc: true
     collapse: true
     theme:
-      - cosmo
-      - brand
+      light: cosmo #flatly
+      dark: solar
   pdf:
     documentclass: book
     code-overflow: wrap
