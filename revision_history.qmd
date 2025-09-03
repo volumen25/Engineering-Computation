@@ -1,9 +1,10 @@
-# Revision History {.unnumbered}
+# Revision History
 
-| Version | Date       | Description                          |
-|---------|------------|--------------------------------------|
-| 2.0     | 2026-01- | Major revision with new chapters     |
-| 1.2     | 2025-09- | Updated SI units section             |
-| 1.1     | 2025-09-02 | Corrected typos, clarified examples  |
-| 1.0     | 2025-09-01 | First edition                        |
+| Version | Date       | Description                         |
+|---------|------------|-------------------------------------|
+| 2.0     | 2026-01-   | Major revision with new chapters    |
+| 1.0     | 2025-09-   | Updated SI units section            |
+| 0.2     | 2025-09-02 | Corrected typos                     |
+| 0.1     | 2025-09-01 | Initial development                 |
 
+: Changelog.

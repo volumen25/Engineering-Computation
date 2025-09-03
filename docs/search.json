@@ -359,58 +359,13 @@
     ]
   },
   {
-    "objectID": "SI_common_mistakes.html",
-    "href": "SI_common_mistakes.html",
-    "title": "SI System Common Mistakes",
-    "section": "",
-    "text": "Using the SI system correctly is crucial for clear communication in science and engineering. Below are common mistakes in using the SI system, examples of incorrect usage, and how to correct them.\n\nSI system rules and common mistakes\n\n\n\n\n\n\n\n\nConcept\nMistake\nCorrect Usage\nNotes\n\n\n\n\nUse of SI Unit Symbols\nm./s\nm/s\nUse the correct format without additional punctuation.\n\n\nSpacing Between Value & Unit\n10kg\n10 kg\nAlways leave a space between the number and the unit symbol.\n\n\nIncorrect Unit Symbols\nsec, hrs, °K\ns, h, K\nUse the proper SI symbols; symbols are case-sensitive.\n\n\nAbbreviations for Units\n5 kilograms (kgs)\n5 kilograms (kg)\nAvoid informal abbreviations like “kgs”; adhere to standard symbols.\n\n\nMultiple Units in Expressions\n5 m/s/s, 5 kg/meter²\n5 m/s², 5 kg/m²\nUse compact, standardized formats for derived units.\n\n\nIncorrect Use of Prefixes\n0.0001 km\n100 mm\nChoose prefixes to keep numbers in the range (0.1 x &lt; 1000).\n\n\nMisplaced Unit Symbols\n5/s, kg10\n5 s⁻¹, 10 kg\nSymbols must follow numerical values, not precede them.\n\n\nDegrees Celsius vs. Kelvin\n300°K\n300 K\nKelvin is written without “degree”\n\n\nSingular vs. Plural Units\n5 kgs, 1 meters\n5 kg, 1 meter\nSymbols do not pluralize; full unit names follow grammar rules.\n\n\nCapitalization of Symbols\nKg, S, Km, MA\nkg, s, km, mA\nSymbols are case-sensitive; use uppercase only where specified (e.g., N, Pa).\n\n\nCapitalization of Unit Names\nNewton, Pascal, Watt\nnewton, pascal, watt\nUnit names are lowercase, even if derived from a person’s name, unless starting a sentence.\n\n\nPrefix Capitalization\nMilliMeter, MegaWatt\nmillimeter, megawatt\nPrefixes are lowercase for (10^{-1}) to (10^{-9}), uppercase for (10^6) and larger (except k for kilo).\n\n\nFormatting in Reports\n5, Temperature: 300\n5 kg, Temperature: 300 K\nAlways specify units explicitly.",
-    "crumbs": [
-      "Appendices",
-      "SI System Common Mistakes"
-    ]
-  },
-  {
-    "objectID": "greek_letters.html",
-    "href": "greek_letters.html",
-    "title": "Greek Letters",
-    "section": "",
-    "text": "Symbols\nThe following list presents the names of Greek letters and selected symbols commonly used in engineering courses, ensuring precise reference and avoiding reliance on informal descriptors such as “squiggle.”",
-    "crumbs": [
-      "Appendices",
-      "Greek Letters"
-    ]
-  },
-  {
-    "objectID": "greek_letters.html#symbols",
-    "href": "greek_letters.html#symbols",
-    "title": "Greek Letters",
-    "section": "",
-    "text": "Commonly used symbols in engineering courses.\n\n\n\n\n\n\n\n\nSymbol\nName\nUse\nCourse\n\n\n\n\n\\(\\Delta\\)\nDelta\nChange\nThermodynamics\n\n\n\\(\\Delta\\)\nDelta\nDisplacement\nNaval Architecture\n\n\n\\(\\nabla\\)\nNabla\nVolume\nNaval Architecture\n\n\n\\(\\Sigma\\)\nSigma\nSum\nThermodynamics, Naval Architecture, Applied Mechanics\n\n\n\\(\\sigma\\)\nSigma\nStress\nThermodynamics, Applied Mechanics\n\n\n\\(\\epsilon\\)\nEpsilon\nModulus of elasticity\nThermodynamics, Applied Mechanics\n\n\n\\(\\eta\\)\nEta\nEfficiency\nThermodynamics\n\n\n\\(\\omega\\)\nOmega\nAngular velocity\nThermodynamics, Applied Mechanics\n\n\n\\(\\rho\\)\nRho\nDensity\nThermodynamics, Naval Architecture\n\n\n\\(\\tau\\)\nTau\nTorque\nThermodynamics, Applied Mechanics",
-    "crumbs": [
-      "Appendices",
-      "Greek Letters"
-    ]
-  },
-  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",
     "section": "",
     "text": "Bird, J. O. (2021). Bird’s engineering mathematics (Ninth\nedition). Routledge.\n\n\nBird, J. O., & Ross, C. T. F. (2020). Mechanical engineering\nprinciples (Fourth edition). Routledge.\n\n\nBolton, W. (2021). Engineering science (Seventh edition).\nRoutledge.\n\n\nPolya, G., & Conway, J. H. (2014). How to solve it: A new aspect\nof mathematical method (With a Foreword by John H. Con ed.\nedition). Princeton University Press.\n\n\nRussell, P. A., Jackson, L., & Embleton, W. (2021). Applied\nmechanics for marine engineers (7th edition). Reeds.\n\n\nShaw, Z. (2017). Learn python 3 the hard way: A very simple\nintroduction to the terrifyingly beautiful world of computers and\ncode (4th edition). Addison-Wesley Professional.",
     "crumbs": [
-      "Appendices",
       "References"
-    ]
-  },
-  {
-    "objectID": "revision_history.html",
-    "href": "revision_history.html",
-    "title": "Revision History",
-    "section": "",
-    "text": "Version\nDate\nDescription\n\n\n\n\n2.0\n2026-01-\nMajor revision with new chapters\n\n\n1.2\n2025-09-\nUpdated SI units section\n\n\n1.1\n2025-09-02\nCorrected typos, clarified examples\n\n\n1.0\n2025-09-01\nFirst edition",
-    "crumbs": [
-      "Appendices",
-      "Revision History"
     ]
   },
   {
@@ -420,8 +375,40 @@
     "section": "",
     "text": "This book was created using Positron and typeset with Quarto v.1.8.22, using Pandoc for document conversion.",
     "crumbs": [
-      "Appendices",
       "Colophon"
+    ]
+  },
+  {
+    "objectID": "SI_common_mistakes.html",
+    "href": "SI_common_mistakes.html",
+    "title": "Appendix A — SI System Common Mistakes",
+    "section": "",
+    "text": "Using the SI system correctly is crucial for clear communication in science and engineering. Below are common mistakes in using the SI system, examples of incorrect usage, and how to correct them.\n\nSI system rules and common mistakes\n\n\n\n\n\n\n\n\nConcept\nMistake\nCorrect Usage\nNotes\n\n\n\n\nUse of SI Unit Symbols\nm./s\nm/s\nUse the correct format without additional punctuation.\n\n\nSpacing Between Value & Unit\n10kg\n10 kg\nAlways leave a space between the number and the unit symbol.\n\n\nIncorrect Unit Symbols\nsec, hrs, °K\ns, h, K\nUse the proper SI symbols; symbols are case-sensitive.\n\n\nAbbreviations for Units\n5 kilograms (kgs)\n5 kilograms (kg)\nAvoid informal abbreviations like “kgs”; adhere to standard symbols.\n\n\nMultiple Units in Expressions\n5 m/s/s, 5 kg/meter²\n5 m/s², 5 kg/m²\nUse compact, standardized formats for derived units.\n\n\nIncorrect Use of Prefixes\n0.0001 km\n100 mm\nChoose prefixes to keep numbers in the range (0.1 x &lt; 1000).\n\n\nMisplaced Unit Symbols\n5/s, kg10\n5 s⁻¹, 10 kg\nSymbols must follow numerical values, not precede them.\n\n\nDegrees Celsius vs. Kelvin\n300°K\n300 K\nKelvin is written without “degree”\n\n\nSingular vs. Plural Units\n5 kgs, 1 meters\n5 kg, 1 meter\nSymbols do not pluralize; full unit names follow grammar rules.\n\n\nCapitalization of Symbols\nKg, S, Km, MA\nkg, s, km, mA\nSymbols are case-sensitive; use uppercase only where specified (e.g., N, Pa).\n\n\nCapitalization of Unit Names\nNewton, Pascal, Watt\nnewton, pascal, watt\nUnit names are lowercase, even if derived from a person’s name, unless starting a sentence.\n\n\nPrefix Capitalization\nMilliMeter, MegaWatt\nmillimeter, megawatt\nPrefixes are lowercase for (10^{-1}) to (10^{-9}), uppercase for (10^6) and larger (except k for kilo).\n\n\nFormatting in Reports\n5, Temperature: 300\n5 kg, Temperature: 300 K\nAlways specify units explicitly.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>SI System Common Mistakes</span>"
+    ]
+  },
+  {
+    "objectID": "greek_letters.html",
+    "href": "greek_letters.html",
+    "title": "Appendix B — Greek Letters",
+    "section": "",
+    "text": "The following tables present the names of Greek letters and selected symbols commonly used in engineering courses, ensuring precise reference and avoiding reliance on informal descriptors such as “squiggle.”\n\nGreek letters.\n\n\nLower Case\nUpper Case\nName\n\n\n\n\n\\(\\alpha\\)\nA\nalpha\n\n\n\\(\\beta\\)\nB\nbeta\n\n\n\\(\\gamma\\)\n\\(\\Gamma\\)\ngamma\n\n\n\\(\\delta\\)\n\\(\\Delta\\)\ndelta\n\n\n\\(\\epsilon\\)\nE\nepsilon\n\n\n\\(\\zeta\\)\nZ\nzeta\n\n\n\\(\\eta\\)\nE\neta\n\n\n\\(\\theta\\)\n\\(\\Theta\\)\ntheta\n\n\n\\(\\iota\\)\nI\niota\n\n\n\\(\\kappa\\)\nK\nkappa\n\n\n\\(\\lambda\\)\n\\(\\Lambda\\)\nlambda\n\n\n\\(\\mu\\)\nM\nmu\n\n\n\\(\\nu\\)\nN\nnu\n\n\n\\(\\xi\\)\n\\(\\Xi\\)\nxi\n\n\n\\(\\omicron\\)\nO\nomicron\n\n\n\\(\\pi\\)\n\\(\\Pi\\)\npi\n\n\n\\(\\rho\\)\nP\nrho\n\n\n\\(\\sigma\\)\n\\(\\Sigma\\)\nsigma\n\n\n\\(\\tau\\)\nT\ntau\n\n\n\\(\\upsilon\\)\n\\(\\Upsilon\\)\nupsilon\n\n\n\\(\\phi\\)\n\\(\\Phi\\)\nphi\n\n\n\\(\\chi\\)\nX\nchi\n\n\n\\(\\psi\\)\n\\(\\Psi\\)\npsi\n\n\n\\(\\omega\\)\n\\(\\Omega\\)\nomega\n\n\n\n\nCommonly used symbols in engineering courses.\n\n\n\n\n\n\n\n\nSymbol\nName\nUse\nCourse\n\n\n\n\n\\(\\Delta\\)\nDelta\nChange\nThermodynamics\n\n\n\\(\\Delta\\)\nDelta\nDisplacement\nNaval Architecture\n\n\n\\(\\nabla\\)\nNabla\nVolume\nNaval Architecture\n\n\n\\(\\Sigma\\)\nSigma\nSum\nThermodynamics, Naval Architecture, Applied Mechanics\n\n\n\\(\\sigma\\)\nSigma\nStress\nThermodynamics, Applied Mechanics\n\n\n\\(\\epsilon\\)\nEpsilon\nModulus of elasticity\nThermodynamics, Applied Mechanics\n\n\n\\(\\eta\\)\nEta\nEfficiency\nThermodynamics\n\n\n\\(\\omega\\)\nOmega\nAngular velocity\nThermodynamics, Applied Mechanics\n\n\n\\(\\rho\\)\nRho\nDensity\nThermodynamics, Naval Architecture\n\n\n\\(\\tau\\)\nTau\nTorque\nThermodynamics, Applied Mechanics",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Greek Letters</span>"
+    ]
+  },
+  {
+    "objectID": "revision_history.html",
+    "href": "revision_history.html",
+    "title": "Appendix C — Revision History",
+    "section": "",
+    "text": "Changelog.\n\n\nVersion\nDate\nDescription\n\n\n\n\n2.0\n2026-01-\nMajor revision with new chapters\n\n\n1.0\n2025-09-\nUpdated SI units section\n\n\n0.2\n2025-09-02\nCorrected typos\n\n\n0.1\n2025-09-01\nInitial development",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Revision History</span>"
     ]
   }
 ]

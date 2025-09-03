@@ -5,32 +5,22 @@
     "git.enableSmartCommit": true,
     "git.autofetch": true,
     "git.confirmSync": false,
-    "cSpell.userWords": [
-        "BCIT",
-        "Beyenir’s",
-        "Kongsberg",
-        "Sanja",
-        "Serhat",
-        "Beyenir",
-        "Antifragile",
-        "Cadd",
+    "editor.accessibilitySupport": "off",
+
+    "cSpell.enabledFileTypes": {
+        "yaml": false,
+        "python": false,
+        "xml": false,
+        "json": false,
+        "toml": false
+    },
+
+    "cSpell.words": [
+        "addcontentsline",
+        "axvline",
         "centi",
         "deca",
         "deci",
-        "giga",
-        "hecto",
-        "longtails",
-        "milli",
-        "Nassim",
-        "Norah",
-        "Serhat",
-        "strat",
-        "Stratocaster",
-        "submultiples",
-        "Taleb",
-        "volumen",
-        "ahrens",
-        "codz",
         "degc",
         "degf",
         "dmypy",
@@ -38,49 +28,52 @@
         "electronvolt",
         "elif",
         "envrc",
+        "hookes",
         "ipynb",
         "ipython",
+        "linestyle",
+        "linspace",
         "makeidx",
         "matplotlib",
         "mypy",
+        "nabla",
         "numpy",
+        "odeint",
         "pagebreak",
+        "Pandoc",
         "pdflatex",
         "polya",
         "printindex",
         "pybuilder",
         "pycache",
         "pyenv",
+        "pyplot",
         "scrreprt",
+        "Serhat",
+        "submultiples",
         "ureg",
         "usepackage",
         "venv",
-        "xelatex"
+        "xelatex",
+        "xlabel",
+        "ylabel"
     ],
-    "editor.accessibilitySupport": "off",
-    "cSpell.languageSettings": [
 
-
-    
+    "cSpell.userWords": [
+        "Antifragile",
+        "BCIT",
+        "Beyenir",
+        "Beyenir’s",
+        "Cadd",
+        "Sanja",
+        "Nassim",
+        "Norah",
+        "Stratocaster",
+        "strat",
+        "Taleb",
+        "volumen",
+        "ahrens"
     ],
-"cSpell.enabledFileTypes": {
-    "yaml": false,
-    "python": false,
-    "xml": false,
-    "json": false,
-    "toml": false
-},
-"cSpell.words": [
-    "axvline",
-    "hookes",
-    "linestyle",
-    "linspace",
-    "nabla",
-    "odeint",
-    "Pandoc",
-    "pyplot",
-    "scipy",
-    "xlabel",
-    "ylabel"
-]
+
+    "cSpell.languageSettings": []
 }
