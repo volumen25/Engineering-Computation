@@ -2,11 +2,12 @@
 
 This book incorporates figures, data, and other resources from the following sources:
 
-- **Figures**  
-  - Figures in the formulae, the centroids and second moments of area, are adapted from the Wikipedia pages on [Centroids](https://en.wikipedia.org/wiki/List_of_centroids) and [Second moments of area](https://en.wikipedia.org/wiki/List_of_second_moments_of_area).
+-   Figures
 
-- **Images**  
+    -   Figures in the formulae, the centroids and second moments of area, are adapted from the Wikipedia pages on [Centroids](https://en.wikipedia.org/wiki/List_of_centroids) and [Second moments of area](https://en.wikipedia.org/wiki/List_of_second_moments_of_area).
 
-- **Data and Datasets**  
+-   Images
 
-- **Other Resources**  
+-   Data and Datasets
+
+-   Other Resources
