@@ -4,6 +4,9 @@ project:
   resources:
     - CNAME
 
+website:
+  favicon: favicon.ico
+  
 book:
   title: "Engineering Computation"
   subtitle: "A Brief Introduction to Computational Tools for Mechanics"
