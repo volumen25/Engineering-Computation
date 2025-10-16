@@ -373,7 +373,7 @@
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "This book was created using Positron and typeset with Quarto v.1.8.22, using Pandoc for document conversion.",
+    "text": "This book was created using Positron and typeset with Quarto v.1.8.25, using Pandoc for document conversion.",
     "crumbs": [
       "Colophon"
     ]
