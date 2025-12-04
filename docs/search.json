@@ -14,7 +14,7 @@
     "href": "dedication.html",
     "title": "Dedication",
     "section": "",
-    "text": "To my students, whose inspiration and encouragement made this work possible.",
+    "text": "To the memory of my colleague and inspiration, Brian Noronha.\nAcademic, Class 1 Marine Engineer, rare professional, and fine gentleman.",
     "crumbs": [
       "Dedication"
     ]
@@ -373,7 +373,7 @@
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "This book was created using Positron and typeset with Quarto v.1.8.22, using Pandoc for document conversion.",
+    "text": "This book was created using Positron and typeset with Quarto v.1.8.26, using Pandoc for document conversion.",
     "crumbs": [
       "Colophon"
     ]
