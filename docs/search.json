@@ -64,7 +64,7 @@
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "This book was typeset with Quarto 1.8.27 using XeLaTeX and Latin Modern fonts, with Menlo for code blocks.\nTechnical Notes\nThe following tools and technologies were used in the preparation of this book:\n\nPython: Primary language for computations\nuv: Modern Python package manager and resolver\nRuff: Fast Python linter and code formatter\nBlack: Python code formatter\nBash: Unix shell for task automation\nmacOS: Main development operating system",
+    "text": "This book was typeset with Quarto 1.9.27 using XeLaTeX and Latin Modern fonts, with Menlo for code blocks.\nTechnical Notes\nThe following tools and technologies were used in the preparation of this book:\n\nPython: Primary language for computations\nuv: Modern Python package manager and resolver\nRuff: Fast Python linter and code formatter\nBlack: Python code formatter\nBash: Unix shell for task automation\nmacOS: Main development operating system",
     "crumbs": [
       "Colophon"
     ]
