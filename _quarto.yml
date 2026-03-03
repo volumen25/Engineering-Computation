@@ -13,6 +13,10 @@ book:
   author: "Serhat Beyenir"
   date: today # today or last-modified
   date-format: "D MMMM YYYY"
+  downloads: [pdf]
+
+  # cover-image: cover_qr.png
+
   sidebar:
     align: left
     style: floating

@@ -3,7 +3,7 @@ import numpy as np
 
 # Define two force vectors in 3D space (units: Newtons)
 force1 = np.array([10, 20, 0])  # Force vector 1 along x and y directions
-force2 = np.array([5, -10, 15]) # Force vector 2 along x, y, and z directions
+force2 = np.array([5, -10, 15])  # Force vector 2 along x, y, and z directions
 
 # 1. Resultant Force
 # Vector addition gives the combined effect of both forces
