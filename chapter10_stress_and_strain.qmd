@@ -1,13 +1,6 @@
 ---
 title: "Chapter 10: Stress and Strain"
 subtitle: "Applied Mechanics — Hannah & Hillier"
-format:
-  html:
-    toc: true
-    toc-depth: 3
-    theme: cosmo
-  pdf:
-    toc: true
 ---
 
 ## Overview
@@ -125,7 +118,7 @@ A higher FoS reflects greater uncertainty in loading or material properties.
 
 ---
 
-## Summary of Core Equations
+## Summary of Equations
 
 | Concept | Equation |
 |---|---|
@@ -141,6 +134,6 @@ A higher FoS reflects greater uncertainty in loading or material properties.
 
 ---
 
-## Key Takeaway
+## Summary
 
 Chapter 10 establishes the language of solid mechanics — stress, strain, and the elastic constants — that underpins all subsequent structural chapters. The key skill is setting up **compatibility** and **equilibrium** equations correctly for statically indeterminate problems such as composite bars and thermally loaded members.

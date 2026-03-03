@@ -1,0 +1,193 @@
+---
+title: "Chapter 9: Materials Under Stress"
+subtitle: "Reeds Vol 2: Applied Mechanics for Marine Engineers"
+---
+
+## Overview
+
+Chapter 9 examines how engineering materials behave when subjected to mechanical loads. It covers the fundamental stress-strain relationships, material properties derived from testing, and the failure criteria relevant to marine engineering components such as shafts, pressure vessels, bolts, and structural members.
+
+---
+
+## Direct Stress and Strain
+
+When an axial force $F$ is applied to a bar of cross-sectional area $A$:
+
+$$\sigma = \frac{F}{A}$$
+
+The resulting strain (change in length per unit length):
+
+$$\varepsilon = \frac{\delta L}{L}$$
+
+**Hooke's Law** states that within the elastic limit, stress is proportional to strain:
+
+$$E = \frac{\sigma}{\varepsilon}$$
+
+The extension of a bar under axial load:
+
+$$\delta L = \frac{FL}{AE}$$
+
+---
+
+## The Tensile Test
+
+The tensile test is the standard method for determining material properties. A specimen is loaded to failure and a **stress-strain curve** is plotted. Key points on the curve:
+
+| Point | Description |
+|---|---|
+| **Limit of proportionality** | Hooke's Law ceases to apply |
+| **Elastic limit** | Beyond this, permanent deformation occurs |
+| **Yield point** | Sudden increase in strain with little increase in stress |
+| **Ultimate tensile stress (UTS)** | Maximum stress the material can withstand |
+| **Fracture point** | Stress at which the specimen breaks |
+
+Mild steel shows a distinct upper and lower yield point; other materials (e.g. aluminium) show a gradual yield and require a **proof stress** (0.1% or 0.2% offset) to define yield strength.
+
+---
+
+## Ductility and Brittleness
+
+- **Ductile materials** (e.g. mild steel, copper) undergo significant plastic deformation before fracture — they give warning of failure
+- **Brittle materials** (e.g. cast iron, ceramics) fracture with little or no plastic deformation
+
+**Percentage elongation** and **percentage reduction in area** are standard measures of ductility:
+
+$$\% \text{ elongation} = \frac{L_f - L_0}{L_0} \times 100$$
+
+$$\% \text{ reduction in area} = \frac{A_0 - A_f}{A_0} \times 100$$
+
+---
+
+## Shear Stress and Strain
+
+Shear stress acts tangentially across a plane:
+
+$$\tau = \frac{F}{A}$$
+
+Shear strain $\gamma$ is the angular deformation. Within the elastic limit:
+
+$$G = \frac{\tau}{\gamma}$$
+
+where $G$ is the **Modulus of Rigidity** (shear modulus).
+
+---
+
+## Poisson's Ratio
+
+When a bar is stretched axially, it contracts laterally. Poisson's ratio $\nu$ relates lateral to axial strain:
+
+$$\nu = -\frac{\varepsilon_{\text{lateral}}}{\varepsilon_{\text{axial}}}$$
+
+Typical values: $\nu \approx 0.25$–$0.33$ for metals.
+
+---
+
+## Volumetric Strain and Bulk Modulus
+
+Under uniform hydrostatic pressure $p$, the volumetric strain is:
+
+$$\varepsilon_v = \frac{\delta V}{V} = \frac{p}{K}$$
+
+where $K$ is the **Bulk Modulus**.
+
+---
+
+## Relationships Between Elastic Constants
+
+The three elastic constants are linked through Poisson's ratio:
+
+$$E = 2G(1 + \nu)$$
+
+$$E = 3K(1 - 2\nu)$$
+
+---
+
+## Thermal Stress
+
+If a bar is **restrained from expanding** when its temperature rises by $\Delta T$, a compressive stress is induced:
+
+$$\sigma = E\alpha\Delta T$$
+
+where $\alpha$ is the coefficient of linear thermal expansion. This is particularly important in pipework, cylinder liners, and any component subject to temperature cycling.
+
+For a **composite bar** (e.g. steel bolt through a brass tube), compatibility of deformation and force equilibrium are solved simultaneously to find the stress in each material.
+
+---
+
+## Stress Concentration
+
+At holes, notches, keyways, and sudden changes of section, the local stress exceeds the nominal stress by a **stress concentration factor** $K_t$:
+
+$$\sigma_{\max} = K_t \cdot \sigma_{\text{nom}}$$
+
+Stress concentrations are a common cause of fatigue failure in marine shafting and structural components.
+
+---
+
+## Factor of Safety
+
+The factor of safety relates the failure stress to the permissible working stress:
+
+$$\text{FoS} = \frac{\text{failure stress}}{\text{working stress}}$$
+
+The appropriate failure stress may be the **yield stress** (for ductile materials) or the **UTS** (for brittle materials), depending on the design philosophy.
+
+---
+
+## Hardness Testing
+
+Hardness is a measure of a material's resistance to surface indentation. Common tests include:
+
+- **Brinell** — steel ball indenter, used for soft to medium-hard materials
+- **Vickers** — diamond pyramid indenter, wide range of materials
+- **Rockwell** — rapid testing, common in industry
+
+Hardness correlates approximately with UTS for steels:
+
+$$\text{UTS (MPa)} \approx 3.3 \times \text{Brinell Hardness Number (BHN)}$$
+
+---
+
+## Impact Testing
+
+Impact tests measure a material's resistance to sudden (dynamic) loading — its **toughness**.
+
+- **Charpy test** — notched specimen struck by a swinging pendulum; energy absorbed is measured
+- **Izod test** — similar principle, different specimen geometry
+
+Toughness is especially important in marine environments where low temperatures can cause a **ductile-to-brittle transition** in steels.
+
+---
+
+## Fatigue
+
+Repeated cyclic loading causes failure at stresses well below the static UTS. The **endurance limit** (or fatigue limit) is the stress below which a material can endure an unlimited number of cycles without failure.
+
+Key factors affecting fatigue life:
+- Stress concentration
+- Surface finish
+- Corrosive environment (particularly significant at sea)
+- Mean stress level
+
+---
+
+## Summary of Equations
+
+| Concept | Equation |
+|---|---|
+| Direct stress | $\sigma = F/A$ |
+| Direct strain | $\varepsilon = \delta L / L$ |
+| Young's modulus | $E = \sigma/\varepsilon$ |
+| Bar extension | $\delta L = FL/AE$ |
+| Shear modulus | $G = \tau/\gamma$ |
+| Poisson's ratio | $\nu = -\varepsilon_{\text{lat}}/\varepsilon_{\text{axial}}$ |
+| Elastic constants | $E = 2G(1+\nu) = 3K(1-2\nu)$ |
+| Thermal stress | $\sigma = E\alpha\Delta T$ |
+| Stress concentration | $\sigma_{\max} = K_t \cdot \sigma_{\text{nom}}$ |
+| Hardness–UTS (steel) | UTS $\approx 3.3 \times$ BHN |
+
+---
+
+## Summary
+
+Understanding material behaviour under stress is fundamental to safe marine engineering design. The tensile test provides the key properties — Young's modulus, yield stress, UTS, and ductility — while fatigue, impact toughness, and stress concentration govern real-world failure in service. The harsh marine environment (corrosion, temperature extremes, dynamic loading) makes material selection and the choice of an appropriate factor of safety especially critical.

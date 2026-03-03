@@ -1,0 +1,243 @@
+---
+title: "Hydrodynamics: Study of Fluids in Motion"
+subtitle: "Reeds Vol 2: Applied Mechanics for Marine Engineers"
+---
+
+## Overview
+
+Hydrodynamics is the study of fluids in motion and the forces associated with that motion. Building on the static pressure relationships of hydrostatics, this chapter introduces flow continuity, energy conservation, momentum, and the effects of viscosity and pipe friction. These principles govern the behaviour of every fluid system on board — cooling water circuits, fuel systems, bilge and ballast systems, and propulsion.
+
+---
+
+## Key Definitions
+
+- **Steady flow** — fluid properties at any point do not change with time
+- **Uniform flow** — fluid properties do not change along the flow direction at a given instant
+- **Streamline** — a line tangent to the velocity vector at every point; no flow crosses a streamline
+- **Streamtube** — a bundle of streamlines forming a tube through which fluid flows
+- **Laminar flow** — fluid moves in smooth parallel layers with no mixing between them
+- **Turbulent flow** — fluid moves in an irregular, chaotic manner with significant mixing
+
+---
+
+## Continuity Equation
+
+For steady, incompressible flow, the mass flow rate is constant along a streamtube. Since density is constant:
+
+$$Q = A_1 v_1 = A_2 v_2$$
+
+where $Q$ is the volumetric flow rate (m³/s), $A$ is the cross-sectional area, and $v$ is the mean flow velocity.
+
+**Mass flow rate:**
+
+$$\dot{m} = \rho Q = \rho A v$$
+
+This means flow velocity increases where the pipe narrows — the basis of the Venturi meter.
+
+---
+
+## Bernoulli's Equation
+
+For steady, incompressible, inviscid flow along a streamline, the total energy per unit weight is constant:
+
+$$\frac{p}{\rho g} + \frac{v^2}{2g} + z = \text{constant}$$
+
+Or in pressure form:
+
+$$p + \frac{1}{2}\rho v^2 + \rho g z = \text{constant}$$
+
+The three terms represent:
+
+| Term | Name | Physical meaning |
+|---|---|---|
+| $p$ | Static pressure | Pressure energy per unit volume |
+| $\frac{1}{2}\rho v^2$ | Dynamic pressure | Kinetic energy per unit volume |
+| $\rho g z$ | Hydrostatic pressure | Potential energy per unit volume |
+
+Between two points on a streamline:
+
+$$p_1 + \frac{1}{2}\rho v_1^2 + \rho g z_1 = p_2 + \frac{1}{2}\rho v_2^2 + \rho g z_2$$
+
+---
+
+## Applications of Bernoulli's Equation
+
+### Venturi Meter
+A converging-diverging device that measures flow rate by measuring the pressure difference between the inlet and throat:
+
+$$Q = C_d A_2 \sqrt{\frac{2(p_1 - p_2)}{\rho(1 - (A_2/A_1)^2)}}$$
+
+where $C_d$ is the coefficient of discharge (typically 0.97–0.99).
+
+### Orifice Meter
+A sharp-edged orifice plate in a pipe — simpler and cheaper than a Venturi but with higher permanent pressure loss:
+
+$$Q = C_d A_0 \sqrt{\frac{2\Delta p}{\rho}}$$
+
+### Pitot Tube
+Measures local flow velocity by converting kinetic energy to pressure at a stagnation point:
+
+$$v = \sqrt{\frac{2(p_0 - p_s)}{\rho}}$$
+
+where $p_0$ is the stagnation pressure and $p_s$ is the static pressure.
+
+---
+
+## Flow Through Orifices
+
+For a sharp-edged orifice of area $A_0$ under a head $H$:
+
+$$v_{\text{theoretical}} = \sqrt{2gH}$$
+
+In practice, the actual velocity and area of the jet are reduced by friction and contraction:
+
+- **Coefficient of velocity** $C_v = v_{\text{actual}} / v_{\text{theoretical}}$
+- **Coefficient of contraction** $C_c = A_{\text{jet}} / A_{\text{orifice}}$
+- **Coefficient of discharge** $C_d = C_v \times C_c$
+
+Actual flow rate:
+
+$$Q = C_d A_0 \sqrt{2gH}$$
+
+---
+
+## Momentum Equation
+
+The force exerted by a fluid on a surface or fitting equals the rate of change of momentum. Applying Newton's second law to a control volume:
+
+$$F = \rho Q (v_2 - v_1)$$
+
+For a **pipe bend** or **nozzle**, forces in $x$ and $y$ directions are found separately and combined as vectors. This governs the forces on pipe bends, nozzles, and turbine blades.
+
+**Jet impingement on a flat plate** (stationary, perpendicular):
+
+$$F = \rho A v^2$$
+
+---
+
+## Viscosity
+
+Real fluids resist shear deformation — this resistance is **viscosity**. Newton's Law of Viscosity:
+
+$$\tau = \mu \frac{dv}{dy}$$
+
+where $\mu$ is the **dynamic viscosity** (Pa·s) and $dv/dy$ is the velocity gradient perpendicular to the flow.
+
+**Kinematic viscosity:**
+
+$$\nu = \frac{\mu}{\rho} \quad \text{(m}^2\text{/s)}$$
+
+Viscosity decreases with increasing temperature for liquids (important for lubricating oils and fuel oils in marine systems).
+
+---
+
+## Reynolds Number and Flow Regimes
+
+The **Reynolds number** is a dimensionless ratio of inertial to viscous forces:
+
+$$Re = \frac{\rho v d}{\mu} = \frac{vd}{\nu}$$
+
+where $d$ is the pipe diameter.
+
+| Reynolds Number | Flow Regime |
+|---|---|
+| $Re < 2000$ | Laminar |
+| $2000 < Re < 4000$ | Transitional |
+| $Re > 4000$ | Turbulent |
+
+In marine piping systems, flow is almost always turbulent.
+
+---
+
+## Pipe Flow and Head Losses
+
+### Darcy-Weisbach Equation
+The head loss due to friction in a pipe of length $L$ and diameter $d$:
+
+$$h_f = \frac{fLv^2}{2gd}$$
+
+where $f$ is the **Darcy friction factor** (dimensionless). For laminar flow: $f = 64/Re$.
+
+For turbulent flow, $f$ depends on $Re$ and the pipe roughness — determined from the **Moody chart**.
+
+### Minor Losses
+Additional losses occur at bends, valves, fittings, and sudden changes of section:
+
+$$h_m = K \frac{v^2}{2g}$$
+
+where $K$ is a loss coefficient specific to the fitting.
+
+### Total Head Loss in a System
+
+$$h_{\text{total}} = h_f + \sum h_m$$
+
+---
+
+## Pipe Systems
+
+### Pipes in Series
+The same flow rate passes through each pipe; total head loss is the sum:
+
+$$Q_1 = Q_2 = Q \qquad h_{\text{total}} = h_{f1} + h_{f2}$$
+
+### Pipes in Parallel
+The head loss across each pipe is equal; total flow is the sum:
+
+$$h_{f1} = h_{f2} \qquad Q_{\text{total}} = Q_1 + Q_2$$
+
+---
+
+## Pump and System Characteristics
+
+A pump adds energy to the fluid. The **pump head** $H_p$ must overcome the system head:
+
+$$H_p = h_{\text{static}} + h_{\text{friction}} + h_{\text{minor}}$$
+
+The **operating point** is where the pump characteristic curve intersects the system curve. Understanding this is essential for selecting and operating marine pumps correctly.
+
+---
+
+## Flow Measurement in Marine Practice
+
+| Device | Principle | Typical Use |
+|---|---|---|
+| Venturi meter | Bernoulli / continuity | Cooling water, ballast |
+| Orifice plate | Bernoulli / continuity | Fuel and lubricating oil |
+| Pitot tube | Stagnation pressure | Ship speed, duct flows |
+| Rotameter | Float equilibrium | Small-bore instrument lines |
+
+---
+
+## Marine Engineering Applications
+
+Hydrodynamic principles govern:
+
+- **Cooling water systems** — flow rates through heat exchangers, sea water lift heads
+- **Fuel oil systems** — viscosity effects on pump selection and pipe sizing
+- **Bilge and ballast systems** — orifice and pipe sizing for required pump-out rates
+- **Fire and GS pumps** — nozzle reaction forces and jet velocities
+- **Propeller and rudder forces** — momentum change in the propeller race produces thrust
+- **Valve and strainer sizing** — pressure drop across fittings using minor loss coefficients
+
+---
+
+## Summary of Equations
+
+| Concept | Equation |
+|---|---|
+| Continuity | $Q = A_1 v_1 = A_2 v_2$ |
+| Bernoulli (pressure form) | $p + \frac{1}{2}\rho v^2 + \rho gz = \text{const}$ |
+| Orifice flow rate | $Q = C_d A_0 \sqrt{2gH}$ |
+| Torricelli velocity | $v = \sqrt{2gH}$ |
+| Momentum force | $F = \rho Q (v_2 - v_1)$ |
+| Jet force on plate | $F = \rho A v^2$ |
+| Reynolds number | $Re = \rho v d / \mu$ |
+| Darcy-Weisbach | $h_f = fLv^2 / 2gd$ |
+| Minor loss | $h_m = K v^2 / 2g$ |
+| Newton's viscosity law | $\tau = \mu \, dv/dy$ |
+
+---
+
+## Summary
+
+Hydrodynamics is built on three foundational principles: **continuity** (mass is conserved), **Bernoulli** (energy is conserved along a streamline), and **momentum** (force equals rate of change of momentum). In real pipe systems, viscosity and turbulence introduce friction losses described by the Darcy-Weisbach equation. For the marine engineer, matching pump characteristics to system resistance — accounting for static head, pipe friction, and fitting losses — is the most practically important application of these principles.

@@ -1,0 +1,185 @@
+---
+title: "Torsion of Shafts"
+subtitle: "Reeds Vol 2: Applied Mechanics for Marine Engineers"
+---
+
+## Overview
+
+This chapter covers the behaviour of circular shafts subjected to twisting moments (torques). Torsion is central to marine engineering — propeller shafting, engine crankshafts, gearbox components, and pumps all transmit power through torsion. The chapter develops the theory from first principles and applies it to solid and hollow shafts, power transmission, and close-coiled helical springs.
+
+---
+
+## Assumptions of Simple Torsion Theory
+
+The theory is valid for circular cross-sections (solid or hollow) under the following assumptions:
+
+- The material is homogeneous, isotropic, and obeys Hooke's Law
+- Plane cross-sections remain plane after twisting (no warping)
+- Shear stress is proportional to distance from the central axis
+- The shaft is straight, prismatic, and loaded by pure torque
+
+---
+
+## The Torsion Formula
+
+The fundamental equation linking torque, geometry, shear stress, and angle of twist:
+
+$$\frac{T}{J} = \frac{\tau}{r} = \frac{G\theta}{L}$$
+
+where:
+
+- $T$ = applied torque (N·m)
+- $J$ = polar second moment of area (m⁴)
+- $\tau$ = shear stress at radius $r$ from the axis (Pa)
+- $G$ = modulus of rigidity (Pa)
+- $\theta$ = angle of twist (radians)
+- $L$ = length of shaft (m)
+
+---
+
+## Polar Second Moment of Area
+
+For a **solid circular shaft** of diameter $d$:
+
+$$J = \frac{\pi d^4}{32}$$
+
+For a **hollow circular shaft** with outer diameter $d_o$ and inner diameter $d_i$:
+
+$$J = \frac{\pi (d_o^4 - d_i^4)}{32}$$
+
+A hollow shaft is structurally efficient — the material near the centre contributes little to torsional strength, so removing it saves weight without much loss of capacity.
+
+---
+
+## Shear Stress Distribution
+
+Shear stress varies **linearly** from zero at the axis to a maximum at the outer surface:
+
+$$\tau_{\max} = \frac{T \cdot d/2}{J}$$
+
+For a solid shaft this simplifies to:
+
+$$\tau_{\max} = \frac{16T}{\pi d^3}$$
+
+For a hollow shaft:
+
+$$\tau_{\max} = \frac{16 T d_o}{\pi (d_o^4 - d_i^4)}$$
+
+---
+
+## Angle of Twist
+
+The total angle of twist over a shaft length $L$:
+
+$$\theta = \frac{TL}{GJ}$$
+
+For a **stepped shaft** (varying diameter along its length), the total twist is the sum of the twists in each segment:
+
+$$\theta_{\text{total}} = \sum_{i} \frac{T_i L_i}{G J_i}$$
+
+---
+
+## Power Transmission
+
+The torque transmitted by a shaft rotating at $N$ rpm delivering power $P$:
+
+$$P = T\omega = \frac{2\pi N T}{60}$$
+
+Rearranging to find the required torque:
+
+$$T = \frac{60P}{2\pi N} = \frac{P}{\omega}$$
+
+This is the starting point for all shaft sizing calculations — find $T$ from $P$ and $N$, then use the torsion formula to find the required diameter.
+
+---
+
+## Shaft Design
+
+For a given allowable shear stress $\tau_{\max}$, the minimum solid shaft diameter is found from:
+
+$$d^3 = \frac{16T}{\pi \tau_{\max}}$$
+
+In marine practice a **factor of safety** is applied to account for shock loading, torsional vibration, and keyway stress concentrations.
+
+---
+
+## Composite (Compound) Shafts
+
+### Shafts in Series
+The same torque $T$ passes through each section; the total twist is the sum of individual twists:
+
+$$\theta_{\text{total}} = \frac{TL_1}{GJ_1} + \frac{TL_2}{GJ_2}$$
+
+### Shafts in Parallel
+Both shafts share the applied torque and undergo the same angle of twist:
+
+$$T = T_1 + T_2 \qquad \text{and} \qquad \theta_1 = \theta_2$$
+
+These two conditions provide the simultaneous equations needed to solve for $T_1$ and $T_2$.
+
+---
+
+## Torsional Stiffness
+
+The torsional stiffness of a shaft (torque per unit angle of twist) is:
+
+$$k_t = \frac{T}{\theta} = \frac{GJ}{L}$$
+
+This is the rotational analogue of axial stiffness $k = AE/L$.
+
+---
+
+## Close-Coiled Helical Springs
+
+A close-coiled helical spring under axial load $W$ is essentially a torsion problem — the spring wire is subjected to torque $T = WR$, where $R$ is the mean coil radius.
+
+**Shear stress in the wire** (diameter $d$, $n$ active coils):
+
+$$\tau = \frac{16WR}{\pi d^3}$$
+
+**Axial deflection:**
+
+$$\delta = \frac{64WR^3 n}{Gd^4}$$
+
+**Spring stiffness:**
+
+$$k = \frac{W}{\delta} = \frac{Gd^4}{64R^3 n}$$
+
+For springs in **series**: $\dfrac{1}{k} = \dfrac{1}{k_1} + \dfrac{1}{k_2}$
+
+For springs in **parallel**: $k = k_1 + k_2$
+
+---
+
+## Marine Engineering Applications
+
+Torsion theory is directly applied to:
+
+- **Propeller shafting** — sizing tail shafts, intermediate shafts, and thrust shafts for transmitted torque and torsional stress
+- **Crankshafts** — each crank pin and journal is subject to torsion from cylinder firing loads
+- **Gearbox shafts** — input and output shafts sized for torque at rated power and speed
+- **Torsional vibration** — resonant twisting oscillations in long shafting systems can cause fatigue failure; shaft stiffness $GJ/L$ is a key parameter
+- **Relief valves and governors** — spring stiffness calculations use the helical spring formulae directly
+
+---
+
+## Summary of Equations
+
+| Concept | Equation |
+|---|---|
+| Torsion formula | $T/J = \tau/r = G\theta/L$ |
+| Polar moment — solid shaft | $J = \pi d^4/32$ |
+| Polar moment — hollow shaft | $J = \pi(d_o^4 - d_i^4)/32$ |
+| Max shear stress — solid | $\tau_{\max} = 16T/\pi d^3$ |
+| Angle of twist | $\theta = TL/GJ$ |
+| Power and torque | $P = 2\pi NT/60$ |
+| Minimum shaft diameter | $d^3 = 16T/\pi\tau_{\max}$ |
+| Torsional stiffness | $k_t = GJ/L$ |
+| Spring deflection | $\delta = 64WR^3n/Gd^4$ |
+| Spring stiffness | $k = Gd^4/64R^3n$ |
+
+---
+
+## Summary
+
+Every torsion problem begins with the torsion formula $T/J = \tau/r = G\theta/L$. For composite shaft problems, correctly identifying **series** (same torque) versus **parallel** (same twist) is the critical first step. In the marine context, shaft sizing for transmitted power is the most common application — but torsional stiffness and vibration behaviour are equally important for long propulsion shafting systems.

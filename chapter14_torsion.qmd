@@ -1,13 +1,6 @@
 ---
 title: "Chapter 14: Torsion"
 subtitle: "Applied Mechanics — Hannah & Hillier"
-format:
-  html:
-    toc: true
-    toc-depth: 3
-    theme: cosmo
-  pdf:
-    toc: true
 ---
 
 ## Overview
@@ -124,7 +117,7 @@ where $d$ is the wire diameter and $n$ is the number of active coils.
 
 ---
 
-## Summary of Core Equations
+## Summary of Equations
 
 | Concept | Equation |
 |---|---|
@@ -139,6 +132,6 @@ where $d$ is the wire diameter and $n$ is the number of active coils.
 
 ---
 
-## Key Takeaway
+## Summary
 
 Torsion analysis always begins with the torsion formula $T/J = \tau/r = G\theta/L$. For composite shaft problems, correctly identifying whether shafts are in **series** (same torque) or **parallel** (same twist) is the critical first step. The close-coiled helical spring is a direct application of torsion theory to a practical engineering component.

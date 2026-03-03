@@ -1,0 +1,129 @@
+---
+title: "Chapter 5: Centripetal Forces"
+subtitle: "Reeds Vol 2: Applied Mechanics for Marine Engineers"
+---
+
+## Overview
+
+Chapter 5 deals with the forces acting on bodies moving in circular paths. Any body constrained to move in a curve must be continuously accelerated toward the centre of that curve — this gives rise to centripetal force and its reaction, centrifugal force. The chapter applies these principles to rotating machinery, banked tracks, and conical pendulums — all highly relevant to marine engineering practice.
+
+---
+
+## Circular Motion Fundamentals
+
+A body moving in a circle of radius $r$ at constant speed $v$ is not in equilibrium — its direction (and therefore velocity) is continuously changing. This requires a **centripetal acceleration** directed toward the centre:
+
+$$a_c = \frac{v^2}{r} = r\omega^2$$
+
+where $\omega$ is the angular velocity in rad/s.
+
+The relationship between linear speed and angular velocity:
+
+$$v = r\omega$$
+
+---
+
+## Centripetal and Centrifugal Force
+
+The **centripetal force** is the inward-acting force required to maintain circular motion:
+
+$$F_c = \frac{mv^2}{r} = mr\omega^2$$
+
+By Newton's Third Law, the equal and opposite reaction is the **centrifugal force** — acting outward on the constraining body (shaft, bearing, track, etc.).
+
+> In practice, centrifugal force is the force felt by the rotating component or its support structure.
+
+---
+
+## Angular Velocity and Speed
+
+Angular velocity $\omega$ in rad/s is related to rotational speed $N$ in rpm:
+
+$$\omega = \frac{2\pi N}{60}$$
+
+---
+
+## Conical Pendulum
+
+A mass $m$ on a string of length $L$ rotates in a horizontal circle, the string making angle $\theta$ with the vertical. Resolving forces:
+
+**Vertical equilibrium:**
+
+$$T\cos\theta = mg$$
+
+**Horizontal (centripetal):**
+
+$$T\sin\theta = mr\omega^2$$
+
+Dividing gives:
+
+$$\tan\theta = \frac{r\omega^2}{g} = \frac{v^2}{rg}$$
+
+The height $h$ of the cone:
+
+$$h = \frac{g}{\omega^2}$$
+
+This is independent of mass and string length — only $\omega$ determines the cone height.
+
+---
+
+## Banked Tracks and Roads
+
+When a vehicle travels around a curved banked track, the normal reaction provides a component of centripetal force, reducing reliance on friction.
+
+For **ideal banking** (no friction required):
+
+$$\tan\theta = \frac{v^2}{rg}$$
+
+where $\theta$ is the angle of banking, $v$ is the speed, and $r$ is the radius of the curve.
+
+---
+
+## Rotating in a Vertical Circle
+
+For a body moving in a vertical circle of radius $r$, the required centripetal force varies with position because gravity assists or opposes the motion.
+
+**At the top** (minimum speed condition — string just taut):
+
+$$\frac{mv^2}{r} = mg \quad \Rightarrow \quad v_{\min} = \sqrt{rg}$$
+
+**At the bottom** (maximum tension in string):
+
+$$T - mg = \frac{mv^2}{r} \quad \Rightarrow \quad T = mg + \frac{mv^2}{r}$$
+
+---
+
+## Effects on Rotating Machinery
+
+In marine engineering, centrifugal effects are important in:
+
+- **Flywheels and rotors** — centrifugal bursting stress increases with $\omega^2$
+- **Governors** — use the conical pendulum principle to regulate engine speed
+- **Bearings** — must react centrifugal loads from out-of-balance rotating masses
+- **Centrifugal pumps and separators** — operation depends directly on centrifugal force
+
+---
+
+## Centrifugal Clutches and Governors
+
+The **centrifugal governor** uses the conical pendulum principle: as engine speed rises, the rotating masses fly outward, raising a sleeve that throttles the fuel supply. The equilibrium condition gives the governed speed directly from $h = g/\omega^2$.
+
+---
+
+## Summary of Equations
+
+| Concept | Equation |
+|---|---|
+| Centripetal acceleration | $a_c = v^2/r = r\omega^2$ |
+| Centripetal force | $F_c = mv^2/r = mr\omega^2$ |
+| Linear and angular velocity | $v = r\omega$ |
+| Angular velocity from rpm | $\omega = 2\pi N/60$ |
+| Conical pendulum height | $h = g/\omega^2$ |
+| Ideal banking angle | $\tan\theta = v^2/rg$ |
+| Minimum speed (top of circle) | $v_{\min} = \sqrt{rg}$ |
+
+---
+
+## Summary
+
+Centripetal force is not a new kind of force — it is simply the **net inward force** required to maintain circular motion, provided by tension, friction, normal reaction, or gravity depending on the situation. For marine engineers, the $\omega^2$ dependence means that centrifugal effects grow rapidly with speed, making correct dynamic balancing and bearing design critical in high-speed rotating machinery.

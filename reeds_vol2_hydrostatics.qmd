@@ -1,0 +1,202 @@
+---
+title: "Hydrostatics: Study of Fluids at Rest"
+subtitle: "Reeds Vol 2: Applied Mechanics for Marine Engineers"
+---
+
+## Overview
+
+Hydrostatics is the study of fluids in equilibrium — fluids that are not in motion. The chapter establishes the fundamental pressure relationships in static fluids and applies them to a wide range of marine engineering problems including pressure measurement, submerged surfaces, buoyancy, and hydraulic systems. An understanding of hydrostatics is essential for the design and operation of tanks, sea chests, valves, pumps, and the vessel itself.
+
+---
+
+## Properties of Fluids
+
+A **fluid** is a substance that cannot sustain a shear stress without continuously deforming. Key properties:
+
+- **Density** $\rho$ — mass per unit volume (kg/m³). For fresh water: $\rho = 1000$ kg/m³; salt water: $\rho \approx 1025$ kg/m³
+- **Specific weight** (unit weight) $w = \rho g$ (N/m³)
+- **Specific gravity (relative density)** $SG = \rho_{\text{fluid}} / \rho_{\text{water}}$
+- **Compressibility** — liquids are treated as incompressible for hydrostatic analysis
+
+---
+
+## Pressure in a Static Fluid
+
+Pressure at any point in a static fluid acts equally in all directions (**Pascal's Law**). The pressure increases with depth due to the weight of fluid above:
+
+$$p = \rho g h$$
+
+where $h$ is the depth below the free surface. This is **gauge pressure** — measured above atmospheric pressure.
+
+**Absolute pressure:**
+
+$$p_{\text{abs}} = p_{\text{gauge}} + p_{\text{atm}}$$
+
+Standard atmospheric pressure: $p_{\text{atm}} = 101.325$ kPa $\approx 1$ bar.
+
+---
+
+## Pressure Variation with Depth
+
+For an incompressible fluid, pressure increases linearly with depth:
+
+$$p_2 - p_1 = \rho g (h_2 - h_1)$$
+
+This means:
+- Pressure depends only on **depth**, not on the shape of the container
+- All points at the same depth in a connected fluid are at the same pressure — the **hydrostatic paradox**
+
+---
+
+## Pressure Measurement
+
+### Manometers
+
+A **simple U-tube manometer** balances the unknown pressure against a column of manometric fluid:
+
+$$p = \rho_m g h_m - \rho_f g h_f$$
+
+where $\rho_m$ is the manometric fluid density and $h_m$ is the height difference.
+
+Common manometric fluids: mercury ($SG = 13.6$), water, oil.
+
+### Bourdon Gauge
+A mechanical gauge widely used in marine systems — measures gauge pressure via the deflection of a curved tube.
+
+### Barometer
+Measures atmospheric pressure using a column of mercury:
+
+$$p_{\text{atm}} = \rho_{\text{Hg}} g h$$
+
+Standard atmosphere supports a mercury column of 760 mm.
+
+---
+
+## Thrust on Submerged Plane Surfaces
+
+The total hydrostatic thrust (force) on a submerged plane surface of area $A$ with its centroid at depth $\bar{h}$:
+
+$$F = \rho g \bar{h} A$$
+
+This is equivalent to the pressure at the centroid multiplied by the area.
+
+### Centre of Pressure
+
+The resultant force does not act at the centroid — it acts below it at the **centre of pressure** $h_p$:
+
+$$h_p = \bar{h} + \frac{I_G}{A\bar{h}}$$
+
+where $I_G$ is the second moment of area of the surface about its centroidal axis.
+
+For a **vertical rectangle** of width $b$ and depth $d$ with its top edge at the free surface:
+
+$$h_p = \frac{2}{3}d$$
+
+---
+
+## Thrust on Curved Surfaces
+
+For a curved submerged surface, the resultant thrust is found by resolving into:
+
+- **Horizontal component** $F_H$ — equal to the thrust on the projected vertical plane area
+- **Vertical component** $F_V$ — equal to the weight of fluid directly above the curved surface (real or imaginary)
+
+The resultant:
+
+$$F = \sqrt{F_H^2 + F_V^2}$$
+
+---
+
+## Buoyancy and Archimedes' Principle
+
+**Archimedes' Principle:** A body wholly or partially submerged in a fluid experiences an upthrust (buoyant force) equal to the weight of fluid displaced:
+
+$$F_B = \rho g V$$
+
+where $V$ is the volume of fluid displaced.
+
+**Conditions for flotation:**
+
+- Floats if $\rho_{\text{body}} < \rho_{\text{fluid}}$
+- Sinks if $\rho_{\text{body}} > \rho_{\text{fluid}}$
+- Neutral buoyancy if $\rho_{\text{body}} = \rho_{\text{fluid}}$
+
+For a floating body:
+
+$$\text{Weight of body} = \text{Weight of fluid displaced}$$
+
+$$mg = \rho_{\text{fluid}} g V_{\text{submerged}}$$
+
+---
+
+## Stability of Floating Bodies
+
+A floating body is **stable** if, when tilted, the buoyant force creates a restoring moment returning it to the upright position.
+
+Key reference points:
+
+- **Centre of Gravity $G$** — where the weight acts
+- **Centre of Buoyancy $B$** — centroid of the displaced volume
+- **Metacentre $M$** — the point about which the body oscillates for small angles of tilt
+
+The **metacentric height** $GM$ determines stability:
+
+$$GM = BM - BG$$
+
+where:
+
+$$BM = \frac{I}{V}$$
+
+$I$ is the second moment of the waterplane area about the axis of tilt, and $V$ is the displaced volume.
+
+| Condition | Stability |
+|---|---|
+| $GM > 0$ ($M$ above $G$) | Stable |
+| $GM = 0$ ($M$ at $G$) | Neutral |
+| $GM < 0$ ($M$ below $G$) | Unstable |
+
+---
+
+## Hydraulic Machines and Pascal's Law
+
+**Pascal's Law:** Pressure applied to an enclosed fluid is transmitted equally and undiminished in all directions.
+
+This is the operating principle of hydraulic jacks, presses, and steering gear:
+
+$$\frac{F_1}{A_1} = \frac{F_2}{A_2}$$
+
+A small force on a small piston produces a large force on a large piston — force multiplication at the cost of distance moved.
+
+---
+
+## Marine Engineering Applications
+
+Hydrostatic principles apply directly to:
+
+- **Tank and sea chest design** — calculating forces on bulkheads and valves at depth
+- **Drydocking** — calculating keel blocks loads as water is pumped out
+- **Load lines and displacement** — Archimedes' principle governs vessel draught and freeboard
+- **Stability calculations** — metacentric height determines safe loading and ballasting
+- **Hydraulic systems** — steering gear, stabilisers, hatch covers, and cranes all rely on Pascal's Law
+- **Pressure gauges and instrumentation** — manometers measure differential pressures across filters, heat exchangers, and tanks
+
+---
+
+## Summary of Equations
+
+| Concept | Equation |
+|---|---|
+| Hydrostatic pressure | $p = \rho g h$ |
+| Absolute pressure | $p_{\text{abs}} = p_{\text{gauge}} + p_{\text{atm}}$ |
+| Thrust on plane surface | $F = \rho g \bar{h} A$ |
+| Centre of pressure | $h_p = \bar{h} + I_G / A\bar{h}$ |
+| Buoyant force | $F_B = \rho g V$ |
+| Metacentric height | $GM = BM - BG$ |
+| $BM$ | $BM = I/V$ |
+| Pascal's Law | $F_1/A_1 = F_2/A_2$ |
+
+---
+
+## Summary
+
+Hydrostatics underpins much of marine engineering — from the forces on tank walls and sea valves to the stability of the vessel itself. The two most important results are that **pressure increases linearly with depth** ($p = \rho g h$) and that **buoyancy equals the weight of displaced fluid** (Archimedes). Stability depends on the relative positions of the metacentre and centre of gravity, making metacentric height $GM$ the single most important stability parameter in naval architecture.

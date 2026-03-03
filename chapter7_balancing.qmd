@@ -1,13 +1,6 @@
 ---
 title: "Chapter 7: Balancing"
 subtitle: "Applied Mechanics — Hannah & Hillier"
-format:
-  html:
-    toc: true
-    toc-depth: 3
-    theme: cosmo
-  pdf:
-    toc: true
 ---
 
 ## Overview

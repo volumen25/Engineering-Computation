@@ -1,13 +1,6 @@
 ---
 title: "Chapter 8: Vibrations"
 subtitle: "Applied Mechanics — Hannah & Hillier"
-format:
-  html:
-    toc: true
-    toc-depth: 3
-    theme: cosmo
-  pdf:
-    toc: true
 ---
 
 ## Overview
@@ -108,7 +101,7 @@ where $\delta_{st}$ is the static deflection of the shaft under its own (or the 
 
 ---
 
-## Summary of Core Equations
+## Summary of Equations
 
 | Concept | Equation |
 |---|---|
@@ -123,6 +116,6 @@ where $\delta_{st}$ is the static deflection of the shaft under its own (or the 
 
 ---
 
-## Key Takeaway
+## Summary
 
 All vibration problems reduce to understanding the interplay between **stiffness** (restoring force), **mass** (inertia), and **damping** (energy dissipation). Resonance avoidance and the role of damping in controlling amplitudes are the central practical concerns for mechanical design.
