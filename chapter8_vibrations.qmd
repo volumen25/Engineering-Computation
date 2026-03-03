@@ -1,10 +1,30 @@
-# Simple Harmonic Motion {#shm}
+---
+title: "Chapter 8: Vibrations"
+subtitle: "Applied Mechanics — Hannah & Hillier"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+  pdf:
+    toc: true
+---
 
-Simple Harmonic Motion: The foundation of vibration analysis. A particle undergoes SHM when its acceleration is proportional to displacement and directed toward the equilibrium position:
+## Overview
+
+Chapter 8 introduces the theory of mechanical vibrations — the oscillatory motion that occurs when a system is disturbed from its equilibrium position. It progresses from idealised free vibration through to damped and forced systems.
+
+---
+
+## Simple Harmonic Motion (SHM)
+
+The foundation of vibration analysis. A particle undergoes SHM when its acceleration is proportional to displacement and directed toward the equilibrium position:
 
 $$a = -\omega^2 x$$
 
 Key relationships — displacement, velocity, acceleration, amplitude, period, and frequency — are all derived from this condition.
+
+---
 
 ## Free Undamped Vibration
 
@@ -24,11 +44,15 @@ Springs in series and parallel are reduced to a single equivalent stiffness befo
 
 $$k_{\text{series}} = \frac{k_1 k_2}{k_1 + k_2} \qquad k_{\text{parallel}} = k_1 + k_2$$
 
+---
+
 ## Energy Method (Rayleigh's Method)
 
 An alternative to force methods — equating maximum kinetic energy to maximum potential energy to find the natural frequency. Particularly useful where writing equations of motion is complex:
 
 $$\frac{1}{2}mv_{\max}^2 = \frac{1}{2}kx_{\max}^2$$
+
+---
 
 ## Damped Free Vibration
 
@@ -40,15 +64,17 @@ The **damping ratio** $\zeta$ determines the character of the motion:
 
 $$\zeta = \frac{c}{2\sqrt{mk}}$$
 
-| Condition   | Behaviour                                               |
-|-------------|---------------------------------------------------------|
-| $\zeta < 1$ | Underdamped — oscillates with decaying amplitude        |
+| Condition | Behaviour |
+|---|---|
+| $\zeta < 1$ | Underdamped — oscillates with decaying amplitude |
 | $\zeta = 1$ | Critically damped — returns to rest without oscillation |
-| $\zeta > 1$ | Overdamped — sluggish return to rest                    |
+| $\zeta > 1$ | Overdamped — sluggish return to rest |
 
 The **damped natural frequency** is reduced from the undamped value:
 
 $$\omega_d = \omega_n\sqrt{1 - \zeta^2}$$
+
+---
 
 ## Forced Vibration (Undamped)
 
@@ -57,6 +83,8 @@ When a harmonic exciting force $F = F_0 \sin\omega t$ is applied, the steady-sta
 $$X = \frac{F_0/k}{1 - (\omega/\omega_n)^2}$$
 
 **Resonance** occurs when $\omega \to \omega_n$, causing theoretically infinite amplitude.
+
+---
 
 ## Forced Vibration (Damped)
 
@@ -68,6 +96,8 @@ At resonance ($\omega = \omega_n$), the DMF reduces to:
 
 $$\text{DMF}_{\text{resonance}} = \frac{1}{2\zeta}$$
 
+---
+
 ## Whirling of Shafts
 
 A rotating shaft has a **critical speed** at which it deflects violently — directly analogous to resonance. The critical (whirling) speed corresponds to the natural frequency of transverse vibration:
@@ -76,10 +106,12 @@ $$N_c = \frac{30}{\pi}\sqrt{\frac{g}{\delta_{st}}}$$
 
 where $\delta_{st}$ is the static deflection of the shaft under its own (or the rotor's) weight. Operating speeds should be well clear of $N_c$.
 
-## Summary of Equations
+---
+
+## Summary of Core Equations
 
 | Concept | Equation |
-|------------------------------------|------------------------------------|
+|---|---|
 | SHM condition | $a = -\omega^2 x$ |
 | Natural frequency (spring-mass) | $\omega_n = \sqrt{k/m}$ |
 | Natural frequency (pendulum) | $f_n = \frac{1}{2\pi}\sqrt{g/L}$ |
@@ -89,6 +121,8 @@ where $\delta_{st}$ is the static deflection of the shaft under its own (or the 
 | DMF (damped forced) | $1/\sqrt{[1-r^2]^2+[2\zeta r]^2}$, where $r=\omega/\omega_n$ |
 | Critical shaft speed | $N_c = (30/\pi)\sqrt{g/\delta_{st}}$ |
 
-## Summary
+---
+
+## Key Takeaway
 
 All vibration problems reduce to understanding the interplay between **stiffness** (restoring force), **mass** (inertia), and **damping** (energy dissipation). Resonance avoidance and the role of damping in controlling amplitudes are the central practical concerns for mechanical design.

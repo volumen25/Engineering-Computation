@@ -1,4 +1,20 @@
-# Torsion {#torsion}
+---
+title: "Chapter 14: Torsion"
+subtitle: "Applied Mechanics — Hannah & Hillier"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+  pdf:
+    toc: true
+---
+
+## Overview
+
+Chapter 14 covers the behaviour of circular shafts and bars subjected to twisting moments (torques). It develops the torsion theory for solid and hollow circular sections, and extends to practical applications such as power transmission and close-coiled helical springs.
+
+---
 
 ## Assumptions of Simple Torsion Theory
 
@@ -8,6 +24,8 @@ The theory applies to circular cross-sections (solid or hollow) and assumes:
 - Plane cross-sections remain plane after twisting
 - Shear stress is proportional to shear strain (elastic behaviour)
 - The shaft is straight and of uniform cross-section
+
+---
 
 ## The Torsion Formula
 
@@ -24,6 +42,7 @@ where:
 - $\theta$ = angle of twist (radians)
 - $L$ = length of shaft (m)
 
+---
 
 ## Polar Second Moment of Area
 
@@ -35,6 +54,7 @@ For a **hollow circular shaft** with outer diameter $d_o$ and inner diameter $d_
 
 $$J = \frac{\pi (d_o^4 - d_i^4)}{32}$$
 
+---
 
 ## Shear Stress Distribution
 
@@ -44,6 +64,7 @@ $$\tau_{\max} = \frac{T \cdot r}{J} = \frac{16T}{\pi d^3} \quad \text{(solid sha
 
 A hollow shaft is more efficient — it carries almost the same torque for less material mass.
 
+---
 
 ## Angle of Twist
 
@@ -55,6 +76,7 @@ For a stepped shaft (different diameters along its length), the total twist is t
 
 $$\theta_{\text{total}} = \sum \frac{T_i L_i}{G J_i}$$
 
+---
 
 ## Power Transmission
 
@@ -64,6 +86,7 @@ $$P = T\omega = \frac{2\pi N T}{60}$$
 
 where $N$ is rotational speed in rpm and $\omega$ is in rad/s. This is used to find the required shaft diameter for a given power and speed.
 
+---
 
 ## Composite (Compound) Shafts
 
@@ -79,6 +102,7 @@ $$T = T_1 + T_2 \qquad \theta_1 = \theta_2$$
 
 These two conditions give the equations needed to solve for the torque in each shaft.
 
+---
 
 ## Close-Coiled Helical Springs
 
@@ -98,8 +122,9 @@ $$k = \frac{W}{\delta} = \frac{Gd^4}{64R^3n}$$
 
 where $d$ is the wire diameter and $n$ is the number of active coils.
 
+---
 
-## Summary of Equations
+## Summary of Core Equations
 
 | Concept | Equation |
 |---|---|
@@ -112,7 +137,8 @@ where $d$ is the wire diameter and $n$ is the number of active coils.
 | Spring deflection | $\delta = 64WR^3n/Gd^4$ |
 | Spring stiffness | $k = Gd^4/64R^3n$ |
 
+---
 
-## Summary
+## Key Takeaway
 
 Torsion analysis always begins with the torsion formula $T/J = \tau/r = G\theta/L$. For composite shaft problems, correctly identifying whether shafts are in **series** (same torque) or **parallel** (same twist) is the critical first step. The close-coiled helical spring is a direct application of torsion theory to a practical engineering component.

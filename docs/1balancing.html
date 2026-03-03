@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; Balancing – Applied Mechanics Workbook</title>
+<title>2&nbsp; Balancing – Applied Mechanics Workbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -34,7 +34,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./2simple_harmonic_motion.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./0units.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -280,7 +280,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1balancing.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Balancing</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1balancing.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Balancing</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -317,38 +317,44 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./0units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Units, Vectors, and Scalar Quantities</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./1balancing.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Balancing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Balancing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./2simple_harmonic_motion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Simple Harmonic Motion</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Simple Harmonic Motion</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./3stress_strain.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Stress &amp; Strain</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Stress &amp; Strain</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./4torsion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Torsion</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Torsion</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./5combined_stress.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Combined Stress</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Combined Stress</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./6fluid_mechanics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Fluid Mechanics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Fluid Mechanics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -402,9 +408,18 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#centrifugal-and-centripetal-force" id="toc-centrifugal-and-centripetal-force" class="nav-link active" data-scroll-target="#centrifugal-and-centripetal-force"><span class="header-section-number">1.1</span> Centrifugal and Centripetal Force</a></li>
-  <li><a href="#velocity-change-in-circular-motion" id="toc-velocity-change-in-circular-motion" class="nav-link" data-scroll-target="#velocity-change-in-circular-motion"><span class="header-section-number">1.2</span> Velocity Change in Circular Motion</a></li>
-  <li><a href="#primary-and-secondary-forces-and-couples-in-applied-mechanics" id="toc-primary-and-secondary-forces-and-couples-in-applied-mechanics" class="nav-link" data-scroll-target="#primary-and-secondary-forces-and-couples-in-applied-mechanics"><span class="header-section-number">1.3</span> Primary and Secondary Forces and Couples in Applied Mechanics</a></li>
+  <li><a href="#static-balance" id="toc-static-balance" class="nav-link active" data-scroll-target="#static-balance"><span class="header-section-number">2.1</span> Static Balance</a></li>
+  <li><a href="#dynamic-balance" id="toc-dynamic-balance" class="nav-link" data-scroll-target="#dynamic-balance"><span class="header-section-number">2.2</span> Dynamic Balance</a></li>
+  <li><a href="#balancing-in-a-single-plane" id="toc-balancing-in-a-single-plane" class="nav-link" data-scroll-target="#balancing-in-a-single-plane"><span class="header-section-number">2.3</span> Balancing in a Single Plane</a></li>
+  <li><a href="#balancing-in-several-planes" id="toc-balancing-in-several-planes" class="nav-link" data-scroll-target="#balancing-in-several-planes"><span class="header-section-number">2.4</span> Balancing in Several Planes</a></li>
+  <li><a href="#balancing-of-reciprocating-masses" id="toc-balancing-of-reciprocating-masses" class="nav-link" data-scroll-target="#balancing-of-reciprocating-masses"><span class="header-section-number">2.5</span> Balancing of Reciprocating Masses</a>
+  <ul class="collapse">
+  <li><a href="#primary-and-secondary-forces" id="toc-primary-and-secondary-forces" class="nav-link" data-scroll-target="#primary-and-secondary-forces"><span class="header-section-number">2.5.1</span> Primary and Secondary Forces</a></li>
+  <li><a href="#multi-cylinder-engines" id="toc-multi-cylinder-engines" class="nav-link" data-scroll-target="#multi-cylinder-engines"><span class="header-section-number">2.5.2</span> Multi-Cylinder Engines</a></li>
+  </ul></li>
+  <li><a href="#partial-balance" id="toc-partial-balance" class="nav-link" data-scroll-target="#partial-balance"><span class="header-section-number">2.6</span> Partial Balance</a></li>
+  <li><a href="#summary-of-equations" id="toc-summary-of-equations" class="nav-link" data-scroll-target="#summary-of-equations"><span class="header-section-number">2.7</span> Summary of Equations</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2.8</span> Summary</a></li>
   </ul>
 </nav>
     </div>
@@ -414,7 +429,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="balancing" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Balancing</span></span></h1>
+<h1 class="title"><span id="balancing" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Balancing</span></span></h1>
 </div>
 
 
@@ -431,67 +446,100 @@ window.Quarto = {
 </header>
 
 
-<section id="centrifugal-and-centripetal-force" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="centrifugal-and-centripetal-force"><span class="header-section-number">1.1</span> Centrifugal and Centripetal Force</h2>
-<p><strong>Newton’s First Law of Motion</strong> states that every body will continue in a state of rest or of uniform motion in a straight line unless acted upon by an external force. If a stone is fastened to the end of a piece of string and whirled around in a circular path, an inward pull must be continuously exerted to keep it traveling in a circle; the stone itself is exerting an outward radial pull trying to get away. If the speed is increased, the pull becomes greater until the string snaps — the stone then flies off in a straight line at a tangent to the circle.</p>
-<p>The outward radial force created by a body traveling in a circular path, due to its natural tendency to fly off and travel in a straight line, is termed the <strong>centrifugal force</strong>. The inward pull applied to counteract this and keep it on its circular path is termed the <strong>centripetal force</strong>; it is equal in magnitude to the centrifugal force and opposite in direction (Newton’s Third Law of Motion).</p>
+<section id="static-balance" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="static-balance"><span class="header-section-number">2.1</span> Static Balance</h2>
+<p>A system is statically balanced when the resultant of all centrifugal forces due to rotating masses is zero — i.e., the centre of mass lies on the axis of rotation.</p>
+<p>This is checked by ensuring the vector sum of all <span class="math inline">\(mr\)</span> terms equals zero:</p>
+<p><span class="math display">\[\sum mr = 0\]</span></p>
+<p>A single correction mass placed in the same plane can achieve static balance.</p>
 </section>
-<section id="velocity-change-in-circular-motion" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="velocity-change-in-circular-motion"><span class="header-section-number">1.2</span> Velocity Change in Circular Motion</h2>
-<p>Consider a body moving at a constant speed of <em>v</em> around a circle of radius <em>r</em>. Referring to Fig. 64, at the instant it is passing point <em>a</em>, its instantaneous velocity is <em>v</em> in the direction tangential to the circle at <em>a</em>; a little further around it is passing point <em>b</em>, and its velocity is now <em>v</em> tangential to the circle at <em>b</em>. Although the speed is constant, the velocity has changed because there is a change of direction.</p>
-<p>Let the movement from <em>a</em> to <em>b</em> be through a small angle θ. To find the change of velocity, the vector diagram of velocities is drawn. If θ is considered a small angle, then the base angles of the triangle are almost 90° and the change of velocity can be taken as <em>v</em> sin θ, <em>v</em> tan θ, or <em>v</em>θ. For small angles:</p>
-<p><span class="math display">\[\sin\theta \approx \tan\theta \approx \theta \text{ (rad)}\]</span></p>
+<section id="dynamic-balance" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="dynamic-balance"><span class="header-section-number">2.2</span> Dynamic Balance</h2>
+<p>Static balance alone is insufficient for systems with masses distributed across different axial planes. Dynamic balance requires two conditions to be satisfied simultaneously:</p>
+<ol type="1">
+<li>The vector sum of all centrifugal forces equals zero (static condition)</li>
+<li>The vector sum of all <strong>moments</strong> of these forces about any reference plane equals zero</li>
+</ol>
+<p><span class="math display">\[\sum mr = 0 \qquad \text{and} \qquad \sum mrl = 0\]</span></p>
+<p>This generally requires <strong>two correction masses</strong> placed in two chosen planes.</p>
 </section>
-<section id="primary-and-secondary-forces-and-couples-in-applied-mechanics" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="primary-and-secondary-forces-and-couples-in-applied-mechanics"><span class="header-section-number">1.3</span> Primary and Secondary Forces and Couples in Applied Mechanics</h2>
-<p>In applied mechanics, forces and moments (couples) acting on a structure or system can be classified into primary and secondary categories based on their origin and influence on the system.</p>
-<p>Shape</p>
+<section id="balancing-in-a-single-plane" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="balancing-in-a-single-plane"><span class="header-section-number">2.3</span> Balancing in a Single Plane</h2>
+<p>For coplanar rotating masses, a graphical or analytical approach uses the <strong>force polygon</strong>. Closing the <span class="math inline">\(mr\)</span> vector polygon determines the required balancing mass and its angular position.</p>
+</section>
+<section id="balancing-in-several-planes" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="balancing-in-several-planes"><span class="header-section-number">2.4</span> Balancing in Several Planes</h2>
+<p>For masses distributed along a shaft, the procedure is:</p>
 <ol type="1">
-<li>Primary Forces and Couples</li>
+<li>Choose a reference plane and construct a <strong>couple polygon</strong> using <span class="math inline">\(mrl\)</span> terms, where <span class="math inline">\(l\)</span> is the axial distance from the reference plane</li>
+<li>Closing the couple polygon gives the first correction mass (magnitude and angle)</li>
+<li>Construct the <strong>force polygon</strong> using <span class="math inline">\(mr\)</span> terms to find the second correction mass</li>
 </ol>
-<p>These are the externally applied loads that directly act on a structure or mechanical system. They are typically the forces and moments applied by external agents, such as gravity, applied loads, or external torques.</p>
-<p>Examples:</p>
-<ol type="1">
-<li><p>Gravitational force acting on a beam or structure.</p></li>
-<li><p>Applied loads on a truss or frame (e.g., point loads, distributed loads).</p></li>
-<li><p>External moments (couples) applied to a body.</p></li>
-<li><p>Hydrostatic forces acting on submerged surfaces.</p></li>
-<li><p>Frictional forces at interfaces.<br>
-</p></li>
-</ol>
-<p>These forces and moments are the main cause of internal stresses and deformations in a system.</p>
-<p>Shape</p>
-<ol start="2" type="1">
-<li>Secondary Forces and Couples</li>
-</ol>
-<p>These forces and moments arise as a reaction to the primary forces. They develop within the system due to constraints, supports, or internal interactions to maintain equilibrium.</p>
-<p>Examples:</p>
-<ol type="1">
-<li><p>Support reactions in beams and frames.</p></li>
-<li><p>Internal forces in trusses (axial forces in members).</p></li>
-<li><p>Shear and bending moments in beams.</p></li>
-<li><p>Resisting torques in shafts transmitting power.</p></li>
-<li><p>Thermal stresses induced by constrained expansion or contraction.</p></li>
-</ol>
-<p>Secondary forces do not exist independently; they develop as a response to the externally applied primary forces to satisfy equilibrium conditions.</p>
-<p>Shape</p>
-<p>Key Differences Between Primary and Secondary Forces</p>
-<p>Aspect</p>
-<p>Primary Forces &amp; Couples</p>
-<p>Secondary Forces &amp; Couples</p>
-<p>Source</p>
-<p>Directly applied externally</p>
-<p>Developed due to system constraints</p>
-<p>Existence</p>
-<p>Independent</p>
-<p>Dependent on primary forces</p>
-<p>Examples</p>
-<p>Gravity, applied loads, external torques</p>
-<p>Support reactions, internal shear forces, bending moments</p>
-<p>Role in Analysis</p>
-<p>Given in problem statement</p>
-<p>Determined through equilibrium equations</p>
-<p>Understanding this classification is crucial in structural analysis, machine design, and mechanical engineering to ensure proper force distribution and stability in a system.</p>
+</section>
+<section id="balancing-of-reciprocating-masses" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="balancing-of-reciprocating-masses"><span class="header-section-number">2.5</span> Balancing of Reciprocating Masses</h2>
+<section id="primary-and-secondary-forces" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="primary-and-secondary-forces"><span class="header-section-number">2.5.1</span> Primary and Secondary Forces</h3>
+<p>The piston acceleration in a crank-slider mechanism gives rise to two force components:</p>
+<p><strong>Primary force</strong> (first-order):</p>
+<p><span class="math display">\[F_{\text{primary}} = mr\omega^2 \cos\theta\]</span></p>
+<p><strong>Secondary force</strong> (second-order):</p>
+<p><span class="math display">\[F_{\text{secondary}} = \frac{mr\omega^2 \cos 2\theta}{n}\]</span></p>
+<p>where <span class="math inline">\(n = \ell / r\)</span> is the ratio of connecting rod length <span class="math inline">\(\ell\)</span> to crank radius <span class="math inline">\(r\)</span>.</p>
+</section>
+<section id="multi-cylinder-engines" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="multi-cylinder-engines"><span class="header-section-number">2.5.2</span> Multi-Cylinder Engines</h3>
+<p>In multi-cylinder in-line engines, the angular phasing of the cranks is arranged to cancel primary and secondary forces and couples. The chapter examines which engine configurations achieve complete or only partial balance.</p>
+</section>
+</section>
+<section id="partial-balance" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="partial-balance"><span class="header-section-number">2.6</span> Partial Balance</h2>
+<p>Complete balance is not always possible or practical — particularly for single-cylinder engines. In such cases:</p>
+<ul>
+<li>A balance mass is added to <strong>reduce</strong> the dominant unbalanced force</li>
+<li>A residual force in one direction is accepted to eliminate the more harmful force in the perpendicular direction</li>
+</ul>
+</section>
+<section id="summary-of-equations" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="summary-of-equations"><span class="header-section-number">2.7</span> Summary of Equations</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Equation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Centrifugal force</td>
+<td><span class="math inline">\(F = mr\omega^2\)</span></td>
+</tr>
+<tr class="even">
+<td>Static balance condition</td>
+<td><span class="math inline">\(\sum mr = 0\)</span></td>
+</tr>
+<tr class="odd">
+<td>Dynamic balance condition</td>
+<td><span class="math inline">\(\sum mr = 0\)</span> and <span class="math inline">\(\sum mrl = 0\)</span></td>
+</tr>
+<tr class="even">
+<td>Primary reciprocating force</td>
+<td><span class="math inline">\(F = mr\omega^2 \cos\theta\)</span></td>
+</tr>
+<tr class="odd">
+<td>Secondary reciprocating force</td>
+<td><span class="math inline">\(F = mr\omega^2 \cos 2\theta \, / \, n\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="summary" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.8</span> Summary</h2>
+<p>Balancing is fundamentally a <strong>vector problem</strong>. Both graphical (polygon) and analytical methods are used throughout. Dynamic balancing always requires satisfying both force <em>and</em> moment equilibrium, and the chapter builds progressively from simple single-plane cases up to the complexity of multi-cylinder engine analysis.</p>
 
 
 </section>
@@ -912,13 +960,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Preface">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="./0units.html" class="pagination-link" aria-label="Units, Vectors, and Scalar Quantities">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Units, Vectors, and Scalar Quantities</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./2simple_harmonic_motion.html" class="pagination-link" aria-label="Simple Harmonic Motion">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Simple Harmonic Motion</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Simple Harmonic Motion</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

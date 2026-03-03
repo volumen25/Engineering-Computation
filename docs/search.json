@@ -10,33 +10,493 @@
     ]
   },
   {
+    "objectID": "0units.html",
+    "href": "0units.html",
+    "title": "1  Units, Vectors, and Scalar Quantities",
+    "section": "",
+    "text": "1.1 SI Units\nThe book adopts the Système International (SI) of units. The base units most relevant to mechanics are:\nDerived units follow from these. For example:\n\\[1 \\text{ N} = 1 \\text{ kg·m/s}^2 \\qquad 1 \\text{ Pa} = 1 \\text{ N/m}^2 \\qquad 1 \\text{ J} = 1 \\text{ N·m}\\]",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
+    ]
+  },
+  {
+    "objectID": "0units.html#si-units",
+    "href": "0units.html#si-units",
+    "title": "1  Units, Vectors, and Scalar Quantities",
+    "section": "",
+    "text": "Quantity\nUnit\nSymbol\n\n\n\n\nMass\nkilogram\nkg\n\n\nLength\nmetre\nm\n\n\nTime\nsecond\ns\n\n\nForce\nnewton\nN\n\n\nEnergy / Work\njoule\nJ\n\n\nPower\nwatt\nW\n\n\nPressure / Stress\npascal\nPa",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
+    ]
+  },
+  {
+    "objectID": "0units.html#scalar-and-vector-quantities",
+    "href": "0units.html#scalar-and-vector-quantities",
+    "title": "1  Units, Vectors, and Scalar Quantities",
+    "section": "1.2 Scalar and Vector Quantities",
+    "text": "1.2 Scalar and Vector Quantities\nScalar quantities have magnitude only and obey ordinary arithmetic:\n\nExamples: mass, speed, energy, temperature, time\n\nVector quantities have both magnitude and direction and must be combined using vector algebra:\n\nExamples: force, velocity, acceleration, displacement, momentum\n\nA vector is represented graphically as an arrow — its length denotes magnitude, its orientation denotes direction.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
+    ]
+  },
+  {
+    "objectID": "0units.html#vector-addition",
+    "href": "0units.html#vector-addition",
+    "title": "1  Units, Vectors, and Scalar Quantities",
+    "section": "1.3 Vector Addition",
+    "text": "1.3 Vector Addition\n\n1.3.1 Triangle Rule\nTwo vectors \\(\\mathbf{A}\\) and \\(\\mathbf{B}\\) are added tip-to-tail; the resultant \\(\\mathbf{R}\\) closes the triangle:\n\\[\\mathbf{R} = \\mathbf{A} + \\mathbf{B}\\]\n\n\n1.3.2 Parallelogram Rule\nBoth vectors are drawn from the same point; the resultant is the diagonal of the parallelogram they form.\n\n\n1.3.3 Polygon Rule\nFor more than two vectors, they are placed tip-to-tail in sequence; the resultant closes the polygon from the tail of the first to the tip of the last.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
+    ]
+  },
+  {
+    "objectID": "0units.html#vector-subtraction",
+    "href": "0units.html#vector-subtraction",
+    "title": "1  Units, Vectors, and Scalar Quantities",
+    "section": "1.4 Vector Subtraction",
+    "text": "1.4 Vector Subtraction\nSubtracting \\(\\mathbf{B}\\) from \\(\\mathbf{A}\\) is equivalent to adding the negative of \\(\\mathbf{B}\\):\n\\[\\mathbf{R} = \\mathbf{A} - \\mathbf{B} = \\mathbf{A} + (-\\mathbf{B})\\]",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
+    ]
+  },
+  {
+    "objectID": "0units.html#resolution-of-vectors",
+    "href": "0units.html#resolution-of-vectors",
+    "title": "1  Units, Vectors, and Scalar Quantities",
+    "section": "1.5 Resolution of Vectors",
+    "text": "1.5 Resolution of Vectors\nAny vector \\(\\mathbf{F}\\) can be resolved into two perpendicular components. For a vector at angle \\(\\theta\\) to the horizontal:\n\\[F_x = F\\cos\\theta\\] \\[F_y = F\\sin\\theta\\]\nThis is the most widely used technique in the book — resolving all forces into horizontal and vertical components before applying equilibrium conditions.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
+    ]
+  },
+  {
+    "objectID": "0units.html#resultant-of-several-vectors",
+    "href": "0units.html#resultant-of-several-vectors",
+    "title": "1  Units, Vectors, and Scalar Quantities",
+    "section": "1.6 Resultant of Several Vectors",
+    "text": "1.6 Resultant of Several Vectors\nTo find the resultant of a system of vectors analytically:\n\nResolve each vector into \\(x\\) and \\(y\\) components\nSum all components in each direction:\n\n\\[\\Sigma F_x = F_{1x} + F_{2x} + \\cdots \\qquad \\Sigma F_y = F_{1y} + F_{2y} + \\cdots\\]\n\nFind the magnitude of the resultant:\n\n\\[R = \\sqrt{(\\Sigma F_x)^2 + (\\Sigma F_y)^2}\\]\n\nFind the direction:\n\n\\[\\theta = \\arctan\\left(\\frac{\\Sigma F_y}{\\Sigma F_x}\\right)\\]",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
+    ]
+  },
+  {
+    "objectID": "0units.html#the-laws-of-sines-and-cosines",
+    "href": "0units.html#the-laws-of-sines-and-cosines",
+    "title": "1  Units, Vectors, and Scalar Quantities",
+    "section": "1.7 The Laws of Sines and Cosines",
+    "text": "1.7 The Laws of Sines and Cosines\nFor cases involving triangles of vectors, these laws provide an analytical alternative to graphical methods.\nSine rule:\n\\[\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}\\]\nCosine rule:\n\\[c^2 = a^2 + b^2 - 2ab\\cos C\\]",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
+    ]
+  },
+  {
+    "objectID": "0units.html#summary-of-equations",
+    "href": "0units.html#summary-of-equations",
+    "title": "1  Units, Vectors, and Scalar Quantities",
+    "section": "1.8 Summary of Equations",
+    "text": "1.8 Summary of Equations\n\n\n\nConcept\nEquation\n\n\n\n\nHorizontal component\n\\(F_x = F\\cos\\theta\\)\n\n\nVertical component\n\\(F_y = F\\sin\\theta\\)\n\n\nResultant magnitude\n\\(R = \\sqrt{(\\Sigma F_x)^2 + (\\Sigma F_y)^2}\\)\n\n\nResultant direction\n\\(\\theta = \\arctan(\\Sigma F_y / \\Sigma F_x)\\)\n\n\nCosine rule\n\\(c^2 = a^2 + b^2 - 2ab\\cos C\\)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
+    ]
+  },
+  {
+    "objectID": "0units.html#summary",
+    "href": "0units.html#summary",
+    "title": "1  Units, Vectors, and Scalar Quantities",
+    "section": "1.9 Summary",
+    "text": "1.9 Summary\nThe resolution-and-recombination technique — breaking every vector into perpendicular components, summing each direction separately, then reconstructing the resultant — is the single most important skill introduced in this chapter. It underpins equilibrium analysis, dynamics, stress transformation, and virtually every other topic in the book.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
+    ]
+  },
+  {
     "objectID": "1balancing.html",
     "href": "1balancing.html",
-    "title": "1  Balancing",
+    "title": "2  Balancing",
     "section": "",
-    "text": "1.1 Centrifugal and Centripetal Force\nNewton’s First Law of Motion states that every body will continue in a state of rest or of uniform motion in a straight line unless acted upon by an external force. If a stone is fastened to the end of a piece of string and whirled around in a circular path, an inward pull must be continuously exerted to keep it traveling in a circle; the stone itself is exerting an outward radial pull trying to get away. If the speed is increased, the pull becomes greater until the string snaps — the stone then flies off in a straight line at a tangent to the circle.\nThe outward radial force created by a body traveling in a circular path, due to its natural tendency to fly off and travel in a straight line, is termed the centrifugal force. The inward pull applied to counteract this and keep it on its circular path is termed the centripetal force; it is equal in magnitude to the centrifugal force and opposite in direction (Newton’s Third Law of Motion).",
+    "text": "2.1 Static Balance\nA system is statically balanced when the resultant of all centrifugal forces due to rotating masses is zero — i.e., the centre of mass lies on the axis of rotation.\nThis is checked by ensuring the vector sum of all \\(mr\\) terms equals zero:\n\\[\\sum mr = 0\\]\nA single correction mass placed in the same plane can achieve static balance.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Balancing</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
     ]
   },
   {
-    "objectID": "1balancing.html#velocity-change-in-circular-motion",
-    "href": "1balancing.html#velocity-change-in-circular-motion",
-    "title": "1  Balancing",
-    "section": "1.2 Velocity Change in Circular Motion",
-    "text": "1.2 Velocity Change in Circular Motion\nConsider a body moving at a constant speed of v around a circle of radius r. Referring to Fig. 64, at the instant it is passing point a, its instantaneous velocity is v in the direction tangential to the circle at a; a little further around it is passing point b, and its velocity is now v tangential to the circle at b. Although the speed is constant, the velocity has changed because there is a change of direction.\nLet the movement from a to b be through a small angle θ. To find the change of velocity, the vector diagram of velocities is drawn. If θ is considered a small angle, then the base angles of the triangle are almost 90° and the change of velocity can be taken as v sin θ, v tan θ, or vθ. For small angles:\n\\[\\sin\\theta \\approx \\tan\\theta \\approx \\theta \\text{ (rad)}\\]",
+    "objectID": "1balancing.html#dynamic-balance",
+    "href": "1balancing.html#dynamic-balance",
+    "title": "2  Balancing",
+    "section": "2.2 Dynamic Balance",
+    "text": "2.2 Dynamic Balance\nStatic balance alone is insufficient for systems with masses distributed across different axial planes. Dynamic balance requires two conditions to be satisfied simultaneously:\n\nThe vector sum of all centrifugal forces equals zero (static condition)\nThe vector sum of all moments of these forces about any reference plane equals zero\n\n\\[\\sum mr = 0 \\qquad \\text{and} \\qquad \\sum mrl = 0\\]\nThis generally requires two correction masses placed in two chosen planes.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Balancing</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
     ]
   },
   {
-    "objectID": "1balancing.html#primary-and-secondary-forces-and-couples-in-applied-mechanics",
-    "href": "1balancing.html#primary-and-secondary-forces-and-couples-in-applied-mechanics",
-    "title": "1  Balancing",
-    "section": "1.3 Primary and Secondary Forces and Couples in Applied Mechanics",
-    "text": "1.3 Primary and Secondary Forces and Couples in Applied Mechanics\nIn applied mechanics, forces and moments (couples) acting on a structure or system can be classified into primary and secondary categories based on their origin and influence on the system.\nShape\n\nPrimary Forces and Couples\n\nThese are the externally applied loads that directly act on a structure or mechanical system. They are typically the forces and moments applied by external agents, such as gravity, applied loads, or external torques.\nExamples:\n\nGravitational force acting on a beam or structure.\nApplied loads on a truss or frame (e.g., point loads, distributed loads).\nExternal moments (couples) applied to a body.\nHydrostatic forces acting on submerged surfaces.\nFrictional forces at interfaces.\n\n\nThese forces and moments are the main cause of internal stresses and deformations in a system.\nShape\n\nSecondary Forces and Couples\n\nThese forces and moments arise as a reaction to the primary forces. They develop within the system due to constraints, supports, or internal interactions to maintain equilibrium.\nExamples:\n\nSupport reactions in beams and frames.\nInternal forces in trusses (axial forces in members).\nShear and bending moments in beams.\nResisting torques in shafts transmitting power.\nThermal stresses induced by constrained expansion or contraction.\n\nSecondary forces do not exist independently; they develop as a response to the externally applied primary forces to satisfy equilibrium conditions.\nShape\nKey Differences Between Primary and Secondary Forces\nAspect\nPrimary Forces & Couples\nSecondary Forces & Couples\nSource\nDirectly applied externally\nDeveloped due to system constraints\nExistence\nIndependent\nDependent on primary forces\nExamples\nGravity, applied loads, external torques\nSupport reactions, internal shear forces, bending moments\nRole in Analysis\nGiven in problem statement\nDetermined through equilibrium equations\nUnderstanding this classification is crucial in structural analysis, machine design, and mechanical engineering to ensure proper force distribution and stability in a system.",
+    "objectID": "1balancing.html#balancing-in-a-single-plane",
+    "href": "1balancing.html#balancing-in-a-single-plane",
+    "title": "2  Balancing",
+    "section": "2.3 Balancing in a Single Plane",
+    "text": "2.3 Balancing in a Single Plane\nFor coplanar rotating masses, a graphical or analytical approach uses the force polygon. Closing the \\(mr\\) vector polygon determines the required balancing mass and its angular position.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Balancing</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
+    ]
+  },
+  {
+    "objectID": "1balancing.html#balancing-in-several-planes",
+    "href": "1balancing.html#balancing-in-several-planes",
+    "title": "2  Balancing",
+    "section": "2.4 Balancing in Several Planes",
+    "text": "2.4 Balancing in Several Planes\nFor masses distributed along a shaft, the procedure is:\n\nChoose a reference plane and construct a couple polygon using \\(mrl\\) terms, where \\(l\\) is the axial distance from the reference plane\nClosing the couple polygon gives the first correction mass (magnitude and angle)\nConstruct the force polygon using \\(mr\\) terms to find the second correction mass",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
+    ]
+  },
+  {
+    "objectID": "1balancing.html#balancing-of-reciprocating-masses",
+    "href": "1balancing.html#balancing-of-reciprocating-masses",
+    "title": "2  Balancing",
+    "section": "2.5 Balancing of Reciprocating Masses",
+    "text": "2.5 Balancing of Reciprocating Masses\n\n2.5.1 Primary and Secondary Forces\nThe piston acceleration in a crank-slider mechanism gives rise to two force components:\nPrimary force (first-order):\n\\[F_{\\text{primary}} = mr\\omega^2 \\cos\\theta\\]\nSecondary force (second-order):\n\\[F_{\\text{secondary}} = \\frac{mr\\omega^2 \\cos 2\\theta}{n}\\]\nwhere \\(n = \\ell / r\\) is the ratio of connecting rod length \\(\\ell\\) to crank radius \\(r\\).\n\n\n2.5.2 Multi-Cylinder Engines\nIn multi-cylinder in-line engines, the angular phasing of the cranks is arranged to cancel primary and secondary forces and couples. The chapter examines which engine configurations achieve complete or only partial balance.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
+    ]
+  },
+  {
+    "objectID": "1balancing.html#partial-balance",
+    "href": "1balancing.html#partial-balance",
+    "title": "2  Balancing",
+    "section": "2.6 Partial Balance",
+    "text": "2.6 Partial Balance\nComplete balance is not always possible or practical — particularly for single-cylinder engines. In such cases:\n\nA balance mass is added to reduce the dominant unbalanced force\nA residual force in one direction is accepted to eliminate the more harmful force in the perpendicular direction",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
+    ]
+  },
+  {
+    "objectID": "1balancing.html#summary-of-equations",
+    "href": "1balancing.html#summary-of-equations",
+    "title": "2  Balancing",
+    "section": "2.7 Summary of Equations",
+    "text": "2.7 Summary of Equations\n\n\n\n\n\n\n\nConcept\nEquation\n\n\n\n\nCentrifugal force\n\\(F = mr\\omega^2\\)\n\n\nStatic balance condition\n\\(\\sum mr = 0\\)\n\n\nDynamic balance condition\n\\(\\sum mr = 0\\) and \\(\\sum mrl = 0\\)\n\n\nPrimary reciprocating force\n\\(F = mr\\omega^2 \\cos\\theta\\)\n\n\nSecondary reciprocating force\n\\(F = mr\\omega^2 \\cos 2\\theta \\, / \\, n\\)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
+    ]
+  },
+  {
+    "objectID": "1balancing.html#summary",
+    "href": "1balancing.html#summary",
+    "title": "2  Balancing",
+    "section": "2.8 Summary",
+    "text": "2.8 Summary\nBalancing is fundamentally a vector problem. Both graphical (polygon) and analytical methods are used throughout. Dynamic balancing always requires satisfying both force and moment equilibrium, and the chapter builds progressively from simple single-plane cases up to the complexity of multi-cylinder engine analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
+    ]
+  },
+  {
+    "objectID": "2simple_harmonic_motion.html",
+    "href": "2simple_harmonic_motion.html",
+    "title": "3  Simple Harmonic Motion",
+    "section": "",
+    "text": "3.1 Free Undamped Vibration\nSimple Harmonic Motion: The foundation of vibration analysis. A particle undergoes SHM when its acceleration is proportional to displacement and directed toward the equilibrium position:\n\\[a = -\\omega^2 x\\]\nKey relationships — displacement, velocity, acceleration, amplitude, period, and frequency — are all derived from this condition.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Harmonic Motion</span>"
+    ]
+  },
+  {
+    "objectID": "2simple_harmonic_motion.html#free-undamped-vibration",
+    "href": "2simple_harmonic_motion.html#free-undamped-vibration",
+    "title": "3  Simple Harmonic Motion",
+    "section": "",
+    "text": "3.1.1 Mass-Spring System\nThe simplest model: a mass \\(m\\) on a spring of stiffness \\(k\\):\n\\[\\omega_n = \\sqrt{\\frac{k}{m}} \\qquad f_n = \\frac{1}{2\\pi}\\sqrt{\\frac{k}{m}}\\]\n\n\n3.1.2 Simple Pendulum\n\\[f_n = \\frac{1}{2\\pi}\\sqrt{\\frac{g}{L}}\\]\n\n\n3.1.3 Equivalent Stiffness\nSprings in series and parallel are reduced to a single equivalent stiffness before applying the standard formulae:\n\\[k_{\\text{series}} = \\frac{k_1 k_2}{k_1 + k_2} \\qquad k_{\\text{parallel}} = k_1 + k_2\\]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Harmonic Motion</span>"
+    ]
+  },
+  {
+    "objectID": "2simple_harmonic_motion.html#energy-method-rayleighs-method",
+    "href": "2simple_harmonic_motion.html#energy-method-rayleighs-method",
+    "title": "3  Simple Harmonic Motion",
+    "section": "3.2 Energy Method (Rayleigh’s Method)",
+    "text": "3.2 Energy Method (Rayleigh’s Method)\nAn alternative to force methods — equating maximum kinetic energy to maximum potential energy to find the natural frequency. Particularly useful where writing equations of motion is complex:\n\\[\\frac{1}{2}mv_{\\max}^2 = \\frac{1}{2}kx_{\\max}^2\\]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Harmonic Motion</span>"
+    ]
+  },
+  {
+    "objectID": "2simple_harmonic_motion.html#damped-free-vibration",
+    "href": "2simple_harmonic_motion.html#damped-free-vibration",
+    "title": "3  Simple Harmonic Motion",
+    "section": "3.3 Damped Free Vibration",
+    "text": "3.3 Damped Free Vibration\nIn practice, energy is dissipated. A viscous damping force proportional to velocity is assumed:\n\\[F_d = -c\\dot{x}\\]\nThe damping ratio \\(\\zeta\\) determines the character of the motion:\n\\[\\zeta = \\frac{c}{2\\sqrt{mk}}\\]\n\n\n\n\n\n\n\nCondition\nBehaviour\n\n\n\n\n\\(\\zeta &lt; 1\\)\nUnderdamped — oscillates with decaying amplitude\n\n\n\\(\\zeta = 1\\)\nCritically damped — returns to rest without oscillation\n\n\n\\(\\zeta &gt; 1\\)\nOverdamped — sluggish return to rest\n\n\n\nThe damped natural frequency is reduced from the undamped value:\n\\[\\omega_d = \\omega_n\\sqrt{1 - \\zeta^2}\\]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Harmonic Motion</span>"
+    ]
+  },
+  {
+    "objectID": "2simple_harmonic_motion.html#forced-vibration-undamped",
+    "href": "2simple_harmonic_motion.html#forced-vibration-undamped",
+    "title": "3  Simple Harmonic Motion",
+    "section": "3.4 Forced Vibration (Undamped)",
+    "text": "3.4 Forced Vibration (Undamped)\nWhen a harmonic exciting force \\(F = F_0 \\sin\\omega t\\) is applied, the steady-state amplitude is:\n\\[X = \\frac{F_0/k}{1 - (\\omega/\\omega_n)^2}\\]\nResonance occurs when \\(\\omega \\to \\omega_n\\), causing theoretically infinite amplitude.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Harmonic Motion</span>"
+    ]
+  },
+  {
+    "objectID": "2simple_harmonic_motion.html#forced-vibration-damped",
+    "href": "2simple_harmonic_motion.html#forced-vibration-damped",
+    "title": "3  Simple Harmonic Motion",
+    "section": "3.5 Forced Vibration (Damped)",
+    "text": "3.5 Forced Vibration (Damped)\nDamping limits the amplitude at resonance. The dynamic magnification factor (DMF) gives the ratio of dynamic to static deflection:\n\\[\\text{DMF} = \\frac{1}{\\sqrt{\\left[1-\\left(\\dfrac{\\omega}{\\omega_n}\\right)^2\\right]^2 + \\left[2\\zeta\\dfrac{\\omega}{\\omega_n}\\right]^2}}\\]\nAt resonance (\\(\\omega = \\omega_n\\)), the DMF reduces to:\n\\[\\text{DMF}_{\\text{resonance}} = \\frac{1}{2\\zeta}\\]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Harmonic Motion</span>"
+    ]
+  },
+  {
+    "objectID": "2simple_harmonic_motion.html#whirling-of-shafts",
+    "href": "2simple_harmonic_motion.html#whirling-of-shafts",
+    "title": "3  Simple Harmonic Motion",
+    "section": "3.6 Whirling of Shafts",
+    "text": "3.6 Whirling of Shafts\nA rotating shaft has a critical speed at which it deflects violently — directly analogous to resonance. The critical (whirling) speed corresponds to the natural frequency of transverse vibration:\n\\[N_c = \\frac{30}{\\pi}\\sqrt{\\frac{g}{\\delta_{st}}}\\]\nwhere \\(\\delta_{st}\\) is the static deflection of the shaft under its own (or the rotor’s) weight. Operating speeds should be well clear of \\(N_c\\).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Harmonic Motion</span>"
+    ]
+  },
+  {
+    "objectID": "2simple_harmonic_motion.html#summary-of-equations",
+    "href": "2simple_harmonic_motion.html#summary-of-equations",
+    "title": "3  Simple Harmonic Motion",
+    "section": "3.7 Summary of Equations",
+    "text": "3.7 Summary of Equations\n\n\n\n\n\n\n\nConcept\nEquation\n\n\n\n\nSHM condition\n\\(a = -\\omega^2 x\\)\n\n\nNatural frequency (spring-mass)\n\\(\\omega_n = \\sqrt{k/m}\\)\n\n\nNatural frequency (pendulum)\n\\(f_n = \\frac{1}{2\\pi}\\sqrt{g/L}\\)\n\n\nDamping ratio\n\\(\\zeta = c \\, / \\, 2\\sqrt{mk}\\)\n\n\nDamped natural frequency\n\\(\\omega_d = \\omega_n\\sqrt{1-\\zeta^2}\\)\n\n\nResonance condition\n\\(\\omega = \\omega_n\\)\n\n\nDMF (damped forced)\n\\(1/\\sqrt{[1-r^2]^2+[2\\zeta r]^2}\\), where \\(r=\\omega/\\omega_n\\)\n\n\nCritical shaft speed\n\\(N_c = (30/\\pi)\\sqrt{g/\\delta_{st}}\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Harmonic Motion</span>"
+    ]
+  },
+  {
+    "objectID": "2simple_harmonic_motion.html#summary",
+    "href": "2simple_harmonic_motion.html#summary",
+    "title": "3  Simple Harmonic Motion",
+    "section": "3.8 Summary",
+    "text": "3.8 Summary\nAll vibration problems reduce to understanding the interplay between stiffness (restoring force), mass (inertia), and damping (energy dissipation). Resonance avoidance and the role of damping in controlling amplitudes are the central practical concerns for mechanical design.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Harmonic Motion</span>"
+    ]
+  },
+  {
+    "objectID": "3stress_strain.html",
+    "href": "3stress_strain.html",
+    "title": "4  Stress & Strain",
+    "section": "",
+    "text": "4.1 Direct Stress and Strain\nWhen a bar is subjected to an axial force \\(F\\) over cross-sectional area \\(A\\), the direct stress is:\n\\[\\sigma = \\frac{F}{A}\\]\nThe resulting axial strain is the ratio of extension to original length:\n\\[\\varepsilon = \\frac{\\delta L}{L}\\]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Stress & Strain</span>"
+    ]
+  },
+  {
+    "objectID": "3stress_strain.html#youngs-modulus-modulus-of-elasticity",
+    "href": "3stress_strain.html#youngs-modulus-modulus-of-elasticity",
+    "title": "4  Stress & Strain",
+    "section": "4.2 Young’s Modulus (Modulus of Elasticity)",
+    "text": "4.2 Young’s Modulus (Modulus of Elasticity)\nWithin the elastic limit, stress and strain are proportional — Hooke’s Law:\n\\[E = \\frac{\\sigma}{\\varepsilon}\\]\nThis gives the deformation of a bar under axial load:\n\\[\\delta L = \\frac{FL}{AE}\\]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Stress & Strain</span>"
+    ]
+  },
+  {
+    "objectID": "3stress_strain.html#shear-stress-and-shear-strain",
+    "href": "3stress_strain.html#shear-stress-and-shear-strain",
+    "title": "4  Stress & Strain",
+    "section": "4.3 Shear Stress and Shear Strain",
+    "text": "4.3 Shear Stress and Shear Strain\nShear stress acts tangentially across a plane:\n\\[\\tau = \\frac{F}{A}\\]\nShear strain \\(\\gamma\\) is the angular deformation (in radians). The Modulus of Rigidity (shear modulus) relates them:\n\\[G = \\frac{\\tau}{\\gamma}\\]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Stress & Strain</span>"
+    ]
+  },
+  {
+    "objectID": "3stress_strain.html#poissons-ratio",
+    "href": "3stress_strain.html#poissons-ratio",
+    "title": "4  Stress & Strain",
+    "section": "4.4 Poisson’s Ratio",
+    "text": "4.4 Poisson’s Ratio\nAxial loading causes lateral contraction (or expansion) as well as axial strain. Poisson’s ratio \\(\\nu\\) relates the two:\n\\[\\nu = -\\frac{\\varepsilon_{\\text{lat}}}{\\varepsilon_{\\text{axial}}}\\]\nTypical values for metals: \\(\\nu \\approx 0.25\\)–\\(0.33\\).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Stress & Strain</span>"
+    ]
+  },
+  {
+    "objectID": "3stress_strain.html#volumetric-strain-and-bulk-modulus",
+    "href": "3stress_strain.html#volumetric-strain-and-bulk-modulus",
+    "title": "4  Stress & Strain",
+    "section": "4.5 Volumetric Strain and Bulk Modulus",
+    "text": "4.5 Volumetric Strain and Bulk Modulus\nUnder hydrostatic (equal all-round) stress, the volumetric strain is:\n\\[\\varepsilon_v = \\frac{\\delta V}{V}\\]\nThe Bulk Modulus \\(K\\) relates hydrostatic stress to volumetric strain:\n\\[K = \\frac{\\sigma}{\\varepsilon_v}\\]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Stress & Strain</span>"
+    ]
+  },
+  {
+    "objectID": "3stress_strain.html#relationship-between-elastic-constants",
+    "href": "3stress_strain.html#relationship-between-elastic-constants",
+    "title": "4  Stress & Strain",
+    "section": "4.6 Relationship Between Elastic Constants",
+    "text": "4.6 Relationship Between Elastic Constants\nThe three elastic constants \\(E\\), \\(G\\), and \\(K\\) are not independent — they are linked through Poisson’s ratio:\n\\[E = 2G(1 + \\nu)\\]\n\\[E = 3K(1 - 2\\nu)\\]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Stress & Strain</span>"
+    ]
+  },
+  {
+    "objectID": "3stress_strain.html#composite-bars",
+    "href": "3stress_strain.html#composite-bars",
+    "title": "4  Stress & Strain",
+    "section": "4.7 Composite Bars",
+    "text": "4.7 Composite Bars\nWhen two materials are bonded together (e.g. a steel rod inside a brass tube), two equations are needed:\nCompatibility — both materials deform by the same amount:\n\\[\\delta L_1 = \\delta L_2 \\quad \\Rightarrow \\quad \\frac{\\sigma_1}{E_1} = \\frac{\\sigma_2}{E_2}\\]\nEquilibrium — internal forces sum to the applied load:\n\\[\\sigma_1 A_1 + \\sigma_2 A_2 = F\\]\nSolving these simultaneously gives the stress in each material.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Stress & Strain</span>"
+    ]
+  },
+  {
+    "objectID": "3stress_strain.html#thermal-stress",
+    "href": "3stress_strain.html#thermal-stress",
+    "title": "4  Stress & Strain",
+    "section": "4.8 Thermal Stress",
+    "text": "4.8 Thermal Stress\nIf a bar is prevented from expanding freely when heated, a compressive stress is induced:\n\\[\\sigma = E \\alpha \\Delta T\\]\nwhere:\n\n\\(\\alpha\\) = coefficient of linear thermal expansion\n\\(\\Delta T\\) = temperature change\n\nFor a composite bar with mismatched expansion, the same compatibility and equilibrium approach applies.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Stress & Strain</span>"
+    ]
+  },
+  {
+    "objectID": "3stress_strain.html#factor-of-safety",
+    "href": "3stress_strain.html#factor-of-safety",
+    "title": "4  Stress & Strain",
+    "section": "4.9 Factor of Safety",
+    "text": "4.9 Factor of Safety\nThe factor of safety relates the failure stress to the permissible working stress:\n\\[\\text{FoS} = \\frac{\\text{failure stress}}{\\text{allowable (working) stress}}\\]\nA higher FoS reflects greater uncertainty in loading or material properties.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Stress & Strain</span>"
+    ]
+  },
+  {
+    "objectID": "3stress_strain.html#summary-of-equations",
+    "href": "3stress_strain.html#summary-of-equations",
+    "title": "4  Stress & Strain",
+    "section": "4.10 Summary of Equations",
+    "text": "4.10 Summary of Equations\n\n\n\n\n\n\n\nConcept\nEquation\n\n\n\n\nDirect stress\n\\(\\sigma = F/A\\)\n\n\nDirect strain\n\\(\\varepsilon = \\delta L / L\\)\n\n\nYoung’s modulus\n\\(E = \\sigma / \\varepsilon\\)\n\n\nAxial deformation\n\\(\\delta L = FL/AE\\)\n\n\nShear modulus\n\\(G = \\tau / \\gamma\\)\n\n\nPoisson’s ratio\n\\(\\nu = -\\varepsilon_{\\text{lat}}/\\varepsilon_{\\text{axial}}\\)\n\n\nBulk modulus\n\\(K = \\sigma / \\varepsilon_v\\)\n\n\nElastic constants\n\\(E = 2G(1+\\nu) = 3K(1-2\\nu)\\)\n\n\nThermal stress\n\\(\\sigma = E\\alpha\\Delta T\\)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Stress & Strain</span>"
+    ]
+  },
+  {
+    "objectID": "3stress_strain.html#summary",
+    "href": "3stress_strain.html#summary",
+    "title": "4  Stress & Strain",
+    "section": "4.11 Summary",
+    "text": "4.11 Summary\nThis chapter establishes the language of solid mechanics — stress, strain, and the elastic constants — that underpins all subsequent structural chapters. The key skill is setting up compatibility and equilibrium equations correctly for statically indeterminate problems such as composite bars and thermally loaded members.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Stress & Strain</span>"
+    ]
+  },
+  {
+    "objectID": "4torsion.html",
+    "href": "4torsion.html",
+    "title": "5  Torsion",
+    "section": "",
+    "text": "5.1 Assumptions of Simple Torsion Theory\nThe theory applies to circular cross-sections (solid or hollow) and assumes:",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Torsion</span>"
+    ]
+  },
+  {
+    "objectID": "4torsion.html#assumptions-of-simple-torsion-theory",
+    "href": "4torsion.html#assumptions-of-simple-torsion-theory",
+    "title": "5  Torsion",
+    "section": "",
+    "text": "The material is homogeneous and isotropic\nPlane cross-sections remain plane after twisting\nShear stress is proportional to shear strain (elastic behaviour)\nThe shaft is straight and of uniform cross-section",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Torsion</span>"
+    ]
+  },
+  {
+    "objectID": "4torsion.html#the-torsion-formula",
+    "href": "4torsion.html#the-torsion-formula",
+    "title": "5  Torsion",
+    "section": "5.2 The Torsion Formula",
+    "text": "5.2 The Torsion Formula\nThe fundamental relationship linking shear stress, torque, geometry, and angle of twist:\n\\[\\frac{T}{J} = \\frac{\\tau}{r} = \\frac{G\\theta}{L}\\]\nwhere:\n\n\\(T\\) = applied torque (N·m)\n\\(J\\) = polar second moment of area (m⁴)\n\\(\\tau\\) = shear stress at radius \\(r\\) (Pa)\n\\(G\\) = modulus of rigidity (Pa)\n\\(\\theta\\) = angle of twist (radians)\n\\(L\\) = length of shaft (m)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Torsion</span>"
+    ]
+  },
+  {
+    "objectID": "4torsion.html#polar-second-moment-of-area",
+    "href": "4torsion.html#polar-second-moment-of-area",
+    "title": "5  Torsion",
+    "section": "5.3 Polar Second Moment of Area",
+    "text": "5.3 Polar Second Moment of Area\nFor a solid circular shaft of diameter \\(d\\):\n\\[J = \\frac{\\pi d^4}{32}\\]\nFor a hollow circular shaft with outer diameter \\(d_o\\) and inner diameter \\(d_i\\):\n\\[J = \\frac{\\pi (d_o^4 - d_i^4)}{32}\\]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Torsion</span>"
+    ]
+  },
+  {
+    "objectID": "4torsion.html#shear-stress-distribution",
+    "href": "4torsion.html#shear-stress-distribution",
+    "title": "5  Torsion",
+    "section": "5.4 Shear Stress Distribution",
+    "text": "5.4 Shear Stress Distribution\nShear stress varies linearly from zero at the centre to a maximum at the outer surface:\n\\[\\tau_{\\max} = \\frac{T \\cdot r}{J} = \\frac{16T}{\\pi d^3} \\quad \\text{(solid shaft)}\\]\nA hollow shaft is more efficient — it carries almost the same torque for less material mass.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Torsion</span>"
+    ]
+  },
+  {
+    "objectID": "4torsion.html#angle-of-twist",
+    "href": "4torsion.html#angle-of-twist",
+    "title": "5  Torsion",
+    "section": "5.5 Angle of Twist",
+    "text": "5.5 Angle of Twist\nThe total angle of twist along a shaft of length \\(L\\):\n\\[\\theta = \\frac{TL}{GJ}\\]\nFor a stepped shaft (different diameters along its length), the total twist is the sum of twists in each segment:\n\\[\\theta_{\\text{total}} = \\sum \\frac{T_i L_i}{G J_i}\\]",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Torsion</span>"
+    ]
+  },
+  {
+    "objectID": "4torsion.html#power-transmission",
+    "href": "4torsion.html#power-transmission",
+    "title": "5  Torsion",
+    "section": "5.6 Power Transmission",
+    "text": "5.6 Power Transmission\nThe relationship between transmitted power, torque, and rotational speed:\n\\[P = T\\omega = \\frac{2\\pi N T}{60}\\]\nwhere \\(N\\) is rotational speed in rpm and \\(\\omega\\) is in rad/s. This is used to find the required shaft diameter for a given power and speed.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Torsion</span>"
+    ]
+  },
+  {
+    "objectID": "4torsion.html#composite-compound-shafts",
+    "href": "4torsion.html#composite-compound-shafts",
+    "title": "5  Torsion",
+    "section": "5.7 Composite (Compound) Shafts",
+    "text": "5.7 Composite (Compound) Shafts\n\n5.7.1 Shafts in Series\nThe same torque passes through each section; total twist is the sum of individual twists:\n\\[\\theta_{\\text{total}} = \\frac{TL_1}{GJ_1} + \\frac{TL_2}{GJ_2}\\]\n\n\n5.7.2 Shafts in Parallel\nBoth shafts share the applied torque and twist by the same angle:\n\\[T = T_1 + T_2 \\qquad \\theta_1 = \\theta_2\\]\nThese two conditions give the equations needed to solve for the torque in each shaft.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Torsion</span>"
+    ]
+  },
+  {
+    "objectID": "4torsion.html#close-coiled-helical-springs",
+    "href": "4torsion.html#close-coiled-helical-springs",
+    "title": "5  Torsion",
+    "section": "5.8 Close-Coiled Helical Springs",
+    "text": "5.8 Close-Coiled Helical Springs\nA close-coiled helical spring under axial load \\(W\\) is primarily a torsion problem. The wire is subjected to torque \\(T = WR\\), where \\(R\\) is the mean coil radius.\nShear stress in the wire:\n\\[\\tau = \\frac{16WR}{\\pi d^3}\\]\nAxial deflection:\n\\[\\delta = \\frac{64WR^3n}{Gd^4}\\]\nStiffness of the spring:\n\\[k = \\frac{W}{\\delta} = \\frac{Gd^4}{64R^3n}\\]\nwhere \\(d\\) is the wire diameter and \\(n\\) is the number of active coils.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Torsion</span>"
+    ]
+  },
+  {
+    "objectID": "4torsion.html#summary-of-equations",
+    "href": "4torsion.html#summary-of-equations",
+    "title": "5  Torsion",
+    "section": "5.9 Summary of Equations",
+    "text": "5.9 Summary of Equations\n\n\n\nConcept\nEquation\n\n\n\n\nTorsion formula\n\\(T/J = \\tau/r = G\\theta/L\\)\n\n\nPolar moment — solid shaft\n\\(J = \\pi d^4 / 32\\)\n\n\nPolar moment — hollow shaft\n\\(J = \\pi(d_o^4 - d_i^4)/32\\)\n\n\nMax shear stress (solid)\n\\(\\tau_{\\max} = 16T/\\pi d^3\\)\n\n\nAngle of twist\n\\(\\theta = TL/GJ\\)\n\n\nPower transmitted\n\\(P = 2\\pi NT/60\\)\n\n\nSpring deflection\n\\(\\delta = 64WR^3n/Gd^4\\)\n\n\nSpring stiffness\n\\(k = Gd^4/64R^3n\\)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Torsion</span>"
+    ]
+  },
+  {
+    "objectID": "4torsion.html#summary",
+    "href": "4torsion.html#summary",
+    "title": "5  Torsion",
+    "section": "5.10 Summary",
+    "text": "5.10 Summary\nTorsion analysis always begins with the torsion formula \\(T/J = \\tau/r = G\\theta/L\\). For composite shaft problems, correctly identifying whether shafts are in series (same torque) or parallel (same twist) is the critical first step. The close-coiled helical spring is a direct application of torsion theory to a practical engineering component.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Torsion</span>"
     ]
   },
   {

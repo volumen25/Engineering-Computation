@@ -1,4 +1,20 @@
-# Balancing {#balancing}
+---
+title: "Chapter 7: Balancing"
+subtitle: "Applied Mechanics — Hannah & Hillier"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+  pdf:
+    toc: true
+---
+
+## Overview
+
+Chapter 7 deals with the problem of eliminating (or reducing) unwanted vibrations and forces in rotating and reciprocating machinery caused by out-of-balance masses.
+
+---
 
 ## Static Balance
 
@@ -10,28 +26,36 @@ $$\sum mr = 0$$
 
 A single correction mass placed in the same plane can achieve static balance.
 
+---
+
 ## Dynamic Balance
 
 Static balance alone is insufficient for systems with masses distributed across different axial planes. Dynamic balance requires two conditions to be satisfied simultaneously:
 
-1.  The vector sum of all centrifugal forces equals zero (static condition)
-2.  The vector sum of all **moments** of these forces about any reference plane equals zero
+1. The vector sum of all centrifugal forces equals zero (static condition)
+2. The vector sum of all **moments** of these forces about any reference plane equals zero
 
 $$\sum mr = 0 \qquad \text{and} \qquad \sum mrl = 0$$
 
 This generally requires **two correction masses** placed in two chosen planes.
 
+---
+
 ## Balancing in a Single Plane
 
 For coplanar rotating masses, a graphical or analytical approach uses the **force polygon**. Closing the $mr$ vector polygon determines the required balancing mass and its angular position.
+
+---
 
 ## Balancing in Several Planes
 
 For masses distributed along a shaft, the procedure is:
 
-1.  Choose a reference plane and construct a **couple polygon** using $mrl$ terms, where $l$ is the axial distance from the reference plane
-2.  Closing the couple polygon gives the first correction mass (magnitude and angle)
-3.  Construct the **force polygon** using $mr$ terms to find the second correction mass
+1. Choose a reference plane and construct a **couple polygon** using $mrl$ terms, where $l$ is the axial distance from the reference plane
+2. Closing the couple polygon gives the first correction mass (magnitude and angle)
+3. Construct the **force polygon** using $mr$ terms to find the second correction mass
+
+---
 
 ## Balancing of Reciprocating Masses
 
@@ -53,6 +77,8 @@ where $n = \ell / r$ is the ratio of connecting rod length $\ell$ to crank radiu
 
 In multi-cylinder in-line engines, the angular phasing of the cranks is arranged to cancel primary and secondary forces and couples. The chapter examines which engine configurations achieve complete or only partial balance.
 
+---
+
 ## Partial Balance
 
 Complete balance is not always possible or practical — particularly for single-cylinder engines. In such cases:
@@ -60,15 +86,19 @@ Complete balance is not always possible or practical — particularly for single
 - A balance mass is added to **reduce** the dominant unbalanced force
 - A residual force in one direction is accepted to eliminate the more harmful force in the perpendicular direction
 
+---
+
 ## Summary of Equations
 
-| Concept                       | Equation                                |
-|-------------------------------|-----------------------------------------|
-| Centrifugal force             | $F = mr\omega^2$                        |
-| Static balance condition      | $\sum mr = 0$                           |
-| Dynamic balance condition     | $\sum mr = 0$ and $\sum mrl = 0$        |
-| Primary reciprocating force   | $F = mr\omega^2 \cos\theta$             |
+| Concept | Equation |
+|---|---|
+| Centrifugal force | $F = mr\omega^2$ |
+| Static balance condition | $\sum mr = 0$ |
+| Dynamic balance condition | $\sum mr = 0$ and $\sum mrl = 0$ |
+| Primary reciprocating force | $F = mr\omega^2 \cos\theta$ |
 | Secondary reciprocating force | $F = mr\omega^2 \cos 2\theta \, / \, n$ |
+
+---
 
 ## Summary
 

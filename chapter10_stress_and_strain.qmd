@@ -1,4 +1,20 @@
-# Stress & Strain {#stress_strain}
+---
+title: "Chapter 10: Stress and Strain"
+subtitle: "Applied Mechanics — Hannah & Hillier"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+  pdf:
+    toc: true
+---
+
+## Overview
+
+Chapter 10 introduces the fundamental concepts of stress and strain — the basis of all structural and mechanical analysis. It covers the behaviour of materials under direct, shear, and combined loading, and introduces the elastic constants that relate them.
+
+---
 
 ## Direct Stress and Strain
 
@@ -10,6 +26,7 @@ The resulting axial strain is the ratio of extension to original length:
 
 $$\varepsilon = \frac{\delta L}{L}$$
 
+---
 
 ## Young's Modulus (Modulus of Elasticity)
 
@@ -21,6 +38,7 @@ This gives the deformation of a bar under axial load:
 
 $$\delta L = \frac{FL}{AE}$$
 
+---
 
 ## Shear Stress and Shear Strain
 
@@ -32,6 +50,7 @@ Shear strain $\gamma$ is the angular deformation (in radians). The **Modulus of 
 
 $$G = \frac{\tau}{\gamma}$$
 
+---
 
 ## Poisson's Ratio
 
@@ -41,6 +60,7 @@ $$\nu = -\frac{\varepsilon_{\text{lat}}}{\varepsilon_{\text{axial}}}$$
 
 Typical values for metals: $\nu \approx 0.25$–$0.33$.
 
+---
 
 ## Volumetric Strain and Bulk Modulus
 
@@ -52,6 +72,7 @@ The **Bulk Modulus** $K$ relates hydrostatic stress to volumetric strain:
 
 $$K = \frac{\sigma}{\varepsilon_v}$$
 
+---
 
 ## Relationship Between Elastic Constants
 
@@ -61,6 +82,7 @@ $$E = 2G(1 + \nu)$$
 
 $$E = 3K(1 - 2\nu)$$
 
+---
 
 ## Composite Bars
 
@@ -76,6 +98,7 @@ $$\sigma_1 A_1 + \sigma_2 A_2 = F$$
 
 Solving these simultaneously gives the stress in each material.
 
+---
 
 ## Thermal Stress
 
@@ -90,6 +113,7 @@ where:
 
 For a composite bar with mismatched expansion, the same compatibility and equilibrium approach applies.
 
+---
 
 ## Factor of Safety
 
@@ -99,8 +123,9 @@ $$\text{FoS} = \frac{\text{failure stress}}{\text{allowable (working) stress}}$$
 
 A higher FoS reflects greater uncertainty in loading or material properties.
 
+---
 
-## Summary of Equations
+## Summary of Core Equations
 
 | Concept | Equation |
 |---|---|
@@ -116,6 +141,6 @@ A higher FoS reflects greater uncertainty in loading or material properties.
 
 ---
 
-## Summary
+## Key Takeaway
 
-This chapter establishes the language of solid mechanics — stress, strain, and the elastic constants — that underpins all subsequent structural chapters. The key skill is setting up **compatibility** and **equilibrium** equations correctly for statically indeterminate problems such as composite bars and thermally loaded members.
+Chapter 10 establishes the language of solid mechanics — stress, strain, and the elastic constants — that underpins all subsequent structural chapters. The key skill is setting up **compatibility** and **equilibrium** equations correctly for statically indeterminate problems such as composite bars and thermally loaded members.

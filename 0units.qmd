@@ -1,0 +1,104 @@
+# Units, Vectors, and Scalar Quantities {#units}
+
+## SI Units
+
+The book adopts the **Système International (SI)** of units. The base units most relevant to mechanics are:
+
+| Quantity          | Unit     | Symbol |
+|-------------------|----------|--------|
+| Mass              | kilogram | kg     |
+| Length            | metre    | m      |
+| Time              | second   | s      |
+| Force             | newton   | N      |
+| Energy / Work     | joule    | J      |
+| Power             | watt     | W      |
+| Pressure / Stress | pascal   | Pa     |
+
+Derived units follow from these. For example:
+
+$$1 \text{ N} = 1 \text{ kg·m/s}^2 \qquad 1 \text{ Pa} = 1 \text{ N/m}^2 \qquad 1 \text{ J} = 1 \text{ N·m}$$
+
+## Scalar and Vector Quantities
+
+**Scalar quantities** have magnitude only and obey ordinary arithmetic:
+
+- Examples: mass, speed, energy, temperature, time
+
+**Vector quantities** have both magnitude and direction and must be combined using vector algebra:
+
+- Examples: force, velocity, acceleration, displacement, momentum
+
+A vector is represented graphically as an arrow — its length denotes magnitude, its orientation denotes direction.
+
+## Vector Addition
+
+### Triangle Rule
+
+Two vectors $\mathbf{A}$ and $\mathbf{B}$ are added tip-to-tail; the resultant $\mathbf{R}$ closes the triangle:
+
+$$\mathbf{R} = \mathbf{A} + \mathbf{B}$$
+
+### Parallelogram Rule
+
+Both vectors are drawn from the same point; the resultant is the diagonal of the parallelogram they form.
+
+### Polygon Rule
+
+For more than two vectors, they are placed tip-to-tail in sequence; the resultant closes the polygon from the tail of the first to the tip of the last.
+
+## Vector Subtraction
+
+Subtracting $\mathbf{B}$ from $\mathbf{A}$ is equivalent to adding the negative of $\mathbf{B}$:
+
+$$\mathbf{R} = \mathbf{A} - \mathbf{B} = \mathbf{A} + (-\mathbf{B})$$
+
+## Resolution of Vectors
+
+Any vector $\mathbf{F}$ can be resolved into two perpendicular components. For a vector at angle $\theta$ to the horizontal:
+
+$$F_x = F\cos\theta$$ $$F_y = F\sin\theta$$
+
+This is the most widely used technique in the book — resolving all forces into horizontal and vertical components before applying equilibrium conditions.
+
+## Resultant of Several Vectors
+
+To find the resultant of a system of vectors analytically:
+
+1.  Resolve each vector into $x$ and $y$ components
+2.  Sum all components in each direction:
+
+$$\Sigma F_x = F_{1x} + F_{2x} + \cdots \qquad \Sigma F_y = F_{1y} + F_{2y} + \cdots$$
+
+3.  Find the magnitude of the resultant:
+
+$$R = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$$
+
+4.  Find the direction:
+
+$$\theta = \arctan\left(\frac{\Sigma F_y}{\Sigma F_x}\right)$$
+
+## The Laws of Sines and Cosines
+
+For cases involving triangles of vectors, these laws provide an analytical alternative to graphical methods.
+
+**Sine rule:**
+
+$$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$$
+
+**Cosine rule:**
+
+$$c^2 = a^2 + b^2 - 2ab\cos C$$
+
+## Summary of Equations
+
+| Concept              | Equation                                     |
+|----------------------|----------------------------------------------|
+| Horizontal component | $F_x = F\cos\theta$                          |
+| Vertical component   | $F_y = F\sin\theta$                          |
+| Resultant magnitude  | $R = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$ |
+| Resultant direction  | $\theta = \arctan(\Sigma F_y / \Sigma F_x)$  |
+| Cosine rule          | $c^2 = a^2 + b^2 - 2ab\cos C$                |
+
+## Summary
+
+The resolution-and-recombination technique — breaking every vector into perpendicular components, summing each direction separately, then reconstructing the resultant — is the single most important skill introduced in this chapter. It underpins equilibrium analysis, dynamics, stress transformation, and virtually every other topic in the book.

@@ -34,6 +34,7 @@ book:
     # - study_guide.qmd
 
     # Main Matter
+    - 0units.qmd
     - 1balancing.qmd
     - 2simple_harmonic_motion.qmd
     - 3stress_strain.qmd
