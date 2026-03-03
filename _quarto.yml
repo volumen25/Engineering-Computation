@@ -10,8 +10,8 @@ website:
 book:
   title: "Applied Mechanics Workbook"
   subtitle: "A Concise Introduction to Computational Tools"
-  author: "Serhat Beyenir"
-  date: today # today or last-modified
+  # author: "Serhat Beyenir"
+  # date: today # today or last-modified
   date-format: "D MMMM YYYY"
   downloads: [pdf]
 
@@ -27,15 +27,21 @@ book:
     right: |
       Built with <a href="https://quarto.org"> Quarto {{< version >}}</a>
   chapters:
+    # Front Matter
     # - dedication.qmd            
     - index.qmd            
     # - acknowledgements.qmd   
     # - study_guide.qmd
 
+    # Main Matter
+
+
     # Back Matter
     - references.qmd
     - attributions.qmd
     - colophon.qmd
+    # - revision_history.qmd
+    # - author.qmd
 
   appendices:
     # - formulae.qmd
