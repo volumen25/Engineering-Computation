@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Appendix A — SI System Common Mistakes – Applied Mechanics Workbook</title>
+<title>1&nbsp; Balancing – Applied Mechanics Workbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./greek_letters.html" rel="next">
-<link href="./colophon.html" rel="prev">
+<link href="./2simple_harmonic_motion.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -75,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -249,7 +278,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SI_common_mistakes.html">Appendices</a></li><li class="breadcrumb-item"><a href="./SI_common_mistakes.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">SI System Common Mistakes</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1balancing.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Balancing</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -286,7 +315,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1balancing.html" class="sidebar-item-text sidebar-link">
+  <a href="./1balancing.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Balancing</span></span></a>
   </div>
 </li>
@@ -349,7 +378,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./SI_common_mistakes.html" class="sidebar-item-text sidebar-link active">
+  <a href="./SI_common_mistakes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">SI System Common Mistakes</span></span></a>
   </div>
 </li>
@@ -366,16 +395,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#centrifugal-and-centripetal-force" id="toc-centrifugal-and-centripetal-force" class="nav-link active" data-scroll-target="#centrifugal-and-centripetal-force"><span class="header-section-number">1.1</span> Centrifugal and Centripetal Force</a></li>
+  <li><a href="#velocity-change-in-circular-motion" id="toc-velocity-change-in-circular-motion" class="nav-link" data-scroll-target="#velocity-change-in-circular-motion"><span class="header-section-number">1.2</span> Velocity Change in Circular Motion</a></li>
+  <li><a href="#primary-and-secondary-forces-and-couples-in-applied-mechanics" id="toc-primary-and-secondary-forces-and-couples-in-applied-mechanics" class="nav-link" data-scroll-target="#primary-and-secondary-forces-and-couples-in-applied-mechanics"><span class="header-section-number">1.3</span> Primary and Secondary Forces and Couples in Applied Mechanics</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SI_common_mistakes.html">Appendices</a></li><li class="breadcrumb-item"><a href="./SI_common_mistakes.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">SI System Common Mistakes</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Appendix A — SI System Common Mistakes</h1>
+<h1 class="title"><span id="balancing" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Balancing</span></span></h1>
 </div>
 
 
@@ -392,106 +429,70 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Using the SI system correctly is crucial for clear communication in science and engineering. Below are common mistakes in using the SI system, examples of incorrect usage, and how to correct them.</p>
-<table class="caption-top table">
-<caption>SI system rules and common mistakes</caption>
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Concept</strong></th>
-<th><strong>Mistake</strong></th>
-<th><strong>Correct Usage</strong></th>
-<th><strong>Notes</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Use of SI Unit Symbols</strong></td>
-<td><code>m./s</code></td>
-<td><code>m/s</code></td>
-<td>Use the correct format without additional punctuation.</td>
-</tr>
-<tr class="even">
-<td><strong>Spacing Between Value &amp; Unit</strong></td>
-<td><code>10kg</code></td>
-<td><code>10 kg</code></td>
-<td>Always leave a space between the number and the unit symbol.</td>
-</tr>
-<tr class="odd">
-<td><strong>Incorrect Unit Symbols</strong></td>
-<td><code>sec</code>, <code>hrs</code>, <code>°K</code></td>
-<td><code>s</code>, <code>h</code>, <code>K</code></td>
-<td>Use the proper SI symbols; symbols are case-sensitive.</td>
-</tr>
-<tr class="even">
-<td><strong>Abbreviations for Units</strong></td>
-<td><code>5 kilograms (kgs)</code></td>
-<td><code>5 kilograms (kg)</code></td>
-<td>Avoid informal abbreviations like “kgs”; adhere to standard symbols.</td>
-</tr>
-<tr class="odd">
-<td><strong>Multiple Units in Expressions</strong></td>
-<td><code>5 m/s/s</code>, <code>5 kg/meter²</code></td>
-<td><code>5 m/s²</code>, <code>5 kg/m²</code></td>
-<td>Use compact, standardized formats for derived units.</td>
-</tr>
-<tr class="even">
-<td><strong>Incorrect Use of Prefixes</strong></td>
-<td><code>0.0001 km</code></td>
-<td><code>100 mm</code></td>
-<td>Choose prefixes to keep numbers in the range (0.1 x &lt; 1000).</td>
-</tr>
-<tr class="odd">
-<td><strong>Misplaced Unit Symbols</strong></td>
-<td><code>5/s</code>, <code>kg10</code></td>
-<td><code>5 s⁻¹</code>, <code>10 kg</code></td>
-<td>Symbols must follow numerical values, not precede them.</td>
-</tr>
-<tr class="even">
-<td><strong>Degrees Celsius vs.&nbsp;Kelvin</strong></td>
-<td><code>300°K</code></td>
-<td><code>300 K</code></td>
-<td>Kelvin is written without “degree”</td>
-</tr>
-<tr class="odd">
-<td><strong>Singular vs.&nbsp;Plural Units</strong></td>
-<td><code>5 kgs</code>, <code>1 meters</code></td>
-<td><code>5 kg</code>, <code>1 meter</code></td>
-<td>Symbols do not pluralize; full unit names follow grammar rules.</td>
-</tr>
-<tr class="even">
-<td><strong>Capitalization of Symbols</strong></td>
-<td><code>Kg</code>, <code>S</code>, <code>Km</code>, <code>MA</code></td>
-<td><code>kg</code>, <code>s</code>, <code>km</code>, <code>mA</code></td>
-<td>Symbols are case-sensitive; use uppercase only where specified (e.g., <code>N</code>, <code>Pa</code>).</td>
-</tr>
-<tr class="odd">
-<td><strong>Capitalization of Unit Names</strong></td>
-<td><code>Newton</code>, <code>Pascal</code>, <code>Watt</code></td>
-<td><code>newton</code>, <code>pascal</code>, <code>watt</code></td>
-<td>Unit names are lowercase, even if derived from a person’s name, unless starting a sentence.</td>
-</tr>
-<tr class="even">
-<td><strong>Prefix Capitalization</strong></td>
-<td><code>MilliMeter</code>, <code>MegaWatt</code></td>
-<td><code>millimeter</code>, <code>megawatt</code></td>
-<td>Prefixes are lowercase for (10^{-1}) to (10^{-9}), uppercase for (10^6) and larger (except <code>k</code> for kilo).</td>
-</tr>
-<tr class="odd">
-<td><strong>Formatting in Reports</strong></td>
-<td><code>5</code>, <code>Temperature: 300</code></td>
-<td><code>5 kg</code>, <code>Temperature: 300 K</code></td>
-<td>Always specify units explicitly.</td>
-</tr>
-</tbody>
-</table>
+<section id="centrifugal-and-centripetal-force" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="centrifugal-and-centripetal-force"><span class="header-section-number">1.1</span> Centrifugal and Centripetal Force</h2>
+<p><strong>Newton’s First Law of Motion</strong> states that every body will continue in a state of rest or of uniform motion in a straight line unless acted upon by an external force. If a stone is fastened to the end of a piece of string and whirled around in a circular path, an inward pull must be continuously exerted to keep it traveling in a circle; the stone itself is exerting an outward radial pull trying to get away. If the speed is increased, the pull becomes greater until the string snaps — the stone then flies off in a straight line at a tangent to the circle.</p>
+<p>The outward radial force created by a body traveling in a circular path, due to its natural tendency to fly off and travel in a straight line, is termed the <strong>centrifugal force</strong>. The inward pull applied to counteract this and keep it on its circular path is termed the <strong>centripetal force</strong>; it is equal in magnitude to the centrifugal force and opposite in direction (Newton’s Third Law of Motion).</p>
+</section>
+<section id="velocity-change-in-circular-motion" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="velocity-change-in-circular-motion"><span class="header-section-number">1.2</span> Velocity Change in Circular Motion</h2>
+<p>Consider a body moving at a constant speed of <em>v</em> around a circle of radius <em>r</em>. Referring to Fig. 64, at the instant it is passing point <em>a</em>, its instantaneous velocity is <em>v</em> in the direction tangential to the circle at <em>a</em>; a little further around it is passing point <em>b</em>, and its velocity is now <em>v</em> tangential to the circle at <em>b</em>. Although the speed is constant, the velocity has changed because there is a change of direction.</p>
+<p>Let the movement from <em>a</em> to <em>b</em> be through a small angle θ. To find the change of velocity, the vector diagram of velocities is drawn. If θ is considered a small angle, then the base angles of the triangle are almost 90° and the change of velocity can be taken as <em>v</em> sin θ, <em>v</em> tan θ, or <em>v</em>θ. For small angles:</p>
+<p><span class="math display">\[\sin\theta \approx \tan\theta \approx \theta \text{ (rad)}\]</span></p>
+</section>
+<section id="primary-and-secondary-forces-and-couples-in-applied-mechanics" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="primary-and-secondary-forces-and-couples-in-applied-mechanics"><span class="header-section-number">1.3</span> Primary and Secondary Forces and Couples in Applied Mechanics</h2>
+<p>In applied mechanics, forces and moments (couples) acting on a structure or system can be classified into primary and secondary categories based on their origin and influence on the system.</p>
+<p>Shape</p>
+<ol type="1">
+<li>Primary Forces and Couples</li>
+</ol>
+<p>These are the externally applied loads that directly act on a structure or mechanical system. They are typically the forces and moments applied by external agents, such as gravity, applied loads, or external torques.</p>
+<p>Examples:</p>
+<ol type="1">
+<li><p>Gravitational force acting on a beam or structure.</p></li>
+<li><p>Applied loads on a truss or frame (e.g., point loads, distributed loads).</p></li>
+<li><p>External moments (couples) applied to a body.</p></li>
+<li><p>Hydrostatic forces acting on submerged surfaces.</p></li>
+<li><p>Frictional forces at interfaces.<br>
+</p></li>
+</ol>
+<p>These forces and moments are the main cause of internal stresses and deformations in a system.</p>
+<p>Shape</p>
+<ol start="2" type="1">
+<li>Secondary Forces and Couples</li>
+</ol>
+<p>These forces and moments arise as a reaction to the primary forces. They develop within the system due to constraints, supports, or internal interactions to maintain equilibrium.</p>
+<p>Examples:</p>
+<ol type="1">
+<li><p>Support reactions in beams and frames.</p></li>
+<li><p>Internal forces in trusses (axial forces in members).</p></li>
+<li><p>Shear and bending moments in beams.</p></li>
+<li><p>Resisting torques in shafts transmitting power.</p></li>
+<li><p>Thermal stresses induced by constrained expansion or contraction.</p></li>
+</ol>
+<p>Secondary forces do not exist independently; they develop as a response to the externally applied primary forces to satisfy equilibrium conditions.</p>
+<p>Shape</p>
+<p>Key Differences Between Primary and Secondary Forces</p>
+<p>Aspect</p>
+<p>Primary Forces &amp; Couples</p>
+<p>Secondary Forces &amp; Couples</p>
+<p>Source</p>
+<p>Directly applied externally</p>
+<p>Developed due to system constraints</p>
+<p>Existence</p>
+<p>Independent</p>
+<p>Dependent on primary forces</p>
+<p>Examples</p>
+<p>Gravity, applied loads, external torques</p>
+<p>Support reactions, internal shear forces, bending moments</p>
+<p>Role in Analysis</p>
+<p>Given in problem statement</p>
+<p>Determined through equilibrium equations</p>
+<p>Understanding this classification is crucial in structural analysis, machine design, and mechanical engineering to ensure proper force distribution and stability in a system.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -909,13 +910,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./colophon.html" class="pagination-link" aria-label="Colophon">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Colophon</span>
+      <a href="./index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./greek_letters.html" class="pagination-link" aria-label="Greek Letters">
-        <span class="nav-page-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Greek Letters</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./2simple_harmonic_motion.html" class="pagination-link" aria-label="Simple Harmonic Motion">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Simple Harmonic Motion</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

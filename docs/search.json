@@ -10,6 +10,36 @@
     ]
   },
   {
+    "objectID": "1balancing.html",
+    "href": "1balancing.html",
+    "title": "1  Balancing",
+    "section": "",
+    "text": "1.1 Centrifugal and Centripetal Force\nNewton’s First Law of Motion states that every body will continue in a state of rest or of uniform motion in a straight line unless acted upon by an external force. If a stone is fastened to the end of a piece of string and whirled around in a circular path, an inward pull must be continuously exerted to keep it traveling in a circle; the stone itself is exerting an outward radial pull trying to get away. If the speed is increased, the pull becomes greater until the string snaps — the stone then flies off in a straight line at a tangent to the circle.\nThe outward radial force created by a body traveling in a circular path, due to its natural tendency to fly off and travel in a straight line, is termed the centrifugal force. The inward pull applied to counteract this and keep it on its circular path is termed the centripetal force; it is equal in magnitude to the centrifugal force and opposite in direction (Newton’s Third Law of Motion).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Balancing</span>"
+    ]
+  },
+  {
+    "objectID": "1balancing.html#velocity-change-in-circular-motion",
+    "href": "1balancing.html#velocity-change-in-circular-motion",
+    "title": "1  Balancing",
+    "section": "1.2 Velocity Change in Circular Motion",
+    "text": "1.2 Velocity Change in Circular Motion\nConsider a body moving at a constant speed of v around a circle of radius r. Referring to Fig. 64, at the instant it is passing point a, its instantaneous velocity is v in the direction tangential to the circle at a; a little further around it is passing point b, and its velocity is now v tangential to the circle at b. Although the speed is constant, the velocity has changed because there is a change of direction.\nLet the movement from a to b be through a small angle θ. To find the change of velocity, the vector diagram of velocities is drawn. If θ is considered a small angle, then the base angles of the triangle are almost 90° and the change of velocity can be taken as v sin θ, v tan θ, or vθ. For small angles:\n\\[\\sin\\theta \\approx \\tan\\theta \\approx \\theta \\text{ (rad)}\\]",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Balancing</span>"
+    ]
+  },
+  {
+    "objectID": "1balancing.html#primary-and-secondary-forces-and-couples-in-applied-mechanics",
+    "href": "1balancing.html#primary-and-secondary-forces-and-couples-in-applied-mechanics",
+    "title": "1  Balancing",
+    "section": "1.3 Primary and Secondary Forces and Couples in Applied Mechanics",
+    "text": "1.3 Primary and Secondary Forces and Couples in Applied Mechanics\nIn applied mechanics, forces and moments (couples) acting on a structure or system can be classified into primary and secondary categories based on their origin and influence on the system.\nShape\n\nPrimary Forces and Couples\n\nThese are the externally applied loads that directly act on a structure or mechanical system. They are typically the forces and moments applied by external agents, such as gravity, applied loads, or external torques.\nExamples:\n\nGravitational force acting on a beam or structure.\nApplied loads on a truss or frame (e.g., point loads, distributed loads).\nExternal moments (couples) applied to a body.\nHydrostatic forces acting on submerged surfaces.\nFrictional forces at interfaces.\n\n\nThese forces and moments are the main cause of internal stresses and deformations in a system.\nShape\n\nSecondary Forces and Couples\n\nThese forces and moments arise as a reaction to the primary forces. They develop within the system due to constraints, supports, or internal interactions to maintain equilibrium.\nExamples:\n\nSupport reactions in beams and frames.\nInternal forces in trusses (axial forces in members).\nShear and bending moments in beams.\nResisting torques in shafts transmitting power.\nThermal stresses induced by constrained expansion or contraction.\n\nSecondary forces do not exist independently; they develop as a response to the externally applied primary forces to satisfy equilibrium conditions.\nShape\nKey Differences Between Primary and Secondary Forces\nAspect\nPrimary Forces & Couples\nSecondary Forces & Couples\nSource\nDirectly applied externally\nDeveloped due to system constraints\nExistence\nIndependent\nDependent on primary forces\nExamples\nGravity, applied loads, external torques\nSupport reactions, internal shear forces, bending moments\nRole in Analysis\nGiven in problem statement\nDetermined through equilibrium equations\nUnderstanding this classification is crucial in structural analysis, machine design, and mechanical engineering to ensure proper force distribution and stability in a system.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Balancing</span>"
+    ]
+  },
+  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",

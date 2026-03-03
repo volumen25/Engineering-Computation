@@ -5,10 +5,6 @@ git pull
 
 uv sync
 
-source .venv/bin/activate # on macOS
-
-.venv\Scripts\activate # on Windows
-
 quarto preview
 ```
 

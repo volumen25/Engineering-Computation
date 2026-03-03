@@ -34,7 +34,12 @@ book:
     # - study_guide.qmd
 
     # Main Matter
-
+    - 1balancing.qmd
+    - 2simple_harmonic_motion.qmd
+    - 3stress_strain.qmd
+    - 4torsion.qmd
+    - 5combined_stress.qmd
+    - 6fluid_mechanics.qmd
 
     # Back Matter
     - references.qmd
