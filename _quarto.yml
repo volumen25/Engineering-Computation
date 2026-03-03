@@ -8,10 +8,10 @@ website:
   favicon: favicon.ico
   
 book:
-  title: "Engineering Computation"
-  subtitle: "A Brief Introduction to Computational Tools for Mechanics"
+  title: "Applied Mechanics Workbook"
+  subtitle: "A Concise Introduction to Computational Tools"
   author: "Serhat Beyenir"
-  date: last-modified
+  date: today # today or last-modified
   date-format: "D MMMM YYYY"
   sidebar:
     align: left
@@ -19,32 +19,25 @@ book:
     collapse-level: 2
     pinned: false
   page-footer:
-    left: © 2025 <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+    left: © 2026 <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
     right: |
       Built with <a href="https://quarto.org"> Quarto {{< version >}}</a>
   chapters:
-    - dedication.qmd         
-    - attributions.qmd     
+    # - dedication.qmd            
     - index.qmd            
-    - acknowledgements.qmd   
-    - part: Beginning
-      chapters:
-        - tutorial_basic.qmd
-        - SI_Units.qmd
-        - tutorial_advanced.qmd
-    - part: Making progress
-      chapters:
-        - tutorial_advanced1.qmd
-    - part: Going forward
-      chapters:
-        - review.qmd
+    # - acknowledgements.qmd   
+    # - study_guide.qmd
+
+    # Back Matter
     - references.qmd
+    - attributions.qmd
     - colophon.qmd
+
   appendices:
-    - formulae.qmd
+    # - formulae.qmd
     - SI_common_mistakes.qmd
     - greek_letters.qmd
-    - revision_history.qmd   
+    # - revision_history.qmd   
 
 
 bibliography: references.bib
@@ -52,32 +45,50 @@ csl: apa.csl
 
 format:
   html:
+    cover-image: cover_qr.png
     toc: true
-    collapse: true
+    toc-collapse: true
     theme:
-      light: cosmo #flatly
+      light: cosmo
       dark: solar
   pdf:
+    pdf-engine: xelatex
     documentclass: book
     code-overflow: wrap
+    toc: true
     toc-title: Contents
+    number-sections: true
+    top-level-division: chapter
     lot: true
     lof: true
-    include-in-header: 
+    include-in-header:
       text: |
         \usepackage{makeidx}
+        \usepackage{graphicx}
         \makeindex
-    include-before-body:
+        \usepackage{fontspec}
+        \setmonofont{Menlo}
+        \usepackage{titling}
+        \pretitle{\begin{center}\Huge\bfseries}
+        \posttitle{\par\end{center}\vspace{0.75em}}
+        \preauthor{\begin{center}\large}
+        \postauthor{\end{center}}
+        \predate{\begin{center}\large}
+        \postdate{%
+          \par\end{center}
+          \vspace*{\fill}
+          \begin{center}
+            \includegraphics[width=0.25\textwidth]{cover_qr.png}\\[1em]
+            {\small
+              This work is licensed under a Creative Commons
+              Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).\\[0.5em]
+              Full text available at
+              \href{https://creativecommons.org/licenses/by-sa/4.0/}{https://creativecommons.org/licenses/by-sa/4.0/}.
+            }
+          \end{center}
+          \vspace*{1cm}
+        }
+    include-after-body:
       text: |
-       \clearpage
-       \vspace*{\fill}  % pushes text to bottom of page
-       \begin{center}
-       {\small
-       This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).\\[0.5em]
-       Full text available at \href{https://creativecommons.org/licenses/by-sa/4.0/}{https://creativecommons.org/licenses/by-sa/4.0/}.
-       }
-       \end{center}
-       \clearpage
-    include-after-body: 
-      text: |
+        \clearpage
         \printindex
