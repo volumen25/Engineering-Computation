@@ -1,5 +1,9 @@
 # Balancing {#balancing}
 
+## Centrifugal and Centripetal Forces
+
+A body in motion travels in a straight line unless forced to change direction (Newton's First Law). When moving in a circle, its inertia causes it to resist that continuous change of direction — in a rotating reference frame, this resistance appears as a fictitious outward "centrifugal" force. The real inward force that continuously deflects the body onto the circular path is the centripetal force. Because circular motion involves a constant change of direction, velocity is always changing even at constant speed. For small angles, the magnitude of this change in velocity simplifies to $vθ$.
+
 ## Static Balance
 
 A system is statically balanced when the resultant of all centrifugal forces due to rotating masses is zero — i.e., the centre of mass lies on the axis of rotation.
