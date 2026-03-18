@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>2&nbsp; Balancing – Applied Mechanics Workbook</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -34,19 +37,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="./0units.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-adfb2833bc15652ec5881dc6381ea988.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-60eb8141d3f50090c0f52d36a83ed331.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-adfb2833bc15652ec5881dc6381ea988.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c213800f9ad2c394781badd4e3c4d3bb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d475e4ab3b4fd243dd6ecd26d4f0399c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -76,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -406,18 +408,25 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#static-balance" id="toc-static-balance" class="nav-link active" data-scroll-target="#static-balance"><span class="header-section-number">2.1</span> Static Balance</a></li>
-  <li><a href="#dynamic-balance" id="toc-dynamic-balance" class="nav-link" data-scroll-target="#dynamic-balance"><span class="header-section-number">2.2</span> Dynamic Balance</a></li>
-  <li><a href="#balancing-in-a-single-plane" id="toc-balancing-in-a-single-plane" class="nav-link" data-scroll-target="#balancing-in-a-single-plane"><span class="header-section-number">2.3</span> Balancing in a Single Plane</a></li>
-  <li><a href="#balancing-in-several-planes" id="toc-balancing-in-several-planes" class="nav-link" data-scroll-target="#balancing-in-several-planes"><span class="header-section-number">2.4</span> Balancing in Several Planes</a></li>
-  <li><a href="#balancing-of-reciprocating-masses" id="toc-balancing-of-reciprocating-masses" class="nav-link" data-scroll-target="#balancing-of-reciprocating-masses"><span class="header-section-number">2.5</span> Balancing of Reciprocating Masses</a>
+  <li><a href="#newtons-laws-of-motion" id="toc-newtons-laws-of-motion" class="nav-link active" data-scroll-target="#newtons-laws-of-motion"><span class="header-section-number">2.1</span> Newton’s Laws of Motion</a>
   <ul class="collapse">
-  <li><a href="#primary-and-secondary-forces" id="toc-primary-and-secondary-forces" class="nav-link" data-scroll-target="#primary-and-secondary-forces"><span class="header-section-number">2.5.1</span> Primary and Secondary Forces</a></li>
-  <li><a href="#multi-cylinder-engines" id="toc-multi-cylinder-engines" class="nav-link" data-scroll-target="#multi-cylinder-engines"><span class="header-section-number">2.5.2</span> Multi-Cylinder Engines</a></li>
+  <li><a href="#first-law-inertia" id="toc-first-law-inertia" class="nav-link" data-scroll-target="#first-law-inertia"><span class="header-section-number">2.1.1</span> First Law — Inertia</a></li>
+  <li><a href="#second-law-force-and-acceleration" id="toc-second-law-force-and-acceleration" class="nav-link" data-scroll-target="#second-law-force-and-acceleration"><span class="header-section-number">2.1.2</span> Second Law — Force and Acceleration</a></li>
+  <li><a href="#third-law-action-and-reaction" id="toc-third-law-action-and-reaction" class="nav-link" data-scroll-target="#third-law-action-and-reaction"><span class="header-section-number">2.1.3</span> Third Law — Action and Reaction</a></li>
   </ul></li>
-  <li><a href="#partial-balance" id="toc-partial-balance" class="nav-link" data-scroll-target="#partial-balance"><span class="header-section-number">2.6</span> Partial Balance</a></li>
-  <li><a href="#summary-of-equations" id="toc-summary-of-equations" class="nav-link" data-scroll-target="#summary-of-equations"><span class="header-section-number">2.7</span> Summary of Equations</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2.8</span> Summary</a></li>
+  <li><a href="#centrifugal-and-centripetal-forces" id="toc-centrifugal-and-centripetal-forces" class="nav-link" data-scroll-target="#centrifugal-and-centripetal-forces"><span class="header-section-number">2.2</span> Centrifugal and Centripetal Forces</a></li>
+  <li><a href="#static-balance" id="toc-static-balance" class="nav-link" data-scroll-target="#static-balance"><span class="header-section-number">2.3</span> Static Balance</a></li>
+  <li><a href="#dynamic-balance" id="toc-dynamic-balance" class="nav-link" data-scroll-target="#dynamic-balance"><span class="header-section-number">2.4</span> Dynamic Balance</a></li>
+  <li><a href="#balancing-in-a-single-plane" id="toc-balancing-in-a-single-plane" class="nav-link" data-scroll-target="#balancing-in-a-single-plane"><span class="header-section-number">2.5</span> Balancing in a Single Plane</a></li>
+  <li><a href="#balancing-in-several-planes" id="toc-balancing-in-several-planes" class="nav-link" data-scroll-target="#balancing-in-several-planes"><span class="header-section-number">2.6</span> Balancing in Several Planes</a></li>
+  <li><a href="#balancing-of-reciprocating-masses" id="toc-balancing-of-reciprocating-masses" class="nav-link" data-scroll-target="#balancing-of-reciprocating-masses"><span class="header-section-number">2.7</span> Balancing of Reciprocating Masses</a>
+  <ul class="collapse">
+  <li><a href="#primary-and-secondary-forces" id="toc-primary-and-secondary-forces" class="nav-link" data-scroll-target="#primary-and-secondary-forces"><span class="header-section-number">2.7.1</span> Primary and Secondary Forces</a></li>
+  <li><a href="#multi-cylinder-engines" id="toc-multi-cylinder-engines" class="nav-link" data-scroll-target="#multi-cylinder-engines"><span class="header-section-number">2.7.2</span> Multi-Cylinder Engines</a></li>
+  </ul></li>
+  <li><a href="#partial-balance" id="toc-partial-balance" class="nav-link" data-scroll-target="#partial-balance"><span class="header-section-number">2.8</span> Partial Balance</a></li>
+  <li><a href="#summary-of-equations" id="toc-summary-of-equations" class="nav-link" data-scroll-target="#summary-of-equations"><span class="header-section-number">2.9</span> Summary of Equations</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2.10</span> Summary</a></li>
   </ul>
 </nav>
     </div>
@@ -444,15 +453,73 @@ window.Quarto = {
 </header>
 
 
-<section id="static-balance" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="static-balance"><span class="header-section-number">2.1</span> Static Balance</h2>
+<section id="newtons-laws-of-motion" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="newtons-laws-of-motion"><span class="header-section-number">2.1</span> Newton’s Laws of Motion</h2>
+<section id="first-law-inertia" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="first-law-inertia"><span class="header-section-number">2.1.1</span> First Law — Inertia</h3>
+<blockquote class="blockquote">
+<p><em>A body remains at rest or in uniform straight-line motion unless acted upon by a net external force.</em></p>
+</blockquote>
+<p>A body in motion travels in a straight line unless forced to change direction. This resistance to any change in motion is called <strong>inertia</strong>. The law defines what a force <em>is</em>: the only thing capable of altering a body’s state of motion.</p>
+<p><span class="math display">\[\sum \vec{F} = 0 \implies \vec{v} = \text{constant}\]</span></p>
+</section>
+<section id="second-law-force-and-acceleration" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="second-law-force-and-acceleration"><span class="header-section-number">2.1.2</span> Second Law — Force and Acceleration</h3>
+<blockquote class="blockquote">
+<p><em>The net force acting on a body equals its mass multiplied by its acceleration.</em></p>
+</blockquote>
+<p><span class="math display">\[\boxed{F = ma}\]</span></p>
+<p>Force and acceleration act in the same direction. The relationship is linear: doubling the net force doubles the acceleration; doubling the mass halves it for the same force.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Change</th>
+<th>Effect on acceleration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Force doubled</td>
+<td>Acceleration doubled</td>
+</tr>
+<tr class="even">
+<td>Mass doubled</td>
+<td>Acceleration halved</td>
+</tr>
+<tr class="odd">
+<td>Both doubled</td>
+<td>Acceleration unchanged</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="third-law-action-and-reaction" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="third-law-action-and-reaction"><span class="header-section-number">2.1.3</span> Third Law — Action and Reaction</h3>
+<blockquote class="blockquote">
+<p><em>For every force one body exerts on another, the second body exerts an equal and opposite force back on the first.</em></p>
+</blockquote>
+<p><span class="math display">\[\vec{F}_{A \to B} = -\vec{F}_{B \to A}\]</span></p>
+<p>Key points:</p>
+<ul>
+<li>The forces are <strong>equal in magnitude</strong> and <strong>opposite in direction</strong>.</li>
+<li>They act on <strong>different objects</strong> — they are never a cancelling pair.</li>
+<li>The reaction force has the same nature as the action (both contact, both gravitational, etc.).</li>
+</ul>
+</section>
+</section>
+<section id="centrifugal-and-centripetal-forces" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="centrifugal-and-centripetal-forces"><span class="header-section-number">2.2</span> Centrifugal and Centripetal Forces</h2>
+<p>A body in motion travels in a straight line unless forced to change direction (Newton’s First Law). When moving in a circle, its inertia causes it to resist that continuous change of direction — in a rotating reference frame, this resistance appears as a fictitious outward “centrifugal” force. The real inward force that continuously deflects the body onto the circular path is the centripetal force. Because circular motion involves a constant change of direction, velocity is always changing even at constant speed. For small angles, the magnitude of this change in velocity simplifies to <span class="math inline">\(vθ\)</span>.</p>
+</section>
+<section id="static-balance" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="static-balance"><span class="header-section-number">2.3</span> Static Balance</h2>
 <p>A system is statically balanced when the resultant of all centrifugal forces due to rotating masses is zero — i.e., the centre of mass lies on the axis of rotation.</p>
 <p>This is checked by ensuring the vector sum of all <span class="math inline">\(mr\)</span> terms equals zero:</p>
 <p><span class="math display">\[\sum mr = 0\]</span></p>
 <p>A single correction mass placed in the same plane can achieve static balance.</p>
 </section>
-<section id="dynamic-balance" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="dynamic-balance"><span class="header-section-number">2.2</span> Dynamic Balance</h2>
+<section id="dynamic-balance" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="dynamic-balance"><span class="header-section-number">2.4</span> Dynamic Balance</h2>
 <p>Static balance alone is insufficient for systems with masses distributed across different axial planes. Dynamic balance requires two conditions to be satisfied simultaneously:</p>
 <ol type="1">
 <li>The vector sum of all centrifugal forces equals zero (static condition)</li>
@@ -461,12 +528,12 @@ window.Quarto = {
 <p><span class="math display">\[\sum mr = 0 \qquad \text{and} \qquad \sum mrl = 0\]</span></p>
 <p>This generally requires <strong>two correction masses</strong> placed in two chosen planes.</p>
 </section>
-<section id="balancing-in-a-single-plane" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="balancing-in-a-single-plane"><span class="header-section-number">2.3</span> Balancing in a Single Plane</h2>
+<section id="balancing-in-a-single-plane" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="balancing-in-a-single-plane"><span class="header-section-number">2.5</span> Balancing in a Single Plane</h2>
 <p>For coplanar rotating masses, a graphical or analytical approach uses the <strong>force polygon</strong>. Closing the <span class="math inline">\(mr\)</span> vector polygon determines the required balancing mass and its angular position.</p>
 </section>
-<section id="balancing-in-several-planes" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="balancing-in-several-planes"><span class="header-section-number">2.4</span> Balancing in Several Planes</h2>
+<section id="balancing-in-several-planes" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="balancing-in-several-planes"><span class="header-section-number">2.6</span> Balancing in Several Planes</h2>
 <p>For masses distributed along a shaft, the procedure is:</p>
 <ol type="1">
 <li>Choose a reference plane and construct a <strong>couple polygon</strong> using <span class="math inline">\(mrl\)</span> terms, where <span class="math inline">\(l\)</span> is the axial distance from the reference plane</li>
@@ -474,10 +541,10 @@ window.Quarto = {
 <li>Construct the <strong>force polygon</strong> using <span class="math inline">\(mr\)</span> terms to find the second correction mass</li>
 </ol>
 </section>
-<section id="balancing-of-reciprocating-masses" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="balancing-of-reciprocating-masses"><span class="header-section-number">2.5</span> Balancing of Reciprocating Masses</h2>
-<section id="primary-and-secondary-forces" class="level3" data-number="2.5.1">
-<h3 data-number="2.5.1" class="anchored" data-anchor-id="primary-and-secondary-forces"><span class="header-section-number">2.5.1</span> Primary and Secondary Forces</h3>
+<section id="balancing-of-reciprocating-masses" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="balancing-of-reciprocating-masses"><span class="header-section-number">2.7</span> Balancing of Reciprocating Masses</h2>
+<section id="primary-and-secondary-forces" class="level3" data-number="2.7.1">
+<h3 data-number="2.7.1" class="anchored" data-anchor-id="primary-and-secondary-forces"><span class="header-section-number">2.7.1</span> Primary and Secondary Forces</h3>
 <p>The piston acceleration in a crank-slider mechanism gives rise to two force components:</p>
 <p><strong>Primary force</strong> (first-order):</p>
 <p><span class="math display">\[F_{\text{primary}} = mr\omega^2 \cos\theta\]</span></p>
@@ -485,21 +552,21 @@ window.Quarto = {
 <p><span class="math display">\[F_{\text{secondary}} = \frac{mr\omega^2 \cos 2\theta}{n}\]</span></p>
 <p>where <span class="math inline">\(n = \ell / r\)</span> is the ratio of connecting rod length <span class="math inline">\(\ell\)</span> to crank radius <span class="math inline">\(r\)</span>.</p>
 </section>
-<section id="multi-cylinder-engines" class="level3" data-number="2.5.2">
-<h3 data-number="2.5.2" class="anchored" data-anchor-id="multi-cylinder-engines"><span class="header-section-number">2.5.2</span> Multi-Cylinder Engines</h3>
+<section id="multi-cylinder-engines" class="level3" data-number="2.7.2">
+<h3 data-number="2.7.2" class="anchored" data-anchor-id="multi-cylinder-engines"><span class="header-section-number">2.7.2</span> Multi-Cylinder Engines</h3>
 <p>In multi-cylinder in-line engines, the angular phasing of the cranks is arranged to cancel primary and secondary forces and couples. The chapter examines which engine configurations achieve complete or only partial balance.</p>
 </section>
 </section>
-<section id="partial-balance" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="partial-balance"><span class="header-section-number">2.6</span> Partial Balance</h2>
+<section id="partial-balance" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="partial-balance"><span class="header-section-number">2.8</span> Partial Balance</h2>
 <p>Complete balance is not always possible or practical — particularly for single-cylinder engines. In such cases:</p>
 <ul>
 <li>A balance mass is added to <strong>reduce</strong> the dominant unbalanced force</li>
 <li>A residual force in one direction is accepted to eliminate the more harmful force in the perpendicular direction</li>
 </ul>
 </section>
-<section id="summary-of-equations" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="summary-of-equations"><span class="header-section-number">2.7</span> Summary of Equations</h2>
+<section id="summary-of-equations" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="summary-of-equations"><span class="header-section-number">2.9</span> Summary of Equations</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 43%">
@@ -535,8 +602,8 @@ window.Quarto = {
 </tbody>
 </table>
 </section>
-<section id="summary" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.8</span> Summary</h2>
+<section id="summary" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.10</span> Summary</h2>
 <p>Balancing is fundamentally a <strong>vector problem</strong>. Both graphical (polygon) and analytical methods are used throughout. Dynamic balancing always requires satisfying both force <em>and</em> moment equilibrium, and the chapter builds progressively from simple single-plane cases up to the complexity of multi-cylinder engine analysis.</p>
 
 
@@ -978,7 +1045,7 @@ window.Quarto = {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Built with <a href="https://quarto.org"> Quarto 1.8.27</a></p>
+<p>Built with <a href="https://quarto.org"> Quarto 1.9.27</a></p>
 </div>
   </div>
 </footer>

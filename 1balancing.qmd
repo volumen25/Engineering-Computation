@@ -1,5 +1,50 @@
 # Balancing {#balancing}
 
+## Newton's Laws of Motion
+
+### First Law — Inertia
+
+> *A body remains at rest or in uniform straight-line motion unless acted upon
+> by a net external force.*
+
+A body in motion travels in a straight line unless forced to change direction.
+This resistance to any change in motion is called **inertia**. The law defines
+what a force *is*: the only thing capable of altering a body's state of motion.
+
+$$\sum \vec{F} = 0 \implies \vec{v} = \text{constant}$$
+
+### Second Law — Force and Acceleration
+
+> *The net force acting on a body equals its mass multiplied by its
+> acceleration.*
+
+$$\boxed{F = ma}$$
+
+Force and acceleration act in the same direction. The relationship is linear:
+doubling the net force doubles the acceleration; doubling the mass halves it
+for the same force.
+
+| Change | Effect on acceleration |
+|--------|----------------------|
+| Force doubled | Acceleration doubled |
+| Mass doubled | Acceleration halved |
+| Both doubled | Acceleration unchanged |
+
+
+### Third Law — Action and Reaction
+
+> *For every force one body exerts on another, the second body exerts an equal
+> and opposite force back on the first.*
+
+$$\vec{F}_{A \to B} = -\vec{F}_{B \to A}$$
+
+Key points:
+
+- The forces are **equal in magnitude** and **opposite in direction**.
+- They act on **different objects** — they are never a cancelling pair.
+- The reaction force has the same nature as the action (both contact, both
+  gravitational, etc.).
+  
 ## Centrifugal and Centripetal Forces
 
 A body in motion travels in a straight line unless forced to change direction (Newton's First Law). When moving in a circle, its inertia causes it to resist that continuous change of direction — in a rotating reference frame, this resistance appears as a fictitious outward "centrifugal" force. The real inward force that continuously deflects the body onto the circular path is the centripetal force. Because circular motion involves a constant change of direction, velocity is always changing even at constant speed. For small angles, the magnitude of this change in velocity simplifies to $vθ$.
