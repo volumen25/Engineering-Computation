@@ -1,4 +1,16 @@
-# Simple Harmonic Motion {#shm}
+---
+title: "Simple Harmonic Motion"
+subtitle: "Reference: Applied Mechanics: Hannah & Hillier and Reed's Vol. 2"
+format:
+  pdf:
+    pdf-engine: xelatex
+    toc: false
+    number-sections: false
+    geometry: margin=2.5cm
+    include-in-header:
+      text: |
+        \usepackage{booktabs}
+---
 
 Simple Harmonic Motion: The foundation of vibration analysis. A particle undergoes SHM when its acceleration is proportional to displacement and directed toward the equilibrium position:
 
@@ -54,9 +66,21 @@ $$\text{Frequency} = \frac{1}{t} \quad \text{oscillations per second}$$
 
 ### Mass-Spring System
 
-The simplest model: a mass $m$ on a spring of stiffness $k$:
+The simplest model: a mass $m$ on a spring of stiffness $s$:
 
-$$\omega_n = \sqrt{\frac{k}{m}} \qquad f_n = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$$
+$$\omega_n = \sqrt{\frac{s}{m}} \qquad f_n = \frac{1}{2\pi}\sqrt{\frac{s}{m}}$$
+
+**Derivation via the general SHM periodic time formula** (Reed's Vol. 2):
+
+Since acceleration is proportional to displacement in any SHM system:
+
+$$T = 2\pi\sqrt{\frac{\text{displacement}}{\text{acceleration}}}$$
+
+For a spring-mass system the restoring force is $F = sx$, so by Newton's second law $a = sx/m$. Substituting:
+
+$$T = 2\pi\sqrt{\frac{x}{sx/m}} = 2\pi\sqrt{\frac{m}{s}}$$
+
+This is the **general SHM formula** — it applies to any oscillating system (spring, pendulum, piston) without needing to know $\omega$ explicitly, provided displacement and acceleration are known.
 
 ### Simple Pendulum
 
@@ -66,13 +90,13 @@ $$f_n = \frac{1}{2\pi}\sqrt{\frac{g}{L}}$$
 
 Springs in series and parallel are reduced to a single equivalent stiffness before applying the standard formulae:
 
-$$k_{\text{series}} = \frac{k_1 k_2}{k_1 + k_2} \qquad k_{\text{parallel}} = k_1 + k_2$$
+$$s_{\text{series}} = \frac{s_1 s_2}{s_1 + s_2} \qquad s_{\text{parallel}} = s_1 + s_2$$
 
-## Energy Method (Rayleigh's Method)
+<!-- ## Energy Method (Rayleigh's Method)
 
 An alternative to force methods — equating maximum kinetic energy to maximum potential energy to find the natural frequency. Particularly useful where writing equations of motion is complex:
 
-$$\frac{1}{2}mv_{\max}^2 = \frac{1}{2}kx_{\max}^2$$
+$$\frac{1}{2}mv_{\max}^2 = \frac{1}{2}sx_{\max}^2$$
 
 ## Damped Free Vibration
 
@@ -82,7 +106,7 @@ $$F_d = -c\dot{x}$$
 
 The **damping ratio** $\zeta$ determines the character of the motion:
 
-$$\zeta = \frac{c}{2\sqrt{mk}}$$
+$$\zeta = \frac{c}{2\sqrt{ms}}$$
 
 | Condition   | Behaviour                                               |
 |-------------|---------------------------------------------------------|
@@ -98,7 +122,7 @@ $$\omega_d = \omega_n\sqrt{1 - \zeta^2}$$
 
 When a harmonic exciting force $F = F_0 \sin(\omega t)$ is applied, the steady-state amplitude is:
 
-$$X = \frac{F_0/k}{1 - (\omega/\omega_n)^2}$$
+$$X = \frac{F_0/s}{1 - (\omega/\omega_n)^2}$$
 
 Note that above resonance this expression yields a negative value, indicating that the response is 180° out of phase with the excitation; the physical amplitude is the modulus $|X|$.
 
@@ -120,20 +144,20 @@ A rotating shaft has a **critical speed** at which it deflects violently — dir
 
 $$N_c = \frac{30}{\pi}\sqrt{\frac{g}{\delta_{st}}}$$
 
-where $\delta_{st}$ is the static deflection of the shaft under its own (or the rotor's) weight. Operating speeds should be well clear of $N_c$.
+where $\delta_{st}$ is the static deflection of the shaft under its own (or the rotor's) weight. Operating speeds should be well clear of $N_c$. -->
 
-## Summary of Equations
+<!-- ## Summary of Equations
 
-| Concept | Equation |
-|-----------------------|-------------------------------------------------|
-| SHM condition | $a = -\omega^2 x$ |
-| Natural frequency (spring-mass) | $\omega_n = \sqrt{k/m}$ |
-| Natural frequency (pendulum) | $f_n = \frac{1}{2\pi}\sqrt{g/L}$ |
-| Damping ratio | $\zeta = c/(2\sqrt{mk})$ |
-| Damped natural frequency | $\omega_d = \omega_n\sqrt{1-\zeta^2}$ |
-| Resonance condition | $\omega = \omega_n$ |
-| DMF (damped forced) | $1/\sqrt{[1-r^2]^2+[2\zeta r]^2}$, where $r=\omega/\omega_n$ |
-| Critical shaft speed | $N_c = (30/\pi)\sqrt{g/\delta_{st}}$ |
+| Concept                         | Equation                                                              |
+|---------------------------------|-----------------------------------------------------------------------|
+| SHM condition                   | $a = -\omega^2 x$                                                     |
+| Natural frequency (spring-mass) | $\omega_n = \sqrt{s/m}$, $T = 2\pi\sqrt{m/s}$                        |
+| Natural frequency (pendulum)    | $f_n = \frac{1}{2\pi}\sqrt{g/L}$                                      |
+| Damping ratio                   | $\zeta = c/(2\sqrt{ms})$                                              |
+| Damped natural frequency        | $\omega_d = \omega_n\sqrt{1-\zeta^2}$                                 |
+| Resonance condition             | $\omega = \omega_n$                                                   |
+| DMF (damped forced)             | $1/\sqrt{[1-r^2]^2+[2\zeta r]^2}$, where $r=\omega/\omega_n$         |
+| Critical shaft speed            | $N_c = (30/\pi)\sqrt{g/\delta_{st}}$                                  | -->
 
 ## Summary
 

@@ -1,0 +1,60 @@
+---
+title: "SHM Worked Example 5.19"
+subtitle: "Reference: Applied Mechanics: Reed's Vol. 2"
+format:
+  pdf:
+    pdf-engine: xelatex
+    toc: false
+    number-sections: false
+    geometry: margin=2.5cm
+---
+
+**Ex. 5.19**: A helical spring with a mass of 6 kg has a mass of 10 kg attached to its free
+end. The mass is pulled down 40 mm from the equilibrium position and then released.
+
+**Given:**
+
+- Mass of the spring, $m_s = 6$ kg
+- Mass attached, $m = 10$ kg
+- Spring stiffness, $k = 532$ N/m
+- Initial displacement (amplitude), $A = 40$ mm $= 0.0400$ m
+- Position to find kinetic energy, $x = 30$ mm $= 0.0300$ m
+
+## (i) Frequency of Oscillation
+
+The natural frequency of a mass-spring system is given by:
+
+$$\omega_n = \sqrt{\frac{k}{m_{\text{eff}}}}$$
+
+where the effective mass accounts for the distributed mass of the spring:
+
+$$m_{\text{eff}} = m + \frac{m_s}{3}$$
+
+Substituting the given values:
+
+$$m_{\text{eff}} = 10 + \frac{6}{3} = 12 \ \text{kg}$$
+
+Calculating the angular frequency:
+
+$$\omega_n = \sqrt{\frac{532}{12}} = \sqrt{44.3333} = 6.6583 \ \text{rad/s}$$
+
+The frequency of oscillation is:
+
+$$f = \frac{\omega_n}{2\pi} = \frac{6.6583}{2\pi} = 1.0597 \ \text{Hz}$$
+
+## (ii) Kinetic Energy at $x = 30$ mm
+
+The velocity of the attached mass at displacement $x$ is:
+
+$$v = \omega_n \sqrt{A^2 - x^2} = 6.6583 \times \sqrt{(0.0400)^2 - (0.0300)^2}$$
+
+$$v = 6.6583 \times \sqrt{0.0007} = 6.6583 \times 0.0265 = 0.1762 \ \text{m/s}$$
+
+The kinetic energy of the attached mass is:
+
+$$KE = \frac{1}{2} m v^2 = \frac{1}{2} \times 10 \times (0.1762)^2 = 0.1552 \ \text{J}$$
+
+## Final Answers
+
+- **Frequency of oscillation:** $f = 1.0597$ Hz
+- **Kinetic energy at $x = 30$ mm:** $KE = 0.1552$ J

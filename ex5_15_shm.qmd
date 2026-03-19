@@ -1,0 +1,30 @@
+---
+title: "SHM Worked Example 5.15"
+subtitle: "Reference: Applied Mechanics: Reed's Vol. 2"
+format:
+  pdf:
+    pdf-engine: xelatex
+    toc: false
+    number-sections: false
+    geometry: margin=2.5cm
+---
+
+**Ex. 5.15**: The stroke of a reciprocating engine is 500 mm. Neglecting the effect of the angularity of the connecting rod, find the velocity and acceleration of the piston when the crank is 30° past top dead centre and the engine is running at 750 rpm.
+
+## Calculations
+
+1.  **Determine the Radius of the Crank:**
+
+$$r = \frac{500}{2} = 250 \ \text{mm} = 0.25 \ \text{m}$$
+
+2.  **Angular Velocity of the Crank:**
+
+$$\omega = \frac{2\pi \cdot 750}{60} = 78.54 \ \text{rad/s}$$
+
+3.  **Velocity of the Piston:**
+
+$$V_p = \omega \cdot r \cdot \sin\theta = 78.54 \times 0.25 \times \sin(30°) = 9.82 \ \text{m/s}$$
+
+4.  **Acceleration of the Piston:**
+
+$$a_p = \omega^2 \cdot r \cdot \cos(\theta) = 78.54^2 \times 0.25 \times \cos(30°) = 1335.52 \ \text{m/s}^2$$

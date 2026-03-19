@@ -1,0 +1,110 @@
+---
+title: "Unbalance & Critical Speed Problem"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    geometry: margin=2.5cm
+---
+
+A shaft of negligible mass is simply supported at both ends and carries a
+single disc of mass **8 kg** at its mid-span. The disc has a small residual
+unbalance such that its centre of mass is **0.5 mm** from the geometric axis
+of the shaft. The static deflection of the shaft at mid-span under the disc's
+weight is **1.2 mm**. The shaft runs at **1 400 rpm**.
+
+1. Calculate the **critical speed** of the shaft.
+2. Calculate the **out-of-balance force** at the running speed.
+3. Determine whether the shaft is running **sub- or supercritically**.
+
+## Given Data
+
+| Symbol | Description | Value |
+|--------|-------------|-------|
+| $m$ | Disc mass | 8 kg |
+| $e$ | Eccentricity (CG offset) | 0.5 mm = 0.0005 m |
+| $\delta_{st}$ | Static deflection at mid-span | 1.2 mm = 0.0012 m |
+| $N$ | Running speed | 1 400 rpm |
+| $g$ | Gravitational acceleration | 9.81 m/s² |
+
+## Critical Speed
+
+Using the static-deflection formula:
+
+$$N_c = \frac{60}{2\pi}\sqrt{\frac{g}{\delta_{st}}}$$
+
+$$N_c = \frac{60}{2\pi}\sqrt{\frac{9.81}{0.0012}}$$
+
+$$N_c = \frac{60}{2\pi}\sqrt{8175} = \frac{60}{2\pi} \times 90.42$$
+
+$$\boxed{N_c \approx 864 \ \text{rpm}}$$
+
+## Out-of-Balance Force at Running Speed
+
+### Angular velocity at running speed
+
+$$\omega = \frac{2\pi N}{60} = \frac{2\pi \times 1400}{60} = 146.61 \ \text{rad/s}$$
+
+### Out-of-balance force
+
+The centrifugal force due to the eccentric mass is:
+
+$$F = me\omega^2 = 8 \times 0.0005 \times 146.61^2$$
+
+$$\boxed{F \approx 86.1 \ \text{N}}$$
+
+## Sub- or Supercritical?
+
+$$N = 1400 \ \text{rpm} \quad > \quad N_c = 864 \ \text{rpm}$$
+
+The shaft is running **supercritically** — above its first critical speed.
+In this regime the disc self-centres: the centre of mass migrates toward the
+bearing axis, and the dynamic behaviour stabilises. The shaft will have passed
+through the critical speed during run-up, where transient amplitudes must be
+managed by sufficient run-up rate or damping.
+
+The speed ratio is:
+
+$$\frac{N}{N_c} = \frac{1400}{864} \approx 1.62$$
+
+Running at 1.62 times the critical speed places the shaft comfortably in the
+supercritical region. A ratio of at least 1.2–1.3 is generally recommended
+to ensure stable supercritical operation.
+
+## Summary
+
+| Quantity | Value |
+|---------|-------|
+| Critical speed $N_c$ | **864 rpm** |
+| Running speed $N$ | 1 400 rpm |
+| Speed ratio $N/N_c$ | 1.62 — supercritical |
+| Angular velocity $\omega$ | 146.61 rad/s |
+| Out-of-balance force $F$ | **86.1 N** |
+
+## Verification (Python)
+
+```python
+import numpy as np
+
+# Given
+m          = 8.0       # kg
+e          = 0.0005    # m  (0.5 mm eccentricity)
+delta_st   = 0.0012    # m  (1.2 mm static deflection)
+N_run      = 1400      # rpm
+g          = 9.81      # m/s^2
+
+# Part 1 — critical speed
+N_c = (60 / (2 * np.pi)) * np.sqrt(g / delta_st)
+print(f"Critical speed  N_c = {N_c:.1f} rpm")
+
+# Part 2 — out-of-balance force at running speed
+omega = 2 * np.pi * N_run / 60
+F     = m * e * omega**2
+print(f"Angular velocity ω  = {omega:.2f} rad/s")
+print(f"Out-of-balance force F = {F:.1f} N")
+
+# Part 3 — speed ratio
+ratio = N_run / N_c
+regime = "supercritical" if N_run > N_c else "subcritical"
+print(f"\nSpeed ratio N/N_c   = {ratio:.2f}  →  {regime}")
+```

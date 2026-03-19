@@ -1,0 +1,60 @@
+---
+title: "SHM Worked Example 5.16"
+subtitle: "Reference: Applied Mechanics: Reed's Vol. 2"
+format:
+  pdf:
+    pdf-engine: xelatex
+    toc: false
+    number-sections: false
+    geometry: margin=2.5cm
+---
+
+**Ex. 5.16**: A machine component of mass $m = 2.25$ kg moves with simple harmonic motion.
+The amplitude is $A = 380$ mm, and the frequency of oscillation is 120 oscillations per minute.
+Determine:
+
+1. The maximum accelerating force.
+2. The accelerating force when the displacement is 250 mm from the mean position.
+
+## Given Data
+
+- Mass, $m = 2.25$ kg
+- Amplitude, $A = 380$ mm $= 0.38$ m
+- Frequency, $f = \dfrac{120}{60} = 2$ Hz
+
+The angular velocity of the motion is given by:
+
+$$\omega = 2\pi f = 2\pi \times 2 = 4\pi = 12.5664 \ \text{rad/s}$$
+
+## (i) Maximum Accelerating Force
+
+The maximum acceleration occurs at maximum displacement ($x = A$) and is given by:
+
+$$a_{\max} = \omega^2 A$$
+
+Substituting the values:
+
+$$a_{\max} = (4\pi)^2 \times 0.38 = 16\pi^2 \times 0.38 = 60.0072 \ \text{m/s}^2$$
+
+The maximum accelerating force is:
+
+$$F_{\max} = m \, a_{\max} = 2.25 \times 60.0072 = 135.0162 \ \text{N}$$
+
+## (ii) Accelerating Force at $x = 250$ mm
+
+The acceleration at displacement $x$ is given by:
+
+$$a = \omega^2 x$$
+
+Substituting $x = 250$ mm $= 0.25$ m:
+
+$$a = (4\pi)^2 \times 0.25 = 16\pi^2 \times 0.25 = 39.4784 \ \text{m/s}^2$$
+
+The accelerating force is:
+
+$$F = m \, a = 2.25 \times 39.4784 = 88.8264 \ \text{N}$$
+
+## Final Answers
+
+1. Maximum accelerating force: $\boldsymbol{F_{\max} = 135.0162}$ **N**
+2. Accelerating force at $x = 250$ mm: $\boldsymbol{F = 88.8264}$ **N**

@@ -1,0 +1,50 @@
+---
+title: "SHM Worked Example 5.18"
+subtitle: "Reference: Applied Mechanics: Reed's Vol. 2"
+format:
+  pdf:
+    pdf-engine: xelatex
+    toc: false
+    number-sections: false
+    geometry: margin=2.5cm
+---
+
+**Ex. 5.18**: A close-coiled helical spring has a stiffness of 1400 N/m. If a 10 kg mass is
+attached to the end of the spring, calculate the periodic time and the frequency of oscillation
+when the spring vibrates vertically.
+
+## Solution
+
+The equation for the natural frequency of a spring-mass system is given by:
+
+$$\omega = \sqrt{\frac{k}{m}}$$
+
+where:
+
+- $k = 1400$ N/m (spring stiffness),
+- $m = 10$ kg (mass).
+
+Substituting the values:
+
+$$\omega = \sqrt{\frac{1400}{10}} = \sqrt{140} = 11.8322 \ \text{rad/s}$$
+
+The periodic time $T$ is given by:
+
+$$T = \frac{2\pi}{\omega}$$
+
+Substituting $\omega = 11.8322$ rad/s:
+
+$$T = \frac{2\pi}{11.8322} = 0.5310 \ \text{s}$$
+
+The frequency $f$ is given by:
+
+$$f = \frac{1}{T}$$
+
+Thus:
+
+$$f = \frac{1}{0.5310} = 1.8831 \ \text{Hz}$$
+
+## Final Answers
+
+- **Periodic Time**: $T = 0.5310$ s
+- **Frequency**: $f = 1.8831$ Hz
