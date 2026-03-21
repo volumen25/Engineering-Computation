@@ -9,7 +9,7 @@ website:
   
 book:
   title: "Applied Mechanics Workbook"
-  subtitle: "A Concise Introduction to Computational Tools"
+  # subtitle: "A Concise Introduction to Computational Tools"
   # author: "Serhat Beyenir"
   # date: today # today or last-modified
   date-format: "D MMMM YYYY"
