@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.27">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -41,9 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-adfb2833bc15652ec5881dc6381ea988.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-60eb8141d3f50090c0f52d36a83ed331.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-adfb2833bc15652ec5881dc6381ea988.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -449,7 +449,29 @@ window.Quarto = {
 
 <p>Simple Harmonic Motion: The foundation of vibration analysis. A particle undergoes SHM when its acceleration is proportional to displacement and directed toward the equilibrium position:</p>
 <p><span class="math display">\[a = -\omega^2 x\]</span></p>
-<p>Key relationships — displacement, velocity, acceleration, amplitude, period, and frequency — are all derived from this condition.</p>
+<p>Key relationships such as displacement, velocity, acceleration, amplitude, period, and frequency are all derived from this condition.</p>
+<p>Simple harmonic motion is a particular form of reciprocating, or ‘to-and-fro’, motion in which the acceleration and the velocity of the body vary as it moves from one end of its travel to the other; the important characteristic of this motion is that the acceleration is proportional to the displacement from mid-travel (and directed towards it).</p>
+<p>When a body moves forwards and backwards with simple harmonic motion, at one end of its oscillation the body is momentarily at rest; it receives maximum acceleration, which causes it to move with increasing velocity. The acceleration, which is proportional to the displacement from mid-travel, decreases, and its velocity increases as the body approaches mid-travel. As it passes its mid-position the acceleration is zero and the velocity is maximum. From mid-travel onwards the acceleration is negative and increasing in magnitude while the velocity decreases until, at the other end of its travel, the velocity is momentarily zero and the acceleration is maximum to return the body in the opposite direction.</p>
+<p>If a particle is travelling around a circular path in a vertical plane at a constant speed and its shadow could be seen on a vertical screen, the shadow would move forwards and backwards with simple harmonic motion.</p>
+<p>From a practical point of view, neglecting the effect of the angularity of the connecting rod of a reciprocating engine, the piston moves with simple harmonic motion when the crank pin travels at a constant angular velocity.</p>
+<p><img src="images/fig78.png" class="img-fluid"></p>
+<p>Referring to Fig. the circle represents the circular path of a particle <span class="math inline">\(Q\)</span> moving at a constant velocity; this could be the crank pin of an engine. The projection of <span class="math inline">\(Q\)</span> on to the plane of the diameter is point <span class="math inline">\(P\)</span>, which could represent the relative position and motion of the piston (neglecting angularity of the connecting rod). <span class="math inline">\(Q\)</span> is moving at a constant angular velocity of <span class="math inline">\(\omega\)</span> around the circular path of radius <span class="math inline">\(r\)</span>, so its linear velocity is <span class="math inline">\(\omega r\)</span>. The velocity vector diagram is drawn to represent the linear velocity of <span class="math inline">\(Q\)</span> when passing the point at <span class="math inline">\(\theta\)</span> past dead centre; the horizontal component represents the velocity of <span class="math inline">\(P\)</span> at that instant. Thus:</p>
+<p><span class="math display">\[\text{Velocity of } P = \text{Velocity of } Q \times \sin\theta = \omega r \sin\theta\]</span></p>
+<p>The angular velocity <span class="math inline">\(\omega\)</span> is constant; therefore the acceleration of a body moving with simple harmonic motion is proportional to its displacement from mid-travel (and directed towards it).</p>
+<p>The <strong>AMPLITUDE</strong> is the maximum displacement to either side of mid-travel.</p>
+<p>The <strong>PERIODIC TIME</strong> is the time taken to make one complete oscillation, that is, to move completely from one end to the other and back again.</p>
+<p>The time for <span class="math inline">\(P\)</span> to make one complete oscillation is the same time that <span class="math inline">\(Q\)</span> takes to complete one full revolution. Since the distance travelled in one revolution is <span class="math inline">\(2\pi r\)</span> and the linear velocity of <span class="math inline">\(Q\)</span> is <span class="math inline">\(\omega r\)</span>:</p>
+<p><span class="math display">\[\text{Periodic time} = \frac{\text{distance}}{\text{velocity}} = \frac{2\pi r}{\omega r} = \frac{2\pi}{\omega}\]</span></p>
+<p>Since the acceleration of <span class="math inline">\(P\)</span> is proportional to its displacement from mid-travel:</p>
+<p><span class="math display">\[\text{acceleration} = \omega^2 \times \text{displacement}\]</span></p>
+<p>it follows that:</p>
+<p><span class="math display">\[\omega = \sqrt{\frac{\text{acceleration}}{\text{displacement}}}\]</span></p>
+<p>Substituting into the expression for periodic time:</p>
+<p><span class="math display">\[\text{Periodic time} = \frac{2\pi}{\omega} = \frac{2\pi}{\sqrt{\dfrac{\text{acceleration}}{\text{displacement}}}}\]</span></p>
+<p>This expression gives the periodic time for any body moving with simple harmonic motion.</p>
+<p>The <strong>FREQUENCY</strong> is the number of complete oscillations made in one second.</p>
+<p>If <span class="math inline">\(t\)</span> = periodic time (s), then:</p>
+<p><span class="math display">\[\text{Frequency} = \frac{1}{t} \quad \text{oscillations per second}\]</span></p>
 <section id="free-undamped-vibration" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="free-undamped-vibration"><span class="header-section-number">3.1</span> Free Undamped Vibration</h2>
 <section id="mass-spring-system" class="level3" data-number="3.1.1">
@@ -509,8 +531,9 @@ window.Quarto = {
 </section>
 <section id="forced-vibration-undamped" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="forced-vibration-undamped"><span class="header-section-number">3.4</span> Forced Vibration (Undamped)</h2>
-<p>When a harmonic exciting force <span class="math inline">\(F = F_0 \sin\omega t\)</span> is applied, the steady-state amplitude is:</p>
+<p>When a harmonic exciting force <span class="math inline">\(F = F_0 \sin(\omega t)\)</span> is applied, the steady-state amplitude is:</p>
 <p><span class="math display">\[X = \frac{F_0/k}{1 - (\omega/\omega_n)^2}\]</span></p>
+<p>Note that above resonance this expression yields a negative value, indicating that the response is 180° out of phase with the excitation; the physical amplitude is the modulus <span class="math inline">\(|X|\)</span>.</p>
 <p><strong>Resonance</strong> occurs when <span class="math inline">\(\omega \to \omega_n\)</span>, causing theoretically infinite amplitude.</p>
 </section>
 <section id="forced-vibration-damped" class="level2" data-number="3.5">
@@ -530,8 +553,8 @@ window.Quarto = {
 <h2 data-number="3.7" class="anchored" data-anchor-id="summary-of-equations"><span class="header-section-number">3.7</span> Summary of Equations</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 31%">
+<col style="width: 68%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -554,7 +577,7 @@ window.Quarto = {
 </tr>
 <tr class="even">
 <td>Damping ratio</td>
-<td><span class="math inline">\(\zeta = c \, / \, 2\sqrt{mk}\)</span></td>
+<td><span class="math inline">\(\zeta = c/(2\sqrt{mk})\)</span></td>
 </tr>
 <tr class="odd">
 <td>Damped natural frequency</td>
@@ -1018,7 +1041,7 @@ window.Quarto = {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Built with <a href="https://quarto.org"> Quarto 1.9.27</a></p>
+<p>Built with <a href="https://quarto.org"> Quarto 1.9.36</a></p>
 </div>
   </div>
 </footer>

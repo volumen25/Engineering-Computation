@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.27">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -41,9 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-adfb2833bc15652ec5881dc6381ea988.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-60eb8141d3f50090c0f52d36a83ed331.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-adfb2833bc15652ec5881dc6381ea988.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-5ccb035bea26c1e21f80f44cf7c27909.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -419,14 +419,23 @@ window.Quarto = {
   <li><a href="#dynamic-balance" id="toc-dynamic-balance" class="nav-link" data-scroll-target="#dynamic-balance"><span class="header-section-number">2.4</span> Dynamic Balance</a></li>
   <li><a href="#balancing-in-a-single-plane" id="toc-balancing-in-a-single-plane" class="nav-link" data-scroll-target="#balancing-in-a-single-plane"><span class="header-section-number">2.5</span> Balancing in a Single Plane</a></li>
   <li><a href="#balancing-in-several-planes" id="toc-balancing-in-several-planes" class="nav-link" data-scroll-target="#balancing-in-several-planes"><span class="header-section-number">2.6</span> Balancing in Several Planes</a></li>
-  <li><a href="#balancing-of-reciprocating-masses" id="toc-balancing-of-reciprocating-masses" class="nav-link" data-scroll-target="#balancing-of-reciprocating-masses"><span class="header-section-number">2.7</span> Balancing of Reciprocating Masses</a>
+  <li><a href="#balancing-of-reciprocating-machinery" id="toc-balancing-of-reciprocating-machinery" class="nav-link" data-scroll-target="#balancing-of-reciprocating-machinery"><span class="header-section-number">2.7</span> Balancing of Reciprocating Machinery</a>
   <ul class="collapse">
   <li><a href="#primary-and-secondary-forces" id="toc-primary-and-secondary-forces" class="nav-link" data-scroll-target="#primary-and-secondary-forces"><span class="header-section-number">2.7.1</span> Primary and Secondary Forces</a></li>
-  <li><a href="#multi-cylinder-engines" id="toc-multi-cylinder-engines" class="nav-link" data-scroll-target="#multi-cylinder-engines"><span class="header-section-number">2.7.2</span> Multi-Cylinder Engines</a></li>
   </ul></li>
-  <li><a href="#partial-balance" id="toc-partial-balance" class="nav-link" data-scroll-target="#partial-balance"><span class="header-section-number">2.8</span> Partial Balance</a></li>
-  <li><a href="#summary-of-equations" id="toc-summary-of-equations" class="nav-link" data-scroll-target="#summary-of-equations"><span class="header-section-number">2.9</span> Summary of Equations</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2.10</span> Summary</a></li>
+  <li><a href="#methods-for-complete-balancing" id="toc-methods-for-complete-balancing" class="nav-link" data-scroll-target="#methods-for-complete-balancing"><span class="header-section-number">2.8</span> Methods for Complete Balancing</a>
+  <ul class="collapse">
+  <li><a href="#crankshaft-counterweight-partial-balance" id="toc-crankshaft-counterweight-partial-balance" class="nav-link" data-scroll-target="#crankshaft-counterweight-partial-balance"><span class="header-section-number">2.8.1</span> Crankshaft Counterweight (Partial Balance)</a></li>
+  <li><a href="#multi-cylinder-in-line-engines" id="toc-multi-cylinder-in-line-engines" class="nav-link" data-scroll-target="#multi-cylinder-in-line-engines"><span class="header-section-number">2.8.2</span> Multi-Cylinder In-Line Engines</a></li>
+  <li><a href="#partial-balance" id="toc-partial-balance" class="nav-link" data-scroll-target="#partial-balance"><span class="header-section-number">2.8.3</span> Partial Balance</a></li>
+  </ul></li>
+  <li><a href="#critical-speed" id="toc-critical-speed" class="nav-link" data-scroll-target="#critical-speed"><span class="header-section-number">2.9</span> Critical Speed</a>
+  <ul class="collapse">
+  <li><a href="#behaviour-around-critical-speed" id="toc-behaviour-around-critical-speed" class="nav-link" data-scroll-target="#behaviour-around-critical-speed"><span class="header-section-number">2.9.1</span> Behaviour Around Critical Speed</a></li>
+  <li><a href="#multiple-critical-speeds" id="toc-multiple-critical-speeds" class="nav-link" data-scroll-target="#multiple-critical-speeds"><span class="header-section-number">2.9.2</span> Multiple Critical Speeds</a></li>
+  </ul></li>
+  <li><a href="#summary-of-equations" id="toc-summary-of-equations" class="nav-link" data-scroll-target="#summary-of-equations"><span class="header-section-number">2.10</span> Summary of Equations</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2.11</span> Summary</a></li>
   </ul>
 </nav>
     </div>
@@ -509,12 +518,11 @@ window.Quarto = {
 </section>
 <section id="centrifugal-and-centripetal-forces" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="centrifugal-and-centripetal-forces"><span class="header-section-number">2.2</span> Centrifugal and Centripetal Forces</h2>
-<p>A body in motion travels in a straight line unless forced to change direction (Newton’s First Law). When moving in a circle, its inertia causes it to resist that continuous change of direction — in a rotating reference frame, this resistance appears as a fictitious outward “centrifugal” force. The real inward force that continuously deflects the body onto the circular path is the centripetal force. Because circular motion involves a constant change of direction, velocity is always changing even at constant speed. For small angles, the magnitude of this change in velocity simplifies to <span class="math inline">\(vθ\)</span>.</p>
+<p>A body in motion travels in a straight line unless forced to change direction (Newton’s First Law). When moving in a circle, its inertia causes it to resist that continuous change of direction — in a rotating reference frame, this resistance appears as a fictitious outward “centrifugal” force. The real inward force that continuously deflects the body onto the circular path is the <strong>centripetal force</strong>. Because circular motion involves a constant change of direction, velocity is always changing even at constant speed. For small angles, the magnitude of this change in velocity simplifies to <span class="math inline">\(v\theta\)</span>.</p>
 </section>
 <section id="static-balance" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="static-balance"><span class="header-section-number">2.3</span> Static Balance</h2>
-<p>A system is statically balanced when the resultant of all centrifugal forces due to rotating masses is zero — i.e., the centre of mass lies on the axis of rotation.</p>
-<p>This is checked by ensuring the vector sum of all <span class="math inline">\(mr\)</span> terms equals zero:</p>
+<p>A system is statically balanced when the resultant of all centrifugal forces due to rotating masses is zero — i.e., the centre of mass lies on the axis of rotation. Static balance requires the vector sum of all <span class="math inline">\(mr\)</span> terms to be zero:</p>
 <p><span class="math display">\[\sum mr = 0\]</span></p>
 <p>A single correction mass placed in the same plane can achieve static balance.</p>
 </section>
@@ -522,10 +530,10 @@ window.Quarto = {
 <h2 data-number="2.4" class="anchored" data-anchor-id="dynamic-balance"><span class="header-section-number">2.4</span> Dynamic Balance</h2>
 <p>Static balance alone is insufficient for systems with masses distributed across different axial planes. Dynamic balance requires two conditions to be satisfied simultaneously:</p>
 <ol type="1">
-<li>The vector sum of all centrifugal forces equals zero (static condition)</li>
-<li>The vector sum of all <strong>moments</strong> of these forces about any reference plane equals zero</li>
+<li>The vector sum of all centrifugal forces equals zero (static condition).</li>
+<li>The vector sum of all <strong>moments</strong> of these forces about any reference plane equals zero.</li>
 </ol>
-<p><span class="math display">\[\sum mr = 0 \qquad \text{and} \qquad \sum mrl = 0\]</span></p>
+<p><span class="math display">\[\sum mr = 0 \qquad \text{and} \qquad \sum mr\ell = 0\]</span></p>
 <p>This generally requires <strong>two correction masses</strong> placed in two chosen planes.</p>
 </section>
 <section id="balancing-in-a-single-plane" class="level2" data-number="2.5">
@@ -536,41 +544,164 @@ window.Quarto = {
 <h2 data-number="2.6" class="anchored" data-anchor-id="balancing-in-several-planes"><span class="header-section-number">2.6</span> Balancing in Several Planes</h2>
 <p>For masses distributed along a shaft, the procedure is:</p>
 <ol type="1">
-<li>Choose a reference plane and construct a <strong>couple polygon</strong> using <span class="math inline">\(mrl\)</span> terms, where <span class="math inline">\(l\)</span> is the axial distance from the reference plane</li>
-<li>Closing the couple polygon gives the first correction mass (magnitude and angle)</li>
-<li>Construct the <strong>force polygon</strong> using <span class="math inline">\(mr\)</span> terms to find the second correction mass</li>
+<li>Choose a reference plane and construct a <strong>couple polygon</strong> using <span class="math inline">\(mr\ell\)</span> terms, where <span class="math inline">\(\ell\)</span> is the axial distance from the reference plane.</li>
+<li>Closing the couple polygon gives the first correction mass (magnitude and angle).</li>
+<li>Construct the <strong>force polygon</strong> using <span class="math inline">\(mr\)</span> terms to find the second correction mass.</li>
 </ol>
 </section>
-<section id="balancing-of-reciprocating-masses" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="balancing-of-reciprocating-masses"><span class="header-section-number">2.7</span> Balancing of Reciprocating Masses</h2>
+<section id="balancing-of-reciprocating-machinery" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="balancing-of-reciprocating-machinery"><span class="header-section-number">2.7</span> Balancing of Reciprocating Machinery</h2>
+<p>A reciprocating engine generates forces that are fundamentally harder to balance than rotating masses. The piston moves in one plane only — adding an opposite mass in that plane creates a new out-of-balance force perpendicular to it. The problem cannot be solved by a single counterweight alone.</p>
 <section id="primary-and-secondary-forces" class="level3" data-number="2.7.1">
 <h3 data-number="2.7.1" class="anchored" data-anchor-id="primary-and-secondary-forces"><span class="header-section-number">2.7.1</span> Primary and Secondary Forces</h3>
-<p>The piston acceleration in a crank-slider mechanism gives rise to two force components:</p>
+<p>Treating the connecting rod as two lumped masses — one at the crank pin, one at the gudgeon pin — splits the system into a rotating part and a pure reciprocating part. The total reciprocating force is:</p>
+<p><span class="math display">\[F = mr\omega^2\!\left(\cos\theta + \frac{r}{\ell}\cos 2\theta + \cdots\right)\]</span></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Name</th>
+<th>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\cos\theta\)</span></td>
+<td>Primary force</td>
+<td><span class="math inline">\(\omega\)</span> (crank speed)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\dfrac{r}{\ell}\cos 2\theta\)</span></td>
+<td>Secondary force</td>
+<td><span class="math inline">\(2\omega\)</span></td>
+</tr>
+<tr class="odd">
+<td>Higher terms</td>
+<td>Negligible in practice</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>The secondary force arises from the obliquity of the connecting rod; higher harmonics are generally ignored. Written separately:</p>
 <p><strong>Primary force</strong> (first-order):</p>
 <p><span class="math display">\[F_{\text{primary}} = mr\omega^2 \cos\theta\]</span></p>
 <p><strong>Secondary force</strong> (second-order):</p>
-<p><span class="math display">\[F_{\text{secondary}} = \frac{mr\omega^2 \cos 2\theta}{n}\]</span></p>
+<p><span class="math display">\[F_{\text{secondary}} = \frac{mr\omega^2}{n}\cos 2\theta\]</span></p>
 <p>where <span class="math inline">\(n = \ell / r\)</span> is the ratio of connecting rod length <span class="math inline">\(\ell\)</span> to crank radius <span class="math inline">\(r\)</span>.</p>
 </section>
-<section id="multi-cylinder-engines" class="level3" data-number="2.7.2">
-<h3 data-number="2.7.2" class="anchored" data-anchor-id="multi-cylinder-engines"><span class="header-section-number">2.7.2</span> Multi-Cylinder Engines</h3>
-<p>In multi-cylinder in-line engines, the angular phasing of the cranks is arranged to cancel primary and secondary forces and couples. The chapter examines which engine configurations achieve complete or only partial balance.</p>
+</section>
+<section id="methods-for-complete-balancing" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="methods-for-complete-balancing"><span class="header-section-number">2.8</span> Methods for Complete Balancing</h2>
+<section id="crankshaft-counterweight-partial-balance" class="level3" data-number="2.8.1">
+<h3 data-number="2.8.1" class="anchored" data-anchor-id="crankshaft-counterweight-partial-balance"><span class="header-section-number">2.8.1</span> Crankshaft Counterweight (Partial Balance)</h3>
+<p>Adding a mass opposite the crank pin cancels the rotating component entirely but only reduces the primary reciprocating force — it cannot eliminate it. This trades a vertical unbalance for a smaller horizontal one. A typical compromise balances <strong>50–60%</strong> of the reciprocating mass.</p>
+</section>
+<section id="multi-cylinder-in-line-engines" class="level3" data-number="2.8.2">
+<h3 data-number="2.8.2" class="anchored" data-anchor-id="multi-cylinder-in-line-engines"><span class="header-section-number">2.8.2</span> Multi-Cylinder In-Line Engines</h3>
+<p>By phasing cranks at equal angles, primary and secondary forces and couples can cancel across the engine. Balance requires:</p>
+<p><span class="math display">\[\sum mr = 0 \quad \text{and} \quad \sum mra = 0\]</span></p>
+<p>for both primary and secondary components.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Configuration</th>
+<th style="text-align: center;">Primary <span class="math inline">\(F\)</span></th>
+<th style="text-align: center;">Primary <span class="math inline">\(C\)</span></th>
+<th style="text-align: center;">Secondary <span class="math inline">\(F\)</span></th>
+<th style="text-align: center;">Secondary <span class="math inline">\(C\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2-cyl, 180°</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="even">
+<td>4-cyl, 180°</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+</tr>
+<tr class="odd">
+<td>6-cyl, 60°</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>six-cylinder in-line engine</strong> achieves complete balance for both primary and secondary effects.</p>
+</section>
+<section id="partial-balance" class="level3" data-number="2.8.3">
+<h3 data-number="2.8.3" class="anchored" data-anchor-id="partial-balance"><span class="header-section-number">2.8.3</span> Partial Balance</h3>
+<p>Complete balance is not always possible or practical — particularly for single-cylinder engines. In such cases a balance mass is added to reduce the dominant unbalanced force, and a residual force in one direction is accepted to eliminate the more harmful force in the perpendicular direction.</p>
 </section>
 </section>
-<section id="partial-balance" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="partial-balance"><span class="header-section-number">2.8</span> Partial Balance</h2>
-<p>Complete balance is not always possible or practical — particularly for single-cylinder engines. In such cases:</p>
-<ul>
-<li>A balance mass is added to <strong>reduce</strong> the dominant unbalanced force</li>
-<li>A residual force in one direction is accepted to eliminate the more harmful force in the perpendicular direction</li>
-</ul>
-</section>
-<section id="summary-of-equations" class="level2" data-number="2.9">
-<h2 data-number="2.9" class="anchored" data-anchor-id="summary-of-equations"><span class="header-section-number">2.9</span> Summary of Equations</h2>
+<section id="critical-speed" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="critical-speed"><span class="header-section-number">2.9</span> Critical Speed</h2>
+<p>Every rotating shaft is also an elastic beam with natural frequencies of lateral vibration. The <strong>critical speed</strong> is the rotational speed at which the excitation frequency from residual unbalance equals a natural frequency, producing resonance.</p>
+<p>For a shaft carrying a disc, using the static deflection <span class="math inline">\(\delta_{st}\)</span> under its own load:</p>
+<p><span class="math display">\[\boxed{N_c = \frac{60}{2\pi}\sqrt{\frac{g}{\delta_{st}}}}\]</span></p>
+<p>This is convenient because <span class="math inline">\(\delta_{st}\)</span> can be directly measured or calculated from beam theory.</p>
+<section id="behaviour-around-critical-speed" class="level3" data-number="2.9.1">
+<h3 data-number="2.9.1" class="anchored" data-anchor-id="behaviour-around-critical-speed"><span class="header-section-number">2.9.1</span> Behaviour Around Critical Speed</h3>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 43%">
 <col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Speed regime</th>
+<th>Shaft behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Well below <span class="math inline">\(N_c\)</span></td>
+<td>Shaft runs stiffly; centre of mass ≈ geometric centre</td>
+</tr>
+<tr class="even">
+<td>Approaching <span class="math inline">\(N_c\)</span></td>
+<td>Amplitude grows rapidly — whirling begins</td>
+</tr>
+<tr class="odd">
+<td>At <span class="math inline">\(N_c\)</span></td>
+<td>Resonance; amplitude theoretically unbounded (damping limits it)</td>
+</tr>
+<tr class="even">
+<td>Well above <span class="math inline">\(N_c\)</span></td>
+<td>Shaft self-centres; centre of mass migrates toward axis</td>
+</tr>
+</tbody>
+</table>
+<p>Many turbines and high-speed spindles operate <strong>supercritically</strong> — above the first critical speed — and simply pass through it during run-up.</p>
+</section>
+<section id="multiple-critical-speeds" class="level3" data-number="2.9.2">
+<h3 data-number="2.9.2" class="anchored" data-anchor-id="multiple-critical-speeds"><span class="header-section-number">2.9.2</span> Multiple Critical Speeds</h3>
+<p>A real shaft has infinitely many lateral modes, each giving a critical speed:</p>
+<p><span class="math display">\[N_{c_n} \propto n^2 \quad \text{(uniform simply-supported shaft)}\]</span></p>
+<p>The <strong>first critical speed</strong> is the most dangerous: it is encountered first and produces the largest deflection amplitude.</p>
+</section>
+</section>
+<section id="summary-of-equations" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="summary-of-equations"><span class="header-section-number">2.10</span> Summary of Equations</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -584,27 +715,31 @@ window.Quarto = {
 <td><span class="math inline">\(F = mr\omega^2\)</span></td>
 </tr>
 <tr class="even">
-<td>Static balance condition</td>
+<td>Static balance</td>
 <td><span class="math inline">\(\sum mr = 0\)</span></td>
 </tr>
 <tr class="odd">
-<td>Dynamic balance condition</td>
-<td><span class="math inline">\(\sum mr = 0\)</span> and <span class="math inline">\(\sum mrl = 0\)</span></td>
+<td>Dynamic balance</td>
+<td><span class="math inline">\(\sum mr = 0\)</span> and <span class="math inline">\(\sum mr\ell = 0\)</span></td>
 </tr>
 <tr class="even">
 <td>Primary reciprocating force</td>
-<td><span class="math inline">\(F = mr\omega^2 \cos\theta\)</span></td>
+<td><span class="math inline">\(F_{\text{primary}} = mr\omega^2 \cos\theta\)</span></td>
 </tr>
 <tr class="odd">
 <td>Secondary reciprocating force</td>
-<td><span class="math inline">\(F = mr\omega^2 \cos 2\theta \, / \, n\)</span></td>
+<td><span class="math inline">\(F_{\text{secondary}} = \dfrac{mr\omega^2}{n}\cos 2\theta\)</span></td>
+</tr>
+<tr class="even">
+<td>Critical speed</td>
+<td><span class="math inline">\(N_c = \dfrac{60}{2\pi}\sqrt{\dfrac{g}{\delta_{st}}}\)</span></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="summary" class="level2" data-number="2.10">
-<h2 data-number="2.10" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.10</span> Summary</h2>
-<p>Balancing is fundamentally a <strong>vector problem</strong>. Both graphical (polygon) and analytical methods are used throughout. Dynamic balancing always requires satisfying both force <em>and</em> moment equilibrium, and the chapter builds progressively from simple single-plane cases up to the complexity of multi-cylinder engine analysis.</p>
+<section id="summary" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.11</span> Summary</h2>
+<p>Balancing is fundamentally a <strong>vector problem</strong>. Both graphical (polygon) and analytical methods are used throughout. Dynamic balancing always requires satisfying both force <em>and</em> moment equilibrium, building progressively from simple single-plane cases up to the complexity of multi-cylinder engine analysis. Critical speed analysis adds a further dimension: even a perfectly balanced shaft can experience destructive resonance if its operating speed coincides with a lateral natural frequency.</p>
 
 
 </section>
@@ -1045,7 +1180,7 @@ window.Quarto = {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Built with <a href="https://quarto.org"> Quarto 1.9.27</a></p>
+<p>Built with <a href="https://quarto.org"> Quarto 1.9.36</a></p>
 </div>
   </div>
 </footer>

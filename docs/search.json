@@ -120,11 +120,41 @@
     ]
   },
   {
+    "objectID": "1balancing.html#newtons-laws-of-motion",
+    "href": "1balancing.html#newtons-laws-of-motion",
+    "title": "2  Balancing",
+    "section": "",
+    "text": "2.1.1 First Law — Inertia\n\nA body remains at rest or in uniform straight-line motion unless acted upon by a net external force.\n\nA body in motion travels in a straight line unless forced to change direction. This resistance to any change in motion is called inertia. The law defines what a force is: the only thing capable of altering a body’s state of motion.\n\\[\\sum \\vec{F} = 0 \\implies \\vec{v} = \\text{constant}\\]\n\n\n2.1.2 Second Law — Force and Acceleration\n\nThe net force acting on a body equals its mass multiplied by its acceleration.\n\n\\[\\boxed{F = ma}\\]\nForce and acceleration act in the same direction. The relationship is linear: doubling the net force doubles the acceleration; doubling the mass halves it for the same force.\n\n\n\nChange\nEffect on acceleration\n\n\n\n\nForce doubled\nAcceleration doubled\n\n\nMass doubled\nAcceleration halved\n\n\nBoth doubled\nAcceleration unchanged\n\n\n\n\n\n2.1.3 Third Law — Action and Reaction\n\nFor every force one body exerts on another, the second body exerts an equal and opposite force back on the first.\n\n\\[\\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A}\\]\nKey points:\n\nThe forces are equal in magnitude and opposite in direction.\nThey act on different objects — they are never a cancelling pair.\nThe reaction force has the same nature as the action (both contact, both gravitational, etc.).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
+    ]
+  },
+  {
+    "objectID": "1balancing.html#centrifugal-and-centripetal-forces",
+    "href": "1balancing.html#centrifugal-and-centripetal-forces",
+    "title": "2  Balancing",
+    "section": "2.2 Centrifugal and Centripetal Forces",
+    "text": "2.2 Centrifugal and Centripetal Forces\nA body in motion travels in a straight line unless forced to change direction (Newton’s First Law). When moving in a circle, its inertia causes it to resist that continuous change of direction — in a rotating reference frame, this resistance appears as a fictitious outward “centrifugal” force. The real inward force that continuously deflects the body onto the circular path is the centripetal force. Because circular motion involves a constant change of direction, velocity is always changing even at constant speed. For small angles, the magnitude of this change in velocity simplifies to \\(v\\theta\\).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
+    ]
+  },
+  {
+    "objectID": "1balancing.html#static-balance",
+    "href": "1balancing.html#static-balance",
+    "title": "2  Balancing",
+    "section": "2.3 Static Balance",
+    "text": "2.3 Static Balance\nA system is statically balanced when the resultant of all centrifugal forces due to rotating masses is zero — i.e., the centre of mass lies on the axis of rotation. Static balance requires the vector sum of all \\(mr\\) terms to be zero:\n\\[\\sum mr = 0\\]\nA single correction mass placed in the same plane can achieve static balance.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
+    ]
+  },
+  {
     "objectID": "1balancing.html#dynamic-balance",
     "href": "1balancing.html#dynamic-balance",
     "title": "2  Balancing",
     "section": "2.4 Dynamic Balance",
-    "text": "2.4 Dynamic Balance\nStatic balance alone is insufficient for systems with masses distributed across different axial planes. Dynamic balance requires two conditions to be satisfied simultaneously:\n\nThe vector sum of all centrifugal forces equals zero (static condition)\nThe vector sum of all moments of these forces about any reference plane equals zero\n\n\\[\\sum mr = 0 \\qquad \\text{and} \\qquad \\sum mrl = 0\\]\nThis generally requires two correction masses placed in two chosen planes.",
+    "text": "2.4 Dynamic Balance\nStatic balance alone is insufficient for systems with masses distributed across different axial planes. Dynamic balance requires two conditions to be satisfied simultaneously:\n\nThe vector sum of all centrifugal forces equals zero (static condition).\nThe vector sum of all moments of these forces about any reference plane equals zero.\n\n\\[\\sum mr = 0 \\qquad \\text{and} \\qquad \\sum mr\\ell = 0\\]\nThis generally requires two correction masses placed in two chosen planes.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
     ]
@@ -144,27 +174,37 @@
     "href": "1balancing.html#balancing-in-several-planes",
     "title": "2  Balancing",
     "section": "2.6 Balancing in Several Planes",
-    "text": "2.6 Balancing in Several Planes\nFor masses distributed along a shaft, the procedure is:\n\nChoose a reference plane and construct a couple polygon using \\(mrl\\) terms, where \\(l\\) is the axial distance from the reference plane\nClosing the couple polygon gives the first correction mass (magnitude and angle)\nConstruct the force polygon using \\(mr\\) terms to find the second correction mass",
+    "text": "2.6 Balancing in Several Planes\nFor masses distributed along a shaft, the procedure is:\n\nChoose a reference plane and construct a couple polygon using \\(mr\\ell\\) terms, where \\(\\ell\\) is the axial distance from the reference plane.\nClosing the couple polygon gives the first correction mass (magnitude and angle).\nConstruct the force polygon using \\(mr\\) terms to find the second correction mass.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
     ]
   },
   {
-    "objectID": "1balancing.html#balancing-of-reciprocating-masses",
-    "href": "1balancing.html#balancing-of-reciprocating-masses",
+    "objectID": "1balancing.html#balancing-of-reciprocating-machinery",
+    "href": "1balancing.html#balancing-of-reciprocating-machinery",
     "title": "2  Balancing",
-    "section": "2.7 Balancing of Reciprocating Masses",
-    "text": "2.7 Balancing of Reciprocating Masses\n\n2.7.1 Primary and Secondary Forces\nThe piston acceleration in a crank-slider mechanism gives rise to two force components:\nPrimary force (first-order):\n\\[F_{\\text{primary}} = mr\\omega^2 \\cos\\theta\\]\nSecondary force (second-order):\n\\[F_{\\text{secondary}} = \\frac{mr\\omega^2 \\cos 2\\theta}{n}\\]\nwhere \\(n = \\ell / r\\) is the ratio of connecting rod length \\(\\ell\\) to crank radius \\(r\\).\n\n\n2.7.2 Multi-Cylinder Engines\nIn multi-cylinder in-line engines, the angular phasing of the cranks is arranged to cancel primary and secondary forces and couples. The chapter examines which engine configurations achieve complete or only partial balance.",
+    "section": "2.7 Balancing of Reciprocating Machinery",
+    "text": "2.7 Balancing of Reciprocating Machinery\nA reciprocating engine generates forces that are fundamentally harder to balance than rotating masses. The piston moves in one plane only — adding an opposite mass in that plane creates a new out-of-balance force perpendicular to it. The problem cannot be solved by a single counterweight alone.\n\n2.7.1 Primary and Secondary Forces\nTreating the connecting rod as two lumped masses — one at the crank pin, one at the gudgeon pin — splits the system into a rotating part and a pure reciprocating part. The total reciprocating force is:\n\\[F = mr\\omega^2\\!\\left(\\cos\\theta + \\frac{r}{\\ell}\\cos 2\\theta + \\cdots\\right)\\]\n\n\n\nTerm\nName\nFrequency\n\n\n\n\n\\(\\cos\\theta\\)\nPrimary force\n\\(\\omega\\) (crank speed)\n\n\n\\(\\dfrac{r}{\\ell}\\cos 2\\theta\\)\nSecondary force\n\\(2\\omega\\)\n\n\nHigher terms\nNegligible in practice\n—\n\n\n\nThe secondary force arises from the obliquity of the connecting rod; higher harmonics are generally ignored. Written separately:\nPrimary force (first-order):\n\\[F_{\\text{primary}} = mr\\omega^2 \\cos\\theta\\]\nSecondary force (second-order):\n\\[F_{\\text{secondary}} = \\frac{mr\\omega^2}{n}\\cos 2\\theta\\]\nwhere \\(n = \\ell / r\\) is the ratio of connecting rod length \\(\\ell\\) to crank radius \\(r\\).",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
     ]
   },
   {
-    "objectID": "1balancing.html#partial-balance",
-    "href": "1balancing.html#partial-balance",
+    "objectID": "1balancing.html#methods-for-complete-balancing",
+    "href": "1balancing.html#methods-for-complete-balancing",
     "title": "2  Balancing",
-    "section": "2.8 Partial Balance",
-    "text": "2.8 Partial Balance\nComplete balance is not always possible or practical — particularly for single-cylinder engines. In such cases:\n\nA balance mass is added to reduce the dominant unbalanced force\nA residual force in one direction is accepted to eliminate the more harmful force in the perpendicular direction",
+    "section": "2.8 Methods for Complete Balancing",
+    "text": "2.8 Methods for Complete Balancing\n\n2.8.1 Crankshaft Counterweight (Partial Balance)\nAdding a mass opposite the crank pin cancels the rotating component entirely but only reduces the primary reciprocating force — it cannot eliminate it. This trades a vertical unbalance for a smaller horizontal one. A typical compromise balances 50–60% of the reciprocating mass.\n\n\n2.8.2 Multi-Cylinder In-Line Engines\nBy phasing cranks at equal angles, primary and secondary forces and couples can cancel across the engine. Balance requires:\n\\[\\sum mr = 0 \\quad \\text{and} \\quad \\sum mra = 0\\]\nfor both primary and secondary components.\n\n\n\n\n\n\n\n\n\n\nConfiguration\nPrimary \\(F\\)\nPrimary \\(C\\)\nSecondary \\(F\\)\nSecondary \\(C\\)\n\n\n\n\n2-cyl, 180°\n✓\n✗\n✓\n✓\n\n\n4-cyl, 180°\n✓\n✓\n✓\n✗\n\n\n6-cyl, 60°\n✓\n✓\n✓\n✓\n\n\n\nThe six-cylinder in-line engine achieves complete balance for both primary and secondary effects.\n\n\n2.8.3 Partial Balance\nComplete balance is not always possible or practical — particularly for single-cylinder engines. In such cases a balance mass is added to reduce the dominant unbalanced force, and a residual force in one direction is accepted to eliminate the more harmful force in the perpendicular direction.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
+    ]
+  },
+  {
+    "objectID": "1balancing.html#critical-speed",
+    "href": "1balancing.html#critical-speed",
+    "title": "2  Balancing",
+    "section": "2.9 Critical Speed",
+    "text": "2.9 Critical Speed\nEvery rotating shaft is also an elastic beam with natural frequencies of lateral vibration. The critical speed is the rotational speed at which the excitation frequency from residual unbalance equals a natural frequency, producing resonance.\nFor a shaft carrying a disc, using the static deflection \\(\\delta_{st}\\) under its own load:\n\\[\\boxed{N_c = \\frac{60}{2\\pi}\\sqrt{\\frac{g}{\\delta_{st}}}}\\]\nThis is convenient because \\(\\delta_{st}\\) can be directly measured or calculated from beam theory.\n\n2.9.1 Behaviour Around Critical Speed\n\n\n\n\n\n\n\nSpeed regime\nShaft behaviour\n\n\n\n\nWell below \\(N_c\\)\nShaft runs stiffly; centre of mass ≈ geometric centre\n\n\nApproaching \\(N_c\\)\nAmplitude grows rapidly — whirling begins\n\n\nAt \\(N_c\\)\nResonance; amplitude theoretically unbounded (damping limits it)\n\n\nWell above \\(N_c\\)\nShaft self-centres; centre of mass migrates toward axis\n\n\n\nMany turbines and high-speed spindles operate supercritically — above the first critical speed — and simply pass through it during run-up.\n\n\n2.9.2 Multiple Critical Speeds\nA real shaft has infinitely many lateral modes, each giving a critical speed:\n\\[N_{c_n} \\propto n^2 \\quad \\text{(uniform simply-supported shaft)}\\]\nThe first critical speed is the most dangerous: it is encountered first and produces the largest deflection amplitude.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
     ]
@@ -173,8 +213,8 @@
     "objectID": "1balancing.html#summary-of-equations",
     "href": "1balancing.html#summary-of-equations",
     "title": "2  Balancing",
-    "section": "2.9 Summary of Equations",
-    "text": "2.9 Summary of Equations\n\n\n\n\n\n\n\nConcept\nEquation\n\n\n\n\nCentrifugal force\n\\(F = mr\\omega^2\\)\n\n\nStatic balance condition\n\\(\\sum mr = 0\\)\n\n\nDynamic balance condition\n\\(\\sum mr = 0\\) and \\(\\sum mrl = 0\\)\n\n\nPrimary reciprocating force\n\\(F = mr\\omega^2 \\cos\\theta\\)\n\n\nSecondary reciprocating force\n\\(F = mr\\omega^2 \\cos 2\\theta \\, / \\, n\\)",
+    "section": "2.10 Summary of Equations",
+    "text": "2.10 Summary of Equations\n\n\n\n\n\n\n\nConcept\nEquation\n\n\n\n\nCentrifugal force\n\\(F = mr\\omega^2\\)\n\n\nStatic balance\n\\(\\sum mr = 0\\)\n\n\nDynamic balance\n\\(\\sum mr = 0\\) and \\(\\sum mr\\ell = 0\\)\n\n\nPrimary reciprocating force\n\\(F_{\\text{primary}} = mr\\omega^2 \\cos\\theta\\)\n\n\nSecondary reciprocating force\n\\(F_{\\text{secondary}} = \\dfrac{mr\\omega^2}{n}\\cos 2\\theta\\)\n\n\nCritical speed\n\\(N_c = \\dfrac{60}{2\\pi}\\sqrt{\\dfrac{g}{\\delta_{st}}}\\)",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
     ]
@@ -183,8 +223,8 @@
     "objectID": "1balancing.html#summary",
     "href": "1balancing.html#summary",
     "title": "2  Balancing",
-    "section": "2.10 Summary",
-    "text": "2.10 Summary\nBalancing is fundamentally a vector problem. Both graphical (polygon) and analytical methods are used throughout. Dynamic balancing always requires satisfying both force and moment equilibrium, and the chapter builds progressively from simple single-plane cases up to the complexity of multi-cylinder engine analysis.",
+    "section": "2.11 Summary",
+    "text": "2.11 Summary\nBalancing is fundamentally a vector problem. Both graphical (polygon) and analytical methods are used throughout. Dynamic balancing always requires satisfying both force and moment equilibrium, building progressively from simple single-plane cases up to the complexity of multi-cylinder engine analysis. Critical speed analysis adds a further dimension: even a perfectly balanced shaft can experience destructive resonance if its operating speed coincides with a lateral natural frequency.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
     ]
@@ -194,7 +234,7 @@
     "href": "2simple_harmonic_motion.html",
     "title": "3  Simple Harmonic Motion",
     "section": "",
-    "text": "3.1 Free Undamped Vibration\nSimple Harmonic Motion: The foundation of vibration analysis. A particle undergoes SHM when its acceleration is proportional to displacement and directed toward the equilibrium position:\n\\[a = -\\omega^2 x\\]\nKey relationships — displacement, velocity, acceleration, amplitude, period, and frequency — are all derived from this condition.",
+    "text": "3.1 Free Undamped Vibration\nSimple Harmonic Motion: The foundation of vibration analysis. A particle undergoes SHM when its acceleration is proportional to displacement and directed toward the equilibrium position:\n\\[a = -\\omega^2 x\\]\nKey relationships such as displacement, velocity, acceleration, amplitude, period, and frequency are all derived from this condition.\nSimple harmonic motion is a particular form of reciprocating, or ‘to-and-fro’, motion in which the acceleration and the velocity of the body vary as it moves from one end of its travel to the other; the important characteristic of this motion is that the acceleration is proportional to the displacement from mid-travel (and directed towards it).\nWhen a body moves forwards and backwards with simple harmonic motion, at one end of its oscillation the body is momentarily at rest; it receives maximum acceleration, which causes it to move with increasing velocity. The acceleration, which is proportional to the displacement from mid-travel, decreases, and its velocity increases as the body approaches mid-travel. As it passes its mid-position the acceleration is zero and the velocity is maximum. From mid-travel onwards the acceleration is negative and increasing in magnitude while the velocity decreases until, at the other end of its travel, the velocity is momentarily zero and the acceleration is maximum to return the body in the opposite direction.\nIf a particle is travelling around a circular path in a vertical plane at a constant speed and its shadow could be seen on a vertical screen, the shadow would move forwards and backwards with simple harmonic motion.\nFrom a practical point of view, neglecting the effect of the angularity of the connecting rod of a reciprocating engine, the piston moves with simple harmonic motion when the crank pin travels at a constant angular velocity.\nReferring to Fig. the circle represents the circular path of a particle \\(Q\\) moving at a constant velocity; this could be the crank pin of an engine. The projection of \\(Q\\) on to the plane of the diameter is point \\(P\\), which could represent the relative position and motion of the piston (neglecting angularity of the connecting rod). \\(Q\\) is moving at a constant angular velocity of \\(\\omega\\) around the circular path of radius \\(r\\), so its linear velocity is \\(\\omega r\\). The velocity vector diagram is drawn to represent the linear velocity of \\(Q\\) when passing the point at \\(\\theta\\) past dead centre; the horizontal component represents the velocity of \\(P\\) at that instant. Thus:\n\\[\\text{Velocity of } P = \\text{Velocity of } Q \\times \\sin\\theta = \\omega r \\sin\\theta\\]\nThe angular velocity \\(\\omega\\) is constant; therefore the acceleration of a body moving with simple harmonic motion is proportional to its displacement from mid-travel (and directed towards it).\nThe AMPLITUDE is the maximum displacement to either side of mid-travel.\nThe PERIODIC TIME is the time taken to make one complete oscillation, that is, to move completely from one end to the other and back again.\nThe time for \\(P\\) to make one complete oscillation is the same time that \\(Q\\) takes to complete one full revolution. Since the distance travelled in one revolution is \\(2\\pi r\\) and the linear velocity of \\(Q\\) is \\(\\omega r\\):\n\\[\\text{Periodic time} = \\frac{\\text{distance}}{\\text{velocity}} = \\frac{2\\pi r}{\\omega r} = \\frac{2\\pi}{\\omega}\\]\nSince the acceleration of \\(P\\) is proportional to its displacement from mid-travel:\n\\[\\text{acceleration} = \\omega^2 \\times \\text{displacement}\\]\nit follows that:\n\\[\\omega = \\sqrt{\\frac{\\text{acceleration}}{\\text{displacement}}}\\]\nSubstituting into the expression for periodic time:\n\\[\\text{Periodic time} = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{\\sqrt{\\dfrac{\\text{acceleration}}{\\text{displacement}}}}\\]\nThis expression gives the periodic time for any body moving with simple harmonic motion.\nThe FREQUENCY is the number of complete oscillations made in one second.\nIf \\(t\\) = periodic time (s), then:\n\\[\\text{Frequency} = \\frac{1}{t} \\quad \\text{oscillations per second}\\]",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Harmonic Motion</span>"
     ]
@@ -234,7 +274,7 @@
     "href": "2simple_harmonic_motion.html#forced-vibration-undamped",
     "title": "3  Simple Harmonic Motion",
     "section": "3.4 Forced Vibration (Undamped)",
-    "text": "3.4 Forced Vibration (Undamped)\nWhen a harmonic exciting force \\(F = F_0 \\sin\\omega t\\) is applied, the steady-state amplitude is:\n\\[X = \\frac{F_0/k}{1 - (\\omega/\\omega_n)^2}\\]\nResonance occurs when \\(\\omega \\to \\omega_n\\), causing theoretically infinite amplitude.",
+    "text": "3.4 Forced Vibration (Undamped)\nWhen a harmonic exciting force \\(F = F_0 \\sin(\\omega t)\\) is applied, the steady-state amplitude is:\n\\[X = \\frac{F_0/k}{1 - (\\omega/\\omega_n)^2}\\]\nNote that above resonance this expression yields a negative value, indicating that the response is 180° out of phase with the excitation; the physical amplitude is the modulus \\(|X|\\).\nResonance occurs when \\(\\omega \\to \\omega_n\\), causing theoretically infinite amplitude.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Harmonic Motion</span>"
     ]
@@ -264,7 +304,7 @@
     "href": "2simple_harmonic_motion.html#summary-of-equations",
     "title": "3  Simple Harmonic Motion",
     "section": "3.7 Summary of Equations",
-    "text": "3.7 Summary of Equations\n\n\n\n\n\n\n\nConcept\nEquation\n\n\n\n\nSHM condition\n\\(a = -\\omega^2 x\\)\n\n\nNatural frequency (spring-mass)\n\\(\\omega_n = \\sqrt{k/m}\\)\n\n\nNatural frequency (pendulum)\n\\(f_n = \\frac{1}{2\\pi}\\sqrt{g/L}\\)\n\n\nDamping ratio\n\\(\\zeta = c \\, / \\, 2\\sqrt{mk}\\)\n\n\nDamped natural frequency\n\\(\\omega_d = \\omega_n\\sqrt{1-\\zeta^2}\\)\n\n\nResonance condition\n\\(\\omega = \\omega_n\\)\n\n\nDMF (damped forced)\n\\(1/\\sqrt{[1-r^2]^2+[2\\zeta r]^2}\\), where \\(r=\\omega/\\omega_n\\)\n\n\nCritical shaft speed\n\\(N_c = (30/\\pi)\\sqrt{g/\\delta_{st}}\\)",
+    "text": "3.7 Summary of Equations\n\n\n\n\n\n\n\nConcept\nEquation\n\n\n\n\nSHM condition\n\\(a = -\\omega^2 x\\)\n\n\nNatural frequency (spring-mass)\n\\(\\omega_n = \\sqrt{k/m}\\)\n\n\nNatural frequency (pendulum)\n\\(f_n = \\frac{1}{2\\pi}\\sqrt{g/L}\\)\n\n\nDamping ratio\n\\(\\zeta = c/(2\\sqrt{mk})\\)\n\n\nDamped natural frequency\n\\(\\omega_d = \\omega_n\\sqrt{1-\\zeta^2}\\)\n\n\nResonance condition\n\\(\\omega = \\omega_n\\)\n\n\nDMF (damped forced)\n\\(1/\\sqrt{[1-r^2]^2+[2\\zeta r]^2}\\), where \\(r=\\omega/\\omega_n\\)\n\n\nCritical shaft speed\n\\(N_c = (30/\\pi)\\sqrt{g/\\delta_{st}}\\)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Harmonic Motion</span>"
     ]
@@ -524,7 +564,7 @@
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "This book was typeset with Quarto 1.8.27 using XeLaTeX and Latin Modern fonts, with Menlo for code blocks.\nTechnical Notes\nThe following tools and technologies were used in the preparation of this book:\n\nPython: Primary language for computations\nuv: Modern Python package manager and resolver\nRuff: Fast Python linter and code formatter\nBlack: Python code formatter\nBash: Unix shell for task automation\nmacOS: Main development operating system",
+    "text": "This book was typeset with Quarto 1.9.36 using XeLaTeX and Latin Modern fonts, with Menlo for code blocks.\nTechnical Notes\nThe following tools and technologies were used in the preparation of this book:\n\nPython: Primary language for computations\nuv: Modern Python package manager and resolver\nRuff: Fast Python linter and code formatter\nBlack: Python code formatter\nBash: Unix shell for task automation\nmacOS: Main development operating system",
     "crumbs": [
       "Colophon"
     ]
@@ -549,36 +589,6 @@
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Greek Letters</span>"
-    ]
-  },
-  {
-    "objectID": "1balancing.html#newtons-laws-of-motion",
-    "href": "1balancing.html#newtons-laws-of-motion",
-    "title": "2  Balancing",
-    "section": "",
-    "text": "2.1.1 First Law — Inertia\n\nA body remains at rest or in uniform straight-line motion unless acted upon by a net external force.\n\nA body in motion travels in a straight line unless forced to change direction. This resistance to any change in motion is called inertia. The law defines what a force is: the only thing capable of altering a body’s state of motion.\n\\[\\sum \\vec{F} = 0 \\implies \\vec{v} = \\text{constant}\\]\n\n\n2.1.2 Second Law — Force and Acceleration\n\nThe net force acting on a body equals its mass multiplied by its acceleration.\n\n\\[\\boxed{F = ma}\\]\nForce and acceleration act in the same direction. The relationship is linear: doubling the net force doubles the acceleration; doubling the mass halves it for the same force.\n\n\n\nChange\nEffect on acceleration\n\n\n\n\nForce doubled\nAcceleration doubled\n\n\nMass doubled\nAcceleration halved\n\n\nBoth doubled\nAcceleration unchanged\n\n\n\n\n\n2.1.3 Third Law — Action and Reaction\n\nFor every force one body exerts on another, the second body exerts an equal and opposite force back on the first.\n\n\\[\\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A}\\]\nKey points:\n\nThe forces are equal in magnitude and opposite in direction.\nThey act on different objects — they are never a cancelling pair.\nThe reaction force has the same nature as the action (both contact, both gravitational, etc.).",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
-    ]
-  },
-  {
-    "objectID": "1balancing.html#centrifugal-and-centripetal-forces",
-    "href": "1balancing.html#centrifugal-and-centripetal-forces",
-    "title": "2  Balancing",
-    "section": "2.2 Centrifugal and Centripetal Forces",
-    "text": "2.2 Centrifugal and Centripetal Forces\nA body in motion travels in a straight line unless forced to change direction (Newton’s First Law). When moving in a circle, its inertia causes it to resist that continuous change of direction — in a rotating reference frame, this resistance appears as a fictitious outward “centrifugal” force. The real inward force that continuously deflects the body onto the circular path is the centripetal force. Because circular motion involves a constant change of direction, velocity is always changing even at constant speed. For small angles, the magnitude of this change in velocity simplifies to \\(vθ\\).",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
-    ]
-  },
-  {
-    "objectID": "1balancing.html#static-balance",
-    "href": "1balancing.html#static-balance",
-    "title": "2  Balancing",
-    "section": "2.3 Static Balance",
-    "text": "2.3 Static Balance\nA system is statically balanced when the resultant of all centrifugal forces due to rotating masses is zero — i.e., the centre of mass lies on the axis of rotation.\nThis is checked by ensuring the vector sum of all \\(mr\\) terms equals zero:\n\\[\\sum mr = 0\\]\nA single correction mass placed in the same plane can achieve static balance.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Balancing</span>"
     ]
   }
 ]
