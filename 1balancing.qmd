@@ -4,12 +4,9 @@
 
 ### First Law — Inertia
 
-> *A body remains at rest or in uniform straight-line motion unless acted upon
-> by a net external force.*
+> *A body remains at rest or in uniform straight-line motion unless acted upon by a net external force.*
 
-A body in motion travels in a straight line unless forced to change direction.
-This resistance to any change in motion is called **inertia**. The law defines
-what a force *is*: the only thing capable of altering a body's state of motion.
+A body in motion travels in a straight line unless forced to change direction. This resistance to any change in motion is called **inertia**. The law defines what a force *is*: the only thing capable of altering a body's state of motion.
 
 $$\sum \vec{F} = 0 \implies \vec{v} = \text{constant}$$
 
@@ -19,20 +16,17 @@ $$\sum \vec{F} = 0 \implies \vec{v} = \text{constant}$$
 
 $$\boxed{F = ma}$$
 
-Force and acceleration act in the same direction. The relationship is linear:
-doubling the net force doubles the acceleration; doubling the mass halves it
-for the same force.
+Force and acceleration act in the same direction. The relationship is linear: doubling the net force doubles the acceleration; doubling the mass halves it for the same force.
 
-| Change | Effect on acceleration |
-|--------|------------------------|
-| Force doubled | Acceleration doubled |
-| Mass doubled | Acceleration halved |
-| Both doubled | Acceleration unchanged |
+| Change        | Effect on acceleration |
+|---------------|------------------------|
+| Force doubled | Acceleration doubled   |
+| Mass doubled  | Acceleration halved    |
+| Both doubled  | Acceleration unchanged |
 
 ### Third Law — Action and Reaction
 
-> *For every force one body exerts on another, the second body exerts an equal
-> and opposite force back on the first.*
+> *For every force one body exerts on another, the second body exerts an equal and opposite force back on the first.*
 
 $$\vec{F}_{A \to B} = -\vec{F}_{B \to A}$$
 
@@ -40,27 +34,15 @@ Key points:
 
 - The forces are **equal in magnitude** and **opposite in direction**.
 - They act on **different objects** — they are never a cancelling pair.
-- The reaction force has the same nature as the action (both contact, both
-  gravitational, etc.).
-
+- The reaction force has the same nature as the action (both contact, both gravitational, etc.).
 
 ## Centrifugal and Centripetal Forces
 
-A body in motion travels in a straight line unless forced to change direction
-(Newton's First Law). When moving in a circle, its inertia causes it to resist
-that continuous change of direction — in a rotating reference frame, this
-resistance appears as a fictitious outward "centrifugal" force. The real inward
-force that continuously deflects the body onto the circular path is the
-**centripetal force**. Because circular motion involves a constant change of
-direction, velocity is always changing even at constant speed. For small
-angles, the magnitude of this change in velocity simplifies to $v\theta$.
-
+A body in motion travels in a straight line unless forced to change direction (Newton's First Law). When moving in a circle, its inertia causes it to resist that continuous change of direction — in a rotating reference frame, this resistance appears as a fictitious outward "centrifugal" force. The real inward force that continuously deflects the body onto the circular path is the **centripetal force**. Because circular motion involves a constant change of direction, velocity is always changing even at constant speed. For small angles, the magnitude of this change in velocity simplifies to $v\theta$.
 
 ## Static Balance
 
-A system is statically balanced when the resultant of all centrifugal forces
-due to rotating masses is zero — i.e., the centre of mass lies on the axis of
-rotation. Static balance requires the vector sum of all $mr$ terms to be zero:
+A system is statically balanced when the resultant of all centrifugal forces due to rotating masses is zero — i.e., the centre of mass lies on the axis of rotation. Static balance requires the vector sum of all $mr$ terms to be zero:
 
 $$\sum mr = 0$$
 
@@ -68,13 +50,10 @@ A single correction mass placed in the same plane can achieve static balance.
 
 ## Dynamic Balance
 
-Static balance alone is insufficient for systems with masses distributed across
-different axial planes. Dynamic balance requires two conditions to be satisfied
-simultaneously:
+Static balance alone is insufficient for systems with masses distributed across different axial planes. Dynamic balance requires two conditions to be satisfied simultaneously:
 
-1. The vector sum of all centrifugal forces equals zero (static condition).
-2. The vector sum of all **moments** of these forces about any reference plane
-   equals zero.
+1.  The vector sum of all centrifugal forces equals zero (static condition).
+2.  The vector sum of all **moments** of these forces about any reference plane equals zero.
 
 $$\sum mr = 0 \qquad \text{and} \qquad \sum mr\ell = 0$$
 
@@ -82,45 +61,33 @@ This generally requires **two correction masses** placed in two chosen planes.
 
 ## Balancing in a Single Plane
 
-For coplanar rotating masses, a graphical or analytical approach uses the
-**force polygon**. Closing the $mr$ vector polygon determines the required
-balancing mass and its angular position.
-
+For coplanar rotating masses, a graphical or analytical approach uses the **force polygon**. Closing the $mr$ vector polygon determines the required balancing mass and its angular position.
 
 ## Balancing in Several Planes
 
 For masses distributed along a shaft, the procedure is:
 
-1. Choose a reference plane and construct a **couple polygon** using $mr\ell$
-   terms, where $\ell$ is the axial distance from the reference plane.
-2. Closing the couple polygon gives the first correction mass (magnitude and
-   angle).
-3. Construct the **force polygon** using $mr$ terms to find the second
-   correction mass.
+1.  Choose a reference plane and construct a **couple polygon** using $mr\ell$ terms, where $\ell$ is the axial distance from the reference plane.
+2.  Closing the couple polygon gives the first correction mass (magnitude and angle).
+3.  Construct the **force polygon** using $mr$ terms to find the second correction mass.
 
 ## Balancing of Reciprocating Machinery
 
-A reciprocating engine generates forces that are fundamentally harder to
-balance than rotating masses. The piston moves in one plane only — adding an
-opposite mass in that plane creates a new out-of-balance force perpendicular
-to it. The problem cannot be solved by a single counterweight alone.
+A reciprocating engine generates forces that are fundamentally harder to balance than rotating masses. The piston moves in one plane only — adding an opposite mass in that plane creates a new out-of-balance force perpendicular to it. The problem cannot be solved by a single counterweight alone.
 
 ### Primary and Secondary Forces
 
-Treating the connecting rod as two lumped masses — one at the crank pin, one
-at the gudgeon pin — splits the system into a rotating part and a pure
-reciprocating part. The total reciprocating force is:
+Treating the connecting rod as two lumped masses — one at the crank pin, one at the gudgeon pin — splits the system into a rotating part and a pure reciprocating part. The total reciprocating force is:
 
 $$F = mr\omega^2\!\left(\cos\theta + \frac{r}{\ell}\cos 2\theta + \cdots\right)$$
 
 | Term | Name | Frequency |
-|------|------|-----------|
+|----|----|----|
 | $\cos\theta$ | Primary force | $\omega$ (crank speed) |
 | $\dfrac{r}{\ell}\cos 2\theta$ | Secondary force | $2\omega$ |
 | Higher terms | Negligible in practice | — |
 
-The secondary force arises from the obliquity of the connecting rod; higher
-harmonics are generally ignored. Written separately:
+The secondary force arises from the obliquity of the connecting rod; higher harmonics are generally ignored. Written separately:
 
 **Primary force** (first-order):
 
@@ -130,70 +97,60 @@ $$F_{\text{primary}} = mr\omega^2 \cos\theta$$
 
 $$F_{\text{secondary}} = \frac{mr\omega^2}{n}\cos 2\theta$$
 
-where $n = \ell / r$ is the ratio of connecting rod length $\ell$ to crank
-radius $r$.
-
+where $n = \ell / r$ is the ratio of connecting rod length $\ell$ to crank radius $r$.
 
 ## Methods for Complete Balancing
 
 ### Crankshaft Counterweight (Partial Balance)
 
-Adding a mass opposite the crank pin cancels the rotating component entirely
-but only reduces the primary reciprocating force — it cannot eliminate it.
-This trades a vertical unbalance for a smaller horizontal one. A typical
-compromise balances **50–60%** of the reciprocating mass.
+Adding a mass opposite the crank pin cancels the rotating component entirely but only reduces the primary reciprocating force — it cannot eliminate it. This trades a vertical unbalance for a smaller horizontal one.
 
 ### Multi-Cylinder In-Line Engines
 
-By phasing cranks at equal angles, primary and secondary forces and couples
-can cancel across the engine. Balance requires:
+By phasing cranks at equal angles, primary and secondary forces and couples can cancel across the engine. Balance requires:
 
-$$\sum mr = 0 \quad \text{and} \quad \sum mra = 0$$
+$$\sum mr = 0 \quad \text{and} \quad \sum mrl = 0$$
 
 for both primary and secondary components.
 
+In multi-cylinder engine balancing there are four things to check:
+
+- F (Force): the vector sum of all $mr$ terms. If non-zero, there is a net radial force shaking the engine.
+
+- C (Couple) — the vector sum of all $mrℓ$ terms. If non-zero, there is a rocking moment twisting the engine about a transverse axis, even if the net force is zero.
+
 | Configuration | Primary $F$ | Primary $C$ | Secondary $F$ | Secondary $C$ |
 |---------------|:-----------:|:-----------:|:-------------:|:-------------:|
-| 2-cyl, 180°   | ✓ | ✗ | ✓ | ✓ |
-| 4-cyl, 180°   | ✓ | ✓ | ✓ | ✗ |
-| 6-cyl, 60°    | ✓ | ✓ | ✓ | ✓ |
+| 2-cyl, 180°   |      ✓      |      ✗      |       ✓       |       ✓       |
+| 4-cyl, 180°   |      ✓      |      ✓      |       ✓       |       ✗       |
+| 6-cyl, 60°    |      ✓      |      ✓      |       ✓       |       ✓       |
 
-The **six-cylinder in-line engine** achieves complete balance for both primary
-and secondary effects.
+The **six-cylinder in-line engine** achieves complete balance for both primary and secondary effects.
 
 ### Partial Balance
 
-Complete balance is not always possible or practical — particularly for
-single-cylinder engines. In such cases a balance mass is added to reduce the
-dominant unbalanced force, and a residual force in one direction is accepted
-to eliminate the more harmful force in the perpendicular direction.
+Complete balance is not always possible or practical — particularly for single-cylinder engines. In such cases a balance mass is added to reduce the dominant unbalanced force, and a residual force in one direction is accepted to eliminate the more harmful force in the perpendicular direction.
 
 ## Critical Speed
 
-Every rotating shaft is also an elastic beam with natural frequencies of
-lateral vibration. The **critical speed** is the rotational speed at which
-the excitation frequency from residual unbalance equals a natural frequency,
-producing resonance.
+Every rotating shaft is also an elastic beam with natural frequencies of lateral vibration. The **critical speed** is the rotational speed at which the excitation frequency from residual unbalance equals a natural frequency, producing resonance.
 
-For a shaft carrying a disc, using the static deflection $\delta_{st}$ under
-its own load:
+For a shaft carrying a disc, using the static deflection $\delta_{st}$ under its own load:
 
 $$\boxed{N_c = \frac{60}{2\pi}\sqrt{\frac{g}{\delta_{st}}}}$$
 
-This is convenient because $\delta_{st}$ can be directly measured or
-calculated from beam theory.
+This is convenient because $\delta_{st}$ can be directly measured or calculated from beam theory.
 
 ### Behaviour Around Critical Speed
 
 | Speed regime | Shaft behaviour |
-|-------------|-----------------|
+|-------------------------------|-----------------------------------------|
 | Well below $N_c$ | Shaft runs stiffly; centre of mass ≈ geometric centre |
 | Approaching $N_c$ | Amplitude grows rapidly — whirling begins |
 | At $N_c$ | Resonance; amplitude theoretically unbounded (damping limits it) |
 | Well above $N_c$ | Shaft self-centres; centre of mass migrates toward axis |
 
-Many turbines and high-speed spindles operate **supercritically** — above the
-first critical speed — and simply pass through it during run-up.
+Many turbines and high-speed spindles operate **supercritically** — above the first critical speed — and simply pass through it during run-up.
 
 ### Multiple Critical Speeds
 
@@ -206,7 +163,7 @@ The **first critical speed** is the most dangerous: it is encountered first and 
 ## Summary of Equations
 
 | Concept | Equation |
-|---------|----------|
+|----------------------------------|--------------------------------------|
 | Centrifugal force | $F = mr\omega^2$ |
 | Static balance | $\sum mr = 0$ |
 | Dynamic balance | $\sum mr = 0$ and $\sum mr\ell = 0$ |
@@ -216,10 +173,4 @@ The **first critical speed** is the most dangerous: it is encountered first and 
 
 ## Summary
 
-Balancing is fundamentally a **vector problem**. Both graphical (polygon) and
-analytical methods are used throughout. Dynamic balancing always requires
-satisfying both force *and* moment equilibrium, building progressively from
-simple single-plane cases up to the complexity of multi-cylinder engine
-analysis. Critical speed analysis adds a further dimension: even a perfectly
-balanced shaft can experience destructive resonance if its operating speed
-coincides with a lateral natural frequency.
+Balancing is fundamentally a **vector problem**. Both graphical (polygon) and analytical methods are used throughout. Dynamic balancing always requires satisfying both force *and* moment equilibrium, building progressively from simple single-plane cases up to the complexity of multi-cylinder engine analysis. Critical speed analysis adds a further dimension: even a perfectly balanced shaft can experience destructive resonance if its operating speed coincides with a lateral natural frequency.

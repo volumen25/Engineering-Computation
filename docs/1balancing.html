@@ -564,13 +564,18 @@ window.Quarto = {
 <h2 data-number="2.8" class="anchored" data-anchor-id="methods-for-complete-balancing"><span class="header-section-number">2.8</span> Methods for Complete Balancing</h2>
 <section id="crankshaft-counterweight-partial-balance" class="level3" data-number="2.8.1">
 <h3 data-number="2.8.1" class="anchored" data-anchor-id="crankshaft-counterweight-partial-balance"><span class="header-section-number">2.8.1</span> Crankshaft Counterweight (Partial Balance)</h3>
-<p>Adding a mass opposite the crank pin cancels the rotating component entirely but only reduces the primary reciprocating force — it cannot eliminate it. This trades a vertical unbalance for a smaller horizontal one. A typical compromise balances <strong>50–60%</strong> of the reciprocating mass.</p>
+<p>Adding a mass opposite the crank pin cancels the rotating component entirely but only reduces the primary reciprocating force — it cannot eliminate it. This trades a vertical unbalance for a smaller horizontal one.</p>
 </section>
 <section id="multi-cylinder-in-line-engines" class="level3" data-number="2.8.2">
 <h3 data-number="2.8.2" class="anchored" data-anchor-id="multi-cylinder-in-line-engines"><span class="header-section-number">2.8.2</span> Multi-Cylinder In-Line Engines</h3>
 <p>By phasing cranks at equal angles, primary and secondary forces and couples can cancel across the engine. Balance requires:</p>
-<p><span class="math display">\[\sum mr = 0 \quad \text{and} \quad \sum mra = 0\]</span></p>
+<p><span class="math display">\[\sum mr = 0 \quad \text{and} \quad \sum mrl = 0\]</span></p>
 <p>for both primary and secondary components.</p>
+<p>In multi-cylinder engine balancing there are four things to check:</p>
+<ul>
+<li><p>F (Force): the vector sum of all <span class="math inline">\(mr\)</span> terms. If non-zero, there is a net radial force shaking the engine.</p></li>
+<li><p>C (Couple) — the vector sum of all <span class="math inline">\(mrℓ\)</span> terms. If non-zero, there is a rocking moment twisting the engine about a transverse axis, even if the net force is zero.</p></li>
+</ul>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 21%">
