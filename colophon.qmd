@@ -1,6 +1,9 @@
 # Colophon {.unnumbered}
 
-This book was typeset with [Quarto](https://quarto.org) {{< version >}} using XeLaTeX and Latin Modern fonts, with Menlo for code blocks.
+This book was typeset with [Quarto](https://quarto.org) {{< version >}}.
+
+
+<!-- This book was typeset with [Quarto](https://quarto.org) {{< version >}} using XeLaTeX and Latin Modern fonts, with Menlo for code blocks.
 
 **Technical Notes**
 
@@ -11,4 +14,4 @@ The following tools and technologies were used in the preparation of this book:
 -   Ruff: Fast Python linter and code formatter
 -   Black: Python code formatter
 -   Bash: Unix shell for task automation
--   macOS: Main development operating system
+-   macOS: Main development operating system -->

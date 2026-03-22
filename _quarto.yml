@@ -10,7 +10,7 @@ website:
 book:
   title: "Applied Mechanics Workbook"
   # subtitle: "A Concise Introduction to Computational Tools"
-  # author: "Serhat Beyenir"
+  author: "Serhat Beyenir"
   # date: today # today or last-modified
   date-format: "D MMMM YYYY"
   downloads: [pdf]
@@ -44,7 +44,7 @@ book:
 
     # Back Matter
     - references.qmd
-    - attributions.qmd
+    # - attributions.qmd
     - colophon.qmd
     # - revision_history.qmd
     # - author.qmd
