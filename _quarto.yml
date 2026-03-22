@@ -85,6 +85,12 @@ format:
         \usepackage{fontspec}
         \setmonofont{Menlo}
         \usepackage{titling}
+        \usepackage{pifont}
+        \usepackage{newunicodechar}
+        \newunicodechar{✓}{\ding{51}}
+        \newunicodechar{✗}{\ding{55}}
+        \newunicodechar{✔}{\ding{51}}
+        \newunicodechar{✘}{\ding{55}}       
         \pretitle{\begin{center}\Huge\bfseries}
         \posttitle{\par\end{center}\vspace{0.75em}}
         \preauthor{\begin{center}\large}
