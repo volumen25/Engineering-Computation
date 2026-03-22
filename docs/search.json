@@ -14,7 +14,7 @@
     "href": "0units.html",
     "title": "1  Units, Vectors, and Scalar Quantities",
     "section": "",
-    "text": "1.1 SI Units\nThe book adopts the Système International (SI) of units. The base units most relevant to mechanics are:\nDerived units follow from these. For example:\n\\[1 \\text{ N} = 1 \\text{ kg·m/s}^2 \\qquad 1 \\text{ Pa} = 1 \\text{ N/m}^2 \\qquad 1 \\text{ J} = 1 \\text{ N·m}\\]",
+    "text": "1.1 SI Units\nThe course adopts the Système International (SI) of units. The base units most relevant to mechanics are:\nDerived units follow from these. For example:\n\\[1 \\text{ N} = 1 \\text{ kg·m/s}^2 \\qquad 1 \\text{ Pa} = 1 \\text{ N/m}^2 \\qquad 1 \\text{ J} = 1 \\text{ N·m}\\]",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
     ]
@@ -34,7 +34,7 @@
     "href": "0units.html#scalar-and-vector-quantities",
     "title": "1  Units, Vectors, and Scalar Quantities",
     "section": "1.2 Scalar and Vector Quantities",
-    "text": "1.2 Scalar and Vector Quantities\nScalar quantities have magnitude only and obey ordinary arithmetic:\n\nExamples: mass, speed, energy, temperature, time\n\nVector quantities have both magnitude and direction and must be combined using vector algebra:\n\nExamples: force, velocity, acceleration, displacement, momentum\n\nA vector is represented graphically as an arrow — its length denotes magnitude, its orientation denotes direction.",
+    "text": "1.2 Scalar and Vector Quantities\nScalar quantities have magnitude only and obey ordinary arithmetic:\n\nExamples: mass, speed, temperature\n\nVector quantities have both magnitude and direction and must be combined using vector algebra:\n\nExamples: force, velocity, acceleration, momentum\n\nA vector is represented graphically as an arrow — its length denotes magnitude, its orientation denotes direction.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
     ]
@@ -84,7 +84,7 @@
     "href": "0units.html#the-laws-of-sines-and-cosines",
     "title": "1  Units, Vectors, and Scalar Quantities",
     "section": "1.7 The Laws of Sines and Cosines",
-    "text": "1.7 The Laws of Sines and Cosines\nFor cases involving triangles of vectors, these laws provide an analytical alternative to graphical methods.\nSine rule:\n\\[\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}\\]\nCosine rule:\n\\[c^2 = a^2 + b^2 - 2ab\\cos C\\]",
+    "text": "1.7 The Laws of Sines and Cosines\nFor cases involving triangles of vectors, these laws provide an analytical alternative to graphical methods.\n\nSine rule:\n\\[\\frac{a}{\\sin \\alpha} = \\frac{b}{\\sin \\beta} = \\frac{c}{\\sin \\gamma}\\]\nCosine rule:\n\\[c^2 = a^2 + b^2 - 2ab\\cos \\gamma\\]",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
     ]
@@ -95,16 +95,6 @@
     "title": "1  Units, Vectors, and Scalar Quantities",
     "section": "1.8 Summary of Equations",
     "text": "1.8 Summary of Equations\n\n\n\nConcept\nEquation\n\n\n\n\nHorizontal component\n\\(F_x = F\\cos\\theta\\)\n\n\nVertical component\n\\(F_y = F\\sin\\theta\\)\n\n\nResultant magnitude\n\\(R = \\sqrt{(\\Sigma F_x)^2 + (\\Sigma F_y)^2}\\)\n\n\nResultant direction\n\\(\\theta = \\arctan(\\Sigma F_y / \\Sigma F_x)\\)\n\n\nCosine rule\n\\(c^2 = a^2 + b^2 - 2ab\\cos C\\)",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
-    ]
-  },
-  {
-    "objectID": "0units.html#summary",
-    "href": "0units.html#summary",
-    "title": "1  Units, Vectors, and Scalar Quantities",
-    "section": "1.9 Summary",
-    "text": "1.9 Summary\nThe resolution-and-recombination technique — breaking every vector into perpendicular components, summing each direction separately, then reconstructing the resultant — is the single most important skill introduced in this chapter. It underpins equilibrium analysis, dynamics, stress transformation, and virtually every other topic in the book.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Units, Vectors, and Scalar Quantities</span>"
     ]

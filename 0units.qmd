@@ -2,7 +2,7 @@
 
 ## SI Units
 
-The book adopts the **Système International (SI)** of units. The base units most relevant to mechanics are:
+The course adopts the **Système International (SI)** of units. The base units most relevant to mechanics are:
 
 | Quantity          | Unit     | Symbol |
 |-------------------|----------|--------|
@@ -22,11 +22,11 @@ $$1 \text{ N} = 1 \text{ kg·m/s}^2 \qquad 1 \text{ Pa} = 1 \text{ N/m}^2 \qquad
 
 **Scalar quantities** have magnitude only and obey ordinary arithmetic:
 
-- Examples: mass, speed, energy, temperature, time
+- Examples: mass, speed, temperature
 
 **Vector quantities** have both magnitude and direction and must be combined using vector algebra:
 
-- Examples: force, velocity, acceleration, displacement, momentum
+- Examples: force, velocity, acceleration, momentum
 
 A vector is represented graphically as an arrow — its length denotes magnitude, its orientation denotes direction.
 
@@ -81,13 +81,15 @@ $$\theta = \arctan\left(\frac{\Sigma F_y}{\Sigma F_x}\right)$$
 
 For cases involving triangles of vectors, these laws provide an analytical alternative to graphical methods.
 
+![](images/sinecosrule.png)
+
 **Sine rule:**
 
-$$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$$
+$$\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma}$$
 
 **Cosine rule:**
 
-$$c^2 = a^2 + b^2 - 2ab\cos C$$
+$$c^2 = a^2 + b^2 - 2ab\cos \gamma$$
 
 ## Summary of Equations
 
@@ -98,7 +100,3 @@ $$c^2 = a^2 + b^2 - 2ab\cos C$$
 | Resultant magnitude  | $R = \sqrt{(\Sigma F_x)^2 + (\Sigma F_y)^2}$ |
 | Resultant direction  | $\theta = \arctan(\Sigma F_y / \Sigma F_x)$  |
 | Cosine rule          | $c^2 = a^2 + b^2 - 2ab\cos C$                |
-
-## Summary
-
-The resolution-and-recombination technique — breaking every vector into perpendicular components, summing each direction separately, then reconstructing the resultant — is the single most important skill introduced in this chapter. It underpins equilibrium analysis, dynamics, stress transformation, and virtually every other topic in the book.
