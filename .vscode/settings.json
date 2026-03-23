@@ -107,5 +107,9 @@
         "ahrens"
     ],
 
-    "cSpell.languageSettings": []
+    "cSpell.languageSettings": [],
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontVariations": true,
+    "editor.fontWeight": "normal"
 }
