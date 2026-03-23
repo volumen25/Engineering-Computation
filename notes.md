@@ -78,7 +78,7 @@ The prefixes for each type of callout are:
 | `important`  | `#imp-` |
 | `caution`    | `#cau-` |
 
-: Prefixes for callout cross-references {#tbl-callout-prefixes}
+: Prefixes for callout cross-references
 
 ## Equations
 
@@ -97,12 +97,10 @@ $$ {#eq-black-scholes}
 
 Black-Scholes (@eq-black-scholes) is a mathematical model that seeks to explain the behavior of financial derivatives, most commonly options:
 
-$$
-\frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2}
+$$\frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2}
 \frac{\partial^{2} \mathrm C}{\partial \mathrm S^2}
   + \mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\ =
-  \mathrm r \mathrm C
-$$ {#eq-black-scholes}
+  \mathrm r \mathrm C$$ {#eq-black-scholes}
 
 ## Theorems and Proofs
 
