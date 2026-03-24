@@ -1,0 +1,68 @@
+---
+title: "Simple Pendulum - Example 5.17"
+subtitle: "Reference: Applied Mechanics: Reed's Vol. 2"
+format:
+  pdf:
+    pdf-engine: xelatex
+    toc: false
+    number-sections: false
+    geometry: margin=2.5cm
+---
+
+**Ex. 5.17**: Find the length of a simple pendulum to make:
+
+1. one complete oscillation per second
+2. half an oscillation per second
+
+The period of a simple pendulum is:
+
+$$T = 2\pi\sqrt{\frac{L}{g}}$$
+
+Rearranging for length $L$:
+
+$$\boxed{L = \frac{gT^2}{4\pi^2}}$$
+
+Since frequency $f = 1/T$, this can also be written as:
+
+$$L = \frac{g}{4\pi^2 f^2}$$
+
+
+## Part (i) — One Complete Oscillation per Second
+
+$$f = 1 \ \text{Hz} \implies T = 1 \ \text{s}$$
+
+$$L = \frac{9.81 \times 1^2}{4\pi^2} = \frac{9.81}{39.478}$$
+
+$$\boxed{L = 0.2485 \ \text{m} \approx 248.5 \ \text{mm}}$$
+
+
+## Part (ii) — Half an Oscillation per Second
+
+$$f = 0.5 \ \text{Hz} \implies T = 2 \ \text{s}$$
+
+$$L = \frac{9.81 \times 2^2}{4\pi^2} = \frac{9.81 \times 4}{39.478}$$
+
+$$\boxed{L = 0.9940 \ \text{m} \approx 994 \ \text{mm}}$$
+
+## Final Answers
+
+Doubling the period requires **four times** the length, since $L \propto T^2$.
+
+| Case | Frequency $f$ | Period $T$ | Length $L$ |
+|------|:-------------:|:----------:|:----------:|
+| (i)  | 1 Hz          | 1 s        | 248.5 mm   |
+| (ii) | 0.5 Hz        | 2 s        | 994.0 mm   |
+
+
+## Python Solution
+
+```python
+import math
+
+g = 9.81  # m/s^2
+
+for f in [1.0, 0.5]:
+    T = 1 / f
+    L = (g * T**2) / (4 * math.pi**2)
+    print(f"f = {f} Hz  →  T = {T:.1f} s  →  L = {L*1000:.2f} mm")
+```
