@@ -1,0 +1,90 @@
+---
+title: "Strength of Pressure Vessels"
+subtitle: "Reference: Applied Mechanics Reed's Vol. 2"
+format:
+  pdf:
+    pdf-engine: xelatex
+    toc: false
+    number-sections: false
+    geometry: margin=2.5cm
+---
+
+## Introduction
+
+The total force (or load) due to fluid pressure is the product of the internal pressure intensity and the projected area on which the fluid acts. For example, the total load on the piston of an internal combustion engine equals the gas pressure multiplied by the projected area of the piston. This projected area is identical to the cross-sectional area of the cylinder bore, regardless of whether the piston is flat, dished, or domed.
+
+Similarly, in a pressure vessel the load causing stress on a section of the shell is the product of the internal pressure and the projected area of the shell perpendicular to that section.
+
+## Thin Cylinders
+
+A **thin cylinder** is a cylindrical vessel whose shell thickness is small relative to its diameter. Boiler drums, air reservoirs, and most pipes fall into this category.
+
+### Longitudinal Stress
+
+Consider a thin seamless cylinder (e.g. a solid-drawn pipe or seamless boiler drum). If the cylinder were to rupture by splitting along its longitudinal axis, the projected area of the curved semi-cylindrical shell equals the area of its rectangular plan view: **diameter × length**.
+
+Let:
+
+| Symbol | Meaning |
+|--------|---------|
+| $p$ | Internal fluid pressure |
+| $d$ | Internal diameter of the cylinder |
+| $l$ | Length of the cylinder |
+| $t$ | Thickness of the cylinder wall |
+
+**Load tending to cause longitudinal fracture:**
+
+$$F_{\text{long}} = p \cdot d \cdot l$$
+
+**Area of metal resisting this load:**
+
+$$A_{\text{long}} = 2tl$$
+
+**Longitudinal (hoop) stress $\sigma_1$:**
+
+$$\boxed{\sigma_1 = \frac{pd}{2t}}$$
+
+### Circumferential Stress
+
+If the cylinder were instead to fracture around its circumference, the effective area on which internal pressure acts is the projected circular area of the end — regardless of whether the ends are flat, dished, or hemispherical.
+
+The cross-sectional area of the annular ring is $\frac{\pi}{4}(D^2 - d^2)$. Because thickness is small compared with diameter, this is approximated without significant error as:
+
+$$A_{\text{circ}} = \pi d t$$
+
+**Load tending to cause circumferential fracture:**
+
+$$F_{\text{circ}} = p \cdot \frac{\pi d^2}{4}$$
+
+**Circumferential stress $\sigma_2$:**
+
+$$\boxed{\sigma_2 = \frac{pd}{4t}}$$
+
+Comparing the two results, $\sigma_1 = 2\sigma_2$, so the **longitudinal section is always the critical failure plane** in a thin cylinder.
+
+## Working Pressure
+
+The maximum allowable internal working pressure depends on the maximum permissible (safe working) stress of the material. When $\sigma$ denotes the safe working stress, $p$ becomes the safe working pressure.
+
+**Cylindrical vessel** (governed by the longitudinal section):
+
+$$\boxed{p = \frac{2t \cdot \sigma_{\text{w}}}{d}}$$
+
+**Spherical vessel** (all sections are circumferential):
+
+$$\boxed{p = \frac{4t \cdot \sigma_{\text{w}}}{d}}$$
+
+## Seam Strength
+
+Cylindrical shells are often fabricated from two or more curved plates. The seams joining these plates are weaker than the parent plate, so a **seam efficiency factor** $\eta$ (where $0 < \eta \leq 1$) must be applied.
+
+**Working pressure accounting for seam efficiency:**
+
+$$p = \frac{2t \cdot \sigma_{\text{w}} \cdot \eta_{\text{long}}}{d} \tag{longitudinal seam}$$
+
+$$p = \frac{4t \cdot \sigma_{\text{w}} \cdot \eta_{\text{circ}}}{d} \tag{circumferential seam}$$
+
+::: {.callout-note}
+### Design Implication
+The circumferential seam efficiency only limits the safe working pressure if $\eta_{\text{circ}} < \tfrac{1}{2}\,\eta_{\text{long}}$. Since the longitudinal seam governs, it must be designed to approach the full strength of the solid plate as closely as practicable.
+:::
