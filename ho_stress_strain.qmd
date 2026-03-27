@@ -1,0 +1,206 @@
+---
+title: "Stress & Strain"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    geometry: margin=2.5cm
+---
+
+# Stress & Strain {#stress_strain}
+
+## Direct Stress and Strain
+
+When a bar is subjected to an axial force $F$ over cross-sectional area $A$, the direct stress is:
+
+$$\sigma = \frac{F}{A}$$
+
+The resulting axial strain is the ratio of extension to original length:
+
+$$\varepsilon = \frac{\delta L}{L}$$
+
+## Shear Stress and Shear Strain
+
+Shear stress acts tangentially across a plane:
+
+$$\tau = \frac{F}{A}$$
+
+## Young's Modulus (Modulus of Elasticity)
+
+Within the elastic limit, stress and strain are proportional — **Hooke's Law**:
+
+$$E = \frac{\sigma}{\varepsilon}$$
+
+## Thin-Walled Cylinders
+
+A **thin-walled cylinder** (also called a thin cylinder) is one in which the wall thickness $t$ is small relative to the internal radius $r$, typically satisfying:
+
+$$\frac{t}{r} \leq \frac{1}{20}$$
+
+When such a cylinder is subjected to internal pressure $p$, the wall develops stresses in two principal directions:
+
+- **Hoop (circumferential) stress** $\sigma_H$ — acts perpendicular to the cylinder axis
+- **Longitudinal (axial) stress** $\sigma_L$ — acts parallel to the cylinder axis
+
+------------------------------------------------------------------------
+
+## Physical Origin of Longitudinal Stress
+
+Internal pressure acts uniformly on all internal surfaces, including the **end caps**. The net effect is a force trying to push the caps off — effectively pulling the cylinder wall apart along its length.
+
+The wall must resist this bursting force, and the resulting tensile stress acting along the axis is the **longitudinal stress**.
+
+> **Key assumption:** Because the wall is thin, $\sigma_L$ is assumed to be **uniform** across the wall thickness. This simplification does not hold for thick-walled cylinders.
+
+------------------------------------------------------------------------
+
+## Derivation
+
+Consider an imaginary cut through the cylinder **perpendicular to its axis**, dividing it into two halves. Apply a static force balance on one half.
+
+### Bursting force (pressure on end cap)
+
+The internal pressure $p$ acts over the full circular cross-section of the end cap. The net axial force trying to separate the two halves is:
+
+$$F_{\text{burst}} = p \cdot \pi r^2$$
+
+### Resisting force (wall cross-section)
+
+The cylinder wall at the cut resists over an annular area. For a thin wall ($t \ll r$), this area is approximated as:
+
+$$A_{\text{wall}} = 2\pi r \cdot t$$
+
+### Force equilibrium
+
+Setting the bursting force equal to the resisting force:
+
+$$\sigma_L \cdot 2\pi r t = p \cdot \pi r^2$$
+
+Solving for $\sigma_L$:
+
+$$\boxed{\sigma_L = \frac{pr}{2t}}$$
+
+------------------------------------------------------------------------
+
+## Comparison with Hoop Stress
+
+The hoop stress is derived similarly (by cutting along a longitudinal plane) and equals:
+
+$$\sigma_H = \frac{pr}{t}$$
+
+Comparing the two:
+
+$$\sigma_H = 2\,\sigma_L$$
+
+The hoop stress is always **twice** the longitudinal stress. This has an important practical consequence: pressurised cylinders (pipes, boilers, pressure vessels) fail preferentially by **splitting along a longitudinal seam**, not across the axis.
+
+| Stress                  | Formula          | Relative magnitude |
+|-------------------------|------------------|--------------------|
+| Longitudinal $\sigma_L$ | $\dfrac{pr}{2t}$ | $1\times$          |
+| Hoop $\sigma_H$         | $\dfrac{pr}{t}$  | $2\times$          |
+
+------------------------------------------------------------------------
+
+## Conditions and Assumptions
+
+The formula $\sigma_L = pr/2t$ is valid under the following assumptions:
+
+1.  **Closed ends** — longitudinal stress requires end caps. An open-ended tube (e.g. a gun barrel) has $\sigma_L \approx 0$.
+2.  **Thin wall** — $t/r \leq 1/20$. For thicker walls, Lamé's equations must be used.
+3.  **Uniform internal pressure** — the pressure $p$ acts uniformly over the entire internal surface.
+4.  **Isotropic, linearly elastic material** — standard assumption for most engineering metals.
+5.  **No bending or external loads** — only internal pressure is considered.
+
+------------------------------------------------------------------------
+
+## Worked Example
+
+**Problem:** A cylindrical pressure vessel has an internal diameter of 400 mm and a wall thickness of 8 mm. It is subjected to an internal gauge pressure of 3 MPa. Determine the longitudinal stress.
+
+**Given:**
+
+- Internal diameter $d = 400\ \text{mm}$ $\Rightarrow$ $r = 200\ \text{mm} = 0.2\ \text{m}$
+- Wall thickness $t = 8\ \text{mm} = 0.008\ \text{m}$
+- Internal pressure $p = 3\ \text{MPa} = 3 \times 10^6\ \text{Pa}$
+
+**Check thin-wall criterion:**
+
+$$\frac{t}{r} = \frac{8}{200} = 0.04 \leq \frac{1}{20} = 0.05 \quad \checkmark$$
+
+**Longitudinal stress:**
+
+$$\sigma_L = \frac{pr}{2t} = \frac{3 \times 10^6 \times 0.2}{2 \times 0.008} = \frac{600{,}000}{0.016} = 37.5\ \text{MPa}$$
+
+**Hoop stress (for comparison):**
+
+$$\sigma_H = \frac{pr}{t} = \frac{3 \times 10^6 \times 0.2}{0.008} = 75\ \text{MPa}$$
+
+The vessel wall experiences a longitudinal stress of **37.5 MPa** and a hoop stress of **75 MPa**.
+
+------------------------------------------------------------------------
+
+## Summary
+
+$$\sigma_L = \frac{pr}{2t}$$
+
+- $p$ = internal gauge pressure (Pa)
+- $r$ = internal radius (m)
+- $t$ = wall thickness (m)
+- $\sigma_L$ = longitudinal stress (Pa)
+
+Longitudinal stress is always half of the hoop stress in a closed thin-walled cylinder. Failure is therefore governed by the hoop stress in most practical applications.
+
+## Composite Bars
+
+When two materials are bonded together (e.g. a steel rod inside a brass tube), two equations are needed:
+
+**Compatibility** — both materials deform by the same amount:
+
+$$\delta L_1 = \delta L_2 \quad \Rightarrow \quad \frac{\sigma_1}{E_1} = \frac{\sigma_2}{E_2}$$
+
+**Equilibrium** — internal forces sum to the applied load:
+
+$$\sigma_1 A_1 + \sigma_2 A_2 = F$$
+
+Solving these simultaneously gives the stress in each material.
+
+## Thermal Stress
+
+If a bar is **prevented from expanding freely** when heated, a compressive stress is induced:
+
+$$\sigma = E \alpha \Delta T$$
+
+where:
+
+- $\alpha$ = coefficient of linear thermal expansion
+- $\Delta T$ = temperature change
+
+For a composite bar with mismatched expansion, the same compatibility and equilibrium approach applies.
+
+## Factor of Safety
+
+The factor of safety relates the failure stress to the permissible working stress:
+
+$$\text{FoS} = \frac{\text{failure stress}}{\text{allowable (working) stress}}$$
+
+A higher FoS reflects greater uncertainty in loading or material properties.
+
+## Summary of Equations
+
+| Concept | Equation |
+|------------------------------------|------------------------------------|
+| Direct stress | $\sigma = F/A$ |
+| Direct strain | $\varepsilon = \delta L / L$ |
+| Young's modulus | $E = \sigma / \varepsilon$ |
+| Axial deformation | $\delta L = FL/AE$ |
+| Shear modulus | $G = \tau / \gamma$ |
+| Poisson's ratio | $\nu = -\varepsilon_{\text{lat}}/\varepsilon_{\text{axial}}$ |
+| Bulk modulus | $K = \sigma / \varepsilon_v$ |
+| Elastic constants | $E = 2G(1+\nu) = 3K(1-2\nu)$ |
+| Thermal stress | $\sigma = E\alpha\Delta T$ |
+
+------------------------------------------------------------------------
+
+## Summary
+
+This chapter establishes the language of solid mechanics — stress, strain, and the elastic constants — that underpins all subsequent structural chapters. The key skill is setting up **compatibility** and **equilibrium** equations correctly for statically indeterminate problems such as composite bars and thermally loaded members.
