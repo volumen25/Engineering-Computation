@@ -1,0 +1,175 @@
+---
+title: "Stresses in Thin-Walled Pressure Vessels"
+format:
+  pdf:
+    toc: false
+    number-sections: false
+    geometry: margin=2.5cm
+    fontsize: 11pt
+    colorlinks: true
+---
+
+## Introduction
+
+A **thin-walled pressure vessel** is one in which the wall thickness $t$ is small relative to the internal radius $r$, typically satisfying:
+
+$$\frac{t}{r} \leq \frac{1}{20} \qquad \text{equivalently} \qquad \frac{2t}{d} \leq \frac{1}{20}$$
+
+where $d = 2r$ is the internal diameter. This assumption allows the stresses to be treated as **uniform through the wall thickness**, greatly simplifying analysis.
+
+Two common geometries are covered here:
+
+- **Thin-walled cylinder** — two distinct principal stresses (longitudinal and circumferential)
+- **Thin-walled sphere** — a single uniform stress in all directions
+
+---
+
+## Thin-Walled Cylinder
+
+When a closed cylinder is subjected to internal gauge pressure $p$, two principal stresses develop:
+
+- **Longitudinal (axial) stress** $\sigma_L$ — parallel to the cylinder axis
+- **Circumferential (hoop) stress** $\sigma_C$ — around the circumference
+
+### Longitudinal Stress
+
+Internal pressure acts on the **end caps**, generating a net axial force that tends to pull the cylinder apart lengthwise. Taking an imaginary cut perpendicular to the axis:
+
+$$F_{\text{burst}} = p \cdot \frac{\pi d^2}{4} = p \cdot \pi r^2$$
+
+The resisting area of the thin wall at the cut is:
+
+$$A_{\text{wall}} = \pi d \cdot t = 2\pi r \cdot t$$
+
+Force equilibrium $\sigma_L \cdot A_{\text{wall}} = F_{\text{burst}}$ gives:
+
+$$\boxed{\sigma_L = \frac{pd}{4t} = \frac{pr}{2t}}$$
+
+### Circumferential (Hoop) Stress
+
+Internal pressure acts radially outward, tending to split the cylinder along a longitudinal seam. Taking an imaginary cut along the length $L$ of the cylinder and considering the projected area of one half-shell:
+
+$$F_{\text{burst}} = p \cdot d \cdot L = p \cdot 2r \cdot L$$
+
+The resisting area from the two exposed wall strips is:
+
+$$A_{\text{wall}} = 2 \cdot t \cdot L$$
+
+Force equilibrium $\sigma_C \cdot A_{\text{wall}} = F_{\text{burst}}$ gives:
+
+$$\boxed{\sigma_C = \frac{pd}{2t} = \frac{pr}{t}}$$
+
+### Relationship Between the Two
+
+$$\sigma_C = 2\,\sigma_L$$
+
+The circumferential stress always governs design. Pressurised cylinders therefore fail preferentially by splitting along a **longitudinal seam**, not across the axis.
+
+---
+
+## Thin-Walled Sphere
+
+### Physical origin
+
+In a sphere, geometry is symmetric in all directions. Internal pressure generates the same bursting force on any diametral plane, and the wall resists uniformly around the full circumference of that plane. There is only **one** principal stress, equal in all directions.
+
+### Derivation
+
+Take any imaginary cut through the centre of the sphere (a diametral plane), dividing it into two hemispheres. The bursting force on the projected circular area is:
+
+$$F_{\text{burst}} = p \cdot \frac{\pi d^2}{4} = p \cdot \pi r^2$$
+
+The resisting area is the thin annular wall exposed at the cut:
+
+$$A_{\text{wall}} = \pi d \cdot t = 2\pi r \cdot t$$
+
+Force equilibrium gives:
+
+$$\sigma_S \cdot \pi d t = p \cdot \frac{\pi d^2}{4}$$
+
+$$\boxed{\sigma_S = \frac{pd}{4t} = \frac{pr}{2t}}$$
+
+### Key observation
+
+The stress in a thin-walled sphere is **equal to the longitudinal stress in a cylinder** of the same diameter, wall thickness, and pressure — and **half the circumferential stress** of that cylinder:
+
+$$\sigma_S = \sigma_L = \frac{1}{2}\,\sigma_C$$
+
+This makes the sphere a structurally efficient shape for pressure containment: the wall material is fully and equally stressed in all directions, with no weaker axis.
+
+---
+
+## Summary of Formulae
+
+| Vessel | Stress | Using radius | Using diameter |
+|---|---|---|---|
+| Cylinder | Longitudinal $\sigma_L$ | $\dfrac{pr}{2t}$ | $\dfrac{pd}{4t}$ |
+| Cylinder | Circumferential $\sigma_C$ | $\dfrac{pr}{t}$ | $\dfrac{pd}{2t}$ |
+| Sphere | $\sigma_S$ (all directions) | $\dfrac{pr}{2t}$ | $\dfrac{pd}{4t}$ |
+
+---
+
+## Conditions and Assumptions
+
+The above formulae apply under the following conditions:
+
+1. **Thin wall** — $t/r \leq 1/20$. For thicker walls, use Lamé's equations (cylinders) or the full thick-shell solution (spheres).
+2. **Closed ends** (cylinder) — longitudinal stress requires end caps. An open tube has $\sigma_L \approx 0$.
+3. **Uniform internal pressure** $p$ acting on all internal surfaces.
+4. **Isotropic, linearly elastic material**.
+5. **No bending, external loads, or self-weight effects**.
+
+---
+
+## Worked Example
+
+**Problem:** A thin-walled pressure vessel is subjected to an internal gauge pressure of 3 MPa. The internal diameter is 400 mm and the wall thickness is 8 mm. Determine all principal stresses for (a) a closed cylinder and (b) a sphere of the same dimensions.
+
+**Given (shared):**
+
+- $d = 400\ \text{mm} = 0.4\ \text{m}$ $\Rightarrow$ $r = 200\ \text{mm} = 0.2\ \text{m}$
+- $t = 8\ \text{mm} = 0.008\ \text{m}$
+- $p = 3\ \text{MPa} = 3 \times 10^6\ \text{Pa}$
+
+**Check thin-wall criterion:**
+
+$$\frac{t}{r} = \frac{8}{200} = 0.04 \leq 0.05 \quad \checkmark$$
+
+### (a) Closed cylinder
+
+**Longitudinal stress:**
+
+$$\sigma_L = \frac{pd}{4t} = \frac{3 \times 10^6 \times 0.4}{4 \times 0.008} = \frac{1{,}200{,}000}{0.032} = 37.5\ \text{MPa}$$
+
+**Circumferential stress:**
+
+$$\sigma_C = \frac{pd}{2t} = \frac{3 \times 10^6 \times 0.4}{2 \times 0.008} = \frac{1{,}200{,}000}{0.016} = 75\ \text{MPa}$$
+
+**Verification:** $\sigma_C = 2 \times 37.5 = 75\ \text{MPa}$ $\checkmark$
+
+### (b) Sphere
+
+$$\sigma_S = \frac{pd}{4t} = \frac{3 \times 10^6 \times 0.4}{4 \times 0.008} = \frac{1{,}200{,}000}{0.032} = 37.5\ \text{MPa}$$
+
+The sphere wall is stressed equally at 37.5 MPa in all directions — the same as the longitudinal stress in the cylinder, and half its circumferential stress.
+
+### Results summary
+
+| Vessel | Stress | Value |
+|---|---|---|
+| Cylinder | Longitudinal $\sigma_L$ | 37.5 MPa |
+| Cylinder | Circumferential $\sigma_C$ | 75.0 MPa |
+| Sphere | $\sigma_S$ (all directions) | 37.5 MPa |
+
+The cylinder's circumferential stress of **75 MPa** is the largest and governs design. For the same pressure and dimensions, the sphere requires no more wall material than is needed to resist the cylinder's longitudinal stress alone — illustrating why spherical vessels are preferred when minimising weight is a priority.
+
+---
+
+## Note on Reed's Volumes
+
+Some editions of Reed's Marine Engineering label the cylinder stress formulae with the values **reversed** — attributing $pd/2t$ to longitudinal stress and $pd/4t$ to circumferential stress. This is incorrect. The physical reasoning is clear:
+
+- The end cap presents area $\pi d^2/4$ to the pressure — a smaller force → **smaller** stress → longitudinal.
+- The projected side area $d \times L$ is larger — a bigger force → **larger** stress → circumferential.
+
+The check $\sigma_C = 2\,\sigma_L$ should always hold. If a reference's two cylinder formulae do not satisfy this, a labelling error is present.
